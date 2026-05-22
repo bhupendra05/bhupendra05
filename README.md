@@ -42,6 +42,7 @@ DevOps       →  Docker · Kubernetes · GCP · AWS · GitHub Actions
 | Project | Description | Stars |
 |---------|-------------|-------|
 | [solana-wallet-tracker](https://github.com/bhupendra05/solana-wallet-tracker) | Track Solana wallets — balance, tokens, live tx watch | [![Stars](https://img.shields.io/github/stars/bhupendra05/solana-wallet-tracker?style=flat)](https://github.com/bhupendra05/solana-wallet-tracker) |
+| [solana-token-cli](https://github.com/bhupendra05/solana-token-cli) | Create, mint, transfer, burn SPL tokens from the terminal | [![Stars](https://img.shields.io/github/stars/bhupendra05/solana-token-cli?style=flat)](https://github.com/bhupendra05/solana-token-cli) |
 | [nft-meta](https://github.com/bhupendra05/nft-meta) | Fetch NFT metadata — Solana, Ethereum, Polygon, Base | [![Stars](https://img.shields.io/github/stars/bhupendra05/nft-meta?style=flat)](https://github.com/bhupendra05/nft-meta) |
 
 ### 🛠️ Developer Tools
