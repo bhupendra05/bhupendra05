@@ -62,6 +62,40 @@ DevOps       →  Docker · Kubernetes · GCP · AWS · GitHub Actions
 | [flutter-boilerplate](https://github.com/bhupendra05/flutter-boilerplate) | Flutter starter — Riverpod, go_router, Dio JWT auth, Material 3, clean arch | [![Stars](https://img.shields.io/github/stars/bhupendra05/flutter-boilerplate?style=flat)](https://github.com/bhupendra05/flutter-boilerplate) |
 | [devops-health](https://github.com/bhupendra05/devops-health) | SSH server health dashboard — CPU, memory, disk, services | [![Stars](https://img.shields.io/github/stars/bhupendra05/devops-health?style=flat)](https://github.com/bhupendra05/devops-health) |
 | [ai-code-review](https://github.com/bhupendra05/ai-code-review) | GitHub Action: AI reviews every PR automatically | [![Stars](https://img.shields.io/github/stars/bhupendra05/ai-code-review?style=flat)](https://github.com/bhupendra05/ai-code-review) |
+| [python-interview-prep](https://github.com/bhupendra05/python-interview-prep) | 100 coding interview problems with CLI runner and test suite | [![Stars](https://img.shields.io/github/stars/bhupendra05/python-interview-prep?style=flat)](https://github.com/bhupendra05/python-interview-prep) |
+| [bash-scripts](https://github.com/bhupendra05/bash-scripts) | Production DevOps bash scripts — server setup, SSL, DB backup, Docker cleanup | [![Stars](https://img.shields.io/github/stars/bhupendra05/bash-scripts?style=flat)](https://github.com/bhupendra05/bash-scripts) |
+| [github-actions-templates](https://github.com/bhupendra05/github-actions-templates) | Copy-paste GitHub Actions workflows — Python CI, Docker, deploy, security scan | [![Stars](https://img.shields.io/github/stars/bhupendra05/github-actions-templates?style=flat)](https://github.com/bhupendra05/github-actions-templates) |
+| [aws-cdk-templates](https://github.com/bhupendra05/aws-cdk-templates) | Production AWS CDK Python stacks — Lambda, ECS Fargate, RDS, S3+CloudFront | [![Stars](https://img.shields.io/github/stars/bhupendra05/aws-cdk-templates?style=flat)](https://github.com/bhupendra05/aws-cdk-templates) |
+
+### 📚 Learning & Reference
+
+| Project | Description | Stars |
+|---------|-------------|-------|
+| [python-design-patterns](https://github.com/bhupendra05/python-design-patterns) | 23 GoF design patterns with real-world Python examples | [![Stars](https://img.shields.io/github/stars/bhupendra05/python-design-patterns?style=flat)](https://github.com/bhupendra05/python-design-patterns) |
+| [python-async-patterns](https://github.com/bhupendra05/python-async-patterns) | asyncio cookbook — queues, retry, circuit breaker, TaskGroup, benchmarks | [![Stars](https://img.shields.io/github/stars/bhupendra05/python-async-patterns?style=flat)](https://github.com/bhupendra05/python-async-patterns) |
+| [postgres-tips](https://github.com/bhupendra05/postgres-tips) | Advanced PostgreSQL — window functions, JSONB, indexing, EXPLAIN ANALYZE | [![Stars](https://img.shields.io/github/stars/bhupendra05/postgres-tips?style=flat)](https://github.com/bhupendra05/postgres-tips) |
+| [openai-cookbook](https://github.com/bhupendra05/openai-cookbook) | Advanced OpenAI API — function calling, streaming, structured outputs, embeddings | [![Stars](https://img.shields.io/github/stars/bhupendra05/openai-cookbook?style=flat)](https://github.com/bhupendra05/openai-cookbook) |
+| [langchain-examples](https://github.com/bhupendra05/langchain-examples) | 20+ runnable LangChain examples — RAG, agents, chains, output parsers | [![Stars](https://img.shields.io/github/stars/bhupendra05/langchain-examples?style=flat)](https://github.com/bhupendra05/langchain-examples) |
+| [k8s-manifests](https://github.com/bhupendra05/k8s-manifests) | Production Kubernetes manifests — HPA, NetworkPolicy, RBAC, security contexts | [![Stars](https://img.shields.io/github/stars/bhupendra05/k8s-manifests?style=flat)](https://github.com/bhupendra05/k8s-manifests) |
+
+### 🔍 Search & Data
+
+| Project | Description | Stars |
+|---------|-------------|-------|
+| [vector-search-demo](https://github.com/bhupendra05/vector-search-demo) | Semantic search from scratch — sentence-transformers + FAISS + FastAPI | [![Stars](https://img.shields.io/github/stars/bhupendra05/vector-search-demo?style=flat)](https://github.com/bhupendra05/vector-search-demo) |
+
+### ⚛️ Frontend
+
+| Project | Description | Stars |
+|---------|-------------|-------|
+| [react-hooks-library](https://github.com/bhupendra05/react-hooks-library) | 30+ production React hooks — zero deps, TypeScript-first | [![Stars](https://img.shields.io/github/stars/bhupendra05/react-hooks-library?style=flat)](https://github.com/bhupendra05/react-hooks-library) |
+| [nextjs-starter](https://github.com/bhupendra05/nextjs-starter) | Next.js 14 App Router starter — Auth.js, Prisma, Tailwind, Docker | [![Stars](https://img.shields.io/github/stars/bhupendra05/nextjs-starter?style=flat)](https://github.com/bhupendra05/nextjs-starter) |
+
+### ⛓️ Blockchain / Solana (continued)
+
+| Project | Description | Stars |
+|---------|-------------|-------|
+| [solana-airdrop-bot](https://github.com/bhupendra05/solana-airdrop-bot) | Send SOL/SPL tokens to thousands of wallets from CSV — pure JSON-RPC | [![Stars](https://img.shields.io/github/stars/bhupendra05/solana-airdrop-bot?style=flat)](https://github.com/bhupendra05/solana-airdrop-bot) |
 
 ---
 
