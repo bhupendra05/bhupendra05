@@ -45,11 +45,21 @@ DevOps       →  Docker · Kubernetes · GCP · AWS · GitHub Actions
 | [solana-token-cli](https://github.com/bhupendra05/solana-token-cli) | Create, mint, transfer, burn SPL tokens from the terminal | [![Stars](https://img.shields.io/github/stars/bhupendra05/solana-token-cli?style=flat)](https://github.com/bhupendra05/solana-token-cli) |
 | [nft-meta](https://github.com/bhupendra05/nft-meta) | Fetch NFT metadata — Solana, Ethereum, Polygon, Base | [![Stars](https://img.shields.io/github/stars/bhupendra05/nft-meta?style=flat)](https://github.com/bhupendra05/nft-meta) |
 
+### 🤖 AI / LLM (continued)
+
+| Project | Description | Stars |
+|---------|-------------|-------|
+| [whisper-cli](https://github.com/bhupendra05/whisper-cli) | Transcribe audio & video locally using OpenAI Whisper — txt, srt, vtt, json | [![Stars](https://img.shields.io/github/stars/bhupendra05/whisper-cli?style=flat)](https://github.com/bhupendra05/whisper-cli) |
+| [ai-agents](https://github.com/bhupendra05/ai-agents) | Minimal Python ReAct agent framework — @tool decorator, OpenAI/Anthropic/Ollama | [![Stars](https://img.shields.io/github/stars/bhupendra05/ai-agents?style=flat)](https://github.com/bhupendra05/ai-agents) |
+
 ### 🛠️ Developer Tools
 
 | Project | Description | Stars |
 |---------|-------------|-------|
 | [fastapi-production-template](https://github.com/bhupendra05/fastapi-production-template) | Production FastAPI starter — async PostgreSQL, JWT, Redis, Docker, CI | [![Stars](https://img.shields.io/github/stars/bhupendra05/fastapi-production-template?style=flat)](https://github.com/bhupendra05/fastapi-production-template) |
+| [docker-compose-templates](https://github.com/bhupendra05/docker-compose-templates) | Production Docker Compose files — Postgres, Redis, Kafka, Grafana, n8n, Jupyter | [![Stars](https://img.shields.io/github/stars/bhupendra05/docker-compose-templates?style=flat)](https://github.com/bhupendra05/docker-compose-templates) |
+| [rust-cli-starter](https://github.com/bhupendra05/rust-cli-starter) | Production Rust CLI template — clap v4, tokio, tracing, config, Docker, CI | [![Stars](https://img.shields.io/github/stars/bhupendra05/rust-cli-starter?style=flat)](https://github.com/bhupendra05/rust-cli-starter) |
+| [flutter-boilerplate](https://github.com/bhupendra05/flutter-boilerplate) | Flutter starter — Riverpod, go_router, Dio JWT auth, Material 3, clean arch | [![Stars](https://img.shields.io/github/stars/bhupendra05/flutter-boilerplate?style=flat)](https://github.com/bhupendra05/flutter-boilerplate) |
 | [devops-health](https://github.com/bhupendra05/devops-health) | SSH server health dashboard — CPU, memory, disk, services | [![Stars](https://img.shields.io/github/stars/bhupendra05/devops-health?style=flat)](https://github.com/bhupendra05/devops-health) |
 | [ai-code-review](https://github.com/bhupendra05/ai-code-review) | GitHub Action: AI reviews every PR automatically | [![Stars](https://img.shields.io/github/stars/bhupendra05/ai-code-review?style=flat)](https://github.com/bhupendra05/ai-code-review) |
 
