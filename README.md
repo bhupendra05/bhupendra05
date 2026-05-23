@@ -1,6 +1,6 @@
 <div align="center">
 
-# Bhupendra Gurjar
+# Bhupendra Tale
 
 **Full-Stack Engineer · AI/ML · Blockchain/Solana · DevOps**
 
