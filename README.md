@@ -28,8 +28,11 @@ DevOps       →  Docker · Kubernetes · GCP · AWS · GitHub Actions
 
 ### 🤖 AI / LLM
 
+> ⭐ **FEATURED** — [oracle](https://github.com/bhupendra05/oracle) · Catch LLM hallucinations before your users do using Claude Opus 4.7's deep reasoning. Verify math, code, citations, and facts.
+
 | Project | Description | Stars |
 |---------|-------------|-------|
+| [oracle](https://github.com/bhupendra05/oracle) | **LLM hallucination verifier** — math validation, code execution, citation grounding, Opus 4.7 reasoning | [![Stars](https://img.shields.io/github/stars/bhupendra05/oracle?style=flat)](https://github.com/bhupendra05/oracle) |
 | [llm-compare](https://github.com/bhupendra05/llm-compare) | Chat with GPT-4o, Claude, Gemini side-by-side | [![Stars](https://img.shields.io/github/stars/bhupendra05/llm-compare?style=flat)](https://github.com/bhupendra05/llm-compare) |
 | [ai-commit](https://github.com/bhupendra05/ai-commit) | AI-generated git commit messages from staged diff | [![Stars](https://img.shields.io/github/stars/bhupendra05/ai-commit?style=flat)](https://github.com/bhupendra05/ai-commit) |
 | [pdf-rag-cli](https://github.com/bhupendra05/pdf-rag-cli) | Ask questions about local PDFs — local embeddings, no cloud | [![Stars](https://img.shields.io/github/stars/bhupendra05/pdf-rag-cli?style=flat)](https://github.com/bhupendra05/pdf-rag-cli) |
