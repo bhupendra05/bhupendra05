@@ -28,11 +28,18 @@ DevOps       →  Docker · Kubernetes · GCP · AWS · GitHub Actions
 
 ### 🤖 AI / LLM
 
-> ⭐ **FEATURED** — [oracle](https://github.com/bhupendra05/oracle) · Catch LLM hallucinations before your users do using Claude Opus 4.7's deep reasoning. Verify math, code, citations, and facts.
+> ⭐ **FEATURED — Claude Opus 4.7 extended-thinking suite:**
+> - 🔮 [oracle](https://github.com/bhupendra05/oracle) — catch LLM hallucinations (math, code, citations, facts)
+> - 🔬 [autopsy](https://github.com/bhupendra05/autopsy) — production incident root cause analyzer
+> - ⚖️ [debate](https://github.com/bhupendra05/debate) — steelman both sides of any technical decision
+> - 📋 [req-check](https://github.com/bhupendra05/req-check) — verify codebase implements spec
 
 | Project | Description | Stars |
 |---------|-------------|-------|
 | [oracle](https://github.com/bhupendra05/oracle) | **LLM hallucination verifier** — math validation, code execution, citation grounding, Opus 4.7 reasoning | [![Stars](https://img.shields.io/github/stars/bhupendra05/oracle?style=flat)](https://github.com/bhupendra05/oracle) |
+| [autopsy](https://github.com/bhupendra05/autopsy) | **Production incident RCA** — logs + git + deploys → post-mortem via extended thinking | [![Stars](https://img.shields.io/github/stars/bhupendra05/autopsy?style=flat)](https://github.com/bhupendra05/autopsy) |
+| [debate](https://github.com/bhupendra05/debate) | **Technical decision steelman** — best argument for each side + verdict with confidence | [![Stars](https://img.shields.io/github/stars/bhupendra05/debate?style=flat)](https://github.com/bhupendra05/debate) |
+| [req-check](https://github.com/bhupendra05/req-check) | **Spec vs code verifier** — extracts requirements, checks each one against implementation | [![Stars](https://img.shields.io/github/stars/bhupendra05/req-check?style=flat)](https://github.com/bhupendra05/req-check) |
 | [llm-compare](https://github.com/bhupendra05/llm-compare) | Chat with GPT-4o, Claude, Gemini side-by-side | [![Stars](https://img.shields.io/github/stars/bhupendra05/llm-compare?style=flat)](https://github.com/bhupendra05/llm-compare) |
 | [ai-commit](https://github.com/bhupendra05/ai-commit) | AI-generated git commit messages from staged diff | [![Stars](https://img.shields.io/github/stars/bhupendra05/ai-commit?style=flat)](https://github.com/bhupendra05/ai-commit) |
 | [pdf-rag-cli](https://github.com/bhupendra05/pdf-rag-cli) | Ask questions about local PDFs — local embeddings, no cloud | [![Stars](https://img.shields.io/github/stars/bhupendra05/pdf-rag-cli?style=flat)](https://github.com/bhupendra05/pdf-rag-cli) |
