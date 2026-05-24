@@ -33,9 +33,12 @@ DevOps       →  Docker · Kubernetes · GCP · AWS · GitHub Actions
 > - 🔬 [autopsy](https://github.com/bhupendra05/autopsy) — production incident root cause analyzer
 > - ⚖️ [debate](https://github.com/bhupendra05/debate) — steelman both sides of any technical decision
 > - 📋 [req-check](https://github.com/bhupendra05/req-check) — verify codebase implements spec
+>
+> ✦ **NEW — [shape](https://github.com/bhupendra05/shape)** — structured output from any LLM in one line
 
 | Project | Description | Stars |
 |---------|-------------|-------|
+| [shape](https://github.com/bhupendra05/shape) | **Structured LLM output in one line** — dict schema or Pydantic, Claude or OpenAI, zero boilerplate | [![Stars](https://img.shields.io/github/stars/bhupendra05/shape?style=flat)](https://github.com/bhupendra05/shape) |
 | [oracle](https://github.com/bhupendra05/oracle) | **LLM hallucination verifier** — math validation, code execution, citation grounding, Opus 4.7 reasoning | [![Stars](https://img.shields.io/github/stars/bhupendra05/oracle?style=flat)](https://github.com/bhupendra05/oracle) |
 | [autopsy](https://github.com/bhupendra05/autopsy) | **Production incident RCA** — logs + git + deploys → post-mortem via extended thinking | [![Stars](https://img.shields.io/github/stars/bhupendra05/autopsy?style=flat)](https://github.com/bhupendra05/autopsy) |
 | [debate](https://github.com/bhupendra05/debate) | **Technical decision steelman** — best argument for each side + verdict with confidence | [![Stars](https://img.shields.io/github/stars/bhupendra05/debate?style=flat)](https://github.com/bhupendra05/debate) |
