@@ -11,6 +11,13 @@
 
 ---
 
+## 💛 First Follower
+
+A special thank you to **[@yumiaura](https://github.com/yumiaura)** — my very first GitHub follower!  
+Olya is an incredible developer building charming AI tools, desktop apps, and voice assistants. Go check out her work! 🐱
+
+---
+
 ## 🧰 Tech Stack
 
 ```
@@ -64,7 +71,7 @@ DevOps       →  Docker · Kubernetes · GCP · AWS · GitHub Actions
 |---------|-------------|-------|
 | [solana-wallet-tracker](https://github.com/bhupendra05/solana-wallet-tracker) | Track Solana wallets — balance, tokens, live tx watch | [![Stars](https://img.shields.io/github/stars/bhupendra05/solana-wallet-tracker?style=flat)](https://github.com/bhupendra05/solana-wallet-tracker) |
 | [solana-token-cli](https://github.com/bhupendra05/solana-token-cli) | Create, mint, transfer, burn SPL tokens from the terminal | [![Stars](https://img.shields.io/github/stars/bhupendra05/solana-token-cli?style=flat)](https://github.com/bhupendra05/solana-token-cli) |
-| [solana-airdrop-bot](https://github.com/bhupendra05/solana-airdrop-bot) | Send SOL/SPL tokens to thousands of wallets from CSV — pure JSON-RPC | [![Stars](https://img.shields.io/github/stars/bhupendra05/solana-airdrop-bot?style=flat)](https://github.com/bhupendra05/solana-airdrop-bot) |
+| [solana-airdrop-bot](https://github.com/bhupendra05/solana-airdrop-bot) | Send SOL/SPL tokens to thousands of wallets from CSV — pure JSON-RPC | [![Stars](https://img.shields.io/github/stars/bhupendra05/solana-airdrop-bot?style=flat)](https://github.com/bhupendra05/solana-token-cli) |
 | [nft-meta](https://github.com/bhupendra05/nft-meta) | Fetch NFT metadata — Solana, Ethereum, Polygon, Base | [![Stars](https://img.shields.io/github/stars/bhupendra05/nft-meta?style=flat)](https://github.com/bhupendra05/nft-meta) |
 
 ### 🛠️ Developer Tools
@@ -88,6 +95,11 @@ DevOps       →  Docker · Kubernetes · GCP · AWS · GitHub Actions
 | [ai-code-review](https://github.com/bhupendra05/ai-code-review) | GitHub Action: AI reviews every PR automatically | [![Stars](https://img.shields.io/github/stars/bhupendra05/ai-code-review?style=flat)](https://github.com/bhupendra05/ai-code-review) |
 | [rust-cli-starter](https://github.com/bhupendra05/rust-cli-starter) | Production Rust CLI template — clap v4, tokio, tracing, config, Docker, CI | [![Stars](https://img.shields.io/github/stars/bhupendra05/rust-cli-starter?style=flat)](https://github.com/bhupendra05/rust-cli-starter) |
 | [flutter-boilerplate](https://github.com/bhupendra05/flutter-boilerplate) | Flutter starter — Riverpod, go_router, Dio JWT auth, Material 3, clean arch | [![Stars](https://img.shields.io/github/stars/bhupendra05/flutter-boilerplate?style=flat)](https://github.com/bhupendra05/flutter-boilerplate) |
+| [gitsecrets](https://github.com/bhupendra05/gitsecrets) | Scan git history for secrets — AWS keys, tokens, passwords, DB URLs | [![Stars](https://img.shields.io/github/stars/bhupendra05/gitsecrets?style=flat)](https://github.com/bhupendra05/gitsecrets) |
+| [headerguard](https://github.com/bhupendra05/headerguard) | HTTP security header scanner — scores 0–100, CLI + Python API | [![Stars](https://img.shields.io/github/stars/bhupendra05/headerguard?style=flat)](https://github.com/bhupendra05/headerguard) |
+| [n1detect](https://github.com/bhupendra05/n1detect) | N+1 SQL query detector for Django, SQLAlchemy, any DB-API app | [![Stars](https://img.shields.io/github/stars/bhupendra05/n1detect?style=flat)](https://github.com/bhupendra05/n1detect) |
+| [cronguard](https://github.com/bhupendra05/cronguard) | Monitor cron jobs for missed runs — heartbeat + cron expression parser | [![Stars](https://img.shields.io/github/stars/bhupendra05/cronguard?style=flat)](https://github.com/bhupendra05/cronguard) |
+| [depaudit](https://github.com/bhupendra05/depaudit) | Audit Python dependencies for license compliance and CVEs | [![Stars](https://img.shields.io/github/stars/bhupendra05/depaudit?style=flat)](https://github.com/bhupendra05/depaudit) |
 
 ### 📚 Learning & Reference
 
@@ -99,7 +111,7 @@ DevOps       →  Docker · Kubernetes · GCP · AWS · GitHub Actions
 | [python-async-patterns](https://github.com/bhupendra05/python-async-patterns) | asyncio cookbook — queues, retry, circuit breaker, TaskGroup, benchmarks | [![Stars](https://img.shields.io/github/stars/bhupendra05/python-async-patterns?style=flat)](https://github.com/bhupendra05/python-async-patterns) |
 | [python-concurrency](https://github.com/bhupendra05/python-concurrency) | Threading vs multiprocessing vs asyncio — patterns, GIL explained, benchmarks | [![Stars](https://img.shields.io/github/stars/bhupendra05/python-concurrency?style=flat)](https://github.com/bhupendra05/python-concurrency) |
 | [python-testing-patterns](https://github.com/bhupendra05/python-testing-patterns) | pytest patterns — fixtures, mocking, parametrize, async tests, FastAPI TestClient | [![Stars](https://img.shields.io/github/stars/bhupendra05/python-testing-patterns?style=flat)](https://github.com/bhupendra05/python-testing-patterns) |
-| [pydantic-v2-cookbook](https://github.com/bhupendra05/pydantic-v2-cookbook) | Pydantic v2 patterns — BaseSettings, validators, discriminated unions, FastAPI | [![Stars](https://img.shields.io/github/stars/bhupendra05/pydantic-v2-cookbook?style=flat)](https://github.com/bhupendra05/pydantic-v2-cookbook) |
+| [pydantic-v2-cookbook](https://github.com/bhupendra05/pydantic-v2-cookbook) | Pydantic v2 patterns — vanilla validators, settings, discriminated unions, FastAPI | [![Stars](https://img.shields.io/github/stars/bhupendra05/pydantic-v2-cookbook?style=flat)](https://github.com/bhupendra05/pydantic-v2-cookbook) |
 | [sql-interview-prep](https://github.com/bhupendra05/sql-interview-prep) | 30 SQL problems easy→hard — JOINs, window functions, CTEs, recursive queries | [![Stars](https://img.shields.io/github/stars/bhupendra05/sql-interview-prep?style=flat)](https://github.com/bhupendra05/sql-interview-prep) |
 | [postgres-tips](https://github.com/bhupendra05/postgres-tips) | Advanced PostgreSQL — window functions, JSONB, indexing, EXPLAIN ANALYZE | [![Stars](https://img.shields.io/github/stars/bhupendra05/postgres-tips?style=flat)](https://github.com/bhupendra05/postgres-tips) |
 | [openai-cookbook](https://github.com/bhupendra05/openai-cookbook) | Advanced OpenAI API — function calling, streaming, structured outputs, embeddings | [![Stars](https://img.shields.io/github/stars/bhupendra05/openai-cookbook?style=flat)](https://github.com/bhupendra05/openai-cookbook) |
