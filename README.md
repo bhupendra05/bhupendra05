@@ -138,8 +138,18 @@ DevOps       →  Docker · Kubernetes · GCP · AWS · GitHub Actions
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=bhupendra05&show_icons=true&theme=dark&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=bhupendra05&layout=compact&theme=dark&hide_border=true)
+<table>
+  <tr>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=bhupendra05&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&cache_seconds=86400" alt="GitHub Stats" />
+    </td>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bhupendra05&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=86400" alt="Top Languages" />
+    </td>
+  </tr>
+</table>
+
+<img src="https://github-readme-streak-stats.herokuapp.com?user=bhupendra05&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="GitHub Streak" />
 
 </div>
 
