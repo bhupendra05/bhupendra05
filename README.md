@@ -16,7 +16,7 @@
 <img src="https://komarev.com/ghpvc/?username=bhupendra05&style=for-the-badge&color=8957e5&label=PROFILE+VIEWS" alt="views"/>
 <a href="https://github.com/bhupendra05?tab=followers"><img src="https://img.shields.io/github/followers/bhupendra05?style=for-the-badge&color=58a6ff&labelColor=0d1117&logo=github" alt="followers"/></a>
 <a href="mailto:bgurjar05.bg@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="email"/></a>
-<a href="https://www.linkedin.com/in/bhupendra-tale/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/></a>
+<a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/></a>
 
 </div>
 
@@ -204,7 +204,7 @@ class BhupendraTale:
 I build AI-native tools and I'm always up for a sharp problem.
 **Open to collaborations, freelance, and full-time roles.**
 
-<a href="https://www.linkedin.com/in/bhupendra-tale/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="mailto:bgurjar05.bg@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hi-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 <a href="https://github.com/bhupendra05"><img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 
