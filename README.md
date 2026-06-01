@@ -1,162 +1,219 @@
+<!-- ====================== HEADER ====================== -->
+<a href="https://github.com/bhupendra05">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Bhupendra%20Tale&fontSize=68&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=AI%20Engineer%20•%20LLM%20%26%20MCP%20•%20RAG&descAlignY=58&descSize=20" alt="header"/>
+</a>
+
 <div align="center">
 
-# Bhupendra Tale
+<!-- Typing animation -->
+<a href="https://github.com/bhupendra05">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=720&lines=Claude+AI+Developer;LLM+%26+MCP+Engineer;RAG+Pipelines%2C+from+scratch;I+turn+expert+workflows+into+AI+tools;60%2B+open-source+tools+shipped+%F0%9F%9A%80" alt="Typing SVG" />
+</a>
 
-**Full-Stack Engineer · AI/ML · Blockchain/Solana · DevOps**
+<br/>
 
-[![GitHub followers](https://img.shields.io/github/followers/bhupendra05?style=social)](https://github.com/bhupendra05)
-[![Email](https://img.shields.io/badge/email-bgurjar05.bg%40gmail.com-red?style=flat&logo=gmail)](mailto:bgurjar05.bg@gmail.com)
+<!-- Badges -->
+<img src="https://komarev.com/ghpvc/?username=bhupendra05&style=for-the-badge&color=8957e5&label=PROFILE+VIEWS" alt="views"/>
+<a href="https://github.com/bhupendra05?tab=followers"><img src="https://img.shields.io/github/followers/bhupendra05?style=for-the-badge&color=58a6ff&labelColor=0d1117&logo=github" alt="followers"/></a>
+<a href="mailto:bgurjar05.bg@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="email"/></a>
+<a href="https://www.linkedin.com/in/bhupendra-tale/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/></a>
 
 </div>
 
 ---
 
-## 💛 First Follower
+<!-- ====================== ABOUT ====================== -->
+## 🧑‍💻 About Me
 
-A special thank you to **[@yumiaura](https://github.com/yumiaura)** — my very first GitHub follower!  
-Olya is an incredible developer building charming AI tools, desktop apps, and voice assistants. Go check out her work! 🐱
+```python
+class BhupendraTale:
+    role        = "AI Engineer · LLM & MCP · RAG"
+    location    = "Indore, India 🇮🇳"
+    focus       = "Turning expert workflows into AI-native tools"
+    philosophy  = "Find a real problem → build the smallest sharp tool → test it → ship it"
+    shipped     = "60+ open-source tools, all tested, open-core"
+```
+
+- 🤖 **Claude AI Developer** — I build with LLMs, **MCP servers**, and **RAG** pipelines.
+- 💼 **AI for finance & IB** — PE/VC waterfall math, DCF, cap-table exits, deal sourcing — runnable by *chatting* with Claude.
+- 🎓 **Strong fundamentals** — rate limiters, probabilistic data structures, and a BM25 search engine, all built **from scratch**.
+- 🛡️ **Security-minded** — phishing detection, secret scanning, PII redaction.
+- ⚡ **I ship.** Small, sharp, tested tools — not toys.
 
 ---
 
+<!-- ====================== TECH STACK ====================== -->
 ## 🧰 Tech Stack
 
-```
-AI/ML        →  PyTorch · Transformers · LangChain · RAG · Fine-tuning
-LLM Tools    →  OpenAI API · Anthropic Claude · Ollama · MCP Protocol
-Blockchain   →  Solana · Anchor · SPL Tokens · Web3.js · Rust
-Backend      →  FastAPI · Python · Node.js · PostgreSQL · Redis
-Frontend     →  React · Next.js · Flutter · Dart
-DevOps       →  Docker · Kubernetes · GCP · AWS · GitHub Actions
-```
-
----
-
-## 🚀 Open Source Projects
-
-### 🤖 AI / LLM
-
-> ⭐ **FEATURED — Claude Opus 4.7 extended-thinking suite:**
-> - 🔮 [oracle](https://github.com/bhupendra05/oracle) — catch LLM hallucinations (math, code, citations, facts)
-> - 🔬 [autopsy](https://github.com/bhupendra05/autopsy) — production incident root cause analyzer
-> - ⚖️ [debate](https://github.com/bhupendra05/debate) — steelman both sides of any technical decision
-> - 📋 [req-check](https://github.com/bhupendra05/req-check) — verify codebase implements spec
->
-> ✦ **NEW — [shape](https://github.com/bhupendra05/shape)** — structured output from any LLM in one line
-
-| Project | Description | Stars |
-|---------|-------------|-------|
-| [shape](https://github.com/bhupendra05/shape) | **Structured LLM output in one line** — dict schema or Pydantic, Claude or OpenAI, zero boilerplate | [![Stars](https://img.shields.io/github/stars/bhupendra05/shape?style=flat)](https://github.com/bhupendra05/shape) |
-| [oracle](https://github.com/bhupendra05/oracle) | **LLM hallucination verifier** — math validation, code execution, citation grounding, Opus 4.7 reasoning | [![Stars](https://img.shields.io/github/stars/bhupendra05/oracle?style=flat)](https://github.com/bhupendra05/oracle) |
-| [autopsy](https://github.com/bhupendra05/autopsy) | **Production incident RCA** — logs + git + deploys → post-mortem via extended thinking | [![Stars](https://img.shields.io/github/stars/bhupendra05/autopsy?style=flat)](https://github.com/bhupendra05/autopsy) |
-| [debate](https://github.com/bhupendra05/debate) | **Technical decision steelman** — best argument for each side + verdict with confidence | [![Stars](https://img.shields.io/github/stars/bhupendra05/debate?style=flat)](https://github.com/bhupendra05/debate) |
-| [req-check](https://github.com/bhupendra05/req-check) | **Spec vs code verifier** — extracts requirements, checks each one against implementation | [![Stars](https://img.shields.io/github/stars/bhupendra05/req-check?style=flat)](https://github.com/bhupendra05/req-check) |
-| [llm-compare](https://github.com/bhupendra05/llm-compare) | Chat with GPT-4o, Claude, Gemini side-by-side | [![Stars](https://img.shields.io/github/stars/bhupendra05/llm-compare?style=flat)](https://github.com/bhupendra05/llm-compare) |
-| [ai-commit](https://github.com/bhupendra05/ai-commit) | AI-generated git commit messages from staged diff | [![Stars](https://img.shields.io/github/stars/bhupendra05/ai-commit?style=flat)](https://github.com/bhupendra05/ai-commit) |
-| [pdf-rag-cli](https://github.com/bhupendra05/pdf-rag-cli) | Ask questions about local PDFs — local embeddings, no cloud | [![Stars](https://img.shields.io/github/stars/bhupendra05/pdf-rag-cli?style=flat)](https://github.com/bhupendra05/pdf-rag-cli) |
-| [readme-ai](https://github.com/bhupendra05/readme-ai) | AI README generator — point at any repo, get a polished README | [![Stars](https://img.shields.io/github/stars/bhupendra05/readme-ai?style=flat)](https://github.com/bhupendra05/readme-ai) |
-| [mcp-servers](https://github.com/bhupendra05/mcp-servers) | MCP servers for Claude — GitHub, PostgreSQL, Web Scraper, Filesystem | [![Stars](https://img.shields.io/github/stars/bhupendra05/mcp-servers?style=flat)](https://github.com/bhupendra05/mcp-servers) |
-| [local-ai-stack](https://github.com/bhupendra05/local-ai-stack) | One-command local AI setup — Ollama + Open WebUI + Qdrant | [![Stars](https://img.shields.io/github/stars/bhupendra05/local-ai-stack?style=flat)](https://github.com/bhupendra05/local-ai-stack) |
-| [rag-from-scratch](https://github.com/bhupendra05/rag-from-scratch) | RAG without LangChain — FAISS dense + BM25 sparse + RRF hybrid retrieval | [![Stars](https://img.shields.io/github/stars/bhupendra05/rag-from-scratch?style=flat)](https://github.com/bhupendra05/rag-from-scratch) |
-| [llm-fine-tuning](https://github.com/bhupendra05/llm-fine-tuning) | Fine-tune Llama 3 / Mistral with LoRA + QLoRA — PEFT, SFTTrainer, merge | [![Stars](https://img.shields.io/github/stars/bhupendra05/llm-fine-tuning?style=flat)](https://github.com/bhupendra05/llm-fine-tuning) |
-| [ollama-models-guide](https://github.com/bhupendra05/ollama-models-guide) | Ollama REST API client + model benchmark + 20+ model comparison table | [![Stars](https://img.shields.io/github/stars/bhupendra05/ollama-models-guide?style=flat)](https://github.com/bhupendra05/ollama-models-guide) |
-| [langgraph-examples](https://github.com/bhupendra05/langgraph-examples) | LangGraph multi-agent workflows — ReAct, supervisor, human-in-loop, RAG agent | [![Stars](https://img.shields.io/github/stars/bhupendra05/langgraph-examples?style=flat)](https://github.com/bhupendra05/langgraph-examples) |
-| [huggingface-examples](https://github.com/bhupendra05/huggingface-examples) | Transformers inference + fine-tuning — classification, NER, summarization, FastAPI | [![Stars](https://img.shields.io/github/stars/bhupendra05/huggingface-examples?style=flat)](https://github.com/bhupendra05/huggingface-examples) |
-| [claude-api-cookbook](https://github.com/bhupendra05/claude-api-cookbook) | Anthropic Claude API patterns — tool use, vision, streaming, batch API | [![Stars](https://img.shields.io/github/stars/bhupendra05/claude-api-cookbook?style=flat)](https://github.com/bhupendra05/claude-api-cookbook) |
-| [whisper-cli](https://github.com/bhupendra05/whisper-cli) | Transcribe audio & video locally using OpenAI Whisper — txt, srt, vtt, json | [![Stars](https://img.shields.io/github/stars/bhupendra05/whisper-cli?style=flat)](https://github.com/bhupendra05/whisper-cli) |
-| [ai-agents](https://github.com/bhupendra05/ai-agents) | Minimal Python ReAct agent framework — @tool decorator, OpenAI/Anthropic/Ollama | [![Stars](https://img.shields.io/github/stars/bhupendra05/ai-agents?style=flat)](https://github.com/bhupendra05/ai-agents) |
-
-### ⛓️ Blockchain / Solana
-
-| Project | Description | Stars |
-|---------|-------------|-------|
-| [solana-wallet-tracker](https://github.com/bhupendra05/solana-wallet-tracker) | Track Solana wallets — balance, tokens, live tx watch | [![Stars](https://img.shields.io/github/stars/bhupendra05/solana-wallet-tracker?style=flat)](https://github.com/bhupendra05/solana-wallet-tracker) |
-| [solana-token-cli](https://github.com/bhupendra05/solana-token-cli) | Create, mint, transfer, burn SPL tokens from the terminal | [![Stars](https://img.shields.io/github/stars/bhupendra05/solana-token-cli?style=flat)](https://github.com/bhupendra05/solana-token-cli) |
-| [solana-airdrop-bot](https://github.com/bhupendra05/solana-airdrop-bot) | Send SOL/SPL tokens to thousands of wallets from CSV — pure JSON-RPC | [![Stars](https://img.shields.io/github/stars/bhupendra05/solana-airdrop-bot?style=flat)](https://github.com/bhupendra05/solana-token-cli) |
-| [nft-meta](https://github.com/bhupendra05/nft-meta) | Fetch NFT metadata — Solana, Ethereum, Polygon, Base | [![Stars](https://img.shields.io/github/stars/bhupendra05/nft-meta?style=flat)](https://github.com/bhupendra05/nft-meta) |
-
-### 🛠️ Developer Tools
-
-| Project | Description | Stars |
-|---------|-------------|-------|
-| [fastapi-production-template](https://github.com/bhupendra05/fastapi-production-template) | Production FastAPI starter — async PostgreSQL, JWT, Redis, Docker, CI | [![Stars](https://img.shields.io/github/stars/bhupendra05/fastapi-production-template?style=flat)](https://github.com/bhupendra05/fastapi-production-template) |
-| [fastapi-microservices](https://github.com/bhupendra05/fastapi-microservices) | Microservices with FastAPI — user service, API gateway, RabbitMQ, Docker Compose | [![Stars](https://img.shields.io/github/stars/bhupendra05/fastapi-microservices?style=flat)](https://github.com/bhupendra05/fastapi-microservices) |
-| [graphql-fastapi](https://github.com/bhupendra05/graphql-fastapi) | GraphQL API with Strawberry + FastAPI + SQLAlchemy, DataLoader, subscriptions | [![Stars](https://img.shields.io/github/stars/bhupendra05/graphql-fastapi?style=flat)](https://github.com/bhupendra05/graphql-fastapi) |
-| [celery-patterns](https://github.com/bhupendra05/celery-patterns) | Production Celery — chains, chords, groups, beat scheduler, Flower monitoring | [![Stars](https://img.shields.io/github/stars/bhupendra05/celery-patterns?style=flat)](https://github.com/bhupendra05/celery-patterns) |
-| [redis-patterns](https://github.com/bhupendra05/redis-patterns) | Redis patterns — cache-aside, token bucket, sliding window, leaderboard, Redlock | [![Stars](https://img.shields.io/github/stars/bhupendra05/redis-patterns?style=flat)](https://github.com/bhupendra05/redis-patterns) |
-| [docker-compose-templates](https://github.com/bhupendra05/docker-compose-templates) | Production Docker Compose files — Postgres, Redis, Kafka, Grafana, n8n, Jupyter | [![Stars](https://img.shields.io/github/stars/bhupendra05/docker-compose-templates?style=flat)](https://github.com/bhupendra05/docker-compose-templates) |
-| [docker-best-practices](https://github.com/bhupendra05/docker-best-practices) | Dockerfile optimization — multi-stage builds, 1GB→150MB, non-root, HEALTHCHECK | [![Stars](https://img.shields.io/github/stars/bhupendra05/docker-best-practices?style=flat)](https://github.com/bhupendra05/docker-best-practices) |
-| [nginx-configs](https://github.com/bhupendra05/nginx-configs) | Production Nginx configs — SSL/TLS, rate limiting, reverse proxy, WebSocket | [![Stars](https://img.shields.io/github/stars/bhupendra05/nginx-configs?style=flat)](https://github.com/bhupendra05/nginx-configs) |
-| [bash-scripts](https://github.com/bhupendra05/bash-scripts) | Production DevOps bash scripts — server setup, SSL, DB backup, Docker cleanup | [![Stars](https://img.shields.io/github/stars/bhupendra05/bash-scripts?style=flat)](https://github.com/bhupendra05/bash-scripts) |
-| [github-actions-templates](https://github.com/bhupendra05/github-actions-templates) | Copy-paste GitHub Actions workflows — Python CI, Docker, deploy, security scan | [![Stars](https://img.shields.io/github/stars/bhupendra05/github-actions-templates?style=flat)](https://github.com/bhupendra05/github-actions-templates) |
-| [aws-cdk-templates](https://github.com/bhupendra05/aws-cdk-templates) | Production AWS CDK Python stacks — Lambda, ECS Fargate, RDS, S3+CloudFront | [![Stars](https://img.shields.io/github/stars/bhupendra05/aws-cdk-templates?style=flat)](https://github.com/bhupendra05/aws-cdk-templates) |
-| [terraform-aws-modules](https://github.com/bhupendra05/terraform-aws-modules) | Reusable Terraform modules — VPC, Lambda, S3+CloudFront, full-stack example | [![Stars](https://img.shields.io/github/stars/bhupendra05/terraform-aws-modules?style=flat)](https://github.com/bhupendra05/terraform-aws-modules) |
-| [python-interview-prep](https://github.com/bhupendra05/python-interview-prep) | 100 coding interview problems with CLI runner and test suite | [![Stars](https://img.shields.io/github/stars/bhupendra05/python-interview-prep?style=flat)](https://github.com/bhupendra05/python-interview-prep) |
-| [devops-health](https://github.com/bhupendra05/devops-health) | SSH server health dashboard — CPU, memory, disk, services | [![Stars](https://img.shields.io/github/stars/bhupendra05/devops-health?style=flat)](https://github.com/bhupendra05/devops-health) |
-| [ai-code-review](https://github.com/bhupendra05/ai-code-review) | GitHub Action: AI reviews every PR automatically | [![Stars](https://img.shields.io/github/stars/bhupendra05/ai-code-review?style=flat)](https://github.com/bhupendra05/ai-code-review) |
-| [rust-cli-starter](https://github.com/bhupendra05/rust-cli-starter) | Production Rust CLI template — clap v4, tokio, tracing, config, Docker, CI | [![Stars](https://img.shields.io/github/stars/bhupendra05/rust-cli-starter?style=flat)](https://github.com/bhupendra05/rust-cli-starter) |
-| [flutter-boilerplate](https://github.com/bhupendra05/flutter-boilerplate) | Flutter starter — Riverpod, go_router, Dio JWT auth, Material 3, clean arch | [![Stars](https://img.shields.io/github/stars/bhupendra05/flutter-boilerplate?style=flat)](https://github.com/bhupendra05/flutter-boilerplate) |
-| [gitsecrets](https://github.com/bhupendra05/gitsecrets) | Scan git history for secrets — AWS keys, tokens, passwords, DB URLs | [![Stars](https://img.shields.io/github/stars/bhupendra05/gitsecrets?style=flat)](https://github.com/bhupendra05/gitsecrets) |
-| [headerguard](https://github.com/bhupendra05/headerguard) | HTTP security header scanner — scores 0–100, CLI + Python API | [![Stars](https://img.shields.io/github/stars/bhupendra05/headerguard?style=flat)](https://github.com/bhupendra05/headerguard) |
-| [n1detect](https://github.com/bhupendra05/n1detect) | N+1 SQL query detector for Django, SQLAlchemy, any DB-API app | [![Stars](https://img.shields.io/github/stars/bhupendra05/n1detect?style=flat)](https://github.com/bhupendra05/n1detect) |
-| [cronguard](https://github.com/bhupendra05/cronguard) | Monitor cron jobs for missed runs — heartbeat + cron expression parser | [![Stars](https://img.shields.io/github/stars/bhupendra05/cronguard?style=flat)](https://github.com/bhupendra05/cronguard) |
-| [depaudit](https://github.com/bhupendra05/depaudit) | Audit Python dependencies for license compliance and CVEs | [![Stars](https://img.shields.io/github/stars/bhupendra05/depaudit?style=flat)](https://github.com/bhupendra05/depaudit) |
-
-### 📚 Learning & Reference
-
-| Project | Description | Stars |
-|---------|-------------|-------|
-| [system-design-patterns](https://github.com/bhupendra05/system-design-patterns) | System design patterns in Python — rate limiter, circuit breaker, saga, CQRS | [![Stars](https://img.shields.io/github/stars/bhupendra05/system-design-patterns?style=flat)](https://github.com/bhupendra05/system-design-patterns) |
-| [python-ml-algorithms](https://github.com/bhupendra05/python-ml-algorithms) | ML from scratch with numpy — linear/logistic regression, KNN, KMeans, PCA, MLP | [![Stars](https://img.shields.io/github/stars/bhupendra05/python-ml-algorithms?style=flat)](https://github.com/bhupendra05/python-ml-algorithms) |
-| [python-design-patterns](https://github.com/bhupendra05/python-design-patterns) | 23 GoF design patterns with real-world Python examples | [![Stars](https://img.shields.io/github/stars/bhupendra05/python-design-patterns?style=flat)](https://github.com/bhupendra05/python-design-patterns) |
-| [python-async-patterns](https://github.com/bhupendra05/python-async-patterns) | asyncio cookbook — queues, retry, circuit breaker, TaskGroup, benchmarks | [![Stars](https://img.shields.io/github/stars/bhupendra05/python-async-patterns?style=flat)](https://github.com/bhupendra05/python-async-patterns) |
-| [python-concurrency](https://github.com/bhupendra05/python-concurrency) | Threading vs multiprocessing vs asyncio — patterns, GIL explained, benchmarks | [![Stars](https://img.shields.io/github/stars/bhupendra05/python-concurrency?style=flat)](https://github.com/bhupendra05/python-concurrency) |
-| [python-testing-patterns](https://github.com/bhupendra05/python-testing-patterns) | pytest patterns — fixtures, mocking, parametrize, async tests, FastAPI TestClient | [![Stars](https://img.shields.io/github/stars/bhupendra05/python-testing-patterns?style=flat)](https://github.com/bhupendra05/python-testing-patterns) |
-| [pydantic-v2-cookbook](https://github.com/bhupendra05/pydantic-v2-cookbook) | Pydantic v2 patterns — vanilla validators, settings, discriminated unions, FastAPI | [![Stars](https://img.shields.io/github/stars/bhupendra05/pydantic-v2-cookbook?style=flat)](https://github.com/bhupendra05/pydantic-v2-cookbook) |
-| [sql-interview-prep](https://github.com/bhupendra05/sql-interview-prep) | 30 SQL problems easy→hard — JOINs, window functions, CTEs, recursive queries | [![Stars](https://img.shields.io/github/stars/bhupendra05/sql-interview-prep?style=flat)](https://github.com/bhupendra05/sql-interview-prep) |
-| [postgres-tips](https://github.com/bhupendra05/postgres-tips) | Advanced PostgreSQL — window functions, JSONB, indexing, EXPLAIN ANALYZE | [![Stars](https://img.shields.io/github/stars/bhupendra05/postgres-tips?style=flat)](https://github.com/bhupendra05/postgres-tips) |
-| [openai-cookbook](https://github.com/bhupendra05/openai-cookbook) | Advanced OpenAI API — function calling, streaming, structured outputs, embeddings | [![Stars](https://img.shields.io/github/stars/bhupendra05/openai-cookbook?style=flat)](https://github.com/bhupendra05/openai-cookbook) |
-| [langchain-examples](https://github.com/bhupendra05/langchain-examples) | 20+ runnable LangChain examples — RAG, agents, chains, output parsers | [![Stars](https://img.shields.io/github/stars/bhupendra05/langchain-examples?style=flat)](https://github.com/bhupendra05/langchain-examples) |
-| [k8s-manifests](https://github.com/bhupendra05/k8s-manifests) | Production Kubernetes manifests — HPA, NetworkPolicy, RBAC, security contexts | [![Stars](https://img.shields.io/github/stars/bhupendra05/k8s-manifests?style=flat)](https://github.com/bhupendra05/k8s-manifests) |
-
-### 🔍 Search & Data
-
-| Project | Description | Stars |
-|---------|-------------|-------|
-| [vector-search-demo](https://github.com/bhupendra05/vector-search-demo) | Semantic search from scratch — sentence-transformers + FAISS + FastAPI | [![Stars](https://img.shields.io/github/stars/bhupendra05/vector-search-demo?style=flat)](https://github.com/bhupendra05/vector-search-demo) |
-
-### ⚛️ Frontend
-
-| Project | Description | Stars |
-|---------|-------------|-------|
-| [react-hooks-library](https://github.com/bhupendra05/react-hooks-library) | 30+ production React hooks — zero deps, TypeScript-first | [![Stars](https://img.shields.io/github/stars/bhupendra05/react-hooks-library?style=flat)](https://github.com/bhupendra05/react-hooks-library) |
-| [typescript-utils](https://github.com/bhupendra05/typescript-utils) | 50+ type-safe utility functions — zero deps, lodash alternative | [![Stars](https://img.shields.io/github/stars/bhupendra05/typescript-utils?style=flat)](https://github.com/bhupendra05/typescript-utils) |
-| [nextjs-starter](https://github.com/bhupendra05/nextjs-starter) | Next.js 14 App Router starter — Auth.js, Prisma, Tailwind, Docker | [![Stars](https://img.shields.io/github/stars/bhupendra05/nextjs-starter?style=flat)](https://github.com/bhupendra05/nextjs-starter) |
-
----
-
-## 📊 GitHub Stats
-
 <div align="center">
 
-<table>
-  <tr>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api?username=bhupendra05&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&cache_seconds=86400" alt="GitHub Stats" />
-    </td>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bhupendra05&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=86400" alt="Top Languages" />
-    </td>
-  </tr>
-</table>
+**🤖 AI / LLM**
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=bhupendra05&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="GitHub Streak" />
+![Anthropic](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP-000000?style=for-the-badge&logo=modelcontextprotocol&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+
+**💻 Languages & Backend**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+
+**🗄️ Data & DevOps**
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Solana](https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white)
 
 </div>
 
 ---
 
+<!-- ====================== FEATURED ====================== -->
+## ✨ Featured Projects
+
 <div align="center">
 
-*Building tools people actually use. Open to AI, blockchain, and backend engineering roles.*
+<a href="https://github.com/bhupendra05/dealdesk-mcp">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=bhupendra05&repo=dealdesk-mcp&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+</a>
+<a href="https://github.com/bhupendra05/investorlens-mcp">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=bhupendra05&repo=investorlens-mcp&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+</a>
+<br/>
+<a href="https://github.com/bhupendra05/sketchbox">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=bhupendra05&repo=sketchbox&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+</a>
+<a href="https://github.com/bhupendra05/pyratelimit">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=bhupendra05&repo=pyratelimit&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+</a>
+<br/>
+<a href="https://github.com/bhupendra05/searchlite">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=bhupendra05&repo=searchlite&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+</a>
+<a href="https://github.com/bhupendra05/phisheye">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=bhupendra05&repo=phisheye&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+</a>
 
 </div>
+
+---
+
+<!-- ====================== MORE BY DOMAIN ====================== -->
+## 🗂️ More, by domain
+
+<details open>
+<summary><b>💰 Finance &amp; Investment Banking</b></summary>
+
+- 🖥️ **[dealdesk-mcp](https://github.com/bhupendra05/dealdesk-mcp)** — run PE/VC deal math inside Claude (MCP)
+- 🔍 **[investorlens-mcp](https://github.com/bhupendra05/investorlens-mcp)** — match a raise to the right Indian investors
+- 💧 **[carryflow](https://github.com/bhupendra05/carryflow)** — distribution waterfall & carried-interest engine
+- 📊 **[exitsim](https://github.com/bhupendra05/exitsim)** — cap-table & exit waterfall simulator
+- 🇮🇳 **[india-dcf](https://github.com/bhupendra05/india-dcf)** · **[india-comps](https://github.com/bhupendra05/india-comps)** · **[drhp-intel](https://github.com/bhupendra05/drhp-intel)**
+</details>
+
+<details>
+<summary><b>🎓 CS Fundamentals (zero-dependency, from scratch)</b></summary>
+
+- ⚡ **[pyratelimit](https://github.com/bhupendra05/pyratelimit)** — 5 rate-limiting algorithms, thread-safe
+- 🎲 **[sketchbox](https://github.com/bhupendra05/sketchbox)** — Bloom filter · Count-Min Sketch · HyperLogLog
+- 🔎 **[searchlite](https://github.com/bhupendra05/searchlite)** — inverted index + BM25 (the Elasticsearch ranker)
+</details>
+
+<details>
+<summary><b>🛡️ Security</b></summary>
+
+- 🎣 **[phisheye](https://github.com/bhupendra05/phisheye)** — offline phishing-URL scanner (homograph / typosquat / DGA)
+- 🔑 **[gitsecrets](https://github.com/bhupendra05/gitsecrets)** — scan full git history for leaked secrets
+- 🔒 **[headerguard](https://github.com/bhupendra05/headerguard)** — HTTP security-header scanner
+- 🕵️ **[logphi](https://github.com/bhupendra05/logphi)** — detect & redact PII/PHI in logs
+</details>
+
+<details>
+<summary><b>🤖 AI / LLM</b></summary>
+
+- ✦ **[shape](https://github.com/bhupendra05/shape)** — structured LLM output in one line
+- 🔮 **[oracle](https://github.com/bhupendra05/oracle)** — catch LLM hallucinations before users do
+- 🚦 **[llm-router](https://github.com/bhupendra05/llm-router)** — route prompts to the cheapest capable model
+- 🧠 **[semantic-cache](https://github.com/bhupendra05/semantic-cache)** — cache LLM responses by meaning
+</details>
+
+<details>
+<summary><b>🛠️ Developer Tools</b></summary>
+
+- 🤖 **[releasebot](https://github.com/bhupendra05/releasebot)** — auto-generate changelogs from git
+- ⚖️ **[clauseguard](https://github.com/bhupendra05/clauseguard)** — red-flag linter for contracts
+- 💸 **[subslayer](https://github.com/bhupendra05/subslayer)** — find forgotten subscriptions
+- 🐌 **[n1detect](https://github.com/bhupendra05/n1detect)** — detect N+1 SQL queries · ⏰ **[cronguard](https://github.com/bhupendra05/cronguard)** — alert on failed cron jobs
+</details>
+
+> 🔭 **Browse all 60+ repositories →** [github.com/bhupendra05?tab=repositories](https://github.com/bhupendra05?tab=repositories)
+
+---
+
+<!-- ====================== STATS ====================== -->
+## 📊 GitHub Analytics
+
+<div align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=bhupendra05&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=8957e5" alt="stats"/>
+<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=bhupendra05&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=8957e5&currStreakLabel=58a6ff" alt="streak"/>
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bhupendra05&layout=compact&langs_count=10&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff" alt="top langs"/>
+
+<br/>
+
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=bhupendra05&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=58a6ff&line=8957e5&point=ffffff&area=true" alt="activity graph"/>
+
+<br/>
+
+<img width="98%" src="https://github-profile-trophy.vercel.app/?username=bhupendra05&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="trophies"/>
+
+</div>
+
+---
+
+<!-- ====================== SNAKE ====================== -->
+## 🐍 Watch my contributions get eaten
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/output/github-contribution-grid-snake.svg">
+  <img alt="snake animation" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/output/github-contribution-grid-snake.svg">
+</picture>
+
+</div>
+
+---
+
+<!-- ====================== CONNECT ====================== -->
+## 🤝 Let's build something
+
+<div align="center">
+
+I build AI-native tools and I'm always up for a sharp problem.
+**Open to collaborations, freelance, and full-time roles.**
+
+<a href="https://www.linkedin.com/in/bhupendra-tale/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:bgurjar05.bg@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hi-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://github.com/bhupendra05"><img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+
+</div>
+
+<br/>
+
+<div align="center">
+<i>⭐ Find my work useful? A star means a lot and helps others discover it.</i>
+</div>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" alt="footer"/>
