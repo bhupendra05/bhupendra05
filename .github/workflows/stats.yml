@@ -36,7 +36,6 @@ jobs:
         run: |
           git config user.name "Bhupendra Tale"
           git config user.email "bgurjar05.bg@gmail.com"
-          git remote set-url origin "https://x-access-token:${PAT_1}@github.com/bhupendra05/bhupendra05.git"
+          git remote set-url origin "https://bhupendra05:${PAT_1}@github.com/bhupendra05/bhupendra05.git"
           git add assets/stats.svg
-          git diff --staged --quiet || git commit -m "chore: refresh stats SVG [skip ci]"
-          git push
+          git diff --staged --quiet && echo "no changes" || (git commit -m "chore: refresh stats SVG [skip ci]" && git push)
