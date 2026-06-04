@@ -207,6 +207,11 @@ An inverted index + **BM25** ranker — the Elasticsearch ranking algorithm, bui
 
 <div align="center">
 
+<!-- Stats card: self-generated daily by GitHub Actions (scripts/gen_stats.py) — no third-party server -->
+<img width="98%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/stats.svg" alt="GitHub stats"/>
+
+<br/>
+
 <img height="172" src="https://streak-stats.demolab.com/?user=bhupendra05&hide_border=true&background=0d0221&stroke=05d9e8&ring=ff2a6d&fire=ff2a6d&currStreakNum=ffffff&currStreakLabel=05d9e8&sideNums=ffffff&sideLabels=05d9e8&dates=8b949e&excludeDaysLabel=8b949e" alt="streak"/>
 
 <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=bhupendra05&bg_color=0d0221&color=05d9e8&line=ff2a6d&point=ffffff&area=true&area_color=a64dff&hide_border=true&title_color=ff2a6d" alt="activity graph"/>

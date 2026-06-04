@@ -1,0 +1,39 @@
+name: Generate Stats SVG
+
+on:
+  schedule:
+    - cron: '0 2 * * *'   # daily at 02:00 UTC (fresh data every morning)
+  push:
+    branches: [main]       # also runs the moment this file is pushed → instant first run
+  workflow_dispatch:        # manual trigger from the Actions tab
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_1 }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate stats SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_1 }}
+          GITHUB_LOGIN: bhupendra05
+        run: python scripts/gen_stats.py
+
+      - name: Commit and push (if changed)
+        run: |
+          git config user.name "Bhupendra Tale"
+          git config user.email "bgurjar05.bg@gmail.com"
+          git add assets/stats.svg
+          git diff --staged --quiet || git commit -m "chore: refresh stats SVG [skip ci]"
+          git push
