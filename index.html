@@ -23,20 +23,21 @@
   <nav id="nav">
     <a href="#top" class="nav-brand"><span class="nb-mark">▲</span>BHUPENDRA TALE</a>
     <div class="nav-links">
-      <a href="#achievements" data-nav>Achievements</a>
+      <a href="#services" data-nav>What We Build</a>
+      <a href="#opulix" data-nav>Opulix</a>
       <a href="#flagship" data-nav>Work</a>
       <a href="#projects" data-nav>Projects</a>
-      <a href="#intel" data-nav>Live Data</a>
       <a href="#contact" data-nav>Contact</a>
     </div>
     <div class="nav-right">
       <button id="theme-toggle" aria-label="Toggle theme"><span class="ti-sun">☀</span><span class="ti-moon">☾</span></button>
-      <a class="nav-cta magnetic" href="https://github.com/bhupendra05" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="nav-cta magnetic" href="#contact" data-nav>Hire us ↗</a>
     </div>
     <button id="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
   <div id="mobile-menu">
-    <a href="#achievements" data-nav>Achievements</a>
+    <a href="#services" data-nav>What We Build</a>
+    <a href="#opulix" data-nav>Opulix</a>
     <a href="#flagship" data-nav>Work</a>
     <a href="#projects" data-nav>Projects</a>
     <a href="#intel" data-nav>Live Data</a>
@@ -75,6 +76,50 @@
         <span>PYTHON</span><span>·</span><span>FASTAPI</span><span>·</span><span>OLLAMA</span><span>·</span><span>LANGGRAPH</span><span>·</span>
         <span>MCP</span><span>·</span><span>FAISS</span><span>·</span><span>CLAUDE</span><span>·</span><span>OPENAI</span><span>·</span>
         <span>DOCKER</span><span>·</span><span>POSTGRESQL</span><span>·</span><span>TYPESCRIPT</span><span>·</span>
+      </div>
+    </section>
+
+    <!-- ================= WHAT WE BUILD ================= -->
+    <section id="services" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">// WHAT WE BUILD</span>
+        <h2>Manual work in. An AI system out.</h2>
+        <p>Repetitive process, an internal tool nobody wants to maintain, a full agentic pipeline — if it can be automated with AI, we build it and ship it. <a href="#contact" data-nav class="inline-link">Tell us what to build →</a></p>
+      </div>
+      <div class="svc-grid" id="svc-grid"></div>
+    </section>
+
+    <!-- ================= FEATURED PRODUCT: OPULIX ================= -->
+    <section id="opulix" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">// IN PRODUCTION</span>
+        <h2>Not just a repo. A live product.</h2>
+        <p>Opulix is our deal-origination platform for investment banking — built, deployed, and used today.</p>
+      </div>
+      <div class="opulix-card reveal">
+        <div class="opulix-copy">
+          <span class="live-badge"><span class="dot"></span>LIVE PRODUCT</span>
+          <h3 class="opulix-name">Opulix Deal Engine</h3>
+          <p class="opulix-tag">AI-powered deal origination for investment bankers</p>
+          <p class="opulix-desc">Connect your data sources, discover companies, classify the right advisory service, and send personalized outreach — fully automated. Every draft is approved by a human before it goes out. Built for a real IB firm's deal-sourcing workflow, multi-tenant, in production.</p>
+          <ul class="flag-features">
+            <li>Tracxn + MCA data ingestion via MCP connectors</li>
+            <li>Deterministic classification engine — tunable, not a black box</li>
+            <li>Contact enrichment + Claude-drafted personalized outreach</li>
+            <li>Multi-tenant firm workspaces, invite codes, human approval gate</li>
+          </ul>
+          <div class="hero-cta">
+            <a href="https://opulix-deal-engine.onrender.com/" target="_blank" rel="noopener" class="btn btn-primary magnetic">Visit the live app <span class="arrow">→</span></a>
+            <a href="https://github.com/bhupendra05/opulix-sourcing" target="_blank" rel="noopener" class="btn btn-ghost magnetic">View source</a>
+          </div>
+        </div>
+        <a class="opulix-visual" href="https://opulix-deal-engine.onrender.com/" target="_blank" rel="noopener" aria-label="Visit Opulix Deal Engine">
+          <div class="browser-chrome">
+            <div class="bc-dots"><span></span><span></span><span></span></div>
+            <div class="bc-url">🔒 opulix-deal-engine.onrender.com</div>
+          </div>
+          <img src="assets/opulix-screenshot.png" alt="Opulix Deal Engine sign-in screen" loading="lazy">
+        </a>
       </div>
     </section>
 
@@ -134,14 +179,37 @@
       <div class="contact-bg"></div>
       <div class="reveal contact-inner">
         <span class="eyebrow">// LET'S BUILD</span>
-        <h2 class="contact-h">Have a hard problem?<br><span class="grad-text">Let's talk.</span></h2>
-        <p>Open to agentic-AI roles, collaborations, and freelance work.</p>
+        <h2 class="contact-h">Tell us what you<br>want to <span class="grad-text">automate.</span></h2>
+        <p>Open to agentic-AI roles, collaborations, and freelance work — reach out on LinkedIn, email, or fill in the form and we'll get back to you.</p>
         <div class="hero-cta">
-          <a href="mailto:bgurjar05.bg@gmail.com" class="btn btn-primary magnetic">Email me <span class="arrow">→</span></a>
+          <a href="mailto:btale05.bt@gmail.com" class="btn btn-primary magnetic">Email us <span class="arrow">→</span></a>
           <a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4" target="_blank" rel="noopener" class="btn btn-ghost magnetic">LinkedIn</a>
           <a href="https://github.com/bhupendra05" target="_blank" rel="noopener" class="btn btn-ghost magnetic">GitHub</a>
         </div>
       </div>
+      <form class="contact-form reveal" id="contact-form">
+        <div class="cf-row">
+          <div class="cf-field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" required autocomplete="name">
+          </div>
+          <div class="cf-field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" required autocomplete="email">
+          </div>
+        </div>
+        <div class="cf-field">
+          <label for="cf-company">Company <span>(optional)</span></label>
+          <input type="text" id="cf-company" name="company" autocomplete="organization">
+        </div>
+        <div class="cf-field">
+          <label for="cf-message">What do you want to build or automate?</label>
+          <textarea id="cf-message" name="message" rows="4" required></textarea>
+        </div>
+        <input type="text" name="_honey" class="cf-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="btn btn-primary magnetic" id="cf-submit">Send message <span class="arrow">→</span></button>
+        <p class="cf-status" id="cf-status" role="status"></p>
+      </form>
     </section>
 
     <footer>

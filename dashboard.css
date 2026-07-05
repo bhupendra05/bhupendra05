@@ -179,6 +179,49 @@ a { color: inherit; text-decoration: none; }
 .eyebrow { display: block; font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: 2px; color: var(--violet); margin-bottom: 14px; }
 .section-head h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); font-weight: 800; letter-spacing: -1px; margin: 0 0 12px; }
 .section-head p { color: var(--muted); font-size: 1.05rem; margin: 0; }
+.inline-link { color: var(--violet); font-weight: 600; }
+.inline-link:hover { text-decoration: underline; }
+
+/* ---------------- services ("what we build") ---------------- */
+.svc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.svc-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 28px 24px; transition: border-color .3s var(--ease), transform .3s var(--ease); }
+.svc-card:hover { border-color: var(--violet); transform: translateY(-4px); }
+.svc-icon { font-size: 20px; color: var(--violet); margin-bottom: 18px; }
+.svc-name { font-weight: 700; font-size: 16px; margin-bottom: 10px; }
+.svc-desc { color: var(--muted); font-size: 13.5px; line-height: 1.6; }
+
+/* ---------------- opulix featured product ---------------- */
+.opulix-card { display: grid; grid-template-columns: 1fr 1.15fr; gap: 50px; align-items: center; background: var(--surface); border: 1px solid var(--border-2); border-radius: var(--radius); padding: 48px; }
+.live-badge { display: inline-flex; align-items: center; gap: 8px; font-size: 11.5px; font-weight: 700; letter-spacing: 1px; color: #3ddc84; background: rgba(61,220,132,.1); border: 1px solid rgba(61,220,132,.3); padding: 6px 14px; border-radius: 20px; margin-bottom: 18px; }
+.live-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: #3ddc84; box-shadow: 0 0 8px #3ddc84; animation: pulse-dot 1.6s infinite; }
+.opulix-name { font-size: clamp(1.5rem, 2.4vw, 2rem); font-weight: 800; margin: 0 0 8px; letter-spacing: -.5px; }
+.opulix-tag { color: var(--violet); font-weight: 600; font-size: 14px; margin: 0 0 18px; }
+.opulix-desc { color: var(--muted); font-size: .96rem; line-height: 1.7; margin-bottom: 22px; }
+.opulix-visual { display: block; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-2); box-shadow: var(--shadow); transition: transform .35s var(--ease); }
+.opulix-visual:hover { transform: translateY(-6px) scale(1.01); }
+.browser-chrome { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--bg-2); border-bottom: 1px solid var(--border); }
+.bc-dots { display: flex; gap: 6px; }
+.bc-dots span { width: 9px; height: 9px; border-radius: 50%; background: var(--border-2); }
+.bc-url { flex: 1; text-align: center; font-family: var(--mono); font-size: 11px; color: var(--muted); background: var(--surface); border-radius: 6px; padding: 4px 10px; }
+.opulix-visual img { display: block; width: 100%; height: auto; }
+
+/* ---------------- contact form ---------------- */
+.contact-form { max-width: 560px; margin: 44px auto 0; text-align: left; display: flex; flex-direction: column; gap: 18px; }
+.cf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.cf-field { display: flex; flex-direction: column; gap: 8px; }
+.cf-field label { font-size: 12.5px; font-weight: 600; color: var(--muted); }
+.cf-field label span { font-weight: 400; color: var(--faint); }
+.cf-field input, .cf-field textarea {
+  font-family: var(--sans); font-size: 14.5px; color: var(--text); background: var(--surface);
+  border: 1px solid var(--border-2); border-radius: var(--radius-sm); padding: 13px 16px; resize: vertical; transition: border-color .25s var(--ease), box-shadow .25s var(--ease);
+}
+.cf-field input:focus, .cf-field textarea:focus { outline: none; border-color: var(--violet); box-shadow: 0 0 0 3px color-mix(in srgb, var(--violet) 18%, transparent); }
+.cf-honey { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+#cf-submit { align-self: flex-start; }
+#cf-submit[disabled] { opacity: .6; cursor: default; }
+.cf-status { font-size: 13.5px; margin: 0; min-height: 1.4em; }
+.cf-status.ok { color: #3ddc84; }
+.cf-status.err { color: #ff6a6a; }
 
 /* ---------------- achievements ---------------- */
 .ach-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
@@ -275,10 +318,12 @@ footer a:hover { color: var(--text); }
   .flag-item { grid-template-columns: 1fr; gap: 30px; }
   .flag-item:nth-child(even) .flag-visual { order: 0; }
   .intel-grid { grid-template-columns: 1fr; }
+  .opulix-card { grid-template-columns: 1fr; gap: 32px; padding: 32px; }
   body { cursor: auto; }
   #cursor { display: none; }
 }
 @media (max-width: 560px) {
   .hero-stats { gap: 28px; }
   .section { padding: 90px clamp(16px, 5vw, 64px); }
+  .cf-row { grid-template-columns: 1fr; }
 }

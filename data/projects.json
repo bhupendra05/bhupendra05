@@ -1,4 +1,26 @@
 {
+  "services": [
+    {
+      "icon": "◆",
+      "name": "Agentic workflow automation",
+      "desc": "A manual, repetitive process becomes an autonomous agent that plans, acts, and checks its own work — the same pattern behind AION and termind."
+    },
+    {
+      "icon": "◇",
+      "name": "RAG & knowledge systems",
+      "desc": "Ground an LLM in your own documents or database with a retrieval pipeline — hybrid search, citations, and no hallucinated answers."
+    },
+    {
+      "icon": "◈",
+      "name": "Custom AI tools & integrations",
+      "desc": "MCP servers, internal tools, Slack/API integrations — whatever connects your data and your team to an LLM safely."
+    },
+    {
+      "icon": "◐",
+      "name": "Financial & deal automation",
+      "desc": "Deal sourcing, valuation models, IB workflows — live in production today, not a slide deck. See Opulix below."
+    }
+  ],
   "flagship": [
     {
       "slug": "aion",
@@ -89,24 +111,6 @@
       "impact": "Build once, use from Claude Desktop, Cursor, or any MCP client — no bespoke wiring",
       "url": "https://github.com/bhupendra05/mcp-servers",
       "category": "Agent Infrastructure"
-    },
-    {
-      "slug": "opulix-sourcing",
-      "name": "opulix-sourcing",
-      "tag": "Agentic deal-sourcing engine",
-      "summary": "An end-to-end agentic pipeline for investment-banking deal origination — ingest, classify, enrich, and draft, chained into one workflow.",
-      "description": "Ingests target companies via Tracxn through an MCP tool, classifies the right advisory service to pitch with an LLM against a deterministic rules engine, enriches CEO/CFO contact details, and drafts personalized outreach with Claude — deployed as a live FastAPI app.",
-      "stack": ["Python", "FastAPI", "Claude", "MCP", "Tracxn"],
-      "features": [
-        "Tracxn ingestion via an MCP connector",
-        "Deterministic classification engine, tunable without touching code",
-        "Contact enrichment + Claude-drafted personalized outreach",
-        "Deployed and running in production on Render"
-      ],
-      "stat": "Deployed",
-      "impact": "A real client-facing agentic pipeline, not a demo",
-      "url": "https://github.com/bhupendra05/opulix-sourcing",
-      "category": "Finance & IB"
     }
   ],
   "categories": [

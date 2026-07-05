@@ -130,7 +130,7 @@
       }
     });
   });
-  var navSections = ["achievements", "flagship", "projects", "intel", "contact"].map(function (id) { return document.getElementById(id); }).filter(Boolean);
+  var navSections = ["services", "opulix", "achievements", "flagship", "projects", "intel", "contact"].map(function (id) { return document.getElementById(id); }).filter(Boolean);
   if ("IntersectionObserver" in window) {
     var navObs = new IntersectionObserver(function (es) {
       es.forEach(function (e) {
@@ -189,6 +189,16 @@
         '</div>' +
         flagshipVisual(p, i) +
       '</article>';
+    }).join("");
+    revealAll();
+  }
+
+  /* ================= services ("what we build") ================= */
+  function renderServices(list) {
+    $("#svc-grid").innerHTML = list.map(function (s) {
+      return '<div class="svc-card reveal"><div class="svc-icon">' + s.icon + '</div>' +
+        '<div class="svc-name">' + esc(s.name) + '</div>' +
+        '<div class="svc-desc">' + esc(s.desc) + '</div></div>';
     }).join("");
     revealAll();
   }
@@ -303,6 +313,32 @@
     track.innerHTML = rows + rows;
   }
 
+  /* ================= contact form ================= */
+  /* Zero-backend: FormSubmit.co relays the POST to btale05.bt@gmail.com. No account was created
+     to wire this up — the FIRST real submission makes FormSubmit send one confirmation email to
+     that inbox; clicking it once activates delivery for every submission after. */
+  (function contactForm() {
+    var form = $("#contact-form");
+    if (!form) return;
+    var status = $("#cf-status"), submit = $("#cf-submit");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (form.querySelector(".cf-honey").value) return; // honeypot tripped — silently drop
+      var data = new FormData(form);
+      submit.disabled = true; status.textContent = "Sending…"; status.className = "cf-status";
+      fetch("https://formsubmit.co/ajax/btale05.bt@gmail.com", {
+        method: "POST", headers: { Accept: "application/json" }, body: data
+      }).then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+        .then(function () {
+          status.textContent = "Message sent — we'll get back to you soon."; status.className = "cf-status ok";
+          form.reset();
+        }).catch(function (err) {
+          status.textContent = "Couldn't send — email us directly at btale05.bt@gmail.com.";
+          status.className = "cf-status err"; console.error("contact form failed:", err);
+        }).finally(function () { submit.disabled = false; });
+    });
+  })();
+
   /* ================= boot ================= */
   Promise.all([
     fetch("data/dashboard.json", { cache: "no-store" }).then(function (r) { return r.json(); }),
@@ -310,6 +346,7 @@
   ]).then(function (res) {
     var dash = res[0], proj = res[1];
     renderHeroStats(dash.totals);
+    renderServices(proj.services || []);
     renderAchievements(proj.achievements);
     renderFlagship(proj.flagship);
     renderCatalog(proj.categories);
@@ -319,7 +356,7 @@
     revealAll();
   }).catch(function (err) {
     console.error("dashboard data failed:", err);
-    ["hero-stats", "ach-grid", "flagship-list", "proj-grid", "stat-grid"].forEach(function (id) {
+    ["hero-stats", "svc-grid", "ach-grid", "flagship-list", "proj-grid", "stat-grid"].forEach(function (id) {
       var el = document.getElementById(id);
       if (el) el.innerHTML = '<p style="color:var(--faint)">Data temporarily unavailable — refresh in a moment.</p>';
     });
