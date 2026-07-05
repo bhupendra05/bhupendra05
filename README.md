@@ -12,6 +12,10 @@
 
 <br/>
 
+<a href="https://bhupendra05.github.io/bhupendra05/"><img src="https://img.shields.io/badge/🌐_LIVE_DASHBOARD-ff2a2a?style=for-the-badge&labelColor=0a0003" alt="live dashboard"/></a>
+
+<br/><br/>
+
 <!-- Badges (komarev + shields — reliable, neon palette) -->
 <img src="https://komarev.com/ghpvc/?username=bhupendra05&style=for-the-badge&color=ff2a6d&labelColor=0d0221&label=PROFILE+VIEWS" alt="views"/>
 <a href="https://github.com/bhupendra05?tab=followers"><img src="https://img.shields.io/github/followers/bhupendra05?style=for-the-badge&color=05d9e8&labelColor=0d0221&logo=github" alt="followers"/></a>

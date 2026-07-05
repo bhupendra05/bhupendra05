@@ -35,21 +35,46 @@ LOGIN = os.environ.get("GITHUB_LOGIN", "bhupendra05")
 ROOT = Path(__file__).resolve().parent.parent
 HISTORY_PATH = ROOT / "data" / "history.json"
 
+# Hard wall-clock budget for the per-repo enrichment loop (stargazers/watchers/traffic —
+# ~500 calls across ~166 repos). A prior run hung 15 minutes and got killed by the workflow
+# timeout because every 403 (including permission-denied ones that will NEVER succeed) was
+# retried with backoff. Below, only genuine rate-limit signals are retried; anything else
+# fails in one shot. This deadline is a second, independent safety net: if we're still over
+# budget, stop enriching further repos and finish with whatever was gathered so far — the
+# job must always complete and commit, never hang indefinitely.
+_START = time.monotonic()
+SOFT_DEADLINE_SECS = 480  # 8 minutes
 
-# ── API helpers (with light retry for secondary rate limits) ──────────────────
+
+def _rate_limited(e: urllib.error.HTTPError) -> bool:
+    """True only for a genuine, retry-worthy rate limit — never for permission-denied."""
+    if e.code == 429:
+        return True
+    if e.code != 403:
+        return False
+    if e.headers.get("X-RateLimit-Remaining") == "0":
+        return True
+    try:
+        msg = json.loads(e.read()).get("message", "")
+    except Exception:
+        msg = ""
+    return "rate limit" in msg.lower() or "abuse" in msg.lower()
+
+
+# ── API helpers (retry ONLY genuine rate limits; fail fast on everything else) ─
 def _request(url: str, headers: dict, data: bytes | None = None):
     req = urllib.request.Request(url, data=data, headers=headers)
     last_err = None
-    for attempt in range(3):
+    for attempt in range(2):
         try:
-            with urllib.request.urlopen(req, timeout=30) as r:
+            with urllib.request.urlopen(req, timeout=20) as r:
                 return json.loads(r.read() or b"{}"), dict(r.headers)
         except urllib.error.HTTPError as e:
             last_err = e
-            if e.code in (403, 429, 502, 503) and attempt < 2:
-                time.sleep(1.5 * (attempt + 1))
+            if attempt < 1 and _rate_limited(e):
+                time.sleep(2 * (attempt + 1))
                 continue
-            raise
+            raise last_err
     raise last_err
 
 
@@ -62,10 +87,13 @@ def rest(path: str, accept: str = "application/vnd.github+json"):
 
 
 def rest_ok(path: str, accept: str = "application/vnd.github+json"):
-    """Like rest(), but swallow 403/404 (traffic/subscribers can be unavailable on some repos)."""
+    """Like rest(), but swallow 403/404 (traffic/subscribers can be unavailable on some repos,
+    or PAT scope may not cover them — either way, skip and move on, never hang on this)."""
     try:
         return rest(path, accept)
     except urllib.error.HTTPError:
+        return None
+    except (urllib.error.URLError, TimeoutError):
         return None
 
 
@@ -160,8 +188,15 @@ stars = max(rest_stars, gql_stars)
 # ── 3. Per-repo: stargazer events (real timestamps), watchers, traffic ────────
 star_events, watchers_by_repo = [], {}
 total_clones = total_clones_uniq = total_views = total_views_uniq = 0
+enriched, skipped_deadline, denied_calls = 0, 0, 0
 
-for r in repos:
+for i, r in enumerate(repos):
+    if time.monotonic() - _START > SOFT_DEADLINE_SECS:
+        skipped_deadline = len(repos) - i
+        print(f"  … {skipped_deadline} repo(s) left but hit the {SOFT_DEADLINE_SECS}s budget — "
+              f"finishing with partial data rather than risking a workflow timeout")
+        break
+
     name = r["name"]
     if r.get("stargazers_count", 0) > 0:
         rows = rest_ok(f"/repos/{LOGIN}/{name}/stargazers", accept="application/vnd.github.star+json") or []
@@ -177,12 +212,23 @@ for r in repos:
 
     clones = rest_ok(f"/repos/{LOGIN}/{name}/traffic/clones")
     views = rest_ok(f"/repos/{LOGIN}/{name}/traffic/views")
+    if clones is None or views is None:
+        denied_calls += 1  # traffic needs push access — PAT may lack it; skip and move on
     if clones:
         total_clones += clones.get("count", 0)
         total_clones_uniq += clones.get("uniques", 0)
     if views:
         total_views += views.get("count", 0)
         total_views_uniq += views.get("uniques", 0)
+
+    enriched += 1
+    if enriched % 40 == 0:
+        print(f"  … enriched {enriched}/{len(repos)} repos "
+              f"({round(time.monotonic() - _START)}s elapsed)")
+
+print(f"  enriched {enriched}/{len(repos)} repos in {round(time.monotonic() - _START)}s"
+      + (f" — {skipped_deadline} skipped (deadline)" if skipped_deadline else "")
+      + (f" — traffic unavailable on {denied_calls} repo(s)" if denied_calls else ""))
 
 star_events.sort(key=lambda e: e["at"], reverse=True)
 unique_watchers = sorted({login for logs in watchers_by_repo.values() for login in logs})
@@ -220,7 +266,6 @@ HISTORY_PATH.write_text(json.dumps({
     "traffic_series": traffic_series,
 }, indent=1))
 
-
 # ── DAILY TAGLINE (deterministic by day-of-year — no external dependency) ─────
 TAGLINES = [
     "ANOTHER DAY. ANOTHER REPO CONQUERED.",
@@ -233,6 +278,36 @@ TAGLINES = [
     "COMPILING AMBITION INTO PRODUCTION CODE.",
 ]
 tagline = TAGLINES[datetime.now(timezone.utc).timetuple().tm_yday % len(TAGLINES)]
+
+# ── dashboard.json — the full payload the animated website reads ─────────────
+top_repos = sorted(
+    ({"name": r["name"], "stars": r.get("stargazers_count", 0),
+      "description": r.get("description") or "", "url": r.get("html_url", "")} for r in repos),
+    key=lambda r: -r["stars"],
+)[:10]
+top_repos = [r for r in top_repos if r["stars"] > 0] or top_repos[:6]
+
+DASHBOARD_PATH = ROOT / "data" / "dashboard.json"
+DASHBOARD_PATH.write_text(json.dumps({
+    "generated_at": datetime.now(timezone.utc).isoformat(),
+    "login": LOGIN,
+    "tagline": tagline,
+    "totals": {
+        "stars": stars, "commits": commits, "repos": public_repos, "prs": prs,
+        "followers": followers, "top_lang": top_lang, "watchers": len(unique_watchers),
+        "recruits": len(star_events),
+        "clones_14d": total_clones, "clones_14d_unique": total_clones_uniq,
+        "views_14d": total_views, "views_14d_unique": total_views_uniq,
+    },
+    "recent_stars": star_events[:24],
+    "new_followers": new_followers,
+    "new_watchers": new_watchers,
+    "first_seen": first_seen,
+    "traffic_series": traffic_series,
+    "top_repos": top_repos,
+    "languages": dict(sorted(lang_sizes.items(), key=lambda kv: -kv[1])[:8]),
+}, indent=1))
+print(f"✓ data/dashboard.json")
 
 
 # ══════════════════════════════ CARD A — stats.svg ═══════════════════════════

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BHUPENDRA TALE // WORLD DOMINATION STATUS</title>
+<meta name="description" content="Live GitHub empire dashboard — stars, recruits, watchers, and traffic, refreshed daily straight from the API.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div id="scanlines" aria-hidden="true"></div>
+  <div id="progress" aria-hidden="true"></div>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section id="hero" class="section">
+      <div class="badge" id="status-badge"><span class="dot"></span>STATUS: EXPANDING</div>
+      <h1 class="glitch" data-text="BHUPENDRA TALE">BHUPENDRA TALE</h1>
+      <p class="subtitle"><span id="typewriter"></span><span class="cursor">▌</span></p>
+      <p class="tagline" id="tagline">LOADING TRANSMISSION…</p>
+      <div class="hero-links">
+        <a href="https://github.com/bhupendra05" target="_blank" rel="noopener" class="glow-btn">▲ GITHUB</a>
+        <a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4" target="_blank" rel="noopener" class="glow-btn">LINKEDIN</a>
+        <a href="mailto:bgurjar05.bg@gmail.com" class="glow-btn">EMAIL</a>
+      </div>
+      <div class="scrolldown" aria-hidden="true"><span></span><span></span><span></span></div>
+    </section>
+
+    <!-- ================= STAT COUNTERS ================= -->
+    <section class="section" id="stats-section">
+      <h2 class="section-title">// EMPIRE STATUS</h2>
+      <div class="grid stat-grid" id="stat-grid"></div>
+    </section>
+
+    <!-- ================= TRAFFIC CHART ================= -->
+    <section class="section" id="traffic-section">
+      <h2 class="section-title">// TRAFFIC — 90 DAY SURVEILLANCE</h2>
+      <p class="section-sub">Aggregate clone + view counts across every repo. GitHub never reveals who — only how many.</p>
+      <div class="chart-wrap">
+        <svg id="traffic-chart" viewBox="0 0 1000 340" preserveAspectRatio="none" role="img" aria-label="Clones and views over the last 90 days"></svg>
+        <div id="chart-tooltip" class="chart-tooltip" hidden></div>
+      </div>
+      <div class="chart-legend">
+        <span><i class="sw sw-clones"></i>CLONES</span>
+        <span><i class="sw sw-views"></i>VIEWS</span>
+      </div>
+    </section>
+
+    <!-- ================= RECRUITMENT FEED + SIGNALS ================= -->
+    <section class="section" id="feed-section">
+      <h2 class="section-title">// INTELLIGENCE FEED</h2>
+      <div class="feed-layout">
+        <div class="panel feed-panel">
+          <div class="panel-head">RECRUITMENT LOG <span class="live-dot"></span></div>
+          <div class="marquee" id="feed-marquee"><div class="marquee-track" id="feed-track"></div></div>
+        </div>
+        <div class="panel signals-panel">
+          <div class="panel-head">NEW SIGNALS</div>
+          <div id="signals-body"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TOP REPOS ================= -->
+    <section class="section" id="repos-section">
+      <h2 class="section-title">// TERRITORIES — TOP REPOS</h2>
+      <div class="grid repo-grid" id="repo-grid"></div>
+    </section>
+
+    <!-- ================= LANGUAGES ================= -->
+    <section class="section" id="lang-section">
+      <h2 class="section-title">// ARSENAL — LANGUAGES</h2>
+      <div id="lang-bars" class="lang-bars"></div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <p>Refreshed daily at 02:00 UTC · straight from the GitHub API · zero third-party servers</p>
+      <p id="footer-time"></p>
+      <a href="https://github.com/bhupendra05/bhupendra05" target="_blank" rel="noopener">view source ▲</a>
+    </footer>
+  </main>
+
+  <script src="dashboard.js" defer></script>
+</body>
+</html>
