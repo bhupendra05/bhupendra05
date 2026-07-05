@@ -186,9 +186,17 @@ rest_stars = sum(r.get("stargazers_count", 0) for r in repos)
 stars = max(rest_stars, gql_stars)
 
 # ── 3. Per-repo: stargazer events (real timestamps), watchers, traffic ────────
+# rest_ok() collapses "denied" and "legitimately empty" into the same None/[] — but they mean
+# very different things here. A repo can genuinely have 0 watchers; but if EVERY traffic call
+# across EVERY repo comes back denied, that's a token-scope problem, not "0 clones everywhere."
+# Track successes vs denials separately so a scope regression can never masquerade as "nobody
+# clones or watches anything" — see the last-known-good fallback below.
 star_events, watchers_by_repo = [], {}
 total_clones = total_clones_uniq = total_views = total_views_uniq = 0
-enriched, skipped_deadline, denied_calls = 0, 0, 0
+enriched, skipped_deadline = 0, 0
+star_attempts = star_denials = 0
+sub_attempts = sub_denials = 0
+traffic_attempts = traffic_denials = 0
 
 for i, r in enumerate(repos):
     if time.monotonic() - _START > SOFT_DEADLINE_SECS:
@@ -199,21 +207,28 @@ for i, r in enumerate(repos):
 
     name = r["name"]
     if r.get("stargazers_count", 0) > 0:
-        rows = rest_ok(f"/repos/{LOGIN}/{name}/stargazers", accept="application/vnd.github.star+json") or []
-        for row in rows:
+        star_attempts += 1
+        rows = rest_ok(f"/repos/{LOGIN}/{name}/stargazers", accept="application/vnd.github.star+json")
+        if rows is None:
+            star_denials += 1
+        for row in (rows or []):
             u = row.get("user") or {}
             if u.get("login"):
                 star_events.append({"login": u["login"], "repo": name, "at": row["starred_at"]})
 
-    subs = rest_ok(f"/repos/{LOGIN}/{name}/subscribers") or []
-    logins = [s["login"] for s in subs if s.get("login")]
+    sub_attempts += 1
+    subs = rest_ok(f"/repos/{LOGIN}/{name}/subscribers")
+    if subs is None:
+        sub_denials += 1
+    logins = [s["login"] for s in (subs or []) if s.get("login")]
     if logins:
         watchers_by_repo[name] = logins
 
+    traffic_attempts += 1
     clones = rest_ok(f"/repos/{LOGIN}/{name}/traffic/clones")
     views = rest_ok(f"/repos/{LOGIN}/{name}/traffic/views")
-    if clones is None or views is None:
-        denied_calls += 1  # traffic needs push access — PAT may lack it; skip and move on
+    if clones is None and views is None:
+        traffic_denials += 1
     if clones:
         total_clones += clones.get("count", 0)
         total_clones_uniq += clones.get("uniques", 0)
@@ -227,8 +242,41 @@ for i, r in enumerate(repos):
               f"({round(time.monotonic() - _START)}s elapsed)")
 
 print(f"  enriched {enriched}/{len(repos)} repos in {round(time.monotonic() - _START)}s"
-      + (f" — {skipped_deadline} skipped (deadline)" if skipped_deadline else "")
-      + (f" — traffic unavailable on {denied_calls} repo(s)" if denied_calls else ""))
+      + (f" — {skipped_deadline} skipped (deadline)" if skipped_deadline else ""))
+
+# ── 3b. Last-known-good fallback — never let a token-scope gap overwrite real history with
+# false zeros. If (almost) every attempt in a category was denied, that's a systematic scope
+# problem, not 161 repos simultaneously and coincidentally having zero watchers/clones/stars
+# today. In that case, keep the previous run's values for that category instead of publishing
+# a wrong "0" that contradicts data this same script already fetched successfully in the past.
+try:
+    last_good = json.loads((ROOT / "data" / "history.json").read_text()).get("last_good", {})
+except (FileNotFoundError, json.JSONDecodeError):
+    last_good = {}
+
+
+def _systematically_denied(attempts: int, denials: int) -> bool:
+    return attempts > 0 and denials / attempts > 0.8
+
+
+stars_ok = not _systematically_denied(star_attempts, star_denials)
+subs_ok = not _systematically_denied(sub_attempts, sub_denials)
+traffic_ok = not _systematically_denied(traffic_attempts, traffic_denials)
+
+if not stars_ok and last_good.get("star_events"):
+    print(f"  ⚠ stargazer reads denied on {star_denials}/{star_attempts} repos (PAT scope?) — "
+          f"keeping the last known-good {len(last_good['star_events'])} star events instead of zeroing them")
+    star_events = last_good["star_events"]
+if not subs_ok and "unique_watchers" in last_good:
+    print(f"  ⚠ subscriber reads denied on {sub_denials}/{sub_attempts} repos (PAT scope?) — "
+          f"keeping the last known-good watcher list instead of zeroing it")
+    watchers_by_repo = {"_carried_forward": last_good["unique_watchers"]}
+if not traffic_ok and "traffic_totals" in last_good:
+    print(f"  ⚠ traffic reads denied on {traffic_denials}/{traffic_attempts} repos (PAT scope?) — "
+          f"keeping the last known-good 14-day totals instead of zeroing them")
+    lg = last_good["traffic_totals"]
+    total_clones, total_clones_uniq = lg["clones"], lg["clones_unique"]
+    total_views, total_views_uniq = lg["views"], lg["views_unique"]
 
 star_events.sort(key=lambda e: e["at"], reverse=True)
 unique_watchers = sorted({login for logs in watchers_by_repo.values() for login in logs})
@@ -257,6 +305,17 @@ traffic_series = [p for p in traffic_series if p.get("date") != today]
 traffic_series.append({"date": today, "clones": total_clones, "views": total_views})
 traffic_series = traffic_series[-90:]  # keep ~3 months of daily points
 
+# Only refresh each last_good slice when THIS run's data for it is trustworthy — otherwise
+# keep whatever the last genuinely-good run recorded, so two consecutive denied runs don't
+# wipe the fallback (a scope problem can persist for days until it's noticed and fixed).
+if stars_ok:
+    last_good["star_events"] = star_events[:24]
+if subs_ok:
+    last_good["unique_watchers"] = unique_watchers
+if traffic_ok:
+    last_good["traffic_totals"] = {"clones": total_clones, "clones_unique": total_clones_uniq,
+                                   "views": total_views, "views_unique": total_views_uniq}
+
 HISTORY_PATH.parent.mkdir(exist_ok=True)
 HISTORY_PATH.write_text(json.dumps({
     "last_run": datetime.now(timezone.utc).isoformat(),
@@ -264,6 +323,8 @@ HISTORY_PATH.write_text(json.dumps({
     "watchers": unique_watchers,
     "first_seen": first_seen,
     "traffic_series": traffic_series,
+    "last_good": last_good,
+    "enrichment_ok": {"stars": stars_ok, "watchers": subs_ok, "traffic": traffic_ok},
 }, indent=1))
 
 # ── DAILY TAGLINE (deterministic by day-of-year — no external dependency) ─────

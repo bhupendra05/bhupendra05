@@ -7,6 +7,13 @@ on:
     branches: [main]       # also runs the moment this file is pushed → instant first run
   workflow_dispatch:        # manual trigger from the Actions tab
 
+# A delayed scheduled run and a push-triggered run can otherwise overlap, and both would try
+# to commit + push at the end — the loser gets a non-fast-forward rejection. Only one run at a
+# time; a newer trigger (e.g. another push) cancels an in-flight one rather than queuing behind it.
+concurrency:
+  group: empire-dashboard
+  cancel-in-progress: true
+
 jobs:
   generate:
     runs-on: ubuntu-latest
