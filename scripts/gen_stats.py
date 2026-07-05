@@ -1,61 +1,121 @@
 #!/usr/bin/env python3
 """
-Fetch GitHub stats via the API and generate a cyberpunk stats SVG.
-Runs as a GitHub Action; needs GITHUB_TOKEN and GITHUB_LOGIN env vars.
-Zero runtime dependencies — stdlib urllib only.
+Fetch GitHub stats + growth intel via the API and generate two SVGs:
+  assets/stats.svg  — hero "command center" card (flex numbers: stars, commits, repos, PRs,
+                       followers, top language)
+  assets/intel.svg  — "recruitment & surveillance" card: recent stargazer events (real, exact
+                       timestamps), newly-detected followers/watchers, and 14-day traffic totals
+
+Honesty constraints, by GitHub API design (not a limitation of this script):
+  - Stars carry a real `starred_at` timestamp — exact who + when, no approximation needed.
+  - Followers and watchers carry NO timestamp anywhere in the API. This script persists a daily
+    snapshot (data/history.json) and diffs it run-to-run, so a "new" follower/watcher is reported
+    as "first detected <date>" — an honest label for a detection event, never claimed as the
+    actual moment they followed/watched.
+  - Clone/view counts are aggregate-only (GitHub never exposes *who* cloned or viewed a repo, for
+    anyone, by design) — this script reports totals and unique counts, never fabricates identities.
+
+Runs as a GitHub Action; needs GITHUB_TOKEN (a PAT with broad read: user profile,
+contributionsCollection, per-repo traffic/subscribers — the default per-repo GITHUB_TOKEN can't
+see this) and GITHUB_LOGIN. Zero runtime dependencies — stdlib urllib only.
 """
 from __future__ import annotations
 
 import json
 import os
+import time
+import urllib.error
 import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
+from xml.sax.saxutils import escape
 
 TOKEN = os.environ["GITHUB_TOKEN"]
 LOGIN = os.environ.get("GITHUB_LOGIN", "bhupendra05")
-ROOT  = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent
+HISTORY_PATH = ROOT / "data" / "history.json"
 
 
-# ── API helpers ───────────────────────────────────────────────────────────────
-def rest(path: str) -> dict | list:
-    url = f"https://api.github.com{path}"
-    req = urllib.request.Request(url, headers={
-        "Authorization": f"Bearer {TOKEN}",
-        "Accept": "application/vnd.github+json",
+# ── API helpers (with light retry for secondary rate limits) ──────────────────
+def _request(url: str, headers: dict, data: bytes | None = None):
+    req = urllib.request.Request(url, data=data, headers=headers)
+    last_err = None
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.loads(r.read() or b"{}"), dict(r.headers)
+        except urllib.error.HTTPError as e:
+            last_err = e
+            if e.code in (403, 429, 502, 503) and attempt < 2:
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            raise
+    raise last_err
+
+
+def rest(path: str, accept: str = "application/vnd.github+json"):
+    data, _ = _request(f"https://api.github.com{path}", headers={
+        "Authorization": f"Bearer {TOKEN}", "Accept": accept,
         "X-GitHub-Api-Version": "2022-11-28",
     })
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read())
+    return data
+
+
+def rest_ok(path: str, accept: str = "application/vnd.github+json"):
+    """Like rest(), but swallow 403/404 (traffic/subscribers can be unavailable on some repos)."""
+    try:
+        return rest(path, accept)
+    except urllib.error.HTTPError:
+        return None
 
 
 def graphql(query: str, variables: dict | None = None) -> dict:
     payload = json.dumps({"query": query, "variables": variables or {}}).encode()
-    req = urllib.request.Request(
-        "https://api.github.com/graphql", data=payload,
-        headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"},
-    )
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read())
+    data, _ = _request("https://api.github.com/graphql", data=payload, headers={
+        "Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json",
+    })
+    return data
 
 
-# ── Fetch data ────────────────────────────────────────────────────────────────
+def paginate_rest(path_fmt: str, accept: str = "application/vnd.github+json", max_pages: int = 20):
+    page, out = 1, []
+    while page <= max_pages:
+        chunk = rest_ok(path_fmt.format(page=page), accept=accept)
+        if not chunk:
+            break
+        out.extend(chunk)
+        if len(chunk) < 100:
+            break
+        page += 1
+    return out
+
+
+def fmt(n) -> str:
+    if isinstance(n, str):
+        return n
+    return f"{n/1000:.1f}k" if n >= 1000 else str(n)
+
+
+def relative_time(iso: str, now: datetime) -> str:
+    try:
+        t = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+    except ValueError:
+        return iso
+    secs = max(0, (now - t).total_seconds())
+    if secs < 3600:
+        return f"{max(1, int(secs // 60))}m ago"
+    if secs < 86400:
+        return f"{int(secs // 3600)}h ago"
+    if secs < 86400 * 30:
+        return f"{int(secs // 86400)}d ago"
+    return t.strftime("%d %b %Y")
+
+
+# ── 1. Core profile + contributions (GraphQL) ─────────────────────────────────
 user = rest(f"/users/{LOGIN}")
-followers    = user.get("followers", 0)
+followers = user.get("followers", 0)
 public_repos = user.get("public_repos", 0)
 
-# Stars: sum across all owned repos via pagination
-stars, page = 0, 1
-while True:
-    repos = rest(f"/users/{LOGIN}/repos?per_page=100&page={page}&type=owner")
-    if not repos:
-        break
-    for r in repos:
-        stars += r.get("stargazers_count", 0)
-    page += 1
-    if len(repos) < 100:
-        break
-
-# Contributions + languages via GraphQL
 GQL = """
 query($login: String!) {
   user(login: $login) {
@@ -78,17 +138,12 @@ query($login: String!) {
   }
 }
 """
-gql_data    = graphql(GQL, {"login": LOGIN})["data"]["user"]
-contribs    = gql_data["contributionsCollection"]
-commits     = contribs["totalCommitContributions"]
-prs         = contribs["totalPullRequestContributions"]
-issues      = contribs["totalIssueContributions"]
+gql_data = graphql(GQL, {"login": LOGIN})["data"]["user"]
+contribs = gql_data["contributionsCollection"]
+commits = contribs["totalCommitContributions"]
+prs = contribs["totalPullRequestContributions"]
+gql_stars = sum(n["stargazerCount"] for n in gql_data["repositories"]["nodes"])
 
-# Stars from GraphQL (accurate, no fork inflation)
-gql_stars   = sum(n["stargazerCount"] for n in gql_data["repositories"]["nodes"])
-stars       = max(stars, gql_stars)
-
-# Top language by total byte size
 lang_sizes: dict[str, int] = {}
 for node in gql_data["repositories"]["nodes"]:
     for edge in node["languages"]["edges"]:
@@ -96,58 +151,129 @@ for node in gql_data["repositories"]["nodes"]:
         lang_sizes[name] = lang_sizes.get(name, 0) + edge["size"]
 top_lang = max(lang_sizes, key=lang_sizes.get) if lang_sizes else "Python"
 
+# ── 2. Full owned, non-fork repo list (single fetch — reused for everything below) ──
+repos = paginate_rest(f"/users/{LOGIN}/repos?per_page=100&type=owner&page={{page}}")
+repos = [r for r in repos if not r.get("fork")]
+rest_stars = sum(r.get("stargazers_count", 0) for r in repos)
+stars = max(rest_stars, gql_stars)
 
-# ── SVG generation ─────────────────────────────────────────────────────────────
-def fmt(n: int | str) -> str:
-    if isinstance(n, str):
-        return n
-    return f"{n/1000:.1f}k" if n >= 1000 else str(n)
+# ── 3. Per-repo: stargazer events (real timestamps), watchers, traffic ────────
+star_events, watchers_by_repo = [], {}
+total_clones = total_clones_uniq = total_views = total_views_uniq = 0
+
+for r in repos:
+    name = r["name"]
+    if r.get("stargazers_count", 0) > 0:
+        rows = rest_ok(f"/repos/{LOGIN}/{name}/stargazers", accept="application/vnd.github.star+json") or []
+        for row in rows:
+            u = row.get("user") or {}
+            if u.get("login"):
+                star_events.append({"login": u["login"], "repo": name, "at": row["starred_at"]})
+
+    subs = rest_ok(f"/repos/{LOGIN}/{name}/subscribers") or []
+    logins = [s["login"] for s in subs if s.get("login")]
+    if logins:
+        watchers_by_repo[name] = logins
+
+    clones = rest_ok(f"/repos/{LOGIN}/{name}/traffic/clones")
+    views = rest_ok(f"/repos/{LOGIN}/{name}/traffic/views")
+    if clones:
+        total_clones += clones.get("count", 0)
+        total_clones_uniq += clones.get("uniques", 0)
+    if views:
+        total_views += views.get("count", 0)
+        total_views_uniq += views.get("uniques", 0)
+
+star_events.sort(key=lambda e: e["at"], reverse=True)
+unique_watchers = sorted({login for logs in watchers_by_repo.values() for login in logs})
+
+# ── 4. Load prior snapshot, diff for "first detected" events ─────────────────
+today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+try:
+    history = json.loads(HISTORY_PATH.read_text())
+except (FileNotFoundError, json.JSONDecodeError):
+    history = {}
+
+prev_followers = set(history.get("followers", []))
+prev_watchers = set(history.get("watchers", []))
+current_followers_list = [f["login"] for f in paginate_rest(f"/users/{LOGIN}/followers?per_page=100&page={{page}}")]
+current_followers = set(current_followers_list)
+
+new_followers = sorted(current_followers - prev_followers) if history else []
+new_watchers = sorted(set(unique_watchers) - prev_watchers) if history else []
+
+first_seen = history.get("first_seen", {})
+for login in current_followers | set(unique_watchers):
+    first_seen.setdefault(login, today)
+
+traffic_series = history.get("traffic_series", [])
+traffic_series = [p for p in traffic_series if p.get("date") != today]
+traffic_series.append({"date": today, "clones": total_clones, "views": total_views})
+traffic_series = traffic_series[-90:]  # keep ~3 months of daily points
+
+HISTORY_PATH.parent.mkdir(exist_ok=True)
+HISTORY_PATH.write_text(json.dumps({
+    "last_run": datetime.now(timezone.utc).isoformat(),
+    "followers": sorted(current_followers),
+    "watchers": unique_watchers,
+    "first_seen": first_seen,
+    "traffic_series": traffic_series,
+}, indent=1))
 
 
-W, H = 720, 210
-
-STATS = [
-    ("⭐  TOTAL STARS",    fmt(stars),       "#ffd700"),
-    ("🔥  COMMITS / YEAR", fmt(commits),     "#ff2a6d"),
-    ("📦  PUBLIC REPOS",   fmt(public_repos),"#05d9e8"),
-    ("🔀  PULL REQUESTS",  fmt(prs),         "#a64dff"),
-    ("👥  FOLLOWERS",      fmt(followers),   "#05d9e8"),
-    ("🏆  TOP LANGUAGE",   top_lang,         "#ff2a6d"),
+# ── DAILY TAGLINE (deterministic by day-of-year — no external dependency) ─────
+TAGLINES = [
+    "ANOTHER DAY. ANOTHER REPO CONQUERED.",
+    "SHIPPING WHILE THE COMPETITION SLEEPS.",
+    "BUILDING THE FUTURE, ONE COMMIT AT A TIME.",
+    "WORLD DOMINATION: STATUS — IN PROGRESS.",
+    "SMALL TEAM. UNREASONABLE OUTPUT.",
+    "TERRITORY EXPANDING. RESISTANCE: MINIMAL.",
+    "IF YOU'RE READING THIS, I ALREADY SHIPPED TODAY.",
+    "COMPILING AMBITION INTO PRODUCTION CODE.",
 ]
+tagline = TAGLINES[datetime.now(timezone.utc).timetuple().tm_yday % len(TAGLINES)]
 
+
+# ══════════════════════════════ CARD A — stats.svg ═══════════════════════════
+W, H = 720, 220
+STATS = [
+    ("⭐  STARS COMMANDED",  fmt(stars),        "#ff2a2a"),
+    ("🔥  COMMITS / YEAR",   fmt(commits),      "#ffb700"),
+    ("📦  REPOS CONQUERED",  fmt(public_repos), "#ff2a2a"),
+    ("🔀  PULL REQUESTS",    fmt(prs),          "#ffb700"),
+    ("👥  FOLLOWERS",        fmt(followers),    "#ff2a2a"),
+    ("🏆  TOP LANGUAGE",     top_lang,          "#ffb700"),
+]
 COL_X = [30, 270, 510]
-ROW_Y = [72, 150]
-
+ROW_Y = [86, 164]
 cells = []
 for i, (label, value, color) in enumerate(STATS):
     col, row = i % 3, i // 3
     cx, cy = COL_X[col], ROW_Y[row]
     cells.append(
-        f'<text x="{cx}" y="{cy}" font-size="10.5" fill="#8b949e"'
-        f' font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">{label}</text>\n'
+        f'<text x="{cx}" y="{cy}" font-size="10.5" fill="#a89090"'
+        f' font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">{escape(label)}</text>\n'
         f'<text x="{cx}" y="{cy+34}" font-size="30" font-weight="800" fill="{color}"'
-        f' font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">{value}</text>'
+        f' font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">{escape(str(value))}</text>'
     )
-
 cells_svg = "\n  ".join(cells)
-
-# Vertical dividers
 v1, v2 = 248, 492
 vdivs = (
-    f'<line x1="{v1}" y1="48" x2="{v1}" y2="{H-14}" stroke="#05d9e8" stroke-width="0.6" opacity="0.18"/>'
-    f'<line x1="{v2}" y1="48" x2="{v2}" y2="{H-14}" stroke="#05d9e8" stroke-width="0.6" opacity="0.18"/>'
-    f'<line x1="24" y1="118" x2="{W-24}" y2="118" stroke="#ff2a6d" stroke-width="0.6" opacity="0.18"/>'
+    f'<line x1="{v1}" y1="60" x2="{v1}" y2="{H-14}" stroke="#ff2a2a" stroke-width="0.6" opacity="0.18"/>'
+    f'<line x1="{v2}" y1="60" x2="{v2}" y2="{H-14}" stroke="#ff2a2a" stroke-width="0.6" opacity="0.18"/>'
+    f'<line x1="24" y1="130" x2="{W-24}" y2="130" stroke="#ffb700" stroke-width="0.6" opacity="0.18"/>'
 )
 
-svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="GitHub stats for {LOGIN}">
+stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="GitHub empire stats for {LOGIN}">
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#0d0221"/>
-    <stop offset="1" stop-color="#150928"/>
+    <stop offset="0" stop-color="#0a0003"/>
+    <stop offset="1" stop-color="#1a0208"/>
   </linearGradient>
   <linearGradient id="border" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0"   stop-color="#05d9e8"/>
-    <stop offset="0.5" stop-color="#ff2a6d"/>
+    <stop offset="0"   stop-color="#ff2a2a"/>
+    <stop offset="0.5" stop-color="#ffb700"/>
     <stop offset="1"   stop-color="#a64dff"/>
   </linearGradient>
   <filter id="glow" x="-20%" y="-60%" width="140%" height="220%">
@@ -156,31 +282,126 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{
   </filter>
 </defs>
 
-<!-- background + border -->
 <rect width="{W}" height="{H}" rx="12" fill="url(#bg)"/>
 <rect width="{W}" height="{H}" rx="12" fill="none" stroke="url(#border)" stroke-width="1.5" opacity="0.85"/>
 
-<!-- title bar -->
-<line x1="20" y1="44" x2="{W-20}" y2="44" stroke="url(#border)" stroke-width="0.8" opacity="0.5"/>
-<text x="20" y="30" font-size="12.5" font-weight="700" fill="#05d9e8"
-  font-family="JetBrains Mono,Courier New,monospace" letter-spacing="3">▲ {LOGIN.upper()} // GITHUB STATS</text>
+<line x1="20" y1="56" x2="{W-20}" y2="56" stroke="url(#border)" stroke-width="0.8" opacity="0.5"/>
+<text x="20" y="28" font-size="12.5" font-weight="700" fill="#ff2a2a"
+  font-family="JetBrains Mono,Courier New,monospace" letter-spacing="3">▲ {LOGIN.upper()} // WORLD DOMINATION STATUS</text>
+<text x="20" y="46" font-size="10" fill="#ffb700" font-family="JetBrains Mono,Courier New,monospace"
+  letter-spacing="1.6">{escape(tagline)}</text>
 
-<!-- corner brackets -->
-<path d="M8 8 h20 M8 8 v20"   stroke="#05d9e8" stroke-width="2" fill="none" opacity="0.7"/>
-<path d="M{W-8} 8 h-20 M{W-8} 8 v20"     stroke="#05d9e8" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M8 8 h20 M8 8 v20"   stroke="#ff2a2a" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M{W-8} 8 h-20 M{W-8} 8 v20"     stroke="#ff2a2a" stroke-width="2" fill="none" opacity="0.7"/>
 <path d="M8 {H-8} h20 M8 {H-8} v-20"     stroke="#a64dff" stroke-width="2" fill="none" opacity="0.7"/>
 <path d="M{W-8} {H-8} h-20 M{W-8} {H-8} v-20" stroke="#a64dff" stroke-width="2" fill="none" opacity="0.7"/>
 
-<!-- dividers -->
 {vdivs}
 
-<!-- stat cells -->
 {cells_svg}
 </svg>'''
 
-out = ROOT / "assets" / "stats.svg"
-out.parent.mkdir(exist_ok=True)
-out.write_text(svg, encoding="utf-8")
-
-print(f"✓ {out}")
+(ROOT / "assets" / "stats.svg").write_text(stats_svg, encoding="utf-8")
+print(f"✓ assets/stats.svg")
 print(f"  stars={stars}  commits={commits}  prs={prs}  repos={public_repos}  followers={followers}  top={top_lang}")
+
+
+# ══════════════════════════════ CARD B — intel.svg ═══════════════════════════
+now = datetime.now(timezone.utc)
+recent_stars = star_events[:5]
+
+feed_rows = []
+y = 92
+for e in recent_stars:
+    feed_rows.append(
+        f'<text x="30" y="{y}" font-size="12.5" fill="#f2e6e6" font-family="JetBrains Mono,Courier New,monospace">'
+        f'<tspan fill="#ff2a2a">⭐</tspan> @{escape(e["login"])} <tspan fill="#7a6a6a">recruited</tspan> {escape(e["repo"])}</text>'
+        f'<text x="{W-30}" y="{y}" font-size="11" fill="#ffb700" text-anchor="end" '
+        f'font-family="JetBrains Mono,Courier New,monospace">{relative_time(e["at"], now)}</text>'
+    )
+    y += 24
+if not recent_stars:
+    feed_rows.append(f'<text x="30" y="{y}" font-size="12.5" fill="#7a6a6a" '
+                     f'font-family="JetBrains Mono,Courier New,monospace">no recruits yet — recruitment ongoing…</text>')
+    y += 24
+
+signals_y = y + 14
+signal_lines = []
+if new_followers:
+    names = ", ".join(f"@{escape(n)}" for n in new_followers[:4])
+    more = f" +{len(new_followers)-4} more" if len(new_followers) > 4 else ""
+    signal_lines.append(f'<tspan fill="#ffb700">👑 new followers:</tspan> <tspan fill="#f2e6e6">{names}{more}</tspan>')
+else:
+    signal_lines.append('<tspan fill="#7a6a6a">👑 no new followers since last scan</tspan>')
+if new_watchers:
+    names = ", ".join(f"@{escape(n)}" for n in new_watchers[:4])
+    more = f" +{len(new_watchers)-4} more" if len(new_watchers) > 4 else ""
+    signal_lines.append(f'<tspan fill="#ffb700">👁 new watchers:</tspan> <tspan fill="#f2e6e6">{names}{more}</tspan>')
+else:
+    signal_lines.append('<tspan fill="#7a6a6a">👁 no new watchers since last scan</tspan>')
+
+signals_svg = "\n  ".join(
+    f'<text x="30" y="{signals_y + i*22}" font-size="12" font-family="JetBrains Mono,Courier New,monospace">{line}</text>'
+    for i, line in enumerate(signal_lines)
+)
+
+H2 = signals_y + len(signal_lines) * 22 + 68
+hud_y = H2 - 46
+HUD = [
+    ("WATCHERS", str(len(unique_watchers)), "#ff2a2a"),
+    ("RECRUITS", str(len(star_events)), "#ffb700"),
+    ("CLONES·14D", f"{total_clones} ({total_clones_uniq}u)", "#ff2a2a"),
+    ("VIEWS·14D", f"{total_views} ({total_views_uniq}u)", "#ffb700"),
+]
+hud_cells = []
+hud_x = [30, 210, 390, 570]
+for (label, value, color), hx in zip(HUD, hud_x):
+    hud_cells.append(
+        f'<text x="{hx}" y="{hud_y}" font-size="9.5" fill="#a89090" '
+        f'font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1">{label}</text>'
+        f'<text x="{hx}" y="{hud_y+20}" font-size="15.5" font-weight="700" fill="{color}" '
+        f'font-family="JetBrains Mono,Courier New,monospace">{escape(value)}</text>'
+    )
+hud_svg = "\n  ".join(hud_cells)
+
+intel_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H2}" width="{W}" height="{H2}" role="img" aria-label="Recruitment and surveillance intel for {LOGIN}">
+<defs>
+  <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0a0003"/>
+    <stop offset="1" stop-color="#1a0208"/>
+  </linearGradient>
+  <linearGradient id="border2" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0"   stop-color="#ff2a2a"/>
+    <stop offset="0.5" stop-color="#ffb700"/>
+    <stop offset="1"   stop-color="#a64dff"/>
+  </linearGradient>
+</defs>
+
+<rect width="{W}" height="{H2}" rx="12" fill="url(#bg2)"/>
+<rect width="{W}" height="{H2}" rx="12" fill="none" stroke="url(#border2)" stroke-width="1.5" opacity="0.85"/>
+
+<line x1="20" y1="56" x2="{W-20}" y2="56" stroke="url(#border2)" stroke-width="0.8" opacity="0.5"/>
+<text x="20" y="28" font-size="12.5" font-weight="700" fill="#ff2a2a"
+  font-family="JetBrains Mono,Courier New,monospace" letter-spacing="3">▲ INTELLIGENCE FEED // RECRUITMENT &amp; SURVEILLANCE</text>
+<text x="20" y="46" font-size="10" fill="#ffb700" font-family="JetBrains Mono,Courier New,monospace"
+  letter-spacing="1.6">LIVE — REFRESHED DAILY AT 02:00 UTC</text>
+
+<path d="M8 8 h20 M8 8 v20"   stroke="#ff2a2a" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M{W-8} 8 h-20 M{W-8} 8 v20"     stroke="#ff2a2a" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M8 {H2-8} h20 M8 {H2-8} v-20"     stroke="#a64dff" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M{W-8} {H2-8} h-20 M{W-8} {H2-8} v-20" stroke="#a64dff" stroke-width="2" fill="none" opacity="0.7"/>
+
+{"".join(feed_rows)}
+
+<line x1="20" y1="{signals_y - 16}" x2="{W-20}" y2="{signals_y - 16}" stroke="#ffb700" stroke-width="0.5" opacity="0.18"/>
+{signals_svg}
+
+<line x1="20" y1="{hud_y - 22}" x2="{W-20}" y2="{hud_y - 22}" stroke="#ff2a2a" stroke-width="0.5" opacity="0.18"/>
+{hud_svg}
+</svg>'''
+
+(ROOT / "assets" / "intel.svg").write_text(intel_svg, encoding="utf-8")
+print(f"✓ assets/intel.svg")
+print(f"  watchers={len(unique_watchers)}  recruits={len(star_events)}  "
+      f"clones14d={total_clones}({total_clones_uniq}u)  views14d={total_views}({total_views_uniq}u)  "
+      f"new_followers={len(new_followers)}  new_watchers={len(new_watchers)}")

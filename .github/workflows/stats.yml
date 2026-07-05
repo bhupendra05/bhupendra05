@@ -1,4 +1,4 @@
-name: Generate Stats SVG
+name: Generate Empire Dashboard
 
 on:
   schedule:
@@ -10,6 +10,7 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 15   # ~500 API calls across all repos (stars/watchers/traffic) — safety net
     permissions:
       contents: write
 
@@ -26,8 +27,9 @@ jobs:
           python-version: '3.11'
 
       # PAT_1 stays here ONLY: gen_stats.py queries account-wide data (contributionsCollection,
-      # stars/followers across ALL repos) that the per-repo GITHUB_TOKEN can't see.
-      - name: Generate stats SVG
+      # stargazers-with-timestamp, watchers, and 14-day traffic across ALL repos) that the
+      # per-repo GITHUB_TOKEN can't see.
+      - name: Generate empire dashboard (stats + intel)
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_1 }}
           GITHUB_LOGIN: bhupendra05
@@ -37,5 +39,5 @@ jobs:
         run: |
           git config user.name "Bhupendra Tale"
           git config user.email "bgurjar05.bg@gmail.com"
-          git add assets/stats.svg
-          git diff --staged --quiet && echo "no changes" || (git commit -m "chore: refresh stats SVG [skip ci]" && git push)
+          git add assets/stats.svg assets/intel.svg data/history.json
+          git diff --staged --quiet && echo "no changes" || (git commit -m "chore: refresh empire dashboard [skip ci]" && git push)

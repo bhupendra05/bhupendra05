@@ -203,14 +203,21 @@ An inverted index + **BM25** ranker — the Elasticsearch ranking algorithm, bui
 <img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/divider.svg" width="100%" alt=""/>
 
 <!-- ====================== ANALYTICS (working widgets only — neon themed) ====================== -->
-## ❯ ANALYTICS
+## ❯ EMPIRE_STATUS
+
+<p align="center"><i>Real-time growth telemetry, pulled straight from the GitHub API and refreshed every morning at 02:00 UTC. No third-party server in the loop.</i></p>
 
 <div align="center">
 
 <!-- Stats card: self-generated daily by GitHub Actions (scripts/gen_stats.py) — no third-party server -->
-<img width="98%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/stats.svg" alt="GitHub stats"/>
+<img width="98%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/stats.svg" alt="GitHub empire stats"/>
 
-<br/>
+<br/><br/>
+
+<!-- Intel card: recent stargazer recruits (real timestamps), newly-detected followers/watchers, 14-day traffic -->
+<img width="98%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/intel.svg" alt="Recruitment and surveillance intel"/>
+
+<br/><br/>
 
 <img height="172" src="https://streak-stats.demolab.com/?user=bhupendra05&hide_border=true&background=0d0221&stroke=05d9e8&ring=ff2a6d&fire=ff2a6d&currStreakNum=ffffff&currStreakLabel=05d9e8&sideNums=ffffff&sideLabels=05d9e8&dates=8b949e&excludeDaysLabel=8b949e" alt="streak"/>
 
