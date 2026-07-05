@@ -29,7 +29,7 @@
 
 <line x1="20" y1="210" x2="700" y2="210" stroke="#ffb700" stroke-width="0.5" opacity="0.18"/>
 <text x="30" y="226" font-size="12" font-family="JetBrains Mono,Courier New,monospace"><tspan fill="#7a6a6a">👑 no new followers since last scan</tspan></text>
-  <text x="30" y="248" font-size="12" font-family="JetBrains Mono,Courier New,monospace"><tspan fill="#ffb700">👁 new watchers:</tspan> <tspan fill="#f2e6e6">@bhupendra05</tspan></text>
+  <text x="30" y="248" font-size="12" font-family="JetBrains Mono,Courier New,monospace"><tspan fill="#7a6a6a">👁 no new watchers since last scan</tspan></text>
 
 <line x1="20" y1="270" x2="700" y2="270" stroke="#ff2a2a" stroke-width="0.5" opacity="0.18"/>
 <text x="30" y="292" font-size="9.5" fill="#a89090" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1">WATCHERS</text><text x="30" y="312" font-size="15.5" font-weight="700" fill="#ff2a2a" font-family="JetBrains Mono,Courier New,monospace">1</text>
