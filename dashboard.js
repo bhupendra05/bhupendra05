@@ -167,12 +167,43 @@
     return t.toLocaleDateString(undefined, { day: "2-digit", month: "short" });
   }
 
-  /* ================= flagship (case studies) ================= */
+  /* ================= flagship (case studies) — one animated SVG per project ================= */
+  var FV_SVG = {
+    aion: '<svg viewBox="0 0 200 200"><circle class="fv-orbit" cx="100" cy="100" r="70"/><circle class="fv-orbit" cx="100" cy="100" r="45"/>' +
+      '<circle class="fv-core" cx="100" cy="100" r="12"/>' +
+      '<g class="fv-sat s1"><circle class="fv-node" cx="170" cy="100" r="9"/></g>' +
+      '<g class="fv-sat s2"><circle class="fv-node" cx="100" cy="30" r="7"/></g>' +
+      '<g class="fv-sat s3"><circle class="fv-node" cx="55" cy="100" r="6"/></g></svg>',
+    termind: '<svg viewBox="0 0 200 130"><rect x="4" y="4" width="192" height="122" rx="10" class="fv-box"/>' +
+      '<circle cx="18" cy="18" r="3" fill="var(--border-2)"/><circle cx="30" cy="18" r="3" fill="var(--border-2)"/><circle cx="42" cy="18" r="3" fill="var(--border-2)"/>' +
+      '<text x="16" y="42" class="fv-term-line l1">$ termind</text>' +
+      '<text x="16" y="60" class="fv-term-line l2">→ /ask what changed in v2.6?</text>' +
+      '<text x="16" y="78" class="fv-term-line l3">✓ answered with 3 source citations</text>' +
+      '<text x="16" y="96" class="fv-term-line l4">0 bytes left this machine<tspan class="fv-cursor">▌</tspan></text></svg>',
+    "rag-from-scratch": '<svg viewBox="0 0 200 130">' +
+      '<path class="fv-flow-path" d="M20,100 C60,100 60,60 100,60 S150,140 190,100"/>' +
+      '<rect class="fv-box" x="4" y="86" width="32" height="28" rx="6"/><text x="20" y="103" class="fv-box-label">Doc</text>' +
+      '<rect class="fv-box" x="84" y="46" width="32" height="28" rx="6"/><text x="100" y="63" class="fv-box-label">Chunk</text>' +
+      '<rect class="fv-box" x="164" y="86" width="32" height="28" rx="6"/><text x="180" y="103" class="fv-box-label">Ans</text>' +
+      '<circle class="fv-flow-dot" r="4"/></svg>',
+    "langgraph-examples": '<svg viewBox="0 0 200 140">' +
+      '<line class="fv-graph-edge" x1="100" y1="20" x2="40" y2="70"/><line class="fv-graph-edge" x1="100" y1="20" x2="160" y2="70"/>' +
+      '<line class="fv-graph-edge" x1="40" y1="70" x2="70" y2="120"/><line class="fv-graph-edge" x1="160" y1="70" x2="130" y2="120"/>' +
+      '<line class="fv-graph-edge" x1="40" y1="70" x2="160" y2="70"/>' +
+      '<circle class="fv-graph-node n1" cx="100" cy="20" r="11"/><circle class="fv-graph-node n2" cx="40" cy="70" r="9"/>' +
+      '<circle class="fv-graph-node n3" cx="160" cy="70" r="9"/><circle class="fv-graph-node n4" cx="70" cy="120" r="8"/>' +
+      '<circle class="fv-graph-node n5" cx="130" cy="120" r="8"/></svg>',
+    "mcp-servers": '<svg viewBox="0 0 200 90">' +
+      '<rect class="fv-pill" x="4" y="30" width="60" height="30" rx="15"/><text x="34" y="49" class="fv-pill-label">Client</text>' +
+      '<rect class="fv-pill" x="136" y="30" width="60" height="30" rx="15"/><text x="166" y="49" class="fv-pill-label">Server</text>' +
+      '<line x1="64" y1="45" x2="136" y2="45" stroke="var(--border-2)" stroke-width="1.3"/>' +
+      '<circle class="fv-packet" cx="64" cy="45" r="4"/><circle class="fv-packet p2" cx="64" cy="45" r="4"/></svg>'
+  };
   function flagshipVisual(p, i) {
     var glowColors = ["var(--violet)", "var(--cyan)", "var(--magenta)"];
+    var svg = FV_SVG[p.slug] || '<svg viewBox="0 0 200 200"><text x="100" y="105" text-anchor="middle" class="fv-box-label" style="font-size:16px">' + esc(p.name.slice(0, 2).toUpperCase()) + '</text></svg>';
     return '<div class="flag-visual"><div class="fv-glow" style="background:' + glowColors[i % 3] + '"></div>' +
-      '<span class="fv-mark">' + esc(p.name.slice(0, 2).toUpperCase()) + '</span>' +
-      '<span class="fv-tag">' + esc(p.category) + '</span></div>';
+      svg + '<span class="fv-tag">' + esc(p.category) + '</span></div>';
   }
   function renderFlagship(list) {
     $("#flagship-list").innerHTML = list.map(function (p, i) {

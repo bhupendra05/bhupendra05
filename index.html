@@ -9,7 +9,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="dashboard.css">
+<!-- GitHub Pages doesn't set short cache lifetimes on static assets — bump ?v= on every
+     dashboard.css/dashboard.js edit or returning visitors can get a stale mix of old CSS/JS
+     with new HTML (this bit a real visitor once: empty-looking cards, unstyled form). -->
+<link rel="stylesheet" href="dashboard.css?v=4">
 </head>
 <body>
   <div id="preloader"><div class="pl-mark">▲</div><div class="pl-bar"><span></span></div></div>
@@ -218,6 +221,6 @@
     </footer>
   </main>
 
-  <script src="dashboard.js" defer></script>
+  <script src="dashboard.js?v=4" defer></script>
 </body>
 </html>
