@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bhupendra Tale — AI Engineer · Agentic AI · LLM Infrastructure</title>
-<meta name="description" content="AI engineer building agent infrastructure — AION (an OS for AI agents), termind, RAG pipelines, and 70+ open-source tools.">
+<meta name="description" content="AI engineer building agent infrastructure — AION (an OS for AI agents), termind, RAG pipelines, and 126+ open-source tools.">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
 <!-- GitHub Pages doesn't set short cache lifetimes on static assets — bump ?v= on every
      dashboard.css/dashboard.js edit or returning visitors can get a stale mix of old CSS/JS
      with new HTML (this bit a real visitor once: empty-looking cards, unstyled form). -->
-<link rel="stylesheet" href="dashboard.css?v=4">
+<link rel="stylesheet" href="dashboard.css?v=5">
 </head>
 <body>
   <div id="preloader"><div class="pl-mark">▲</div><div class="pl-bar"><span></span></div></div>
@@ -29,6 +29,7 @@
       <a href="#services" data-nav>What We Build</a>
       <a href="#opulix" data-nav>Opulix</a>
       <a href="#flagship" data-nav>Work</a>
+      <a href="#agentic-lab" data-nav>Agentic AI</a>
       <a href="#projects" data-nav>Projects</a>
       <a href="#contact" data-nav>Contact</a>
     </div>
@@ -42,6 +43,8 @@
     <a href="#services" data-nav>What We Build</a>
     <a href="#opulix" data-nav>Opulix</a>
     <a href="#flagship" data-nav>Work</a>
+    <a href="#agentic-lab" data-nav>Agentic AI</a>
+    <a href="#stack" data-nav>Tech Stack</a>
     <a href="#projects" data-nav>Projects</a>
     <a href="#intel" data-nav>Live Data</a>
     <a href="#contact" data-nav>Contact</a>
@@ -60,7 +63,7 @@
           <span class="reveal-line"><span class="reveal-word">Building</span> <span class="reveal-word">the</span> <span class="reveal-word grad-text">infrastructure</span></span>
           <span class="reveal-line"><span class="reveal-word">for</span> <span class="reveal-word grad-text">autonomous</span> <span class="reveal-word">AI</span> <span class="reveal-word">agents.</span></span>
         </h1>
-        <p class="hero-sub reveal">AI engineer. Author of <b>AION</b>, an operating system for AI agents, and <b>70+</b> open-source tools spanning agentic infrastructure, RAG, and applied finance.</p>
+        <p class="hero-sub reveal">AI engineer. Author of <b>AION</b>, an operating system for AI agents, and <b>126+</b> open-source tools spanning agentic infrastructure, RAG, security, and applied finance.</p>
         <div class="hero-cta reveal">
           <a href="#flagship" class="btn btn-primary magnetic" data-nav>See the work <span class="arrow">→</span></a>
           <a href="https://github.com/bhupendra05" target="_blank" rel="noopener" class="btn btn-ghost magnetic">▲ github.com/bhupendra05</a>
@@ -113,7 +116,7 @@
           </ul>
           <div class="hero-cta">
             <a href="https://opulix-deal-engine.onrender.com/" target="_blank" rel="noopener" class="btn btn-primary magnetic">Visit the live app <span class="arrow">→</span></a>
-            <a href="https://github.com/bhupendra05/opulix-sourcing" target="_blank" rel="noopener" class="btn btn-ghost magnetic">View source</a>
+            <a href="#contact" data-nav class="btn btn-ghost magnetic">Ask about the build</a>
           </div>
         </div>
         <a class="opulix-visual" href="https://opulix-deal-engine.onrender.com/" target="_blank" rel="noopener" aria-label="Visit Opulix Deal Engine">
@@ -145,15 +148,43 @@
       <div id="flagship-list"></div>
     </section>
 
+    <!-- ================= AGENTIC AI LAB ================= -->
+    <section id="agentic-lab" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">// AGENTIC AI, IN DEPTH</span>
+        <h2>The agentic AI lab</h2>
+        <p>Beyond the flagship builds — twelve more agents and agent-adjacent tools, each solving one sharp problem: verification, routing, memory, incident triage, migration trust.</p>
+      </div>
+      <div class="lab-grid" id="lab-grid"></div>
+    </section>
+
+    <!-- ================= TECH STACK ================= -->
+    <section id="stack" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">// THE TOOLBOX</span>
+        <h2>Everything above is built with</h2>
+        <p>No single-vendor lock-in — the same fundamentals applied across agent infra, finance, and security.</p>
+      </div>
+      <div class="stack-groups" id="stack-groups"></div>
+    </section>
+
     <!-- ================= ALL PROJECTS ================= -->
     <section id="projects" class="section">
       <div class="section-head reveal">
         <span class="eyebrow">// THE CATALOG</span>
-        <h2>70+ projects, by domain</h2>
+        <h2>126+ projects, by domain</h2>
         <p>Every category tested, documented, and shipped.</p>
+      </div>
+      <div class="cat-search-row reveal">
+        <div class="cat-search">
+          <span class="cs-icon">⌕</span>
+          <input type="text" id="cat-search" placeholder="Search 126+ projects by name or keyword…" autocomplete="off">
+          <span class="cs-count" id="cs-count"></span>
+        </div>
       </div>
       <div class="filter-row reveal" id="filter-row"></div>
       <div class="proj-grid" id="proj-grid"></div>
+      <p class="proj-empty" id="proj-empty">No projects match that search.</p>
     </section>
 
     <!-- ================= LIVE INTEL ================= -->
@@ -221,6 +252,6 @@
     </footer>
   </main>
 
-  <script src="dashboard.js?v=4" defer></script>
+  <script src="dashboard.js?v=5" defer></script>
 </body>
 </html>

@@ -35,7 +35,7 @@
     document.addEventListener("mousedown", function () { cursor.classList.add("click"); });
     document.addEventListener("mouseup", function () { cursor.classList.remove("click"); });
     document.addEventListener("mouseover", function (e) {
-      cursor.classList.toggle("hover", !!e.target.closest("a, button, .magnetic, .proj-card"));
+      cursor.classList.toggle("hover", !!(e.target.closest && e.target.closest("a, button, .magnetic, .proj-card")));
     });
 
     if (!reduced) {
@@ -53,7 +53,7 @@
 
   /* ================= project-card cursor glow ================= */
   document.addEventListener("mousemove", function (e) {
-    var card = e.target.closest(".proj-card");
+    var card = e.target.closest ? e.target.closest(".proj-card") : null;
     if (!card) return;
     var r = card.getBoundingClientRect();
     card.style.setProperty("--mx", (e.clientX - r.left) + "px");
@@ -130,7 +130,7 @@
       }
     });
   });
-  var navSections = ["services", "opulix", "achievements", "flagship", "projects", "intel", "contact"].map(function (id) { return document.getElementById(id); }).filter(Boolean);
+  var navSections = ["services", "opulix", "achievements", "flagship", "agentic-lab", "stack", "projects", "intel", "contact"].map(function (id) { return document.getElementById(id); }).filter(Boolean);
   if ("IntersectionObserver" in window) {
     var navObs = new IntersectionObserver(function (es) {
       es.forEach(function (e) {
@@ -224,6 +224,52 @@
     revealAll();
   }
 
+  /* ================= agentic ai lab ================= */
+  var LAB_ICONS = {
+    orbit: '<svg viewBox="0 0 46 34"><circle class="li-orbit-c" cx="23" cy="17" r="14"/><circle class="li-orbit-core" cx="23" cy="17" r="3" fill="var(--violet)"/><g class="li-orbit-sat"><circle cx="37" cy="17" r="2.5" fill="var(--bg-2)" stroke="var(--violet)" stroke-width="1.3"/></g></svg>',
+    pulse: '<svg viewBox="0 0 46 34"><circle class="li-pulse-r" cx="23" cy="17" r="10" stroke="var(--violet)"/><circle class="li-pulse-core" cx="23" cy="17" r="4" fill="var(--violet)"/></svg>',
+    dots: '<svg viewBox="0 0 46 34"><circle class="li-dot d1" cx="13" cy="17" r="3.5" fill="var(--violet)"/><circle class="li-dot d2" cx="23" cy="17" r="3.5" fill="var(--cyan)"/><circle class="li-dot d3" cx="33" cy="17" r="3.5" fill="var(--magenta)"/></svg>',
+    scan: '<svg viewBox="0 0 46 34"><rect class="li-scan-box" x="3" y="3" width="40" height="28" rx="4"/><line class="li-scan-line" x1="3" y1="7" x2="43" y2="7" stroke="var(--cyan)" stroke-width="1.5"/></svg>',
+    grid: '<svg viewBox="0 0 46 34"><rect class="li-grid-sq g1" x="3" y="5" width="11" height="10" rx="2" fill="var(--violet)"/><rect class="li-grid-sq g2" x="18" y="5" width="11" height="10" rx="2" fill="var(--cyan)"/><rect class="li-grid-sq g3" x="33" y="5" width="11" height="10" rx="2" fill="var(--magenta)"/><rect class="li-grid-sq g4" x="3" y="19" width="11" height="10" rx="2" fill="var(--cyan)"/><rect class="li-grid-sq g5" x="18" y="19" width="11" height="10" rx="2" fill="var(--magenta)"/><rect class="li-grid-sq g6" x="33" y="19" width="11" height="10" rx="2" fill="var(--violet)"/></svg>',
+    route: '<svg viewBox="0 0 46 34"><circle class="li-route-n" cx="4" cy="17" r="4"/><circle class="li-route-n" cx="42" cy="17" r="4"/><line x1="4" y1="17" x2="42" y2="17" stroke="var(--border-2)" stroke-width="1.2"/><circle class="li-route-dot" r="3" fill="var(--cyan)"/></svg>'
+  };
+  function renderAgenticLab(list) {
+    $("#lab-grid").innerHTML = (list || []).map(function (p, i) {
+      return '<article class="lab-card reveal" style="transition-delay:' + ((i % 6) * 45) + 'ms">' +
+        '<div class="lab-head"><div class="lab-icon">' + (LAB_ICONS[p.icon] || LAB_ICONS.dots) + '</div><span class="lab-tag">' + esc(p.tag) + '</span></div>' +
+        '<div class="lab-name">' + esc(p.name) + '</div>' +
+        '<p class="lab-tagline">' + esc(p.tagline) + '</p>' +
+        '<ul class="lab-features">' + p.features.map(function (f) { return "<li>" + esc(f) + "</li>"; }).join("") + '</ul>' +
+        '<a class="lab-link magnetic" href="' + p.url + '" target="_blank" rel="noopener">View repository <span class="arrow">→</span></a>' +
+      '</article>';
+    }).join("");
+    revealAll();
+  }
+
+  /* ================= tech stack ================= */
+  function renderStack(groups) {
+    $("#stack-groups").innerHTML = (groups || []).map(function (g) {
+      return '<div class="stack-group reveal"><div class="stack-group-name">' + esc(g.group) + '</div>' +
+        '<div class="stack-badges">' + g.items.map(function (it) { return '<span class="stack-badge">' + esc(it) + '</span>'; }).join("") + '</div></div>';
+    }).join("");
+    revealAll();
+  }
+
+  /* ================= 3D tilt on hover (proj-card / lab-card) ================= */
+  if (!reduced && !coarse) {
+    document.addEventListener("mousemove", function (e) {
+      var card = e.target.closest ? e.target.closest(".proj-card, .lab-card") : null;
+      if (!card) return;
+      var r = card.getBoundingClientRect();
+      var px = (e.clientX - r.left) / r.width - .5, py = (e.clientY - r.top) / r.height - .5;
+      card.style.transform = "perspective(800px) rotateX(" + (-py * 7) + "deg) rotateY(" + (px * 7) + "deg) translateY(-4px)";
+    });
+    document.addEventListener("mouseleave", function (e) {
+      var card = e.target && e.target.closest ? e.target.closest(".proj-card, .lab-card") : null;
+      if (card) card.style.transform = "";
+    }, true);
+  }
+
   /* ================= services ("what we build") ================= */
   function renderServices(list) {
     $("#svc-grid").innerHTML = list.map(function (s) {
@@ -235,30 +281,57 @@
   }
 
   /* ================= project catalog ================= */
-  var CATS = [];
+  var CATS = [], activeCat = "all", activeQuery = "";
   function renderCatalog(categories) {
     CATS = categories;
+    var total = categories.reduce(function (n, c) { return n + c.items.length; }, 0);
     var filters = ['<button class="filter-btn on" data-cat="all">All</button>'].concat(
       categories.map(function (c) { return '<button class="filter-btn" data-cat="' + esc(c.name) + '">' + c.icon + " " + esc(c.name) + '</button>'; })
     );
     $("#filter-row").innerHTML = filters.join("");
-    var grid = $("#proj-grid");
+    var grid = $("#proj-grid"), i = 0;
     grid.innerHTML = categories.flatMap(function (c) {
       return c.items.map(function (it) {
-        return '<a class="proj-card" data-cat="' + esc(c.name) + '" href="' + it.url + '" target="_blank" rel="noopener">' +
+        var delay = (i++ % 10) * 40;
+        return '<a class="proj-card reveal" data-cat="' + esc(c.name) + '" data-search="' + esc((it.name + " " + it.desc).toLowerCase()) + '" style="transition-delay:' + delay + 'ms" href="' + it.url + '" target="_blank" rel="noopener">' +
           '<div class="pc-icon">' + c.icon + '</div>' +
           '<div class="pc-name">' + esc(it.name) + '</div>' +
           '<div class="pc-desc">' + esc(it.desc) + '</div>' +
           '<div class="pc-link">View on GitHub ↗</div></a>';
       });
     }).join("");
+    revealAll();
+    updateCatalogView(total);
     $$(".filter-btn").forEach(function (b) {
       b.addEventListener("click", function () {
         $$(".filter-btn").forEach(function (x) { x.classList.toggle("on", x === b); });
-        var cat = b.dataset.cat;
-        $$(".proj-card").forEach(function (card) { card.classList.toggle("hide", cat !== "all" && card.dataset.cat !== cat); });
+        activeCat = b.dataset.cat;
+        applyCatalogFilter();
       });
     });
+    var search = $("#cat-search");
+    if (search) {
+      search.addEventListener("input", function () {
+        activeQuery = search.value.trim().toLowerCase();
+        applyCatalogFilter();
+      });
+    }
+    function applyCatalogFilter() {
+      var shown = 0;
+      $$(".proj-card").forEach(function (card) {
+        var matchCat = activeCat === "all" || card.dataset.cat === activeCat;
+        var matchQuery = !activeQuery || card.dataset.search.indexOf(activeQuery) !== -1;
+        var visible = matchCat && matchQuery;
+        card.classList.toggle("hide", !visible);
+        if (visible) shown++;
+      });
+      updateCatalogView(total, shown);
+    }
+  }
+  function updateCatalogView(total, shown) {
+    var countEl = $("#cs-count"), emptyEl = $("#proj-empty");
+    if (countEl) countEl.textContent = (shown == null ? total : shown) + " / " + total;
+    if (emptyEl) emptyEl.classList.toggle("show", shown === 0);
   }
 
   /* ================= achievements ================= */
@@ -380,6 +453,8 @@
     renderServices(proj.services || []);
     renderAchievements(proj.achievements);
     renderFlagship(proj.flagship);
+    renderAgenticLab(proj.agentic_lab || []);
+    renderStack(proj.techstack || []);
     renderCatalog(proj.categories);
     renderStatGrid(dash.totals);
     renderChart(dash.traffic_series || []);
@@ -387,7 +462,7 @@
     revealAll();
   }).catch(function (err) {
     console.error("dashboard data failed:", err);
-    ["hero-stats", "svc-grid", "ach-grid", "flagship-list", "proj-grid", "stat-grid"].forEach(function (id) {
+    ["hero-stats", "svc-grid", "ach-grid", "flagship-list", "lab-grid", "stack-groups", "proj-grid", "stat-grid"].forEach(function (id) {
       var el = document.getElementById(id);
       if (el) el.innerHTML = '<p style="color:var(--faint)">Data temporarily unavailable — refresh in a moment.</p>';
     });

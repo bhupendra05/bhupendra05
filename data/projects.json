@@ -28,7 +28,11 @@
       "tag": "The Agent Operating System",
       "summary": "Classic operating systems schedule CPU and RAM for programs. AION schedules the resources AI agents actually run out of — tokens, context, and credits.",
       "description": "A zero-dependency micro-kernel that gives autonomous agents OS-grade primitives: a content-addressed virtual filesystem (skip re-reading unchanged files by hash), semantic long-term memory, transparent read caching, per-process credit budgets, capability-based sandboxing, a package manager, and inter-process messaging — so multiple agents collaborate through the kernel instead of pasting everything back into one giant prompt.",
-      "stack": ["Python", "Zero-dependency", "Micro-kernel"],
+      "stack": [
+        "Python",
+        "Zero-dependency",
+        "Micro-kernel"
+      ],
       "features": [
         "Content-addressed VFS — hash-based change detection skips redundant re-reads",
         "Capability sandbox — least-privilege syscalls, a rogue fs.write outside the jail is denied",
@@ -46,7 +50,12 @@
       "tag": "Local Agentic AI Platform",
       "summary": "A private AI agent that lives in your terminal and a Claude-style web UI — one brain, zero cloud dependency, $0 per query.",
       "description": "Runs a local model on-device at zero cost, escalating to a frontier model only on explicit consent with every byte logged. Ships a full agent loop (reason → act → observe), RAG over your own documents with source citations, a database client that previews destructive queries before running them, and a chartered-accountant workbench for regulated data that legally cannot touch the cloud.",
-      "stack": ["Python", "Ollama", "AION", "SQLite/Postgres/MySQL"],
+      "stack": [
+        "Python",
+        "Ollama",
+        "AION",
+        "SQLite/Postgres/MySQL"
+      ],
       "features": [
         "Think → Act → Observe loop, jailed to a chosen workspace folder",
         "RAG with source citations, DB client with destructive-query preview + confirm gate",
@@ -64,7 +73,12 @@
       "tag": "Production RAG, no framework",
       "summary": "A complete Retrieval-Augmented Generation pipeline built without LangChain — chunking, embeddings, hybrid retrieval, all understood at the mechanism level.",
       "description": "Three chunking strategies (fixed-size, recursive, sentence-aware), OpenAI embeddings into a FAISS vector index, and a BM25 keyword retriever running in parallel with dense semantic search — fused with Reciprocal Rank Fusion so results that rank high by either method rise to the top. Returns grounded answers with the exact source chunks and scores used.",
-      "stack": ["Python", "FAISS", "BM25", "OpenAI Embeddings"],
+      "stack": [
+        "Python",
+        "FAISS",
+        "BM25",
+        "OpenAI Embeddings"
+      ],
       "features": [
         "Three interchangeable chunkers — fixed, recursive, sentence-based",
         "Hybrid retrieval: dense (FAISS) + lexical (BM25) fused via RRF",
@@ -82,7 +96,11 @@
       "tag": "Six production agent patterns",
       "summary": "ReAct agents, supervisor-led multi-agent systems, human-in-the-loop approval gates, parallel fan-out, self-reflective RAG, and persistent memory — the patterns real agents are built from.",
       "description": "A reference set covering the core LangGraph primitives: nodes that read and update shared state, conditional edges for branching and looping, checkpointed persistence for resumable and human-in-the-loop flows, and prebuilt tool execution. Each example is a runnable, minimal demonstration of one pattern.",
-      "stack": ["Python", "LangGraph", "OpenAI"],
+      "stack": [
+        "Python",
+        "LangGraph",
+        "OpenAI"
+      ],
       "features": [
         "Supervisor + specialist multi-agent routing",
         "Human-in-the-loop via interrupt_before + checkpointing",
@@ -100,7 +118,10 @@
       "tag": "Model Context Protocol servers",
       "summary": "Four production-ready MCP servers exposing GitHub, PostgreSQL, web scraping, and the filesystem as secure tools for any MCP-compatible AI client.",
       "description": "Each server implements list_tools and call_tool; the MCP SDK handles the rest. Safe-by-default throughout — Postgres is read-only unless explicitly flagged writable, the filesystem server is sandboxed to one allowed directory and rejects any path traversal attempt, tokens are scoped per server.",
-      "stack": ["Python", "MCP SDK"],
+      "stack": [
+        "Python",
+        "MCP SDK"
+      ],
       "features": [
         "GitHub Issues — list, create, comment, search",
         "PostgreSQL — schema inspection + read-safe queries by default",
@@ -113,86 +134,935 @@
       "category": "Agent Infrastructure"
     }
   ],
+  "agentic_lab": [
+    {
+      "slug": "agentic-rag-agent",
+      "name": "agentic-rag-agent",
+      "icon": "orbit",
+      "accent": "violet",
+      "tag": "RAG agent",
+      "tagline": "A geography-grounded RAG agent that answers only from ingested PDFs — built to prove retrieval discipline, not just chat.",
+      "features": [
+        "PDF extraction → chunking → vector embeddings pipeline",
+        "Semantic search grounds every answer in a real source page"
+      ],
+      "url": "https://github.com/bhupendra05/agentic-rag-agent"
+    },
+    {
+      "slug": "ai-agents",
+      "name": "ai-agents",
+      "icon": "orbit",
+      "accent": "cyan",
+      "tag": "Agent framework",
+      "tagline": "The smallest framework that still gets the ReAct loop right — reason, act, observe, repeat, across three model providers.",
+      "features": [
+        "Provider-agnostic: OpenAI, Anthropic, or Ollama",
+        "Tool calling via plain Python decorators, no config files"
+      ],
+      "url": "https://github.com/bhupendra05/ai-agents"
+    },
+    {
+      "slug": "localmind",
+      "name": "localmind",
+      "icon": "route",
+      "accent": "magenta",
+      "tag": "Local agent",
+      "tagline": "RAG over your own documents on a model that never leaves your machine — $0 per query, sandboxed on AION.",
+      "features": [
+        "Runs on local Gemma/Ollama models by default",
+        "Budgeted and jailed by the same kernel that powers termind"
+      ],
+      "url": "https://github.com/bhupendra05/localmind"
+    },
+    {
+      "slug": "oracle",
+      "name": "oracle",
+      "icon": "pulse",
+      "accent": "violet",
+      "tag": "Self-verification",
+      "tagline": "A drop-in wrapper that re-checks an LLM's own math, code, and citations before you ship the answer.",
+      "features": [
+        "Uses Claude Opus 4.7 extended thinking to verify claims",
+        "Self-correcting — flags and fixes before the response reaches a user"
+      ],
+      "url": "https://github.com/bhupendra05/oracle"
+    },
+    {
+      "slug": "req-check",
+      "name": "req-check",
+      "icon": "pulse",
+      "accent": "cyan",
+      "tag": "Spec verification",
+      "tagline": "Point it at a spec and a codebase — it tells you what's actually implemented versus just described.",
+      "features": [
+        "Powered by Claude Opus 4.7 extended thinking",
+        "CI-friendly — fails the build on real spec drift"
+      ],
+      "url": "https://github.com/bhupendra05/req-check"
+    },
+    {
+      "slug": "debate",
+      "name": "debate",
+      "icon": "dots",
+      "accent": "magenta",
+      "tag": "Decision support",
+      "tagline": "Argues both sides of a technical decision as hard as it can, then hands you a verdict you can defend in a design review.",
+      "features": [
+        "Steelmans the case for AND against before concluding",
+        "Built on Claude Opus 4.7's extended thinking"
+      ],
+      "url": "https://github.com/bhupendra05/debate"
+    },
+    {
+      "slug": "autopsy",
+      "name": "autopsy",
+      "icon": "scan",
+      "accent": "violet",
+      "tag": "Incident analysis",
+      "tagline": "Feeds an agent your logs, deploys, and git history, and asks it to trace the actual causal chain behind a production incident.",
+      "features": [
+        "Correlates logs + deploy timeline + commit history automatically",
+        "Extended-thinking root-cause trace, not a keyword grep"
+      ],
+      "url": "https://github.com/bhupendra05/autopsy"
+    },
+    {
+      "slug": "claude-commands",
+      "name": "claude-commands",
+      "icon": "grid",
+      "accent": "cyan",
+      "tag": "Tooling",
+      "tagline": "Turned the internet's ‘secret Claude commands’ infographic into 99 real, installable slash commands.",
+      "features": [
+        "/eli10, /resumebullet, /tldr and 96 more, ready to install",
+        "Community-sourced, made actually runnable"
+      ],
+      "url": "https://github.com/bhupendra05/claude-commands"
+    },
+    {
+      "slug": "job-hunter",
+      "name": "job-hunter",
+      "icon": "dots",
+      "accent": "magenta",
+      "tag": "Agent pipeline",
+      "tagline": "An agent pipeline that ranks job postings against your resume, drafts a tailored cover letter, and tracks every application.",
+      "features": [
+        "Resume parsing → ranked job matches → tailored cover letters",
+        "Bring-your-own Claude key, fully open source"
+      ],
+      "url": "https://github.com/bhupendra05/job-hunter"
+    },
+    {
+      "slug": "migra",
+      "name": "migra",
+      "icon": "scan",
+      "accent": "cyan",
+      "tag": "Data validation",
+      "tagline": "Profiles both sides of a migration, reconciles row-for-row, and hands you an HTML report instead of a silent hope.",
+      "features": [
+        "Schema-diff + reconciliation with zero boilerplate setup",
+        "Human-readable HTML report, not just a pass/fail exit code"
+      ],
+      "url": "https://github.com/bhupendra05/migra"
+    },
+    {
+      "slug": "context-store",
+      "name": "context-store",
+      "icon": "dots",
+      "accent": "violet",
+      "tag": "Agent memory",
+      "tagline": "A memory layer that stores, searches, and injects the right context into a prompt automatically.",
+      "features": [
+        "Semantic search over stored memories, not keyword match",
+        "Drop-in for any LLM app that needs to remember"
+      ],
+      "url": "https://github.com/bhupendra05/context-store"
+    },
+    {
+      "slug": "llm-router",
+      "name": "llm-router",
+      "icon": "route",
+      "accent": "magenta",
+      "tag": "Cost routing",
+      "tagline": "Scores a prompt's complexity first, then routes it to the cheapest model that can actually handle it.",
+      "features": [
+        "Complexity scoring before every routing decision",
+        "Cuts spend by not sending easy prompts to expensive models"
+      ],
+      "url": "https://github.com/bhupendra05/llm-router"
+    }
+  ],
+  "techstack": [
+    {
+      "group": "Languages & Runtimes",
+      "items": [
+        "Python",
+        "TypeScript",
+        "Rust",
+        "Dart",
+        "Bash"
+      ]
+    },
+    {
+      "group": "Agentic AI & LLM",
+      "items": [
+        "LangChain",
+        "LangGraph",
+        "MCP",
+        "Ollama",
+        "Claude API",
+        "OpenAI API",
+        "FAISS",
+        "Hugging Face"
+      ]
+    },
+    {
+      "group": "Data & Infrastructure",
+      "items": [
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "AWS CDK"
+      ]
+    },
+    {
+      "group": "Finance & Web3",
+      "items": [
+        "Solana",
+        "SEC EDGAR",
+        "NSE/BSE",
+        "MCA21"
+      ]
+    }
+  ],
   "categories": [
     {
       "name": "Agent Infrastructure",
       "icon": "◆",
       "items": [
-        {"name": "aion", "desc": "An OS for AI agents — syscalls, semantic memory, capability sandbox, budgets, multi-agent IPC", "url": "https://github.com/bhupendra05/aion"},
-        {"name": "termind", "desc": "Private local agent, terminal + web UI, audit ledger, 216 tests", "url": "https://github.com/bhupendra05/termind"},
-        {"name": "localmind", "desc": "Private local agent, RAG over your docs, sandboxed on AION", "url": "https://github.com/bhupendra05/localmind"},
-        {"name": "claude-commands", "desc": "99 installable Claude Code slash commands", "url": "https://github.com/bhupendra05/claude-commands"},
-        {"name": "mcp-servers", "desc": "MCP servers — GitHub, Postgres, web scraper, filesystem", "url": "https://github.com/bhupendra05/mcp-servers"},
-        {"name": "ai-agents", "desc": "Minimal Python agent framework — decorator tools, reason → act → observe", "url": "https://github.com/bhupendra05/ai-agents"}
+        {
+          "name": "aion",
+          "desc": "▲ AION — The Agent Operating System. A micro-kernel that schedules what agents actually run…",
+          "url": "https://github.com/bhupendra05/aion"
+        },
+        {
+          "name": "termind",
+          "desc": "A local AI agent that lives in your terminal — clone, run one command, everything…",
+          "url": "https://github.com/bhupendra05/termind"
+        },
+        {
+          "name": "localmind",
+          "desc": "A private, local-first AI agent — RAG over your own docs on a local model (Gemma/Ollama)…",
+          "url": "https://github.com/bhupendra05/localmind"
+        },
+        {
+          "name": "mcp-servers",
+          "desc": "Production-ready MCP servers for Claude — GitHub Issues, PostgreSQL, Web Scraper, Filesystem",
+          "url": "https://github.com/bhupendra05/mcp-servers"
+        },
+        {
+          "name": "ai-agents",
+          "desc": "Minimal Python framework for building LLM-powered ReAct agents — OpenAI, Anthropic, Ollama",
+          "url": "https://github.com/bhupendra05/ai-agents"
+        },
+        {
+          "name": "agentic-rag-agent",
+          "desc": "Retrieval-Augmented Generation (RAG) Agent - Singapore Tour Guide with PDF extraction, vector…",
+          "url": "https://github.com/bhupendra05/agentic-rag-agent"
+        },
+        {
+          "name": "claude-commands",
+          "desc": "99 real, installable Claude Code slash commands (/eli10, /resumebullet, /tldr). The 'secret…",
+          "url": "https://github.com/bhupendra05/claude-commands"
+        },
+        {
+          "name": "context-store",
+          "desc": "Semantic memory store for LLM applications — store, search, and inject context into prompts",
+          "url": "https://github.com/bhupendra05/context-store"
+        },
+        {
+          "name": "migra",
+          "desc": "Data migration validation — profile, reconcile, schema-diff, and HTML reports. Zero…",
+          "url": "https://github.com/bhupendra05/migra"
+        }
       ]
     },
     {
-      "name": "AI / LLM",
+      "name": "AI / LLM & RAG",
       "icon": "◇",
       "items": [
-        {"name": "rag-from-scratch", "desc": "RAG with chunking + FAISS + BM25 + RRF, no LangChain", "url": "https://github.com/bhupendra05/rag-from-scratch"},
-        {"name": "langgraph-examples", "desc": "Six LangGraph patterns — ReAct, supervisor, HITL, self-reflective RAG", "url": "https://github.com/bhupendra05/langgraph-examples"},
-        {"name": "shape", "desc": "Structured LLM output in one line", "url": "https://github.com/bhupendra05/shape"},
-        {"name": "oracle", "desc": "Catch LLM hallucinations before users do", "url": "https://github.com/bhupendra05/oracle"},
-        {"name": "llm-router", "desc": "Route prompts to the cheapest capable model", "url": "https://github.com/bhupendra05/llm-router"},
-        {"name": "semantic-cache", "desc": "Cache LLM responses by meaning, not exact match", "url": "https://github.com/bhupendra05/semantic-cache"},
-        {"name": "job-hunter", "desc": "Multi-LLM job-application agent — Gemini profile extraction + scoring", "url": "https://github.com/bhupendra05/job-hunter"},
-        {"name": "claude-api-cookbook", "desc": "Production Claude API patterns — streaming, tool use, caching, batch", "url": "https://github.com/bhupendra05/claude-api-cookbook"}
+        {
+          "name": "rag-from-scratch",
+          "desc": "Build RAG without LangChain — pure Python, OpenAI embeddings, FAISS, BM25 hybrid retrieval…",
+          "url": "https://github.com/bhupendra05/rag-from-scratch"
+        },
+        {
+          "name": "langgraph-examples",
+          "desc": "LangGraph patterns: ReAct agents, multi-agent supervisor, human-in-loop, parallel fan-out, RAG…",
+          "url": "https://github.com/bhupendra05/langgraph-examples"
+        },
+        {
+          "name": "langchain-examples",
+          "desc": "Practical LangChain cookbook — chains, agents, RAG, memory, tools, structured output. 20+…",
+          "url": "https://github.com/bhupendra05/langchain-examples"
+        },
+        {
+          "name": "oracle",
+          "desc": "Catch LLM hallucinations before your users do. Verifies math, code, citations, and facts using…",
+          "url": "https://github.com/bhupendra05/oracle"
+        },
+        {
+          "name": "req-check",
+          "desc": "Verify your codebase actually implements your spec — powered by Claude Opus 4.7 extended…",
+          "url": "https://github.com/bhupendra05/req-check"
+        },
+        {
+          "name": "debate",
+          "desc": "Steelman both sides of any technical decision using Claude Opus 4.7's extended thinking — then…",
+          "url": "https://github.com/bhupendra05/debate"
+        },
+        {
+          "name": "autopsy",
+          "desc": "AI-powered production incident root cause analyzer — uses Claude Opus 4.7 extended thinking to…",
+          "url": "https://github.com/bhupendra05/autopsy"
+        },
+        {
+          "name": "shape",
+          "desc": "Structured output from any LLM in one line — dict schema or Pydantic, Claude or OpenAI, zero…",
+          "url": "https://github.com/bhupendra05/shape"
+        },
+        {
+          "name": "llm-router",
+          "desc": "Intelligent LLM routing — score prompt complexity and send to the cheapest capable model",
+          "url": "https://github.com/bhupendra05/llm-router"
+        },
+        {
+          "name": "semantic-cache",
+          "desc": "LLM response caching using semantic similarity — cut API costs by up to 90% on repeated queries",
+          "url": "https://github.com/bhupendra05/semantic-cache"
+        },
+        {
+          "name": "llm-compare",
+          "desc": "Chat with multiple AI models side by side from your terminal — GPT-4o, Claude, Gemini, Ollama",
+          "url": "https://github.com/bhupendra05/llm-compare"
+        },
+        {
+          "name": "llm-fine-tuning",
+          "desc": "Fine-tune Llama 3 / Mistral with LoRA + QLoRA — Hugging Face PEFT, SFTTrainer, merge adapter…",
+          "url": "https://github.com/bhupendra05/llm-fine-tuning"
+        },
+        {
+          "name": "vector-search-demo",
+          "desc": "Semantic search from scratch — sentence-transformers, FAISS, FastAPI REST API. No API key…",
+          "url": "https://github.com/bhupendra05/vector-search-demo"
+        },
+        {
+          "name": "pdf-rag-cli",
+          "desc": "Ask questions about your local PDFs from the terminal — local embeddings +…",
+          "url": "https://github.com/bhupendra05/pdf-rag-cli"
+        },
+        {
+          "name": "promptci",
+          "desc": "Test suite for LLM prompts — catch regressions before they hit production",
+          "url": "https://github.com/bhupendra05/promptci"
+        },
+        {
+          "name": "job-hunter",
+          "desc": "Assisted job-application engine: resume → ranked jobs → tailored cover letters → tracker. Open…",
+          "url": "https://github.com/bhupendra05/job-hunter"
+        },
+        {
+          "name": "huggingface-examples",
+          "desc": "Hugging Face Transformers examples: sentiment analysis, summarization, NER, DistilBERT…",
+          "url": "https://github.com/bhupendra05/huggingface-examples"
+        },
+        {
+          "name": "ollama-models-guide",
+          "desc": "Python wrapper for Ollama REST API with benchmarking, RAG example, and model comparison guide",
+          "url": "https://github.com/bhupendra05/ollama-models-guide"
+        },
+        {
+          "name": "openai-cookbook",
+          "desc": "Advanced OpenAI API examples — function calling, streaming, structured outputs (Pydantic)…",
+          "url": "https://github.com/bhupendra05/openai-cookbook"
+        },
+        {
+          "name": "claude-api-cookbook",
+          "desc": "Claude API examples: tool use, vision, streaming, batch API, structured output, prompt…",
+          "url": "https://github.com/bhupendra05/claude-api-cookbook"
+        },
+        {
+          "name": "local-ai-stack",
+          "desc": "Run a complete local AI stack in one command — Ollama + Open WebUI + LiteLLM + Qdrant + SearXNG",
+          "url": "https://github.com/bhupendra05/local-ai-stack"
+        }
       ]
     },
     {
       "name": "Finance & IB",
       "icon": "◈",
       "items": [
-        {"name": "opulix-sourcing", "desc": "Agentic deal-sourcing engine, deployed on Render", "url": "https://github.com/bhupendra05/opulix-sourcing"},
-        {"name": "dealdesk-mcp", "desc": "Run PE/VC deal math inside Claude via MCP", "url": "https://github.com/bhupendra05/dealdesk-mcp"},
-        {"name": "investorlens-mcp", "desc": "Match a raise to the right Indian investors", "url": "https://github.com/bhupendra05/investorlens-mcp"},
-        {"name": "carryflow", "desc": "Distribution waterfall & carried-interest engine", "url": "https://github.com/bhupendra05/carryflow"},
-        {"name": "exitsim", "desc": "Cap-table & exit waterfall simulator", "url": "https://github.com/bhupendra05/exitsim"},
-        {"name": "india-dcf", "desc": "DCF valuation modeling for Indian markets", "url": "https://github.com/bhupendra05/india-dcf"},
-        {"name": "india-comps", "desc": "Comparable company analysis for Indian markets", "url": "https://github.com/bhupendra05/india-comps"},
-        {"name": "drhp-intel", "desc": "Extract structured intelligence from IPO prospectuses", "url": "https://github.com/bhupendra05/drhp-intel"}
+        {
+          "name": "dealdesk-mcp",
+          "desc": "MCP server — run PE/VC deal math (waterfall, exit, carry, secondaries, teasers) inside…",
+          "url": "https://github.com/bhupendra05/dealdesk-mcp"
+        },
+        {
+          "name": "investorlens-mcp",
+          "desc": "India-focused investor discovery MCP — match a startup raise to the right Indian VCs/PE/angels…",
+          "url": "https://github.com/bhupendra05/investorlens-mcp"
+        },
+        {
+          "name": "carryflow",
+          "desc": "PE/VC distribution waterfall, carried-interest & exit-structuring engine — European/American…",
+          "url": "https://github.com/bhupendra05/carryflow"
+        },
+        {
+          "name": "exitsim",
+          "desc": "Cap table & exit waterfall simulator — liquidation preferences, participating preferred…",
+          "url": "https://github.com/bhupendra05/exitsim"
+        },
+        {
+          "name": "india-dcf",
+          "desc": "India-calibrated DCF valuation engine for NSE/BSE companies — G-Sec risk-free, India ERP…",
+          "url": "https://github.com/bhupendra05/india-dcf"
+        },
+        {
+          "name": "india-comps",
+          "desc": "Comparable company analysis for Indian listed stocks (NSE/BSE) — free data, no Bloomberg needed",
+          "url": "https://github.com/bhupendra05/india-comps"
+        },
+        {
+          "name": "drhp-intel",
+          "desc": "DRHP/IPO prospectus intelligence — auto-extract financials, risk flags, RPTs from Indian IPO…",
+          "url": "https://github.com/bhupendra05/drhp-intel"
+        },
+        {
+          "name": "dcf-model",
+          "desc": "DCF valuation for any US public company using free SEC EDGAR data — one command, no API key",
+          "url": "https://github.com/bhupendra05/dcf-model"
+        },
+        {
+          "name": "teasergen",
+          "desc": "Investor teaser / CIM auto-generator — turn company financials into an investor-ready (or…",
+          "url": "https://github.com/bhupendra05/teasergen"
+        },
+        {
+          "name": "model-doctor",
+          "desc": "Excel financial model auditor — finds 10 critical problems before your client does. Health…",
+          "url": "https://github.com/bhupendra05/model-doctor"
+        },
+        {
+          "name": "deeptracker",
+          "desc": "Deep-tech funding & valuation tracker for Indian startups — semiconductors, space, aerospace…",
+          "url": "https://github.com/bhupendra05/deeptracker"
+        },
+        {
+          "name": "promoter-watch",
+          "desc": "Track promoter pledging, bulk deals and insider activity — early warning system for Indian…",
+          "url": "https://github.com/bhupendra05/promoter-watch"
+        },
+        {
+          "name": "pipe-recon",
+          "desc": "Enterprise pipeline reconciliation driven by functional/technical mapping documents. Oracle…",
+          "url": "https://github.com/bhupendra05/pipe-recon"
+        },
+        {
+          "name": "mca-lookup",
+          "desc": "MCA21 company search, CIN parser & XBRL financials for Indian private companies — no API key…",
+          "url": "https://github.com/bhupendra05/mca-lookup"
+        }
+      ]
+    },
+    {
+      "name": "Security & Threat Detection",
+      "icon": "◑",
+      "items": [
+        {
+          "name": "phisheye",
+          "desc": "Offline, zero-dependency phishing-URL risk scanner — catches homograph, typosquat & DGA…",
+          "url": "https://github.com/bhupendra05/phisheye"
+        },
+        {
+          "name": "gitsecrets",
+          "desc": "Scan git commit history for secrets — catches what HEAD-only scanners miss",
+          "url": "https://github.com/bhupendra05/gitsecrets"
+        },
+        {
+          "name": "headerguard",
+          "desc": "Scan any URL for missing or misconfigured HTTP security headers. Score 0-100. CLI + Python API.",
+          "url": "https://github.com/bhupendra05/headerguard"
+        },
+        {
+          "name": "logphi",
+          "desc": "Detect and redact PII/PHI in application logs — GDPR & HIPAA compliance scanner",
+          "url": "https://github.com/bhupendra05/logphi"
+        },
+        {
+          "name": "tunneleye",
+          "desc": "Catch data leaving via DNS — detects DNS tunneling/exfiltration in query logs by subdomain…",
+          "url": "https://github.com/bhupendra05/tunneleye"
+        },
+        {
+          "name": "rugscan",
+          "desc": "Is this Solana token a rug? Checks an SPL mint for active mint/freeze authority, mutable…",
+          "url": "https://github.com/bhupendra05/rugscan"
+        },
+        {
+          "name": "txlens",
+          "desc": "Decode a raw Solana transaction into plain English before you sign — flags drainer-style ops…",
+          "url": "https://github.com/bhupendra05/txlens"
+        },
+        {
+          "name": "feeradar",
+          "desc": "Stop over/underpaying Solana priority fees — samples recent fees, recommends…",
+          "url": "https://github.com/bhupendra05/feeradar"
+        },
+        {
+          "name": "delegguard",
+          "desc": "Find who can drain your Solana tokens — scans token accounts for active delegate authorities…",
+          "url": "https://github.com/bhupendra05/delegguard"
+        },
+        {
+          "name": "solrent",
+          "desc": "Reclaim SOL locked in empty SPL token accounts. Scans a wallet, finds closeable accounts…",
+          "url": "https://github.com/bhupendra05/solrent"
+        },
+        {
+          "name": "beaconfind",
+          "desc": "Find the C2 beacon in your connection logs — detects malware callbacks by timing regularity…",
+          "url": "https://github.com/bhupendra05/beaconfind"
+        },
+        {
+          "name": "alertcluster",
+          "desc": "Beat alert fatigue — collapse an alert storm into correlated incidents by shared entities +…",
+          "url": "https://github.com/bhupendra05/alertcluster"
+        },
+        {
+          "name": "attackmap",
+          "desc": "Find your detection blind spots — map rules to MITRE ATT&CK, see uncovered techniques ranked…",
+          "url": "https://github.com/bhupendra05/attackmap"
+        },
+        {
+          "name": "blastpath",
+          "desc": "Attack-path & blast-radius engine — model your env as a graph, find the easiest routes to your…",
+          "url": "https://github.com/bhupendra05/blastpath"
+        },
+        {
+          "name": "fwaudit",
+          "desc": "Audit firewall / cloud security-group rules for risky exposure — world-open ports, broad…",
+          "url": "https://github.com/bhupendra05/fwaudit"
+        },
+        {
+          "name": "brutewatch",
+          "desc": "Offline auth.log triage — detect SSH brute-force, password spraying & successful compromises…",
+          "url": "https://github.com/bhupendra05/brutewatch"
+        },
+        {
+          "name": "logdrain",
+          "desc": "Millions of log lines into a few templates, then surfaces the rare/novel ones — a from-scratch…",
+          "url": "https://github.com/bhupendra05/logdrain"
+        }
+      ]
+    },
+    {
+      "name": "Solana / Web3",
+      "icon": "◉",
+      "items": [
+        {
+          "name": "nft-meta",
+          "desc": "Fetch NFT metadata from Solana, Ethereum, Polygon, Base — no SDK required",
+          "url": "https://github.com/bhupendra05/nft-meta"
+        },
+        {
+          "name": "solana-wallet-tracker",
+          "desc": "Track any Solana wallet from your terminal — balances, transactions, live watch. No API key…",
+          "url": "https://github.com/bhupendra05/solana-wallet-tracker"
+        },
+        {
+          "name": "solana-token-cli",
+          "desc": "Create and manage Solana SPL tokens from your terminal — mint, transfer, burn, revoke",
+          "url": "https://github.com/bhupendra05/solana-token-cli"
+        },
+        {
+          "name": "solana-airdrop-bot",
+          "desc": "Solana developer tool — airdrop SOL or SPL tokens to multiple wallets from CSV, with dry-run…",
+          "url": "https://github.com/bhupendra05/solana-airdrop-bot"
+        }
       ]
     },
     {
       "name": "CS Fundamentals",
       "icon": "◐",
       "items": [
-        {"name": "pyratelimit", "desc": "5 rate-limiting algorithms, thread-safe, from scratch", "url": "https://github.com/bhupendra05/pyratelimit"},
-        {"name": "sketchbox", "desc": "Bloom filter · Count-Min Sketch · HyperLogLog, from scratch", "url": "https://github.com/bhupendra05/sketchbox"},
-        {"name": "searchlite", "desc": "Inverted index + BM25 — the Elasticsearch ranking algorithm", "url": "https://github.com/bhupendra05/searchlite"}
+        {
+          "name": "pyratelimit",
+          "desc": "Five rate-limiting algorithms (token bucket, leaky bucket, fixed & sliding window) …",
+          "url": "https://github.com/bhupendra05/pyratelimit"
+        },
+        {
+          "name": "sketchbox",
+          "desc": "Probabilistic data structures from scratch — Bloom filter, Count-Min Sketch, HyperLogLog…",
+          "url": "https://github.com/bhupendra05/sketchbox"
+        },
+        {
+          "name": "searchlite",
+          "desc": "A tiny full-text search engine — inverted index + BM25 ranking (the Lucene/Elasticsearch…",
+          "url": "https://github.com/bhupendra05/searchlite"
+        },
+        {
+          "name": "system-design-patterns",
+          "desc": "Python implementations of system design patterns: rate limiter, circuit breaker, cache-aside…",
+          "url": "https://github.com/bhupendra05/system-design-patterns"
+        },
+        {
+          "name": "python-design-patterns",
+          "desc": "All 23 GoF design patterns in Python with real-world examples — Singleton, Factory, Observer…",
+          "url": "https://github.com/bhupendra05/python-design-patterns"
+        },
+        {
+          "name": "python-ml-algorithms",
+          "desc": "Classic ML algorithms from scratch: linear regression, logistic regression, KNN, KMeans, PCA…",
+          "url": "https://github.com/bhupendra05/python-ml-algorithms"
+        },
+        {
+          "name": "python-concurrency",
+          "desc": "Python concurrency: threading vs multiprocessing vs asyncio with benchmarks. GIL explained…",
+          "url": "https://github.com/bhupendra05/python-concurrency"
+        },
+        {
+          "name": "python-async-patterns",
+          "desc": "asyncio cookbook — concurrent HTTP, queues, retry with backoff, circuit breaker, background…",
+          "url": "https://github.com/bhupendra05/python-async-patterns"
+        },
+        {
+          "name": "python-testing-patterns",
+          "desc": "pytest patterns: fixtures, mocking with respx/unittest.mock, parametrize, async tests, FastAPI…",
+          "url": "https://github.com/bhupendra05/python-testing-patterns"
+        }
       ]
     },
     {
-      "name": "Security",
-      "icon": "◑",
-      "items": [
-        {"name": "phisheye", "desc": "Offline phishing-URL scanner — homograph, typosquat, DGA detection", "url": "https://github.com/bhupendra05/phisheye"},
-        {"name": "gitsecrets", "desc": "Scan full git history for leaked secrets", "url": "https://github.com/bhupendra05/gitsecrets"},
-        {"name": "headerguard", "desc": "HTTP security-header scanner", "url": "https://github.com/bhupendra05/headerguard"},
-        {"name": "logphi", "desc": "Detect and redact PII/PHI in logs", "url": "https://github.com/bhupendra05/logphi"},
-        {"name": "tunneleye", "desc": "Catch data leaving via DNS tunneling in query logs", "url": "https://github.com/bhupendra05/tunneleye"}
-      ]
-    },
-    {
-      "name": "Developer Tools",
+      "name": "Developer Productivity",
       "icon": "◒",
       "items": [
-        {"name": "releasebot", "desc": "Auto-generate changelogs from git history", "url": "https://github.com/bhupendra05/releasebot"},
-        {"name": "clauseguard", "desc": "Red-flag linter for contracts", "url": "https://github.com/bhupendra05/clauseguard"},
-        {"name": "subslayer", "desc": "Find forgotten subscriptions", "url": "https://github.com/bhupendra05/subslayer"},
-        {"name": "n1detect", "desc": "Detect N+1 SQL queries", "url": "https://github.com/bhupendra05/n1detect"},
-        {"name": "cronguard", "desc": "Alert on failed cron jobs", "url": "https://github.com/bhupendra05/cronguard"},
-        {"name": "txlens", "desc": "Decode a raw Solana transaction into plain English before you sign", "url": "https://github.com/bhupendra05/txlens"}
+        {
+          "name": "releasebot",
+          "desc": "Auto-generate clean changelogs and release notes from your git history (conventional commits).",
+          "url": "https://github.com/bhupendra05/releasebot"
+        },
+        {
+          "name": "clauseguard",
+          "desc": "A red-flag linter for contracts — scan any agreement for risky clauses and missing protections.",
+          "url": "https://github.com/bhupendra05/clauseguard"
+        },
+        {
+          "name": "subslayer",
+          "desc": "Find and kill forgotten subscriptions — point it at a bank statement and see what's draining…",
+          "url": "https://github.com/bhupendra05/subslayer"
+        },
+        {
+          "name": "n1detect",
+          "desc": "Detect N+1 SQL query patterns in Django, SQLAlchemy, or any Python app. Zero deps.",
+          "url": "https://github.com/bhupendra05/n1detect"
+        },
+        {
+          "name": "cronguard",
+          "desc": "Monitor cron jobs for missed runs. Lightweight heartbeat + cron expression parser. Zero deps.",
+          "url": "https://github.com/bhupendra05/cronguard"
+        },
+        {
+          "name": "standup",
+          "desc": "Auto-generate your daily standup from git commits. Zero config, one command, paste into Slack.",
+          "url": "https://github.com/bhupendra05/standup"
+        },
+        {
+          "name": "focus",
+          "desc": "Pomodoro timer for your terminal — ASCII art 🍅, personality messages, desktop notifications",
+          "url": "https://github.com/bhupendra05/focus"
+        },
+        {
+          "name": "devdash",
+          "desc": "Beautiful developer dashboard for your terminal — clock, weather, GitHub stats, system usage…",
+          "url": "https://github.com/bhupendra05/devdash"
+        },
+        {
+          "name": "ai-commit",
+          "desc": "AI-generated git commit messages from your staged diff — OpenAI, Anthropic, Ollama",
+          "url": "https://github.com/bhupendra05/ai-commit"
+        },
+        {
+          "name": "readme-ai",
+          "desc": "AI-powered GitHub README generator — analyzes your repo and writes a polished README in seconds",
+          "url": "https://github.com/bhupendra05/readme-ai"
+        },
+        {
+          "name": "apipin",
+          "desc": "Snapshot third-party API responses — know when they silently change shape",
+          "url": "https://github.com/bhupendra05/apipin"
+        },
+        {
+          "name": "configsync",
+          "desc": "Diff .env configs across environments — find staging/prod drift instantly",
+          "url": "https://github.com/bhupendra05/configsync"
+        },
+        {
+          "name": "envguard",
+          "desc": "Type-safe env var validation — one decorator, validated at startup, fails loud",
+          "url": "https://github.com/bhupendra05/envguard"
+        },
+        {
+          "name": "schemadiff",
+          "desc": "Database schema drift monitor — snapshot and compare DB schemas to catch unexpected changes",
+          "url": "https://github.com/bhupendra05/schemadiff"
+        },
+        {
+          "name": "asynctrace",
+          "desc": "Full caller context in asyncio exceptions — fix useless async stack traces in one line",
+          "url": "https://github.com/bhupendra05/asynctrace"
+        },
+        {
+          "name": "importwatch",
+          "desc": "Find which imports slow your app startup — drop-in profiler, one line",
+          "url": "https://github.com/bhupendra05/importwatch"
+        },
+        {
+          "name": "leakwatch",
+          "desc": "Memory growth detector — with leakwatch() shows exactly what allocated memory",
+          "url": "https://github.com/bhupendra05/leakwatch"
+        },
+        {
+          "name": "slowtrap",
+          "desc": "Auto-flag functions exceeding a time budget — decorator + context manager",
+          "url": "https://github.com/bhupendra05/slowtrap"
+        },
+        {
+          "name": "deadroute",
+          "desc": "Find unused FastAPI/Flask endpoints from access logs",
+          "url": "https://github.com/bhupendra05/deadroute"
+        },
+        {
+          "name": "sqlpulse",
+          "desc": "Drop-in N+1 SQL detector — works with any Python SQL library, no ORM required",
+          "url": "https://github.com/bhupendra05/sqlpulse"
+        },
+        {
+          "name": "depaudit",
+          "desc": "Audit Python dependencies for license compliance and known CVEs. Uses OSV.dev. Zero deps.",
+          "url": "https://github.com/bhupendra05/depaudit"
+        },
+        {
+          "name": "kubewaste",
+          "desc": "Find Kubernetes resource waste — pods over-provisioned on CPU and RAM, unused ConfigMaps and…",
+          "url": "https://github.com/bhupendra05/kubewaste"
+        },
+        {
+          "name": "ai-code-review",
+          "desc": "GitHub Action: automatically review PRs with AI — bugs, security issues, suggestions",
+          "url": "https://github.com/bhupendra05/ai-code-review"
+        },
+        {
+          "name": "devops-health",
+          "desc": "SSH-based server health dashboard — CPU, memory, disk, uptime across all your servers",
+          "url": "https://github.com/bhupendra05/devops-health"
+        }
+      ]
+    },
+    {
+      "name": "Starter Templates & Infra",
+      "icon": "▣",
+      "items": [
+        {
+          "name": "fastapi-production-template",
+          "desc": "Production-ready FastAPI starter — async PostgreSQL, JWT auth, Redis, Docker, GitHub Actions CI",
+          "url": "https://github.com/bhupendra05/fastapi-production-template"
+        },
+        {
+          "name": "fastapi-microservices",
+          "desc": "FastAPI microservices template: user service, notification service, API gateway with JWT auth…",
+          "url": "https://github.com/bhupendra05/fastapi-microservices"
+        },
+        {
+          "name": "fastapi-websocket-chat",
+          "desc": "Real-time chat with FastAPI WebSockets + Redis Pub/Sub — rooms, typing indicators…",
+          "url": "https://github.com/bhupendra05/fastapi-websocket-chat"
+        },
+        {
+          "name": "nextjs-starter",
+          "desc": "Production Next.js 14 App Router starter — TypeScript, Tailwind, Auth.js, Prisma, Docker",
+          "url": "https://github.com/bhupendra05/nextjs-starter"
+        },
+        {
+          "name": "rust-cli-starter",
+          "desc": "Production Rust CLI starter — clap v4, tokio, tracing, config, Docker, CI. Clone and build.",
+          "url": "https://github.com/bhupendra05/rust-cli-starter"
+        },
+        {
+          "name": "flutter-boilerplate",
+          "desc": "Production Flutter starter — Riverpod, go_router, Dio JWT auth, secure storage, Material 3, CI",
+          "url": "https://github.com/bhupendra05/flutter-boilerplate"
+        },
+        {
+          "name": "terraform-aws-modules",
+          "desc": "Reusable Terraform modules for AWS: VPC with NAT, Lambda + IAM + VPC, S3 + CloudFront OAC…",
+          "url": "https://github.com/bhupendra05/terraform-aws-modules"
+        },
+        {
+          "name": "aws-cdk-templates",
+          "desc": "Production AWS CDK Python stacks — Lambda+API Gateway, ECS Fargate, RDS PostgreSQL…",
+          "url": "https://github.com/bhupendra05/aws-cdk-templates"
+        },
+        {
+          "name": "k8s-manifests",
+          "desc": "Production Kubernetes manifest collection — Deployment, HPA, Ingress, NetworkPolicy, RBAC, all…",
+          "url": "https://github.com/bhupendra05/k8s-manifests"
+        },
+        {
+          "name": "docker-compose-templates",
+          "desc": "Production-ready Docker Compose templates — Postgres, Redis, Kafka, Grafana, FastAPI, n8n…",
+          "url": "https://github.com/bhupendra05/docker-compose-templates"
+        },
+        {
+          "name": "github-actions-templates",
+          "desc": "Copy-paste GitHub Actions workflows — Python CI, Node CI, Docker multi-arch build, Fly.io…",
+          "url": "https://github.com/bhupendra05/github-actions-templates"
+        },
+        {
+          "name": "graphql-fastapi",
+          "desc": "GraphQL API with FastAPI + Strawberry (code-first) — full CRUD, N+1 prevention, interactive…",
+          "url": "https://github.com/bhupendra05/graphql-fastapi"
+        },
+        {
+          "name": "nginx-configs",
+          "desc": "Production-ready nginx configs for FastAPI, Next.js, WebSocket, load balancing — SSL, rate…",
+          "url": "https://github.com/bhupendra05/nginx-configs"
+        },
+        {
+          "name": "bash-scripts",
+          "desc": "Production DevOps bash scripts — server setup, SSL, PostgreSQL backup, log rotation, Docker…",
+          "url": "https://github.com/bhupendra05/bash-scripts"
+        },
+        {
+          "name": "docker-best-practices",
+          "desc": "Docker best practices: multi-stage builds (85% smaller images), non-root users, HEALTHCHECK…",
+          "url": "https://github.com/bhupendra05/docker-best-practices"
+        }
+      ]
+    },
+    {
+      "name": "Interview Prep & Cookbooks",
+      "icon": "▤",
+      "items": [
+        {
+          "name": "python-interview-prep",
+          "desc": "100 Python coding interview questions with optimal solutions, complexity analysis, and a test…",
+          "url": "https://github.com/bhupendra05/python-interview-prep"
+        },
+        {
+          "name": "sql-interview-prep",
+          "desc": "30 SQL interview questions with full solutions — easy to hard, window functions, CTEs…",
+          "url": "https://github.com/bhupendra05/sql-interview-prep"
+        },
+        {
+          "name": "pydantic-v2-cookbook",
+          "desc": "Pydantic v2 cookbook: settings management, custom validators, discriminated unions, computed…",
+          "url": "https://github.com/bhupendra05/pydantic-v2-cookbook"
+        },
+        {
+          "name": "redis-patterns",
+          "desc": "Production-ready Redis patterns: cache-aside, token bucket rate limiting, leaderboard…",
+          "url": "https://github.com/bhupendra05/redis-patterns"
+        },
+        {
+          "name": "celery-patterns",
+          "desc": "Celery task patterns: retries, chains, groups, chords, beat schedules, Flower monitoring with…",
+          "url": "https://github.com/bhupendra05/celery-patterns"
+        },
+        {
+          "name": "postgres-tips",
+          "desc": "Advanced PostgreSQL cheat sheet — window functions, JSONB, CTEs, indexing, EXPLAIN ANALYZE…",
+          "url": "https://github.com/bhupendra05/postgres-tips"
+        },
+        {
+          "name": "react-hooks-library",
+          "desc": "30+ production React hooks — useLocalStorage, useDebounce, useFetch, useIntersectionObserver…",
+          "url": "https://github.com/bhupendra05/react-hooks-library"
+        },
+        {
+          "name": "typescript-utils",
+          "desc": "Type-safe TypeScript utility functions — zero runtime dependencies. Lodash alternative with…",
+          "url": "https://github.com/bhupendra05/typescript-utils"
+        }
+      ]
+    },
+    {
+      "name": "Media & Content AI",
+      "icon": "▥",
+      "items": [
+        {
+          "name": "video-subtitle-app",
+          "desc": "Local web app: add subtitles + replace audio with ElevenLabs using Whisper + Remotion",
+          "url": "https://github.com/bhupendra05/video-subtitle-app"
+        },
+        {
+          "name": "video-subtitle-app-v2",
+          "desc": "AI Shorts Studio v2 — Full pipeline: script → TTS → Whisper captions → FLUX images → Wan2.1…",
+          "url": "https://github.com/bhupendra05/video-subtitle-app-v2"
+        },
+        {
+          "name": "whisper-cli",
+          "desc": "Transcribe audio & video files locally using OpenAI Whisper — no internet needed",
+          "url": "https://github.com/bhupendra05/whisper-cli"
+        }
+      ]
+    },
+    {
+      "name": "Client & Personal Sites",
+      "icon": "▦",
+      "items": [
+        {
+          "name": "blueneck-events",
+          "desc": "Premium event management website built with Next.js 14",
+          "url": "https://github.com/bhupendra05/blueneck-events"
+        },
+        {
+          "name": "bhupendra-portfolio",
+          "desc": "Futuristic AI-powered cyberpunk portfolio — built with Node.js, Groq AI & Express",
+          "url": "https://github.com/bhupendra05/bhupendra-portfolio"
+        }
       ]
     }
   ],
   "achievements": [
-    {"n": "70+", "label": "open-source repositories shipped" },
-    {"n": "216", "label": "automated tests — termind alone" },
-    {"n": "109", "label": "automated tests — AION alone" },
-    {"n": "6", "label": "problem domains covered end to end" },
-    {"n": "1", "label": "AI agent OS, built from scratch" },
-    {"n": "$0", "label": "cost per query, local-first by default" }
+    {
+      "n": "126+",
+      "label": "open-source repositories shipped"
+    },
+    {
+      "n": "12",
+      "label": "agentic AI tools in active use"
+    },
+    {
+      "n": "216",
+      "label": "automated tests — termind alone"
+    },
+    {
+      "n": "109",
+      "label": "automated tests — AION alone"
+    },
+    {
+      "n": "11",
+      "label": "problem domains covered end to end"
+    },
+    {
+      "n": "1",
+      "label": "AI agent OS, built from scratch"
+    },
+    {
+      "n": "$0",
+      "label": "cost per query, local-first by default"
+    }
   ]
 }
