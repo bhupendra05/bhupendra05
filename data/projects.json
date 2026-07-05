@@ -1,0 +1,194 @@
+{
+  "flagship": [
+    {
+      "slug": "aion",
+      "name": "AION",
+      "tag": "The Agent Operating System",
+      "summary": "Classic operating systems schedule CPU and RAM for programs. AION schedules the resources AI agents actually run out of — tokens, context, and credits.",
+      "description": "A zero-dependency micro-kernel that gives autonomous agents OS-grade primitives: a content-addressed virtual filesystem (skip re-reading unchanged files by hash), semantic long-term memory, transparent read caching, per-process credit budgets, capability-based sandboxing, a package manager, and inter-process messaging — so multiple agents collaborate through the kernel instead of pasting everything back into one giant prompt.",
+      "stack": ["Python", "Zero-dependency", "Micro-kernel"],
+      "features": [
+        "Content-addressed VFS — hash-based change detection skips redundant re-reads",
+        "Capability sandbox — least-privilege syscalls, a rogue fs.write outside the jail is denied",
+        "Hard credit budgets per process — a runaway agent is stopped, not billed",
+        "Semantic memory recall + IPC channels for real multi-agent collaboration"
+      ],
+      "stat": "109 tests",
+      "impact": "~69% fewer credits burned on the same workload, measured",
+      "url": "https://github.com/bhupendra05/aion",
+      "category": "Agent Infrastructure"
+    },
+    {
+      "slug": "termind",
+      "name": "termind",
+      "tag": "Local Agentic AI Platform",
+      "summary": "A private AI agent that lives in your terminal and a Claude-style web UI — one brain, zero cloud dependency, $0 per query.",
+      "description": "Runs a local model on-device at zero cost, escalating to a frontier model only on explicit consent with every byte logged. Ships a full agent loop (reason → act → observe), RAG over your own documents with source citations, a database client that previews destructive queries before running them, and a chartered-accountant workbench for regulated data that legally cannot touch the cloud.",
+      "stack": ["Python", "Ollama", "AION", "SQLite/Postgres/MySQL"],
+      "features": [
+        "Think → Act → Observe loop, jailed to a chosen workspace folder",
+        "RAG with source citations, DB client with destructive-query preview + confirm gate",
+        "Tamper-evident, hash-chained audit ledger of every action taken",
+        "Model tiers: local → bigger local → frontier-on-consent, all logged"
+      ],
+      "stat": "216 tests",
+      "impact": "Built on AION — the same kernel, applied to a daily-driver agent",
+      "url": "https://github.com/bhupendra05/termind",
+      "category": "Agent Infrastructure"
+    },
+    {
+      "slug": "rag-from-scratch",
+      "name": "rag-from-scratch",
+      "tag": "Production RAG, no framework",
+      "summary": "A complete Retrieval-Augmented Generation pipeline built without LangChain — chunking, embeddings, hybrid retrieval, all understood at the mechanism level.",
+      "description": "Three chunking strategies (fixed-size, recursive, sentence-aware), OpenAI embeddings into a FAISS vector index, and a BM25 keyword retriever running in parallel with dense semantic search — fused with Reciprocal Rank Fusion so results that rank high by either method rise to the top. Returns grounded answers with the exact source chunks and scores used.",
+      "stack": ["Python", "FAISS", "BM25", "OpenAI Embeddings"],
+      "features": [
+        "Three interchangeable chunkers — fixed, recursive, sentence-based",
+        "Hybrid retrieval: dense (FAISS) + lexical (BM25) fused via RRF",
+        "Every answer returns its source chunks and relevance scores",
+        "A few hundred lines, three dependencies — easy to read end to end"
+      ],
+      "stat": "Zero black-box frameworks",
+      "impact": "The reference implementation used to explain RAG mechanics from first principles",
+      "url": "https://github.com/bhupendra05/rag-from-scratch",
+      "category": "AI / LLM"
+    },
+    {
+      "slug": "langgraph-examples",
+      "name": "langgraph-examples",
+      "tag": "Six production agent patterns",
+      "summary": "ReAct agents, supervisor-led multi-agent systems, human-in-the-loop approval gates, parallel fan-out, self-reflective RAG, and persistent memory — the patterns real agents are built from.",
+      "description": "A reference set covering the core LangGraph primitives: nodes that read and update shared state, conditional edges for branching and looping, checkpointed persistence for resumable and human-in-the-loop flows, and prebuilt tool execution. Each example is a runnable, minimal demonstration of one pattern.",
+      "stack": ["Python", "LangGraph", "OpenAI"],
+      "features": [
+        "Supervisor + specialist multi-agent routing",
+        "Human-in-the-loop via interrupt_before + checkpointing",
+        "Parallel fan-out / fan-in for independent subtasks",
+        "Self-reflective RAG that rewrites and re-retrieves on weak context"
+      ],
+      "stat": "6 runnable patterns",
+      "impact": "Maps directly to LangGraph's actual production API, not toy pseudocode",
+      "url": "https://github.com/bhupendra05/langgraph-examples",
+      "category": "AI / LLM"
+    },
+    {
+      "slug": "mcp-servers",
+      "name": "mcp-servers",
+      "tag": "Model Context Protocol servers",
+      "summary": "Four production-ready MCP servers exposing GitHub, PostgreSQL, web scraping, and the filesystem as secure tools for any MCP-compatible AI client.",
+      "description": "Each server implements list_tools and call_tool; the MCP SDK handles the rest. Safe-by-default throughout — Postgres is read-only unless explicitly flagged writable, the filesystem server is sandboxed to one allowed directory and rejects any path traversal attempt, tokens are scoped per server.",
+      "stack": ["Python", "MCP SDK"],
+      "features": [
+        "GitHub Issues — list, create, comment, search",
+        "PostgreSQL — schema inspection + read-safe queries by default",
+        "Filesystem — sandboxed to a single allowed directory",
+        "Web scraper — structured extraction from any page"
+      ],
+      "stat": "4 servers",
+      "impact": "Build once, use from Claude Desktop, Cursor, or any MCP client — no bespoke wiring",
+      "url": "https://github.com/bhupendra05/mcp-servers",
+      "category": "Agent Infrastructure"
+    },
+    {
+      "slug": "opulix-sourcing",
+      "name": "opulix-sourcing",
+      "tag": "Agentic deal-sourcing engine",
+      "summary": "An end-to-end agentic pipeline for investment-banking deal origination — ingest, classify, enrich, and draft, chained into one workflow.",
+      "description": "Ingests target companies via Tracxn through an MCP tool, classifies the right advisory service to pitch with an LLM against a deterministic rules engine, enriches CEO/CFO contact details, and drafts personalized outreach with Claude — deployed as a live FastAPI app.",
+      "stack": ["Python", "FastAPI", "Claude", "MCP", "Tracxn"],
+      "features": [
+        "Tracxn ingestion via an MCP connector",
+        "Deterministic classification engine, tunable without touching code",
+        "Contact enrichment + Claude-drafted personalized outreach",
+        "Deployed and running in production on Render"
+      ],
+      "stat": "Deployed",
+      "impact": "A real client-facing agentic pipeline, not a demo",
+      "url": "https://github.com/bhupendra05/opulix-sourcing",
+      "category": "Finance & IB"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Agent Infrastructure",
+      "icon": "◆",
+      "items": [
+        {"name": "aion", "desc": "An OS for AI agents — syscalls, semantic memory, capability sandbox, budgets, multi-agent IPC", "url": "https://github.com/bhupendra05/aion"},
+        {"name": "termind", "desc": "Private local agent, terminal + web UI, audit ledger, 216 tests", "url": "https://github.com/bhupendra05/termind"},
+        {"name": "localmind", "desc": "Private local agent, RAG over your docs, sandboxed on AION", "url": "https://github.com/bhupendra05/localmind"},
+        {"name": "claude-commands", "desc": "99 installable Claude Code slash commands", "url": "https://github.com/bhupendra05/claude-commands"},
+        {"name": "mcp-servers", "desc": "MCP servers — GitHub, Postgres, web scraper, filesystem", "url": "https://github.com/bhupendra05/mcp-servers"},
+        {"name": "ai-agents", "desc": "Minimal Python agent framework — decorator tools, reason → act → observe", "url": "https://github.com/bhupendra05/ai-agents"}
+      ]
+    },
+    {
+      "name": "AI / LLM",
+      "icon": "◇",
+      "items": [
+        {"name": "rag-from-scratch", "desc": "RAG with chunking + FAISS + BM25 + RRF, no LangChain", "url": "https://github.com/bhupendra05/rag-from-scratch"},
+        {"name": "langgraph-examples", "desc": "Six LangGraph patterns — ReAct, supervisor, HITL, self-reflective RAG", "url": "https://github.com/bhupendra05/langgraph-examples"},
+        {"name": "shape", "desc": "Structured LLM output in one line", "url": "https://github.com/bhupendra05/shape"},
+        {"name": "oracle", "desc": "Catch LLM hallucinations before users do", "url": "https://github.com/bhupendra05/oracle"},
+        {"name": "llm-router", "desc": "Route prompts to the cheapest capable model", "url": "https://github.com/bhupendra05/llm-router"},
+        {"name": "semantic-cache", "desc": "Cache LLM responses by meaning, not exact match", "url": "https://github.com/bhupendra05/semantic-cache"},
+        {"name": "job-hunter", "desc": "Multi-LLM job-application agent — Gemini profile extraction + scoring", "url": "https://github.com/bhupendra05/job-hunter"},
+        {"name": "claude-api-cookbook", "desc": "Production Claude API patterns — streaming, tool use, caching, batch", "url": "https://github.com/bhupendra05/claude-api-cookbook"}
+      ]
+    },
+    {
+      "name": "Finance & IB",
+      "icon": "◈",
+      "items": [
+        {"name": "opulix-sourcing", "desc": "Agentic deal-sourcing engine, deployed on Render", "url": "https://github.com/bhupendra05/opulix-sourcing"},
+        {"name": "dealdesk-mcp", "desc": "Run PE/VC deal math inside Claude via MCP", "url": "https://github.com/bhupendra05/dealdesk-mcp"},
+        {"name": "investorlens-mcp", "desc": "Match a raise to the right Indian investors", "url": "https://github.com/bhupendra05/investorlens-mcp"},
+        {"name": "carryflow", "desc": "Distribution waterfall & carried-interest engine", "url": "https://github.com/bhupendra05/carryflow"},
+        {"name": "exitsim", "desc": "Cap-table & exit waterfall simulator", "url": "https://github.com/bhupendra05/exitsim"},
+        {"name": "india-dcf", "desc": "DCF valuation modeling for Indian markets", "url": "https://github.com/bhupendra05/india-dcf"},
+        {"name": "india-comps", "desc": "Comparable company analysis for Indian markets", "url": "https://github.com/bhupendra05/india-comps"},
+        {"name": "drhp-intel", "desc": "Extract structured intelligence from IPO prospectuses", "url": "https://github.com/bhupendra05/drhp-intel"}
+      ]
+    },
+    {
+      "name": "CS Fundamentals",
+      "icon": "◐",
+      "items": [
+        {"name": "pyratelimit", "desc": "5 rate-limiting algorithms, thread-safe, from scratch", "url": "https://github.com/bhupendra05/pyratelimit"},
+        {"name": "sketchbox", "desc": "Bloom filter · Count-Min Sketch · HyperLogLog, from scratch", "url": "https://github.com/bhupendra05/sketchbox"},
+        {"name": "searchlite", "desc": "Inverted index + BM25 — the Elasticsearch ranking algorithm", "url": "https://github.com/bhupendra05/searchlite"}
+      ]
+    },
+    {
+      "name": "Security",
+      "icon": "◑",
+      "items": [
+        {"name": "phisheye", "desc": "Offline phishing-URL scanner — homograph, typosquat, DGA detection", "url": "https://github.com/bhupendra05/phisheye"},
+        {"name": "gitsecrets", "desc": "Scan full git history for leaked secrets", "url": "https://github.com/bhupendra05/gitsecrets"},
+        {"name": "headerguard", "desc": "HTTP security-header scanner", "url": "https://github.com/bhupendra05/headerguard"},
+        {"name": "logphi", "desc": "Detect and redact PII/PHI in logs", "url": "https://github.com/bhupendra05/logphi"},
+        {"name": "tunneleye", "desc": "Catch data leaving via DNS tunneling in query logs", "url": "https://github.com/bhupendra05/tunneleye"}
+      ]
+    },
+    {
+      "name": "Developer Tools",
+      "icon": "◒",
+      "items": [
+        {"name": "releasebot", "desc": "Auto-generate changelogs from git history", "url": "https://github.com/bhupendra05/releasebot"},
+        {"name": "clauseguard", "desc": "Red-flag linter for contracts", "url": "https://github.com/bhupendra05/clauseguard"},
+        {"name": "subslayer", "desc": "Find forgotten subscriptions", "url": "https://github.com/bhupendra05/subslayer"},
+        {"name": "n1detect", "desc": "Detect N+1 SQL queries", "url": "https://github.com/bhupendra05/n1detect"},
+        {"name": "cronguard", "desc": "Alert on failed cron jobs", "url": "https://github.com/bhupendra05/cronguard"},
+        {"name": "txlens", "desc": "Decode a raw Solana transaction into plain English before you sign", "url": "https://github.com/bhupendra05/txlens"}
+      ]
+    }
+  ],
+  "achievements": [
+    {"n": "70+", "label": "open-source repositories shipped" },
+    {"n": "216", "label": "automated tests — termind alone" },
+    {"n": "109", "label": "automated tests — AION alone" },
+    {"n": "6", "label": "problem domains covered end to end" },
+    {"n": "1", "label": "AI agent OS, built from scratch" },
+    {"n": "$0", "label": "cost per query, local-first by default" }
+  ]
+}

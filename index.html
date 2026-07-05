@@ -1,87 +1,151 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BHUPENDRA TALE // WORLD DOMINATION STATUS</title>
-<meta name="description" content="Live GitHub empire dashboard — stars, recruits, watchers, and traffic, refreshed daily straight from the API.">
+<title>Bhupendra Tale — AI Engineer · Agentic AI · LLM Infrastructure</title>
+<meta name="description" content="AI engineer building agent infrastructure — AION (an OS for AI agents), termind, RAG pipelines, and 70+ open-source tools.">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
+  <div id="preloader"><div class="pl-mark">▲</div><div class="pl-bar"><span></span></div></div>
+
+  <div id="cursor" aria-hidden="true"><div class="cur-dot"></div><div class="cur-ring"></div></div>
   <canvas id="fx" aria-hidden="true"></canvas>
-  <div id="scanlines" aria-hidden="true"></div>
+  <div id="grid-overlay" aria-hidden="true"></div>
+  <div id="noise" aria-hidden="true"></div>
   <div id="progress" aria-hidden="true"></div>
 
-  <main>
+  <nav id="nav">
+    <a href="#top" class="nav-brand"><span class="nb-mark">▲</span>BHUPENDRA TALE</a>
+    <div class="nav-links">
+      <a href="#achievements" data-nav>Achievements</a>
+      <a href="#flagship" data-nav>Work</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#intel" data-nav>Live Data</a>
+      <a href="#contact" data-nav>Contact</a>
+    </div>
+    <div class="nav-right">
+      <button id="theme-toggle" aria-label="Toggle theme"><span class="ti-sun">☀</span><span class="ti-moon">☾</span></button>
+      <a class="nav-cta magnetic" href="https://github.com/bhupendra05" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <button id="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div id="mobile-menu">
+    <a href="#achievements" data-nav>Achievements</a>
+    <a href="#flagship" data-nav>Work</a>
+    <a href="#projects" data-nav>Projects</a>
+    <a href="#intel" data-nav>Live Data</a>
+    <a href="#contact" data-nav>Contact</a>
+  </div>
+
+  <main id="top">
+
     <!-- ================= HERO ================= -->
-    <section id="hero" class="section">
-      <div class="badge" id="status-badge"><span class="dot"></span>STATUS: EXPANDING</div>
-      <h1 class="glitch" data-text="BHUPENDRA TALE">BHUPENDRA TALE</h1>
-      <p class="subtitle"><span id="typewriter"></span><span class="cursor">▌</span></p>
-      <p class="tagline" id="tagline">LOADING TRANSMISSION…</p>
-      <div class="hero-links">
-        <a href="https://github.com/bhupendra05" target="_blank" rel="noopener" class="glow-btn">▲ GITHUB</a>
-        <a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4" target="_blank" rel="noopener" class="glow-btn">LINKEDIN</a>
-        <a href="mailto:bgurjar05.bg@gmail.com" class="glow-btn">EMAIL</a>
-      </div>
-      <div class="scrolldown" aria-hidden="true"><span></span><span></span><span></span></div>
-    </section>
-
-    <!-- ================= STAT COUNTERS ================= -->
-    <section class="section" id="stats-section">
-      <h2 class="section-title">// EMPIRE STATUS</h2>
-      <div class="grid stat-grid" id="stat-grid"></div>
-    </section>
-
-    <!-- ================= TRAFFIC CHART ================= -->
-    <section class="section" id="traffic-section">
-      <h2 class="section-title">// TRAFFIC — 90 DAY SURVEILLANCE</h2>
-      <p class="section-sub">Aggregate clone + view counts across every repo. GitHub never reveals who — only how many.</p>
-      <div class="chart-wrap">
-        <svg id="traffic-chart" viewBox="0 0 1000 340" preserveAspectRatio="none" role="img" aria-label="Clones and views over the last 90 days"></svg>
-        <div id="chart-tooltip" class="chart-tooltip" hidden></div>
-      </div>
-      <div class="chart-legend">
-        <span><i class="sw sw-clones"></i>CLONES</span>
-        <span><i class="sw sw-views"></i>VIEWS</span>
-      </div>
-    </section>
-
-    <!-- ================= RECRUITMENT FEED + SIGNALS ================= -->
-    <section class="section" id="feed-section">
-      <h2 class="section-title">// INTELLIGENCE FEED</h2>
-      <div class="feed-layout">
-        <div class="panel feed-panel">
-          <div class="panel-head">RECRUITMENT LOG <span class="live-dot"></span></div>
-          <div class="marquee" id="feed-marquee"><div class="marquee-track" id="feed-track"></div></div>
+    <section id="hero">
+      <div class="hero-bg"><div class="mesh m1"></div><div class="mesh m2"></div><div class="mesh m3"></div></div>
+      <div class="hero-inner">
+        <div class="reveal badge-row">
+          <span class="badge"><span class="dot"></span>AVAILABLE FOR AGENTIC AI ROLES</span>
         </div>
-        <div class="panel signals-panel">
-          <div class="panel-head">NEW SIGNALS</div>
-          <div id="signals-body"></div>
+        <h1 class="hero-title" id="hero-title">
+          <span class="reveal-line"><span class="reveal-word">Building</span> <span class="reveal-word">the</span> <span class="reveal-word grad-text">infrastructure</span></span>
+          <span class="reveal-line"><span class="reveal-word">for</span> <span class="reveal-word grad-text">autonomous</span> <span class="reveal-word">AI</span> <span class="reveal-word">agents.</span></span>
+        </h1>
+        <p class="hero-sub reveal">AI engineer. Author of <b>AION</b>, an operating system for AI agents, and <b>70+</b> open-source tools spanning agentic infrastructure, RAG, and applied finance.</p>
+        <div class="hero-cta reveal">
+          <a href="#flagship" class="btn btn-primary magnetic" data-nav>See the work <span class="arrow">→</span></a>
+          <a href="https://github.com/bhupendra05" target="_blank" rel="noopener" class="btn btn-ghost magnetic">▲ github.com/bhupendra05</a>
+        </div>
+        <div class="hero-stats reveal" id="hero-stats"></div>
+      </div>
+      <div class="scroll-cue"><span>SCROLL</span><div class="cue-line"></div></div>
+    </section>
+
+    <!-- ================= LOGO / STACK MARQUEE ================= -->
+    <section class="marquee-strip">
+      <div class="mq-track">
+        <span>PYTHON</span><span>·</span><span>FASTAPI</span><span>·</span><span>OLLAMA</span><span>·</span><span>LANGGRAPH</span><span>·</span>
+        <span>MCP</span><span>·</span><span>FAISS</span><span>·</span><span>CLAUDE</span><span>·</span><span>OPENAI</span><span>·</span>
+        <span>DOCKER</span><span>·</span><span>POSTGRESQL</span><span>·</span><span>TYPESCRIPT</span><span>·</span>
+        <span>PYTHON</span><span>·</span><span>FASTAPI</span><span>·</span><span>OLLAMA</span><span>·</span><span>LANGGRAPH</span><span>·</span>
+        <span>MCP</span><span>·</span><span>FAISS</span><span>·</span><span>CLAUDE</span><span>·</span><span>OPENAI</span><span>·</span>
+        <span>DOCKER</span><span>·</span><span>POSTGRESQL</span><span>·</span><span>TYPESCRIPT</span><span>·</span>
+      </div>
+    </section>
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+    <section id="achievements" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">// BY THE NUMBERS</span>
+        <h2>Achievements</h2>
+      </div>
+      <div class="ach-grid" id="ach-grid"></div>
+    </section>
+
+    <!-- ================= FLAGSHIP PROJECTS ================= -->
+    <section id="flagship" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">// SELECTED WORK</span>
+        <h2>Flagship projects</h2>
+        <p>Full case studies of the projects I'd walk you through in an interview.</p>
+      </div>
+      <div id="flagship-list"></div>
+    </section>
+
+    <!-- ================= ALL PROJECTS ================= -->
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">// THE CATALOG</span>
+        <h2>70+ projects, by domain</h2>
+        <p>Every category tested, documented, and shipped.</p>
+      </div>
+      <div class="filter-row reveal" id="filter-row"></div>
+      <div class="proj-grid" id="proj-grid"></div>
+    </section>
+
+    <!-- ================= LIVE INTEL ================= -->
+    <section id="intel" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">// LIVE, NOT A SCREENSHOT</span>
+        <h2>Real-time GitHub intelligence</h2>
+        <p>Refreshed daily, straight from the API. Every number here traces back to a real field — nothing simulated.</p>
+      </div>
+      <div class="stat-grid" id="stat-grid"></div>
+      <div class="intel-grid">
+        <div class="glass-card chart-card reveal">
+          <div class="card-head">90-day traffic surveillance</div>
+          <svg id="traffic-chart" viewBox="0 0 1000 300" preserveAspectRatio="none" role="img" aria-label="Clones and views over 90 days"></svg>
+          <div class="chart-legend"><span><i class="sw sw-a"></i>Clones</span><span><i class="sw sw-b"></i>Views</span></div>
+        </div>
+        <div class="glass-card feed-card reveal">
+          <div class="card-head">Recruitment log <span class="live-dot"></span></div>
+          <div class="marquee-v" id="feed-marquee"><div id="feed-track"></div></div>
         </div>
       </div>
     </section>
 
-    <!-- ================= TOP REPOS ================= -->
-    <section class="section" id="repos-section">
-      <h2 class="section-title">// TERRITORIES — TOP REPOS</h2>
-      <div class="grid repo-grid" id="repo-grid"></div>
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section contact-section">
+      <div class="contact-bg"></div>
+      <div class="reveal contact-inner">
+        <span class="eyebrow">// LET'S BUILD</span>
+        <h2 class="contact-h">Have a hard problem?<br><span class="grad-text">Let's talk.</span></h2>
+        <p>Open to agentic-AI roles, collaborations, and freelance work.</p>
+        <div class="hero-cta">
+          <a href="mailto:bgurjar05.bg@gmail.com" class="btn btn-primary magnetic">Email me <span class="arrow">→</span></a>
+          <a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4" target="_blank" rel="noopener" class="btn btn-ghost magnetic">LinkedIn</a>
+          <a href="https://github.com/bhupendra05" target="_blank" rel="noopener" class="btn btn-ghost magnetic">GitHub</a>
+        </div>
+      </div>
     </section>
 
-    <!-- ================= LANGUAGES ================= -->
-    <section class="section" id="lang-section">
-      <h2 class="section-title">// ARSENAL — LANGUAGES</h2>
-      <div id="lang-bars" class="lang-bars"></div>
-    </section>
-
-    <!-- ================= FOOTER ================= -->
     <footer>
-      <p>Refreshed daily at 02:00 UTC · straight from the GitHub API · zero third-party servers</p>
-      <p id="footer-time"></p>
+      <span>© 2026 Bhupendra Tale · refreshed daily at 02:00 UTC · zero third-party servers</span>
       <a href="https://github.com/bhupendra05/bhupendra05" target="_blank" rel="noopener">view source ▲</a>
     </footer>
   </main>
