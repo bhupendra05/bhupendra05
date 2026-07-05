@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bhupendra05.github.io/bhupendra05/sitemap.xml
