@@ -49,7 +49,7 @@
 <!-- GitHub Pages doesn't set short cache lifetimes on static assets — bump ?v= on every
      dashboard.css/dashboard.js edit or returning visitors can get a stale mix of old CSS/JS
      with new HTML (this bit a real visitor once: empty-looking cards, unstyled form). -->
-<link rel="stylesheet" href="dashboard.css?v=5">
+<link rel="stylesheet" href="dashboard.css?v=6">
 </head>
 <body>
   <div id="preloader"><div class="pl-mark">▲</div><div class="pl-bar"><span></span></div></div>
@@ -65,6 +65,7 @@
     <div class="nav-links">
       <a href="#services" data-nav>What We Build</a>
       <a href="#opulix" data-nav>Opulix</a>
+      <a href="#termind-ca" data-nav>termind</a>
       <a href="#flagship" data-nav>Work</a>
       <a href="#agentic-lab" data-nav>Agentic AI</a>
       <a href="#projects" data-nav>Projects</a>
@@ -79,6 +80,7 @@
   <div id="mobile-menu">
     <a href="#services" data-nav>What We Build</a>
     <a href="#opulix" data-nav>Opulix</a>
+    <a href="#termind-ca" data-nav>termind</a>
     <a href="#flagship" data-nav>Work</a>
     <a href="#agentic-lab" data-nav>Agentic AI</a>
     <a href="#stack" data-nav>Tech Stack</a>
@@ -139,12 +141,12 @@
         <h2>Not just a repo. A live product.</h2>
         <p>Opulix is our deal-origination platform for investment banking — built, deployed, and used today.</p>
       </div>
-      <div class="opulix-card reveal">
+      <div class="feature-card reveal">
         <div class="opulix-copy">
           <span class="live-badge"><span class="dot"></span>LIVE PRODUCT</span>
-          <h3 class="opulix-name">Opulix Deal Engine</h3>
-          <p class="opulix-tag">AI-powered deal origination for investment bankers</p>
-          <p class="opulix-desc">Connect your data sources, discover companies, classify the right advisory service, and send personalized outreach — fully automated. Every draft is approved by a human before it goes out. Built for a real IB firm's deal-sourcing workflow, multi-tenant, in production.</p>
+          <h3 class="feature-name">Opulix Deal Engine</h3>
+          <p class="feature-tag">AI-powered deal origination for investment bankers</p>
+          <p class="feature-desc">Connect your data sources, discover companies, classify the right advisory service, and send personalized outreach — fully automated. Every draft is approved by a human before it goes out. Built for a real IB firm's deal-sourcing workflow, multi-tenant, in production.</p>
           <ul class="flag-features">
             <li>Tracxn + MCA data ingestion via MCP connectors</li>
             <li>Deterministic classification engine — tunable, not a black box</li>
@@ -156,12 +158,45 @@
             <a href="#contact" data-nav class="btn btn-ghost magnetic">Ask about the build</a>
           </div>
         </div>
-        <a class="opulix-visual" href="https://opulix-deal-engine.onrender.com/" target="_blank" rel="noopener" aria-label="Visit Opulix Deal Engine">
+        <a class="feature-visual" href="https://opulix-deal-engine.onrender.com/" target="_blank" rel="noopener" aria-label="Visit Opulix Deal Engine">
           <div class="browser-chrome">
             <div class="bc-dots"><span></span><span></span><span></span></div>
             <div class="bc-url">🔒 opulix-deal-engine.onrender.com</div>
           </div>
           <img src="assets/opulix-screenshot.png" alt="Opulix Deal Engine sign-in screen" loading="lazy">
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED PRODUCT: TERMIND CA WORKBENCH ================= -->
+    <section id="termind-ca" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">// FOR CHARTERED ACCOUNTANTS</span>
+        <h2>Client data that never leaves the laptop.</h2>
+        <p>termind ships a dedicated CA workbench for regulated financial data that legally can't touch the cloud.</p>
+      </div>
+      <div class="feature-card reverse reveal">
+        <div class="opulix-copy">
+          <span class="live-badge local"><span class="dot"></span>100% LOCAL</span>
+          <h3 class="feature-name">termind — CA Workbench</h3>
+          <p class="feature-tag">Built for chartered accountants who can't put client data in cloud tools</p>
+          <p class="feature-desc">Every step runs on this machine with the local model, and each parse and export is sealed into a tamper-evident audit ledger — the "data never left the device" proof a practice needs. Notice drafting and financial statements are next on the roadmap.</p>
+          <ul class="flag-features">
+            <li>Bank statement → Tally — classifies every line to a ledger head + voucher, writes ready-to-import Tally vouchers</li>
+            <li>Ledger scrutiny — flags round numbers, duplicates, weekend entries, unusual spikes, and possible personal expenses</li>
+            <li>GST 2B reconciliation — matches the purchase register against GSTR-2B, surfaces ITC at risk and probable invoice-number typos</li>
+          </ul>
+          <div class="hero-cta">
+            <a href="https://github.com/bhupendra05/termind" target="_blank" rel="noopener" class="btn btn-primary magnetic">View on GitHub <span class="arrow">→</span></a>
+            <a href="#contact" data-nav class="btn btn-ghost magnetic">Ask about the build</a>
+          </div>
+        </div>
+        <a class="feature-visual" href="https://github.com/bhupendra05/termind" target="_blank" rel="noopener" aria-label="View termind on GitHub">
+          <div class="browser-chrome">
+            <div class="bc-dots"><span></span><span></span><span></span></div>
+            <div class="bc-url">⚙ termind — CA workbench</div>
+          </div>
+          <img src="assets/termind-ca-workbench.png" alt="termind CA workbench panel — bank statement to Tally, ledger scrutiny, GST 2B reconciliation" loading="lazy">
         </a>
       </div>
     </section>
@@ -289,6 +324,6 @@
     </footer>
   </main>
 
-  <script src="dashboard.js?v=5" defer></script>
+  <script src="dashboard.js?v=6" defer></script>
 </body>
 </html>

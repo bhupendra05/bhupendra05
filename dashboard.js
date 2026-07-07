@@ -130,7 +130,7 @@
       }
     });
   });
-  var navSections = ["services", "opulix", "achievements", "flagship", "agentic-lab", "stack", "projects", "intel", "contact"].map(function (id) { return document.getElementById(id); }).filter(Boolean);
+  var navSections = ["services", "opulix", "termind-ca", "achievements", "flagship", "agentic-lab", "stack", "projects", "intel", "contact"].map(function (id) { return document.getElementById(id); }).filter(Boolean);
   if ("IntersectionObserver" in window) {
     var navObs = new IntersectionObserver(function (es) {
       es.forEach(function (e) {
