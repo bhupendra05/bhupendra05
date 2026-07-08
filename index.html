@@ -49,7 +49,7 @@
 <!-- GitHub Pages doesn't set short cache lifetimes on static assets — bump ?v= on every
      dashboard.css/dashboard.js edit or returning visitors can get a stale mix of old CSS/JS
      with new HTML (this bit a real visitor once: empty-looking cards, unstyled form). -->
-<link rel="stylesheet" href="dashboard.css?v=7">
+<link rel="stylesheet" href="dashboard.css?v=8">
 </head>
 <body>
   <div id="preloader"><div class="pl-mark">▲</div><div class="pl-bar"><span></span></div></div>
@@ -187,12 +187,18 @@
             <li>GST 2B reconciliation — matches the purchase register against GSTR-2B, surfaces ITC at risk and probable invoice-number typos</li>
           </ul>
           <div class="hero-cta">
-            <a href="downloads/termind.exe" download class="btn btn-primary magnetic">Download for Windows <span class="arrow">→</span></a>
+            <a href="downloads/termind.exe" download id="dl-primary" class="btn btn-primary magnetic">Download for Windows <span class="arrow">→</span></a>
             <a href="#contact" data-nav class="btn btn-ghost magnetic">Ask about the build</a>
           </div>
-          <p class="dl-note">Needs <a href="https://ollama.com/download/windows" target="_blank" rel="noopener" class="inline-link">Ollama</a> installed separately — termind checks for it on first launch and tells you if it's missing.</p>
+          <div class="dl-platforms" id="dl-platforms">
+            <a href="downloads/termind.exe" download data-platform="windows">Windows</a>
+            <a href="downloads/termind-macos-arm64" download data-platform="mac-arm">macOS (Apple Silicon)</a>
+            <a href="javascript:void(0)" data-platform="mac-intel" class="pending" title="Building — check back soon">macOS (Intel) · soon</a>
+            <a href="downloads/termind-linux" download data-platform="linux">Linux</a>
+          </div>
+          <p class="dl-note">Needs <a href="https://ollama.com/download" target="_blank" rel="noopener" class="inline-link">Ollama</a> installed separately — termind checks for it on first launch and tells you if it's missing.</p>
         </div>
-        <a class="feature-visual" href="downloads/termind.exe" download aria-label="Download termind for Windows">
+        <a class="feature-visual" href="downloads/termind.exe" download id="dl-visual" aria-label="Download termind">
           <div class="browser-chrome">
             <div class="bc-dots"><span></span><span></span><span></span></div>
             <div class="bc-url">⚙ termind — CA workbench</div>
@@ -325,6 +331,6 @@
     </footer>
   </main>
 
-  <script src="dashboard.js?v=7" defer></script>
+  <script src="dashboard.js?v=8" defer></script>
 </body>
 </html>

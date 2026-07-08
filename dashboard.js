@@ -417,6 +417,25 @@
     track.innerHTML = rows + rows;
   }
 
+  /* ================= termind download: platform auto-detect ================= */
+  /* Mac can't be reliably split into Apple Silicon vs Intel from the browser — Rosetta makes
+     both report "MacIntel" on navigator.platform in many browsers — so "mac" defaults to the
+     arm64 build (the common case since 2020+) and Intel users pick their own from the row below. */
+  (function detectPlatform() {
+    var primary = $("#dl-primary"), visual = $("#dl-visual"), platforms = $("#dl-platforms");
+    if (!primary || !platforms) return;
+    var ua = navigator.userAgent || "", plat = navigator.platform || "";
+    var key = "windows", label = "Download for Windows", file = "downloads/termind.exe";
+    if (/Mac/i.test(plat) || /Macintosh/i.test(ua)) {
+      key = "mac-arm"; label = "Download for macOS"; file = "downloads/termind-macos-arm64";
+    } else if (/Linux/i.test(plat) && !/Android/i.test(ua)) {
+      key = "linux"; label = "Download for Linux"; file = "downloads/termind-linux";
+    }
+    primary.href = file; primary.innerHTML = label + ' <span class="arrow">→</span>';
+    if (visual) { visual.href = file; visual.setAttribute("aria-label", label); }
+    $$("a", platforms).forEach(function (a) { a.classList.toggle("current", a.dataset.platform === key); });
+  })();
+
   /* ================= contact form ================= */
   /* Zero-backend: FormSubmit.co relays the POST to btale05.bt@gmail.com. No account was created
      to wire this up — the FIRST real submission makes FormSubmit send one confirmation email to
