@@ -49,7 +49,7 @@
 <!-- GitHub Pages doesn't set short cache lifetimes on static assets — bump ?v= on every
      dashboard.css/dashboard.js edit or returning visitors can get a stale mix of old CSS/JS
      with new HTML (this bit a real visitor once: empty-looking cards, unstyled form). -->
-<link rel="stylesheet" href="dashboard.css?v=8">
+<link rel="stylesheet" href="dashboard.css?v=9">
 </head>
 <body>
   <div id="preloader"><div class="pl-mark">▲</div><div class="pl-bar"><span></span></div></div>
@@ -193,7 +193,7 @@
           <div class="dl-platforms" id="dl-platforms">
             <a href="downloads/termind.exe" download data-platform="windows">Windows</a>
             <a href="downloads/termind-macos-arm64" download data-platform="mac-arm">macOS (Apple Silicon)</a>
-            <a href="javascript:void(0)" data-platform="mac-intel" class="pending" title="Building — check back soon">macOS (Intel) · soon</a>
+            <a href="#contact" data-nav data-platform="mac-intel" title="Not packaged yet — reach out and we'll sort you out">macOS (Intel)? Contact us</a>
             <a href="downloads/termind-linux" download data-platform="linux">Linux</a>
           </div>
           <p class="dl-note">Needs <a href="https://ollama.com/download" target="_blank" rel="noopener" class="inline-link">Ollama</a> installed separately — termind checks for it on first launch and tells you if it's missing.</p>
@@ -331,6 +331,6 @@
     </footer>
   </main>
 
-  <script src="dashboard.js?v=8" defer></script>
+  <script src="dashboard.js?v=9" defer></script>
 </body>
 </html>

@@ -207,7 +207,6 @@ a { color: inherit; text-decoration: none; }
 .dl-platforms a { font-size: 12px; font-weight: 600; padding: 7px 14px; border-radius: 20px; border: 1px solid var(--border-2); color: var(--muted); transition: all .25s var(--ease); }
 .dl-platforms a:hover { color: var(--text); border-color: var(--violet); }
 .dl-platforms a.current { color: var(--violet); border-color: var(--violet); background: color-mix(in srgb, var(--violet) 8%, transparent); }
-.dl-platforms a.pending { opacity: .45; pointer-events: none; }
 .dl-note { font-size: 12.5px; color: var(--faint); margin: 14px 0 0; }
 .feature-visual { display: block; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-2); box-shadow: var(--shadow); transition: transform .35s var(--ease); }
 .feature-visual:hover { transform: translateY(-6px) scale(1.01); }
