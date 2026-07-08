@@ -64,7 +64,8 @@
       ],
       "stat": "216 tests",
       "impact": "Built on AION — the same kernel, applied to a daily-driver agent",
-      "url": "https://github.com/bhupendra05/termind",
+      "url": "#termind-ca",
+      "linkLabel": "See the CA workbench",
       "category": "Agent Infrastructure"
     },
     {
@@ -349,8 +350,8 @@
         },
         {
           "name": "termind",
-          "desc": "A local AI agent that lives in your terminal — clone, run one command, everything…",
-          "url": "https://github.com/bhupendra05/termind"
+          "desc": "A local AI agent that lives in your terminal — download for Windows, zero cloud dependency…",
+          "url": "#termind-ca"
         },
         {
           "name": "localmind",

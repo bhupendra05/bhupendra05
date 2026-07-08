@@ -216,7 +216,7 @@
           '<ul class="flag-features">' + p.features.map(function (f) { return "<li>" + esc(f) + "</li>"; }).join("") + '</ul>' +
           '<div class="tag-row">' + p.stack.map(function (s) { return '<span class="tag">' + esc(s) + '</span>'; }).join("") + '</div>' +
           '<div class="flag-meta"><span class="fm"><b>' + esc(p.stat) + '</b></span><span class="fm">' + esc(p.impact) + '</span></div>' +
-          '<a class="flag-link magnetic" href="' + p.url + '" target="_blank" rel="noopener">View repository <span class="arrow">→</span></a>' +
+          '<a class="flag-link magnetic" href="' + p.url + '"' + (p.url.charAt(0) === "#" ? " data-nav" : ' target="_blank" rel="noopener"') + '>' + esc(p.linkLabel || "View repository") + ' <span class="arrow">→</span></a>' +
         '</div>' +
         flagshipVisual(p, i) +
       '</article>';
@@ -293,7 +293,7 @@
     grid.innerHTML = categories.flatMap(function (c) {
       return c.items.map(function (it) {
         var delay = (i++ % 10) * 40;
-        return '<a class="proj-card reveal" data-cat="' + esc(c.name) + '" data-search="' + esc((it.name + " " + it.desc).toLowerCase()) + '" style="transition-delay:' + delay + 'ms" href="' + it.url + '" target="_blank" rel="noopener">' +
+        return '<a class="proj-card reveal" data-cat="' + esc(c.name) + '" data-search="' + esc((it.name + " " + it.desc).toLowerCase()) + '" style="transition-delay:' + delay + 'ms" href="' + it.url + '"' + (it.url.charAt(0) === "#" ? " data-nav" : ' target="_blank" rel="noopener"') + '>' +
           '<div class="pc-icon">' + c.icon + '</div>' +
           '<div class="pc-name">' + esc(it.name) + '</div>' +
           '<div class="pc-desc">' + esc(it.desc) + '</div>' +

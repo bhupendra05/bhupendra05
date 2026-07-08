@@ -203,6 +203,7 @@ a { color: inherit; text-decoration: none; }
 .feature-name { font-size: clamp(1.5rem, 2.4vw, 2rem); font-weight: 800; margin: 0 0 8px; letter-spacing: -.5px; }
 .feature-tag { color: var(--violet); font-weight: 600; font-size: 14px; margin: 0 0 18px; }
 .feature-desc { color: var(--muted); font-size: .96rem; line-height: 1.7; margin-bottom: 22px; }
+.dl-note { font-size: 12.5px; color: var(--faint); margin: 14px 0 0; }
 .feature-visual { display: block; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-2); box-shadow: var(--shadow); transition: transform .35s var(--ease); }
 .feature-visual:hover { transform: translateY(-6px) scale(1.01); }
 .browser-chrome { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--bg-2); border-bottom: 1px solid var(--border); }
