@@ -1,6 +1,7 @@
 {
- "last_run": "2026-07-08T09:11:00.548256+00:00",
+ "last_run": "2026-07-09T06:08:57.764406+00:00",
  "followers": [
+  "1Crazymoney",
   "AD-Styles",
   "AbSomeone",
   "AliHaider20",
@@ -10,7 +11,6 @@
   "FidelJones",
   "FrancoKaddour",
   "GallaGit",
-  "Hawisamuel",
   "HollowGaze",
   "IDouble",
   "Kagamihara-Ruruka",
@@ -45,6 +45,7 @@
   "brianobot",
   "brunogiacomelli1979-cyber",
   "buraksocial",
+  "codeinheaven",
   "danbarc",
   "debajit-ai",
   "dokejaker",
@@ -209,7 +210,9 @@
   "Hawisamuel": "2026-07-07",
   "ashish7802": "2026-07-07",
   "sumedhamandloi": "2026-07-08",
-  "buraksocial": "2026-07-08"
+  "buraksocial": "2026-07-08",
+  "codeinheaven": "2026-07-09",
+  "1Crazymoney": "2026-07-09"
  },
  "traffic_series": [
   {
@@ -229,6 +232,11 @@
   },
   {
    "date": "2026-07-08",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-09",
    "clones": 1083,
    "views": 108
   }

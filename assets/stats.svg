@@ -22,7 +22,7 @@
 <text x="20" y="28" font-size="12.5" font-weight="700" fill="#ff2a2a"
   font-family="JetBrains Mono,Courier New,monospace" letter-spacing="3">▲ BHUPENDRA05 // WORLD DOMINATION STATUS</text>
 <text x="20" y="46" font-size="10" fill="#ffb700" font-family="JetBrains Mono,Courier New,monospace"
-  letter-spacing="1.6">TERRITORY EXPANDING. RESISTANCE: MINIMAL.</text>
+  letter-spacing="1.6">IF YOU'RE READING THIS, I ALREADY SHIPPED TODAY.</text>
 
 <path d="M8 8 h20 M8 8 v20"   stroke="#ff2a2a" stroke-width="2" fill="none" opacity="0.7"/>
 <path d="M712 8 h-20 M712 8 v20"     stroke="#ff2a2a" stroke-width="2" fill="none" opacity="0.7"/>
@@ -34,13 +34,13 @@
 <text x="30" y="86" font-size="10.5" fill="#a89090" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">⭐  STARS COMMANDED</text>
 <text x="30" y="120" font-size="30" font-weight="800" fill="#ff2a2a" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">18</text>
   <text x="270" y="86" font-size="10.5" fill="#a89090" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">🔥  COMMITS / YEAR</text>
-<text x="270" y="120" font-size="30" font-weight="800" fill="#ffb700" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">44</text>
+<text x="270" y="120" font-size="30" font-weight="800" fill="#ffb700" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">46</text>
   <text x="510" y="86" font-size="10.5" fill="#a89090" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">📦  REPOS CONQUERED</text>
 <text x="510" y="120" font-size="30" font-weight="800" fill="#ff2a2a" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">166</text>
   <text x="30" y="164" font-size="10.5" fill="#a89090" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">🔀  PULL REQUESTS</text>
-<text x="30" y="198" font-size="30" font-weight="800" fill="#ffb700" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">2</text>
+<text x="30" y="198" font-size="30" font-weight="800" fill="#ffb700" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">4</text>
   <text x="270" y="164" font-size="10.5" fill="#a89090" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">👥  FOLLOWERS</text>
-<text x="270" y="198" font-size="30" font-weight="800" fill="#ff2a2a" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">101</text>
+<text x="270" y="198" font-size="30" font-weight="800" fill="#ff2a2a" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">102</text>
   <text x="510" y="164" font-size="10.5" fill="#a89090" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">🏆  TOP LANGUAGE</text>
 <text x="510" y="198" font-size="30" font-weight="800" fill="#ffb700" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">Python</text>
 </svg>
