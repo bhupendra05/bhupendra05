@@ -16,7 +16,7 @@
 
   /* ================= theme ================= */
   var LS = { get: function (k, d) { try { return JSON.parse(localStorage.getItem("pf:" + k)) ?? d; } catch (e) { return d; } }, set: function (k, v) { try { localStorage.setItem("pf:" + k, JSON.stringify(v)); } catch (e) {} } };
-  var theme = LS.get("theme", "dark");
+  var theme = LS.get("theme", "light");
   document.documentElement.setAttribute("data-theme", theme);
   $("#theme-toggle").addEventListener("click", function () {
     theme = theme === "dark" ? "light" : "dark";
