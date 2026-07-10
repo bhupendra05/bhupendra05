@@ -49,7 +49,7 @@
 <!-- GitHub Pages doesn't set short cache lifetimes on static assets — bump ?v= on every
      dashboard.css/dashboard.js edit or returning visitors can get a stale mix of old CSS/JS
      with new HTML (this bit a real visitor once: empty-looking cards, unstyled form). -->
-<link rel="stylesheet" href="dashboard.css?v=10">
+<link rel="stylesheet" href="dashboard.css?v=11">
 </head>
 <body>
   <div id="preloader"><div class="pl-mark">▲</div><div class="pl-bar"><span></span></div></div>
@@ -197,6 +197,14 @@
             <a href="downloads/termind-linux" download data-platform="linux">Linux</a>
           </div>
           <p class="dl-note">Needs <a href="https://ollama.com/download" target="_blank" rel="noopener" class="inline-link">Ollama</a> installed separately — termind checks for it on first launch and tells you if it's missing.</p>
+          <details class="dl-security">
+            <summary>Mac or Windows blocking the download? <span class="chev">▾</span></summary>
+            <div class="dl-security-body">
+              <p><strong>macOS — "Apple could not verify... is free of malware":</strong> the app isn't notarized by Apple (that needs a paid developer account we haven't set up yet), so Gatekeeper blocks it by default. Fix it in <strong>System Settings → Privacy &amp; Security</strong> — scroll down to the blocked-app notice and click <strong>Open Anyway</strong>, then confirm. Or in Terminal: <code>xattr -d com.apple.quarantine ~/Downloads/termind-macos-arm64 &amp;&amp; chmod +x ~/Downloads/termind-macos-arm64</code></p>
+              <p><strong>Windows — "Windows protected your PC":</strong> click <strong>More info</strong>, then <strong>Run anyway</strong>. Same reason — no code-signing certificate yet.</p>
+              <p>Nothing about the binary itself is hidden — it's built straight from source via CI and smoke-tested on the real target OS before being published. There's just no paid Apple/Microsoft certificate attached to it yet.</p>
+            </div>
+          </details>
         </div>
         <a class="feature-visual" href="downloads/termind.exe" download id="dl-visual" aria-label="Download termind">
           <div class="browser-chrome">
@@ -331,6 +339,6 @@
     </footer>
   </main>
 
-  <script src="dashboard.js?v=10" defer></script>
+  <script src="dashboard.js?v=11" defer></script>
 </body>
 </html>
