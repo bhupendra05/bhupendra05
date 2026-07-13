@@ -1,5 +1,5 @@
 {
- "last_run": "2026-07-12T05:19:04.750880+00:00",
+ "last_run": "2026-07-13T05:28:36.035596+00:00",
  "followers": [
   "1Crazymoney",
   "AD-Styles",
@@ -8,7 +8,7 @@
   "Alitindrawan24",
   "ByteBunny777",
   "CultureSupport",
-  "Dani-8",
+  "Ella-horizon",
   "FidelJones",
   "FrancoKaddour",
   "GallaGit",
@@ -18,7 +18,7 @@
   "Kagamihara-Ruruka",
   "KarGourav09",
   "Kritagya123611",
-  "LambertArm",
+  "Lee-Dongwook",
   "Leisy17",
   "LikeIWantTheCoco",
   "MaximeLouka",
@@ -29,6 +29,7 @@
   "Nai64",
   "ORIORIS-FR",
   "PEOPLE-EATER",
+  "RaccoonFacts",
   "SVauna",
   "SakunosukeCode",
   "SiyaMathe",
@@ -44,7 +45,6 @@
   "aleoviedo071298",
   "alym-hub",
   "arkobyne",
-  "arn-c0de",
   "ashish7802",
   "baltazargallegosj-arch",
   "brianobot",
@@ -75,6 +75,7 @@
   "kitikazis",
   "lcetin66",
   "lollaramkumar-cyber",
+  "lucianoizidro",
   "lukeinthecity",
   "mad2203",
   "malkamr",
@@ -109,6 +110,7 @@
   "uwuncyan",
   "vardan444",
   "vwinck-dev",
+  "xcontcom",
   "yoshi933",
   "yoshican",
   "yumiaura",
@@ -233,7 +235,12 @@
   "baltazargallegosj-arch": "2026-07-11",
   "vardan444": "2026-07-12",
   "josephsenior": "2026-07-12",
-  "JohnMwendwa": "2026-07-12"
+  "JohnMwendwa": "2026-07-12",
+  "lucianoizidro": "2026-07-13",
+  "xcontcom": "2026-07-13",
+  "Ella-horizon": "2026-07-13",
+  "RaccoonFacts": "2026-07-13",
+  "Lee-Dongwook": "2026-07-13"
  },
  "traffic_series": [
   {
@@ -273,6 +280,11 @@
   },
   {
    "date": "2026-07-12",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-13",
    "clones": 1083,
    "views": 108
   }
