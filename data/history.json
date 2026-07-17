@@ -1,5 +1,5 @@
 {
- "last_run": "2026-07-16T04:54:09.986291+00:00",
+ "last_run": "2026-07-17T04:57:01.902636+00:00",
  "followers": [
   "1Crazymoney",
   "AD-Styles",
@@ -70,6 +70,7 @@
   "ictdeplomavta-glitch",
   "iloekenedilichukwu",
   "invisibleuser321",
+  "ip-docketing",
   "josephsenior",
   "kaiiii777",
   "kimuntugroup-commits",
@@ -93,6 +94,7 @@
   "ohmygodduh",
   "ollarethe4k-dotcom",
   "phjpdev",
+  "pwnedroot",
   "qiluy202-dev",
   "r97221004",
   "rckukaswal",
@@ -243,7 +245,9 @@
   "clinton-mwachia": "2026-07-14",
   "camparevic22": "2026-07-15",
   "iloekenedilichukwu": "2026-07-15",
-  "silberfunke-72": "2026-07-16"
+  "silberfunke-72": "2026-07-16",
+  "ip-docketing": "2026-07-17",
+  "pwnedroot": "2026-07-17"
  },
  "traffic_series": [
   {
@@ -303,6 +307,11 @@
   },
   {
    "date": "2026-07-16",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-17",
    "clones": 1083,
    "views": 108
   }
