@@ -1,5 +1,5 @@
 {
- "last_run": "2026-07-17T04:57:01.902636+00:00",
+ "last_run": "2026-07-18T04:40:26.580627+00:00",
  "followers": [
   "1Crazymoney",
   "AD-Styles",
@@ -31,8 +31,10 @@
   "ORIORIS-FR",
   "PEOPLE-EATER",
   "RaccoonFacts",
+  "Rudraksha-007",
   "SVauna",
   "SakunosukeCode",
+  "Shubh2-0",
   "SiyaMathe",
   "SoheilGtex",
   "Sphesihle17",
@@ -86,7 +88,6 @@
   "minjae083",
   "mosyan",
   "mtngunay",
-  "mwakidenis",
   "mynameisprem-pj",
   "nargestohidloo",
   "nehasudheesh",
@@ -247,7 +248,9 @@
   "iloekenedilichukwu": "2026-07-15",
   "silberfunke-72": "2026-07-16",
   "ip-docketing": "2026-07-17",
-  "pwnedroot": "2026-07-17"
+  "pwnedroot": "2026-07-17",
+  "Shubh2-0": "2026-07-18",
+  "Rudraksha-007": "2026-07-18"
  },
  "traffic_series": [
   {
@@ -312,6 +315,11 @@
   },
   {
    "date": "2026-07-17",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-18",
    "clones": 1083,
    "views": 108
   }
