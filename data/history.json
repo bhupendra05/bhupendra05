@@ -1,5 +1,5 @@
 {
- "last_run": "2026-07-18T04:40:26.580627+00:00",
+ "last_run": "2026-07-19T05:14:47.723640+00:00",
  "followers": [
   "1Crazymoney",
   "AD-Styles",
@@ -30,12 +30,12 @@
   "Nai64",
   "ORIORIS-FR",
   "PEOPLE-EATER",
-  "RaccoonFacts",
   "Rudraksha-007",
   "SVauna",
   "SakunosukeCode",
   "Shubh2-0",
   "SiyaMathe",
+  "SnowLeopard-io",
   "SoheilGtex",
   "Sphesihle17",
   "StarShoppingUG",
@@ -45,10 +45,10 @@
   "WuYong323",
   "aatifaaofficial",
   "abdulrdeveloper",
-  "ahmedabbas52233-a11y",
   "aleoviedo071298",
   "alym-hub",
   "ashish7802",
+  "aza-ali",
   "baltazargallegosj-arch",
   "brianobot",
   "brunogiacomelli1979-cyber",
@@ -88,7 +88,6 @@
   "minjae083",
   "mosyan",
   "mtngunay",
-  "mynameisprem-pj",
   "nargestohidloo",
   "nehasudheesh",
   "noelmayele02-droid",
@@ -250,7 +249,9 @@
   "ip-docketing": "2026-07-17",
   "pwnedroot": "2026-07-17",
   "Shubh2-0": "2026-07-18",
-  "Rudraksha-007": "2026-07-18"
+  "Rudraksha-007": "2026-07-18",
+  "SnowLeopard-io": "2026-07-19",
+  "aza-ali": "2026-07-19"
  },
  "traffic_series": [
   {
@@ -320,6 +321,11 @@
   },
   {
    "date": "2026-07-18",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-19",
    "clones": 1083,
    "views": 108
   }
