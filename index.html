@@ -66,6 +66,7 @@
       <a href="#services" data-nav>What We Build</a>
       <a href="#opulix" data-nav>Opulix</a>
       <a href="#termind-ca" data-nav>termind</a>
+      <a href="#aion" data-nav>AION</a>
       <a href="#flagship" data-nav>Work</a>
       <a href="#agentic-lab" data-nav>Agentic AI</a>
       <a href="#projects" data-nav>Projects</a>
@@ -81,6 +82,7 @@
     <a href="#services" data-nav>What We Build</a>
     <a href="#opulix" data-nav>Opulix</a>
     <a href="#termind-ca" data-nav>termind</a>
+    <a href="#aion" data-nav>AION</a>
     <a href="#flagship" data-nav>Work</a>
     <a href="#agentic-lab" data-nav>Agentic AI</a>
     <a href="#stack" data-nav>Tech Stack</a>
@@ -213,6 +215,42 @@
           </div>
           <img src="assets/termind-ca-workbench.png?v=2" alt="termind's standalone CA Workbench page — bank statement converted to Tally vouchers, with tabs for ledger scrutiny, GST 2B reconciliation, notice replies, and financial statements" loading="lazy">
         </a>
+      </div>
+    </section>
+
+    <!-- ================= AION DOWNLOAD ================= -->
+    <section id="aion" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">// FOR ANY TEAM OR SOLO BUILDER RUNNING AI AGENTS</span>
+        <h2>AION — the operating system for AI agents.</h2>
+        <p>termind itself runs on AION's kernel, every day, in production.</p>
+      </div>
+      <div class="feature-card reveal" style="grid-template-columns:1fr;">
+        <div class="opulix-copy">
+          <span class="live-badge"><span class="dot"></span>60-DAY FREE TRIAL</span>
+          <h3 class="feature-name">AION</h3>
+          <p class="feature-tag">A kernel that caches, sandboxes, and puts a hard budget on what your AI agents can spend</p>
+          <p class="feature-desc">Zero setup, no signup, no card. Install it and it just runs — the trial starts automatically. After 60 days, contact us for pricing.</p>
+          <div class="hero-cta">
+            <a href="downloads/aion.exe" download class="btn btn-primary magnetic">Download for Windows <span class="arrow">→</span></a>
+            <a href="#contact" data-nav class="btn btn-ghost magnetic">Ask about pricing</a>
+          </div>
+          <div class="dl-platforms">
+            <a href="downloads/aion.exe" download data-platform="windows">Windows</a>
+            <a href="downloads/aion-macos-arm64" download data-platform="mac-arm">macOS (Apple Silicon)</a>
+            <a href="#contact" data-nav data-platform="mac-intel" title="Not packaged yet — reach out and we'll sort you out">macOS (Intel)? Contact us</a>
+            <a href="downloads/aion-linux" download data-platform="linux">Linux</a>
+          </div>
+          <p class="dl-note">Prefer the command line? <code>pip install aion-os</code> works too, once you have a license.</p>
+          <details class="dl-security">
+            <summary>Mac or Windows blocking the download? <span class="chev">▾</span></summary>
+            <div class="dl-security-body">
+              <p><strong>macOS — "Apple could not verify... is free of malware":</strong> the app isn't notarized by Apple yet, so Gatekeeper blocks it by default. Fix it in <strong>System Settings → Privacy &amp; Security</strong> — scroll to the blocked-app notice and click <strong>Open Anyway</strong>, then confirm. Or in Terminal: <code>xattr -d com.apple.quarantine ~/Downloads/aion-macos-arm64 &amp;&amp; chmod +x ~/Downloads/aion-macos-arm64</code></p>
+              <p><strong>Windows — "Windows protected your PC":</strong> click <strong>More info</strong>, then <strong>Run anyway</strong>. Same reason — no code-signing certificate yet.</p>
+              <p>Nothing about the binary itself is hidden — it's built straight from source via CI and smoke-tested on the real target OS before being published.</p>
+            </div>
+          </details>
+        </div>
       </div>
     </section>
 
