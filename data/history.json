@@ -1,5 +1,5 @@
 {
- "last_run": "2026-07-19T05:14:47.723640+00:00",
+ "last_run": "2026-07-20T05:34:34.906924+00:00",
  "followers": [
   "1Crazymoney",
   "AD-Styles",
@@ -24,6 +24,7 @@
   "LikeIWantTheCoco",
   "MaximeLouka",
   "Medalcode",
+  "MongLong0214",
   "N1TEB0I",
   "NabilParwez",
   "NachoOFC",
@@ -251,7 +252,8 @@
   "Shubh2-0": "2026-07-18",
   "Rudraksha-007": "2026-07-18",
   "SnowLeopard-io": "2026-07-19",
-  "aza-ali": "2026-07-19"
+  "aza-ali": "2026-07-19",
+  "MongLong0214": "2026-07-20"
  },
  "traffic_series": [
   {
@@ -326,6 +328,11 @@
   },
   {
    "date": "2026-07-19",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-20",
    "clones": 1083,
    "views": 108
   }
