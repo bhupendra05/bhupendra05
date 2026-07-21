@@ -1,36 +1,31 @@
 {
- "generated_at": "2026-07-05T06:04:59.356230+00:00",
+ "generated_at": "2026-07-21T07:37:47.836899+00:00",
  "login": "bhupendra05",
- "tagline": "BUILDING THE FUTURE, ONE COMMIT AT A TIME.",
+ "tagline": "126+ repos \u2014 every one open, every one real.",
  "totals": {
-  "stars": 21,
-  "commits": 44,
-  "repos": 166,
-  "prs": 2,
-  "followers": 77,
+  "stars": 18,
+  "commits": 47,
+  "repos": 167,
+  "prs": 4,
+  "followers": 119,
   "top_lang": "Python",
   "watchers": 1,
-  "recruits": 19,
-  "clones_14d": 1083,
-  "clones_14d_unique": 826,
-  "views_14d": 108,
-  "views_14d_unique": 66
+  "recruits": 16,
+  "clones_14d": 1071,
+  "clones_14d_unique": 741,
+  "views_14d": 52,
+  "views_14d_unique": 25
  },
  "recent_stars": [
   {
-   "login": "kevin-joseph-j",
-   "repo": "claude-api-cookbook",
-   "at": "2026-07-01T05:53:57Z"
+   "login": "Shubh2-0",
+   "repo": "bhupendra05",
+   "at": "2026-07-18T03:18:52Z"
   },
   {
-   "login": "ORIORIS-FR",
-   "repo": "aion",
-   "at": "2026-06-22T16:52:50Z"
-  },
-  {
-   "login": "Corykidios",
-   "repo": "aion",
-   "at": "2026-06-21T08:40:55Z"
+   "login": "qiangweihewu",
+   "repo": "video-subtitle-app-v2",
+   "at": "2026-07-09T23:23:37Z"
   },
   {
    "login": "rubak714",
@@ -49,18 +44,8 @@
   },
   {
    "login": "kimuntugroup-commits",
-   "repo": "aion",
-   "at": "2026-06-08T21:48:56Z"
-  },
-  {
-   "login": "kimuntugroup-commits",
    "repo": "claude-commands",
    "at": "2026-06-08T21:48:38Z"
-  },
-  {
-   "login": "mynameisprem-pj",
-   "repo": "aion",
-   "at": "2026-06-02T23:58:40Z"
   },
   {
    "login": "CarAuto34",
@@ -113,10 +98,10 @@
    "at": "2026-05-29T13:25:54Z"
   }
  ],
- "new_followers": [],
- "new_watchers": [
-  "bhupendra05"
+ "new_followers": [
+  "Moeabdelaziz007"
  ],
+ "new_watchers": [],
  "first_seen": {
   "yunawyner": "2026-07-05",
   "espiradesombra": "2026-07-05",
@@ -195,22 +180,160 @@
   "standardgalactic": "2026-07-05",
   "mtngunay": "2026-07-05",
   "rckukaswal": "2026-07-05",
-  "yumiaura": "2026-07-05"
+  "yumiaura": "2026-07-05",
+  "Alitindrawan24": "2026-07-05",
+  "arn-c0de": "2026-07-05",
+  "hikidogor": "2026-07-05",
+  "matthieugraziani": "2026-07-05",
+  "IDouble": "2026-07-05",
+  "WeningerII": "2026-07-05",
+  "SoheilGtex": "2026-07-05",
+  "exezick": "2026-07-05",
+  "Kritagya123611": "2026-07-05",
+  "AnkitSaini491": "2026-07-05",
+  "samir-ouaammou": "2026-07-05",
+  "nargestohidloo": "2026-07-05",
+  "gardusig": "2026-07-06",
+  "ictdeplomavta-glitch": "2026-07-06",
+  "debajit-ai": "2026-07-07",
+  "TaronVardanyan": "2026-07-07",
+  "NabilParwez": "2026-07-07",
+  "ByteBunny777": "2026-07-07",
+  "N1TEB0I": "2026-07-07",
+  "NachoOFC": "2026-07-07",
+  "matheusfmedina": "2026-07-07",
+  "Hawisamuel": "2026-07-07",
+  "ashish7802": "2026-07-07",
+  "sumedhamandloi": "2026-07-08",
+  "buraksocial": "2026-07-08",
+  "codeinheaven": "2026-07-09",
+  "1Crazymoney": "2026-07-09",
+  "vwinck-dev": "2026-07-10",
+  "aleoviedo071298": "2026-07-10",
+  "Dani-8": "2026-07-10",
+  "aatifaaofficial": "2026-07-10",
+  "LambertArm": "2026-07-11",
+  "skyla643": "2026-07-11",
+  "invisibleuser321": "2026-07-11",
+  "baltazargallegosj-arch": "2026-07-11",
+  "vardan444": "2026-07-12",
+  "josephsenior": "2026-07-12",
+  "JohnMwendwa": "2026-07-12",
+  "lucianoizidro": "2026-07-13",
+  "xcontcom": "2026-07-13",
+  "Ella-horizon": "2026-07-13",
+  "RaccoonFacts": "2026-07-13",
+  "Lee-Dongwook": "2026-07-13",
+  "kaiiii777": "2026-07-14",
+  "ahmedabbas52233-a11y": "2026-07-14",
+  "KingBlackCow": "2026-07-14",
+  "clinton-mwachia": "2026-07-14",
+  "camparevic22": "2026-07-15",
+  "iloekenedilichukwu": "2026-07-15",
+  "silberfunke-72": "2026-07-16",
+  "ip-docketing": "2026-07-17",
+  "pwnedroot": "2026-07-17",
+  "Shubh2-0": "2026-07-18",
+  "Rudraksha-007": "2026-07-18",
+  "SnowLeopard-io": "2026-07-19",
+  "aza-ali": "2026-07-19",
+  "MongLong0214": "2026-07-20",
+  "dbunt1tled": "2026-07-20",
+  "engrshuvodas": "2026-07-20",
+  "mrhx01": "2026-07-20",
+  "bigmacman1129": "2026-07-20",
+  "seehiong": "2026-07-20",
+  "Sumersingpatil2694": "2026-07-21",
+  "Moeabdelaziz007": "2026-07-21"
  },
  "traffic_series": [
   {
    "date": "2026-07-05",
    "clones": 1083,
    "views": 108
+  },
+  {
+   "date": "2026-07-06",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-07",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-08",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-09",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-10",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-11",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-12",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-13",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-14",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-15",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-16",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-17",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-18",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-19",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-20",
+   "clones": 1083,
+   "views": 108
+  },
+  {
+   "date": "2026-07-21",
+   "clones": 1071,
+   "views": 52
   }
  ],
  "top_repos": [
-  {
-   "name": "aion",
-   "stars": 4,
-   "description": "\u25b2 AION \u2014 The Agent Operating System. A micro-kernel that schedules what agents actually run out of: tokens, context & credits. Zero-dep, building in public.",
-   "url": "https://github.com/bhupendra05/aion"
-  },
   {
    "name": "phisheye",
    "stars": 2,
@@ -230,16 +353,16 @@
    "url": "https://github.com/bhupendra05/txlens"
   },
   {
+   "name": "bhupendra05",
+   "stars": 1,
+   "description": "Config files for my GitHub profile.",
+   "url": "https://github.com/bhupendra05/bhupendra05"
+  },
+  {
    "name": "carryflow",
    "stars": 1,
    "description": "PE/VC distribution waterfall, carried-interest & exit-structuring engine \u2014 European/American waterfalls, IRR/MOIC, secondaries, continuation vehicles",
    "url": "https://github.com/bhupendra05/carryflow"
-  },
-  {
-   "name": "claude-api-cookbook",
-   "stars": 1,
-   "description": "Claude API examples: tool use, vision, streaming, batch API, structured output, prompt engineering patterns",
-   "url": "https://github.com/bhupendra05/claude-api-cookbook"
   },
   {
    "name": "claude-commands",
@@ -264,16 +387,22 @@
    "stars": 1,
    "description": "Stop over/underpaying Solana priority fees \u2014 samples recent fees, recommends normal/fast/turbo. Zero-dep.",
    "url": "https://github.com/bhupendra05/feeradar"
+  },
+  {
+   "name": "job-hunter",
+   "stars": 1,
+   "description": "Assisted job-application engine: resume \u2192 ranked jobs \u2192 tailored cover letters \u2192 tracker. Open source, bring-your-own Claude key.",
+   "url": "https://github.com/bhupendra05/job-hunter"
   }
  ],
  "languages": {
-  "Python": 3462240,
-  "JavaScript": 551207,
-  "HTML": 504857,
-  "CSS": 320020,
-  "TypeScript": 33134,
-  "HCL": 15914,
-  "Dockerfile": 7775,
-  "Shell": 5983
+  "Python": 4312148,
+  "JavaScript": 853229,
+  "HTML": 818391,
+  "CSS": 394332,
+  "Dart": 341539,
+  "TypeScript": 106394,
+  "Go": 74507,
+  "Shell": 6749
  }
 }
