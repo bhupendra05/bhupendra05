@@ -32,7 +32,7 @@
 <line x1="248" y1="60" x2="248" y2="206" stroke="#a875ff" stroke-width="0.6" opacity="0.18"/><line x1="492" y1="60" x2="492" y2="206" stroke="#a875ff" stroke-width="0.6" opacity="0.18"/><line x1="24" y1="130" x2="696" y2="130" stroke="#4fd8ff" stroke-width="0.6" opacity="0.18"/>
 
 <text x="30" y="86" font-size="10.5" fill="#9498ab" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">⭐  STARS</text>
-<text x="30" y="120" font-size="30" font-weight="800" fill="#a875ff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">18</text>
+<text x="30" y="120" font-size="30" font-weight="800" fill="#a875ff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">16</text>
   <text x="270" y="86" font-size="10.5" fill="#9498ab" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">🔥  COMMITS / YEAR</text>
 <text x="270" y="120" font-size="30" font-weight="800" fill="#4fd8ff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">47</text>
   <text x="510" y="86" font-size="10.5" fill="#9498ab" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">📦  REPOS SHIPPED</text>
