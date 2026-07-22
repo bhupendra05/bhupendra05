@@ -1,5 +1,5 @@
 {
- "last_run": "2026-07-21T07:41:43.267702+00:00",
+ "last_run": "2026-07-22T05:01:19.320681+00:00",
  "followers": [
   "1Crazymoney",
   "AD-Styles",
@@ -30,6 +30,7 @@
   "NabilParwez",
   "NachoOFC",
   "Nai64",
+  "Nexus-Vertex",
   "ORIORIS-FR",
   "PEOPLE-EATER",
   "Rudraksha-007",
@@ -62,12 +63,10 @@
   "codeinheaven",
   "danbarc",
   "dbunt1tled",
-  "debajit-ai",
   "ejfxgit2025",
   "enak223",
   "engrshuvodas",
   "espiradesombra",
-  "exezick",
   "felipevillavicencio321",
   "gamerhackuz",
   "gardusig",
@@ -266,7 +265,8 @@
   "bigmacman1129": "2026-07-20",
   "seehiong": "2026-07-20",
   "Sumersingpatil2694": "2026-07-21",
-  "Moeabdelaziz007": "2026-07-21"
+  "Moeabdelaziz007": "2026-07-21",
+  "Nexus-Vertex": "2026-07-22"
  },
  "traffic_series": [
   {
@@ -351,6 +351,11 @@
   },
   {
    "date": "2026-07-21",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-07-22",
    "clones": 1071,
    "views": 52
   }
