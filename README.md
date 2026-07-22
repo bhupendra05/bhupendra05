@@ -94,7 +94,7 @@ class BhupendraTale:
 ### ▲ [AION](https://bhupendra05.github.io/bhupendra05/#aion)
 The Agent Operating System — a micro-kernel that schedules the resources agents actually burn: **tokens, context & credits**.
 <br/>
-![flagship](https://img.shields.io/badge/flagship-4fd8ff?style=flat-square&labelColor=05060a) ![tests](https://img.shields.io/badge/109_tests-ff5fb0?style=flat-square&labelColor=05060a) ![private](https://img.shields.io/badge/private_%C2%B7_by_design-a875ff?style=flat-square&labelColor=05060a)
+![flagship](https://img.shields.io/badge/flagship-4fd8ff?style=flat-square&labelColor=05060a) ![tests](https://img.shields.io/badge/356_tests-ff5fb0?style=flat-square&labelColor=05060a) ![private](https://img.shields.io/badge/private_%C2%B7_by_design-a875ff?style=flat-square&labelColor=05060a)
 
 </td>
 <td width="50%" valign="top">

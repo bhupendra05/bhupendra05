@@ -39,8 +39,8 @@
         "Hard credit budgets per process — a runaway agent is stopped, not billed",
         "Semantic memory recall + IPC channels for real multi-agent collaboration"
       ],
-      "stat": "109 tests",
-      "impact": "~69% fewer credits burned on the same workload, measured",
+      "stat": "356 tests",
+      "impact": "~71% fewer credits burned on the same workload, measured",
       "url": "#aion",
       "linkLabel": "See the product",
       "category": "Agent Infrastructure"
@@ -1051,7 +1051,7 @@
       "label": "automated tests — termind alone"
     },
     {
-      "n": "109",
+      "n": "356",
       "label": "automated tests — AION alone"
     },
     {
