@@ -297,7 +297,7 @@
           '<div class="pc-icon">' + c.icon + '</div>' +
           '<div class="pc-name">' + esc(it.name) + '</div>' +
           '<div class="pc-desc">' + esc(it.desc) + '</div>' +
-          '<div class="pc-link">View on GitHub ↗</div></a>';
+          '<div class="pc-link">' + (it.url.charAt(0) === "#" ? "See the product ↓" : "View on GitHub ↗") + '</div></a>';
       });
     }).join("");
     revealAll();

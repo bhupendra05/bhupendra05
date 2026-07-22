@@ -7,7 +7,7 @@
 
 <!-- Typing animation (demolab host — reliable) -->
 <a href="https://github.com/bhupendra05">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2800&pause=700&color=4FD8FF&center=true&vCenter=true&width=760&lines=AION+%E2%80%94+an+OS+for+AI+agents;LLM+%C2%B7+MCP+%C2%B7+RAG+%C2%B7+Agentic+AI;I+turn+expert+workflows+into+AI+tools;126%2B+open-source+tools%2C+all+tested+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2800&pause=700&color=4FD8FF&center=true&vCenter=true&width=760&lines=AION+%E2%80%94+an+OS+for+AI+agents;LLM+%C2%B7+MCP+%C2%B7+RAG+%C2%B7+Agentic+AI;I+turn+expert+workflows+into+AI+tools;126%2B+tools+shipped%2C+all+tested+%F0%9F%9A%80" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -36,10 +36,10 @@ class BhupendraTale:
     focus       = "Building the infrastructure layer autonomous agents run on"
     philosophy  = "Find a real problem → build the smallest sharp tool → test it → ship it"
     flagship    = "AION — an operating system for AI agents"
-    shipped     = "126+ open-source tools · all tested · local-first where it matters"
+    shipped     = "126+ tools shipped · all tested · local-first where it matters"
 ```
 
-- 🧠 **Agent infrastructure** — author of **[AION](https://github.com/bhupendra05/aion)**, a zero-dependency micro-kernel that gives agents OS-grade primitives (capability sandboxing, credit budgets, semantic memory, multi-agent IPC) — and **[termind](https://github.com/bhupendra05/termind)**, a local AI agent built on it with a dedicated workbench for chartered accountants.
+- 🧠 **Agent infrastructure** — author of **[AION](https://bhupendra05.github.io/bhupendra05/#aion)**, a zero-dependency micro-kernel that gives agents OS-grade primitives (capability sandboxing, credit budgets, semantic memory, multi-agent IPC) — and **[termind](https://bhupendra05.github.io/bhupendra05/#termind-ca)**, a local AI agent built on it with a dedicated workbench for chartered accountants.
 - 🤖 **LLM & agent tooling** — MCP servers, RAG pipelines built from scratch (no LangChain), LangGraph multi-agent patterns, and a dozen more focused agentic-AI tools — request routing, hallucination checking, incident root-causing, spec verification.
 - 💼 **AI for finance & IB** — deal-sourcing automation (Opulix, in production for a real IB firm), PE/VC waterfall math, DCF, cap-table exits — runnable by *chatting* with an LLM, not spreadsheet macros.
 - 🎓 **Strong fundamentals** — rate limiters, probabilistic data structures, and a BM25 search engine, all built **from scratch**, not wrapped.
@@ -91,15 +91,15 @@ class BhupendraTale:
 <tr>
 <td width="50%" valign="top">
 
-### ▲ [AION](https://github.com/bhupendra05/aion)
+### ▲ [AION](https://bhupendra05.github.io/bhupendra05/#aion)
 The Agent Operating System — a micro-kernel that schedules the resources agents actually burn: **tokens, context & credits**.
 <br/>
-![stars](https://img.shields.io/github/stars/bhupendra05/aion?style=flat-square&logo=github&logoColor=white&color=a875ff&labelColor=05060a) ![flagship](https://img.shields.io/badge/flagship-4fd8ff?style=flat-square&labelColor=05060a) ![tests](https://img.shields.io/badge/109_tests-ff5fb0?style=flat-square&labelColor=05060a)
+![flagship](https://img.shields.io/badge/flagship-4fd8ff?style=flat-square&labelColor=05060a) ![tests](https://img.shields.io/badge/109_tests-ff5fb0?style=flat-square&labelColor=05060a) ![private](https://img.shields.io/badge/private_%C2%B7_by_design-a875ff?style=flat-square&labelColor=05060a)
 
 </td>
 <td width="50%" valign="top">
 
-### ⚡ [termind](https://github.com/bhupendra05/termind)
+### ⚡ [termind](https://bhupendra05.github.io/bhupendra05/#termind-ca)
 A local AI agent, terminal + web UI, one shared brain — with a dedicated workbench for chartered accountants. $0/query, private by design.
 <br/>
 ![tests](https://img.shields.io/badge/216_tests-a875ff?style=flat-square&labelColor=05060a) ![local](https://img.shields.io/badge/local_%C2%B7_private-4fd8ff?style=flat-square&labelColor=05060a)
@@ -152,8 +152,8 @@ Deal-origination platform for investment bankers — deployed and in daily use b
 <details open>
 <summary><b>🧠 Agent Infrastructure</b></summary>
 
-- ▲ **[aion](https://github.com/bhupendra05/aion)** — an OS for AI agents: syscalls, semantic memory, capability sandbox, budgets, multi-agent IPC
-- ⚡ **[termind](https://github.com/bhupendra05/termind)** — local agent, terminal + web UI, audit ledger, 216 tests
+- ▲ **[aion](https://bhupendra05.github.io/bhupendra05/#aion)** — an OS for AI agents: syscalls, semantic memory, capability sandbox, budgets, multi-agent IPC
+- ⚡ **[termind](https://bhupendra05.github.io/bhupendra05/#termind-ca)** — local agent, terminal + web UI, audit ledger, 216 tests
 - 🧠 **[localmind](https://github.com/bhupendra05/localmind)** — private local agent, RAG over your docs, sandboxed on AION
 - 🔧 **[claude-commands](https://github.com/bhupendra05/claude-commands)** — 99 installable Claude Code slash commands
 </details>

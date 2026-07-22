@@ -41,7 +41,8 @@
       ],
       "stat": "109 tests",
       "impact": "~69% fewer credits burned on the same workload, measured",
-      "url": "https://github.com/bhupendra05/aion",
+      "url": "#aion",
+      "linkLabel": "See the product",
       "category": "Agent Infrastructure"
     },
     {
@@ -346,7 +347,7 @@
         {
           "name": "aion",
           "desc": "▲ AION — The Agent Operating System. A micro-kernel that schedules what agents actually run…",
-          "url": "https://github.com/bhupendra05/aion"
+          "url": "#aion"
         },
         {
           "name": "termind",
