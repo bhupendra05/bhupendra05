@@ -1,5 +1,5 @@
 {
- "last_run": "2026-07-25T04:59:28.537622+00:00",
+ "last_run": "2026-07-26T05:24:49.793507+00:00",
  "followers": [
   "1Crazymoney",
   "AD-Styles",
@@ -8,7 +8,6 @@
   "AliHaider20",
   "Alitindrawan24",
   "ByteBunny777",
-  "CultureSupport",
   "Dreamerol",
   "Ella-horizon",
   "FidelJones",
@@ -45,13 +44,15 @@
   "SoheilGtex",
   "Sphesihle17",
   "StarShoppingUG",
-  "Sumersingpatil2694",
   "TaronVardanyan",
+  "Tiaan-R",
   "Valentin-Israel",
   "WeningerII",
   "WuYong323",
+  "YucongDuan",
   "aatifaaofficial",
   "abdulrdeveloper",
+  "ak47akshaykulkarni",
   "aleoviedo071298",
   "alym-hub",
   "ashish7802",
@@ -71,6 +72,7 @@
   "enak223",
   "engrshuvodas",
   "espiradesombra",
+  "exezick",
   "felipevillavicencio321",
   "gamerhackuz",
   "gardusig",
@@ -91,6 +93,7 @@
   "lcetin66",
   "lollaramkumar-cyber",
   "lucianoizidro",
+  "luisv-lima",
   "lukeinthecity",
   "malkamr",
   "matheusfmedina",
@@ -278,7 +281,11 @@
   "auspicie": "2026-07-25",
   "Dreamerol": "2026-07-25",
   "Resolutefemi": "2026-07-25",
-  "kingcrown88x-tech": "2026-07-25"
+  "kingcrown88x-tech": "2026-07-25",
+  "luisv-lima": "2026-07-26",
+  "Tiaan-R": "2026-07-26",
+  "ak47akshaykulkarni": "2026-07-26",
+  "YucongDuan": "2026-07-26"
  },
  "traffic_series": [
   {
@@ -383,6 +390,11 @@
   },
   {
    "date": "2026-07-25",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-07-26",
    "clones": 1071,
    "views": 52
   }
