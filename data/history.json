@@ -1,5 +1,5 @@
 {
- "last_run": "2026-07-28T04:56:51.012612+00:00",
+ "last_run": "2026-07-29T05:01:30.527542+00:00",
  "followers": [
   "1Crazymoney",
   "AD-Styles",
@@ -10,7 +10,7 @@
   "Alitindrawan24",
   "ByteBunny777",
   "Danny-de-bree",
-  "Dreamerol",
+  "EimanTahir027",
   "Ella-horizon",
   "FidelJones",
   "FrancoKaddour",
@@ -47,6 +47,7 @@
   "SoheilGtex",
   "Sphesihle17",
   "StarShoppingUG",
+  "TOPDEV99999",
   "TaronVardanyan",
   "Tiaan-R",
   "Valentin-Israel",
@@ -60,7 +61,7 @@
   "alym-hub",
   "ashish7802",
   "auspicie",
-  "baltazargallegosj-arch",
+  "aza-ali",
   "bigmacman1129",
   "brianobot",
   "brunogiacomelli1979-cyber",
@@ -71,6 +72,7 @@
   "danbarc",
   "dbunt1tled",
   "dovvnloading",
+  "dragocz95",
   "ejfxgit2025",
   "enak223",
   "engrshuvodas",
@@ -88,6 +90,7 @@
   "iloekenedilichukwu",
   "invisibleuser321",
   "ip-docketing",
+  "jeallz",
   "josephsenior",
   "kaiiii777",
   "kapenda-dev",
@@ -128,6 +131,7 @@
   "teamnak",
   "thanmayaarjun",
   "vardan444",
+  "yonana-sahile",
   "yoshi933",
   "yumiaura"
  ],
@@ -292,7 +296,12 @@
   "AceCodeLabs": "2026-07-27",
   "Keerthanababu81311": "2026-07-27",
   "Danny-de-bree": "2026-07-27",
-  "giladfuchs": "2026-07-27"
+  "giladfuchs": "2026-07-27",
+  "jeallz": "2026-07-29",
+  "yonana-sahile": "2026-07-29",
+  "dragocz95": "2026-07-29",
+  "TOPDEV99999": "2026-07-29",
+  "EimanTahir027": "2026-07-29"
  },
  "traffic_series": [
   {
@@ -412,6 +421,11 @@
   },
   {
    "date": "2026-07-28",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-07-29",
    "clones": 1071,
    "views": 52
   }
