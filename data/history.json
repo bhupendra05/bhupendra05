@@ -1,6 +1,7 @@
 {
- "last_run": "2026-07-29T05:01:30.527542+00:00",
+ "last_run": "2026-07-30T04:49:39.431179+00:00",
  "followers": [
+  "0disoft",
   "1Crazymoney",
   "AD-Styles",
   "ARUNAGIRINATHAN-K",
@@ -35,12 +36,14 @@
   "NachoOFC",
   "Nai64",
   "Nexus-Vertex",
+  "NomanRafique01",
   "ORIORIS-FR",
   "PEOPLE-EATER",
   "Resolutefemi",
   "Rudraksha-007",
   "SVauna",
   "SakunosukeCode",
+  "ShemySUN-ane",
   "Shubh2-0",
   "SiyaMathe",
   "SnowLeopard-io",
@@ -81,7 +84,6 @@
   "felipevillavicencio321",
   "gamerhackuz",
   "gardusig",
-  "giladfuchs",
   "glanjos27-dev",
   "harishsehlangia",
   "hisshanzzz",
@@ -130,6 +132,7 @@
   "swarn007-byte",
   "teamnak",
   "thanmayaarjun",
+  "theunstopabble",
   "vardan444",
   "yonana-sahile",
   "yoshi933",
@@ -301,7 +304,11 @@
   "yonana-sahile": "2026-07-29",
   "dragocz95": "2026-07-29",
   "TOPDEV99999": "2026-07-29",
-  "EimanTahir027": "2026-07-29"
+  "EimanTahir027": "2026-07-29",
+  "0disoft": "2026-07-30",
+  "NomanRafique01": "2026-07-30",
+  "ShemySUN-ane": "2026-07-30",
+  "theunstopabble": "2026-07-30"
  },
  "traffic_series": [
   {
@@ -426,6 +433,11 @@
   },
   {
    "date": "2026-07-29",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-07-30",
    "clones": 1071,
    "views": 52
   }
