@@ -255,6 +255,35 @@
       </div>
     </section>
 
+    <!-- ================= THERMGUARD ================= -->
+    <section id="thermguard" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">// BUILT AFTER A NEAR-MISS</span>
+        <h2>The Mac Studio started overheating. So I built a watchdog for it.</h2>
+        <p>An hour into testing local vision models, no warning, no indicator — just a machine quietly cooking itself. ThermGuard is the tool that shouldn't have needed building, built the same day it happened.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="opulix-copy">
+          <span class="live-badge local"><span class="dot"></span>PRIVATE BUILD</span>
+          <h3 class="feature-name">ThermGuard</h3>
+          <p class="feature-tag">A menu bar + terminal watchdog for macOS overheating, for anyone running local models on Apple Silicon</p>
+          <p class="feature-desc">Apple doesn't expose raw CPU/GPU temperature on Apple Silicon through any public API. ThermGuard reads the signal macOS itself uses to decide when to throttle — <code>NSProcessInfo.thermalState</code> — cross-checked against live CPU, memory, and per-process GPU/ANE load, so the exact process cooking the machine is never a mystery again.</p>
+          <ul class="flag-features">
+            <li>Live menu bar popup + full terminal dashboard — the same real-time data, always visible</li>
+            <li>Per-process GPU attribution, not just an aggregate number — a Metal/ANE-bound model can cook a Mac while barely touching CPU%</li>
+            <li>A looping alarm and native notification the moment thermal state turns serious/critical — one notification is too easy to miss</li>
+            <li>One-key Terminate, Force-Kill, Suspend, Resume, or Deprioritize on the offending process — guarded so system-critical processes can never be touched</li>
+          </ul>
+          <div class="hero-cta">
+            <a href="#contact" data-nav class="btn btn-primary magnetic">Ask about the build <span class="arrow">→</span></a>
+          </div>
+        </div>
+        <div class="feature-visual">
+          <img src="assets/thermguard-overview.jpg" alt="ThermGuard overview — the overheating problem during local vision-model testing, and the menu bar + terminal watchdog built to catch it" loading="lazy">
+        </div>
+      </div>
+    </section>
+
     <!-- ================= ACHIEVEMENTS ================= -->
     <section id="achievements" class="section">
       <div class="section-head reveal">
