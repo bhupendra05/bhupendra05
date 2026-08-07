@@ -1,5 +1,5 @@
 {
- "last_run": "2026-08-06T04:57:18.410376+00:00",
+ "last_run": "2026-08-07T04:21:27.301282+00:00",
  "followers": [
   "0disoft",
   "1Crazymoney",
@@ -33,6 +33,7 @@
   "MaximeLouka",
   "Medalcode",
   "Moeabdelaziz007",
+  "Mubder",
   "N1TEB0I",
   "NabilParwez",
   "NachoOFC",
@@ -66,6 +67,7 @@
   "alishamari",
   "alym-hub",
   "ashish7802",
+  "auroraeye-dev",
   "auspicie",
   "bigmacman1129",
   "brianobot",
@@ -125,7 +127,9 @@
   "pwnedroot",
   "qiluy202-dev",
   "r97221004",
+  "raviwijerathna1",
   "rckukaswal",
+  "rsamwilson2323-cloud",
   "saaaakshiii",
   "samir-ouaammou",
   "sanjanvandijk",
@@ -329,7 +333,11 @@
   "alishamari": "2026-08-05",
   "sanjanvandijk": "2026-08-05",
   "MadB0i": "2026-08-05",
-  "josejairobaltazargallegos-afk": "2026-08-05"
+  "josejairobaltazargallegos-afk": "2026-08-05",
+  "auroraeye-dev": "2026-08-07",
+  "rsamwilson2323-cloud": "2026-08-07",
+  "raviwijerathna1": "2026-08-07",
+  "Mubder": "2026-08-07"
  },
  "traffic_series": [
   {
@@ -494,6 +502,11 @@
   },
   {
    "date": "2026-08-06",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-07",
    "clones": 1071,
    "views": 52
   }
