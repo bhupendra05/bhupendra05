@@ -22,7 +22,7 @@
 <text x="20" y="28" font-size="12.5" font-weight="700" fill="#a875ff"
   font-family="JetBrains Mono,Courier New,monospace" letter-spacing="3">▲ BHUPENDRA05 // GITHUB ACTIVITY</text>
 <text x="20" y="46" font-size="10" fill="#4fd8ff" font-family="JetBrains Mono,Courier New,monospace"
-  letter-spacing="1.6">Proven, not promised.</text>
+  letter-spacing="1.6">One focused release at a time — see the commits.</text>
 
 <path d="M8 8 h20 M8 8 v20"   stroke="#4fd8ff" stroke-width="2" fill="none" opacity="0.7"/>
 <path d="M712 8 h-20 M712 8 v20"     stroke="#4fd8ff" stroke-width="2" fill="none" opacity="0.7"/>
@@ -40,7 +40,7 @@
   <text x="30" y="164" font-size="10.5" fill="#9498ab" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">🔀  PULL REQUESTS</text>
 <text x="30" y="198" font-size="30" font-weight="800" fill="#4fd8ff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">4</text>
   <text x="270" y="164" font-size="10.5" fill="#9498ab" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">👥  FOLLOWERS</text>
-<text x="270" y="198" font-size="30" font-weight="800" fill="#a875ff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">147</text>
+<text x="270" y="198" font-size="30" font-weight="800" fill="#a875ff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">146</text>
   <text x="510" y="164" font-size="10.5" fill="#9498ab" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">🏆  TOP LANGUAGE</text>
 <text x="510" y="198" font-size="30" font-weight="800" fill="#4fd8ff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">Python</text>
 </svg>
