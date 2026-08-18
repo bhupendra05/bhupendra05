@@ -1,5 +1,5 @@
 {
- "last_run": "2026-08-17T02:54:12.638709+00:00",
+ "last_run": "2026-08-18T02:49:30.148439+00:00",
  "followers": [
   "0disoft",
   "1Crazymoney",
@@ -46,7 +46,6 @@
   "NullEntity001",
   "ORIORIS-FR",
   "PEOPLE-EATER",
-  "RashidSaeedAlMazrouei18",
   "Rudraksha-007",
   "SVauna",
   "SakunosukeCode",
@@ -77,7 +76,6 @@
   "auspicie",
   "aza-ali",
   "azkaabds",
-  "badiranssen",
   "bigmacman1129",
   "boomray",
   "brianobot",
@@ -165,8 +163,7 @@
   "vardan444",
   "vvxlx",
   "yonana-sahile",
-  "yoshi933",
-  "yumiaura"
+  "yoshi933"
  ],
  "watchers": [
   "bhupendra05"
@@ -607,6 +604,11 @@
   },
   {
    "date": "2026-08-17",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-18",
    "clones": 1071,
    "views": 52
   }
