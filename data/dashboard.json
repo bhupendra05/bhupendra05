@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-07-21T07:37:47.836899+00:00",
+ "generated_at": "2026-08-20T13:35:56.914280+00:00",
  "login": "bhupendra05",
- "tagline": "126+ repos \u2014 every one open, every one real.",
+ "tagline": "Shipped in public. Tested before it's called done.",
  "totals": {
   "stars": 18,
-  "commits": 47,
-  "repos": 167,
+  "commits": 32,
+  "repos": 166,
   "prs": 4,
-  "followers": 119,
+  "followers": 160,
   "top_lang": "Python",
   "watchers": 1,
   "recruits": 16,
@@ -98,9 +98,7 @@
    "at": "2026-05-29T13:25:54Z"
   }
  ],
- "new_followers": [
-  "Moeabdelaziz007"
- ],
+ "new_followers": [],
  "new_watchers": [],
  "first_seen": {
   "yunawyner": "2026-07-05",
@@ -244,7 +242,82 @@
   "bigmacman1129": "2026-07-20",
   "seehiong": "2026-07-20",
   "Sumersingpatil2694": "2026-07-21",
-  "Moeabdelaziz007": "2026-07-21"
+  "Moeabdelaziz007": "2026-07-21",
+  "Nexus-Vertex": "2026-07-22",
+  "kapenda-dev": "2026-07-22",
+  "ARUNAGIRINATHAN-K": "2026-07-23",
+  "dovvnloading": "2026-07-24",
+  "auspicie": "2026-07-25",
+  "Dreamerol": "2026-07-25",
+  "Resolutefemi": "2026-07-25",
+  "kingcrown88x-tech": "2026-07-25",
+  "luisv-lima": "2026-07-26",
+  "Tiaan-R": "2026-07-26",
+  "ak47akshaykulkarni": "2026-07-26",
+  "YucongDuan": "2026-07-26",
+  "AceCodeLabs": "2026-07-27",
+  "Keerthanababu81311": "2026-07-27",
+  "Danny-de-bree": "2026-07-27",
+  "giladfuchs": "2026-07-27",
+  "jeallz": "2026-07-29",
+  "yonana-sahile": "2026-07-29",
+  "dragocz95": "2026-07-29",
+  "TOPDEV99999": "2026-07-29",
+  "EimanTahir027": "2026-07-29",
+  "0disoft": "2026-07-30",
+  "NomanRafique01": "2026-07-30",
+  "ShemySUN-ane": "2026-07-30",
+  "theunstopabble": "2026-07-30",
+  "aayush0325": "2026-07-31",
+  "EpisodeYu": "2026-08-01",
+  "udaysaai": "2026-08-02",
+  "AmirhosseinHonardoust": "2026-08-04",
+  "HexCore8": "2026-08-04",
+  "Arul1998": "2026-08-04",
+  "mrl1979": "2026-08-05",
+  "harrietbrooke": "2026-08-05",
+  "danofairanks": "2026-08-05",
+  "alishamari": "2026-08-05",
+  "sanjanvandijk": "2026-08-05",
+  "MadB0i": "2026-08-05",
+  "josejairobaltazargallegos-afk": "2026-08-05",
+  "auroraeye-dev": "2026-08-07",
+  "rsamwilson2323-cloud": "2026-08-07",
+  "raviwijerathna1": "2026-08-07",
+  "Mubder": "2026-08-07",
+  "cchongming": "2026-08-08",
+  "tjwodud04": "2026-08-11",
+  "Seo-yeonLee": "2026-08-11",
+  "El-Tousy": "2026-08-11",
+  "SuperInstance": "2026-08-11",
+  "Ali-hey-0": "2026-08-11",
+  "9Michael-Cooley": "2026-08-11",
+  "Divido5555": "2026-08-11",
+  "arpitrajjj": "2026-08-11",
+  "nearyou": "2026-08-13",
+  "RashidSaeedAlMazrouei18": "2026-08-14",
+  "badiranssen": "2026-08-14",
+  "NullEntity001": "2026-08-14",
+  "ElvinHasanov3d": "2026-08-14",
+  "laloloco89": "2026-08-14",
+  "luisotakubanda": "2026-08-14",
+  "cambot86": "2026-08-14",
+  "furkan012": "2026-08-14",
+  "Endo1933": "2026-08-14",
+  "KevinWong455": "2026-08-14",
+  "Sanghyun-0h": "2026-08-14",
+  "dweatherston11": "2026-08-14",
+  "juandjesus20009": "2026-08-14",
+  "boomray": "2026-08-14",
+  "nordestediego": "2026-08-14",
+  "lorenzodarioben-lgtm": "2026-08-16",
+  "Nisyalz01": "2026-08-16",
+  "3xtroy": "2026-08-16",
+  "azkaabds": "2026-08-16",
+  "vvxlx": "2026-08-16",
+  "journaltraces": "2026-08-17",
+  "nvdigitalsolutions": "2026-08-17",
+  "Shifrozy": "2026-08-20"
  },
  "traffic_series": [
   {
@@ -331,9 +404,165 @@
    "date": "2026-07-21",
    "clones": 1071,
    "views": 52
+  },
+  {
+   "date": "2026-07-22",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-07-23",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-07-24",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-07-25",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-07-26",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-07-27",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-07-28",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-07-29",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-07-30",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-07-31",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-01",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-02",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-03",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-04",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-05",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-06",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-07",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-08",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-09",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-10",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-11",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-12",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-13",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-14",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-15",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-16",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-17",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-18",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-19",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-08-20",
+   "clones": 1071,
+   "views": 52
   }
  ],
  "top_repos": [
+  {
+   "name": "bhupendra05",
+   "stars": 2,
+   "description": "Config files for my GitHub profile.",
+   "url": "https://github.com/bhupendra05/bhupendra05"
+  },
   {
    "name": "phisheye",
    "stars": 2,
@@ -353,12 +582,6 @@
    "url": "https://github.com/bhupendra05/txlens"
   },
   {
-   "name": "bhupendra05",
-   "stars": 1,
-   "description": "Config files for my GitHub profile.",
-   "url": "https://github.com/bhupendra05/bhupendra05"
-  },
-  {
    "name": "carryflow",
    "stars": 1,
    "description": "PE/VC distribution waterfall, carried-interest & exit-structuring engine \u2014 European/American waterfalls, IRR/MOIC, secondaries, continuation vehicles",
@@ -369,6 +592,12 @@
    "stars": 1,
    "description": "99 real, installable Claude Code slash commands (/eli10, /resumebullet, /tldr). The 'secret commands' infographic \u2014 turned into actual commands you can run.",
    "url": "https://github.com/bhupendra05/claude-commands"
+  },
+  {
+   "name": "dcf-model",
+   "stars": 1,
+   "description": "DCF valuation for any US public company using free SEC EDGAR data \u2014 one command, no API key",
+   "url": "https://github.com/bhupendra05/dcf-model"
   },
   {
    "name": "deeptracker",
@@ -387,22 +616,16 @@
    "stars": 1,
    "description": "Stop over/underpaying Solana priority fees \u2014 samples recent fees, recommends normal/fast/turbo. Zero-dep.",
    "url": "https://github.com/bhupendra05/feeradar"
-  },
-  {
-   "name": "job-hunter",
-   "stars": 1,
-   "description": "Assisted job-application engine: resume \u2192 ranked jobs \u2192 tailored cover letters \u2192 tracker. Open source, bring-your-own Claude key.",
-   "url": "https://github.com/bhupendra05/job-hunter"
   }
  ],
  "languages": {
-  "Python": 4312148,
-  "JavaScript": 853229,
-  "HTML": 818391,
-  "CSS": 394332,
-  "Dart": 341539,
-  "TypeScript": 106394,
-  "Go": 74507,
-  "Shell": 6749
+  "Python": 2093903,
+  "JavaScript": 218012,
+  "HTML": 164741,
+  "TypeScript": 124554,
+  "CSS": 60593,
+  "Shell": 31396,
+  "HCL": 15914,
+  "Dockerfile": 6949
  }
 }
