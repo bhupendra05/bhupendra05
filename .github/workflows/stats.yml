@@ -46,5 +46,5 @@ jobs:
         run: |
           git config user.name "Bhupendra Tale"
           git config user.email "bgurjar05.bg@gmail.com"
-          git add assets/stats.svg assets/intel.svg data/history.json
+          git add assets/stats.svg assets/intel.svg data/history.json data/dashboard.json
           git diff --staged --quiet && echo "no changes" || (git commit -m "chore: refresh empire dashboard [skip ci]" && git push)
