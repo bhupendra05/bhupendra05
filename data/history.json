@@ -1,5 +1,5 @@
 {
- "last_run": "2026-09-03T06:41:33.212494+00:00",
+ "last_run": "2026-09-04T06:46:07.606860+00:00",
  "followers": [
   "0disoft",
   "1Crazymoney",
@@ -101,6 +101,7 @@
   "iloekenedilichukwu",
   "invisibleuser321",
   "ip-docketing",
+  "ivanpaghubasan",
   "josejairobaltazargallegos-afk",
   "josephsenior",
   "kaiiii777",
@@ -116,6 +117,7 @@
   "luisv-lima",
   "lukeinthecity",
   "malkamr",
+  "martinsblucas",
   "matheusfmedina",
   "matthieugraziani",
   "minjae083",
@@ -382,7 +384,9 @@
   "andrebuilds": "2026-08-28",
   "MalazAbdalla": "2026-08-28",
   "Ehxzel": "2026-08-31",
-  "Tsuki-up": "2026-09-02"
+  "Tsuki-up": "2026-09-02",
+  "ivanpaghubasan": "2026-09-04",
+  "martinsblucas": "2026-09-04"
  },
  "traffic_series": [
   {
@@ -687,6 +691,11 @@
   },
   {
    "date": "2026-09-03",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-09-04",
    "clones": 1071,
    "views": 52
   }

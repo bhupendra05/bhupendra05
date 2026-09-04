@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-03T06:41:33.213414+00:00",
+ "generated_at": "2026-09-04T06:46:07.607674+00:00",
  "login": "bhupendra05",
- "tagline": "One focused release at a time \u2014 see the commits.",
+ "tagline": "$0 per query, by design, not by accident.",
  "totals": {
   "stars": 19,
   "commits": 32,
   "repos": 166,
   "prs": 4,
-  "followers": 152,
+  "followers": 154,
   "top_lang": "Python",
   "watchers": 1,
   "recruits": 16,
@@ -98,7 +98,10 @@
    "at": "2026-05-29T13:25:54Z"
   }
  ],
- "new_followers": [],
+ "new_followers": [
+  "ivanpaghubasan",
+  "martinsblucas"
+ ],
  "new_watchers": [],
  "first_seen": {
   "yunawyner": "2026-07-05",
@@ -325,7 +328,9 @@
   "andrebuilds": "2026-08-28",
   "MalazAbdalla": "2026-08-28",
   "Ehxzel": "2026-08-31",
-  "Tsuki-up": "2026-09-02"
+  "Tsuki-up": "2026-09-02",
+  "ivanpaghubasan": "2026-09-04",
+  "martinsblucas": "2026-09-04"
  },
  "traffic_series": [
   {
@@ -630,6 +635,11 @@
   },
   {
    "date": "2026-09-03",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-09-04",
    "clones": 1071,
    "views": 52
   }
