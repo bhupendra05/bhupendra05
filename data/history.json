@@ -1,5 +1,5 @@
 {
- "last_run": "2026-09-10T06:51:06.443095+00:00",
+ "last_run": "2026-09-11T06:50:36.004736+00:00",
  "followers": [
   "0disoft",
   "1Crazymoney",
@@ -7,6 +7,7 @@
   "AD-Styles",
   "ARUNAGIRINATHAN-K",
   "AbSomeone",
+  "Abdulhamid97Mousa",
   "AliHaider20",
   "Alitindrawan24",
   "AmirhosseinHonardoust",
@@ -115,6 +116,7 @@
   "kitikazis",
   "kritagyaio",
   "lcetin66",
+  "liesbethbelmokhtar203-source",
   "lollaramkumar-cyber",
   "lorenzodarioben-lgtm",
   "lucianoizidro",
@@ -145,6 +147,7 @@
   "rsamwilson2323-cloud",
   "saaaakshiii",
   "samir-ouaammou",
+  "satpreetsn",
   "sbaris1",
   "seehiong",
   "silberfunke-72",
@@ -398,7 +401,10 @@
   "baksohyeon": "2026-09-07",
   "Lewickiy": "2026-09-08",
   "Nando-suka": "2026-09-09",
-  "Wanderajonah": "2026-09-10"
+  "Wanderajonah": "2026-09-10",
+  "satpreetsn": "2026-09-11",
+  "liesbethbelmokhtar203-source": "2026-09-11",
+  "Abdulhamid97Mousa": "2026-09-11"
  },
  "traffic_series": [
   {
@@ -738,6 +744,11 @@
   },
   {
    "date": "2026-09-10",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-09-11",
    "clones": 1071,
    "views": 52
   }

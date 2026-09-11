@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-10T06:51:06.443966+00:00",
+ "generated_at": "2026-09-11T06:50:36.005607+00:00",
  "login": "bhupendra05",
- "tagline": "Proven, not promised.",
+ "tagline": "One focused release at a time \u2014 see the commits.",
  "totals": {
-  "stars": 19,
+  "stars": 21,
   "commits": 32,
   "repos": 166,
   "prs": 4,
-  "followers": 159,
+  "followers": 162,
   "top_lang": "Python",
   "watchers": 1,
   "recruits": 16,
@@ -99,8 +99,9 @@
   }
  ],
  "new_followers": [
-  "Wanderajonah",
-  "aza-ali"
+  "Abdulhamid97Mousa",
+  "liesbethbelmokhtar203-source",
+  "satpreetsn"
  ],
  "new_watchers": [],
  "first_seen": {
@@ -337,7 +338,10 @@
   "baksohyeon": "2026-09-07",
   "Lewickiy": "2026-09-08",
   "Nando-suka": "2026-09-09",
-  "Wanderajonah": "2026-09-10"
+  "Wanderajonah": "2026-09-10",
+  "satpreetsn": "2026-09-11",
+  "liesbethbelmokhtar203-source": "2026-09-11",
+  "Abdulhamid97Mousa": "2026-09-11"
  },
  "traffic_series": [
   {
@@ -679,6 +683,11 @@
    "date": "2026-09-10",
    "clones": 1071,
    "views": 52
+  },
+  {
+   "date": "2026-09-11",
+   "clones": 1071,
+   "views": 52
   }
  ],
  "top_repos": [
@@ -687,6 +696,12 @@
    "stars": 3,
    "description": "Config files for my GitHub profile.",
    "url": "https://github.com/bhupendra05/bhupendra05"
+  },
+  {
+   "name": "deeptracker",
+   "stars": 2,
+   "description": "Deep-tech funding & valuation tracker for Indian startups \u2014 semiconductors, space, aerospace, eVTOL, biotech. Sector/quarter analytics, investor leaderboard.",
+   "url": "https://github.com/bhupendra05/deeptracker"
   },
   {
    "name": "phisheye",
@@ -707,6 +722,12 @@
    "url": "https://github.com/bhupendra05/txlens"
   },
   {
+   "name": "agentic-rag-agent",
+   "stars": 1,
+   "description": "Retrieval-Augmented Generation (RAG) Agent - Singapore Tour Guide with PDF extraction, vector embeddings, semantic search, and LLM integration",
+   "url": "https://github.com/bhupendra05/agentic-rag-agent"
+  },
+  {
    "name": "carryflow",
    "stars": 1,
    "description": "PE/VC distribution waterfall, carried-interest & exit-structuring engine \u2014 European/American waterfalls, IRR/MOIC, secondaries, continuation vehicles",
@@ -725,22 +746,10 @@
    "url": "https://github.com/bhupendra05/dcf-model"
   },
   {
-   "name": "deeptracker",
-   "stars": 1,
-   "description": "Deep-tech funding & valuation tracker for Indian startups \u2014 semiconductors, space, aerospace, eVTOL, biotech. Sector/quarter analytics, investor leaderboard.",
-   "url": "https://github.com/bhupendra05/deeptracker"
-  },
-  {
    "name": "exitsim",
    "stars": 1,
    "description": "Cap table & exit waterfall simulator \u2014 liquidation preferences, participating preferred, seniority stacking, dilution, breakeven solver",
    "url": "https://github.com/bhupendra05/exitsim"
-  },
-  {
-   "name": "feeradar",
-   "stars": 1,
-   "description": "Stop over/underpaying Solana priority fees \u2014 samples recent fees, recommends normal/fast/turbo. Zero-dep.",
-   "url": "https://github.com/bhupendra05/feeradar"
   }
  ],
  "languages": {
