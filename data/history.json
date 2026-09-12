@@ -1,6 +1,7 @@
 {
- "last_run": "2026-09-11T06:50:36.004736+00:00",
+ "last_run": "2026-09-12T06:42:29.229571+00:00",
  "followers": [
+  "00200200",
   "0disoft",
   "1Crazymoney",
   "3xtroy",
@@ -106,6 +107,7 @@
   "iloekenedilichukwu",
   "invisibleuser321",
   "ip-docketing",
+  "ishandutta2007",
   "ivanpaghubasan",
   "josejairobaltazargallegos-afk",
   "josephsenior",
@@ -404,7 +406,9 @@
   "Wanderajonah": "2026-09-10",
   "satpreetsn": "2026-09-11",
   "liesbethbelmokhtar203-source": "2026-09-11",
-  "Abdulhamid97Mousa": "2026-09-11"
+  "Abdulhamid97Mousa": "2026-09-11",
+  "00200200": "2026-09-12",
+  "ishandutta2007": "2026-09-12"
  },
  "traffic_series": [
   {
@@ -749,6 +753,11 @@
   },
   {
    "date": "2026-09-11",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-09-12",
    "clones": 1071,
    "views": 52
   }
