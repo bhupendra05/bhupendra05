@@ -1,5 +1,5 @@
 {
- "last_run": "2026-09-12T06:42:29.229571+00:00",
+ "last_run": "2026-09-13T06:59:52.594988+00:00",
  "followers": [
   "00200200",
   "0disoft",
@@ -46,6 +46,7 @@
   "NomanRafique01",
   "NullEntity001",
   "ORIORIS-FR",
+  "OpenSourceBitbot",
   "PEOPLE-EATER",
   "Rudraksha-007",
   "SVauna",
@@ -105,7 +106,6 @@
   "iataganCursos",
   "ictdeplomavta-glitch",
   "iloekenedilichukwu",
-  "invisibleuser321",
   "ip-docketing",
   "ishandutta2007",
   "ivanpaghubasan",
@@ -142,6 +142,7 @@
   "nvdigitalsolutions",
   "ohmygodduh",
   "ollarethe4k-dotcom",
+  "openamer",
   "pwnedroot",
   "qiluy202-dev",
   "r97221004",
@@ -164,7 +165,8 @@
   "udaysaai",
   "vardan444",
   "yonana-sahile",
-  "yoshi933"
+  "yoshi933",
+  "yxpil"
  ],
  "watchers": [
   "bhupendra05"
@@ -408,7 +410,10 @@
   "liesbethbelmokhtar203-source": "2026-09-11",
   "Abdulhamid97Mousa": "2026-09-11",
   "00200200": "2026-09-12",
-  "ishandutta2007": "2026-09-12"
+  "ishandutta2007": "2026-09-12",
+  "openamer": "2026-09-13",
+  "OpenSourceBitbot": "2026-09-13",
+  "yxpil": "2026-09-13"
  },
  "traffic_series": [
   {
@@ -758,6 +763,11 @@
   },
   {
    "date": "2026-09-12",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-09-13",
    "clones": 1071,
    "views": 52
   }
