@@ -1,5 +1,5 @@
 {
- "last_run": "2026-09-13T06:59:52.594988+00:00",
+ "last_run": "2026-09-14T07:22:39.271353+00:00",
  "followers": [
   "00200200",
   "0disoft",
@@ -9,9 +9,11 @@
   "ARUNAGIRINATHAN-K",
   "AbSomeone",
   "Abdulhamid97Mousa",
+  "AetherAI3",
   "AliHaider20",
   "Alitindrawan24",
   "AmirhosseinHonardoust",
+  "AronAxe",
   "Arul1998",
   "ByteBunny777",
   "Danny-de-bree",
@@ -413,7 +415,9 @@
   "ishandutta2007": "2026-09-12",
   "openamer": "2026-09-13",
   "OpenSourceBitbot": "2026-09-13",
-  "yxpil": "2026-09-13"
+  "yxpil": "2026-09-13",
+  "AetherAI3": "2026-09-14",
+  "AronAxe": "2026-09-14"
  },
  "traffic_series": [
   {
@@ -768,6 +772,11 @@
   },
   {
    "date": "2026-09-13",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-09-14",
    "clones": 1071,
    "views": 52
   }
