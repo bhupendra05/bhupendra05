@@ -1,5 +1,5 @@
 {
- "last_run": "2026-09-21T07:26:59.187738+00:00",
+ "last_run": "2026-09-22T07:04:49.590867+00:00",
  "followers": [
   "0disoft",
   "1Crazymoney",
@@ -51,7 +51,6 @@
   "NullEntity001",
   "ORIORIS-FR",
   "PEOPLE-EATER",
-  "Rudraksha-007",
   "SVauna",
   "SakunosukeCode",
   "ShemySUN-ane",
@@ -104,6 +103,7 @@
   "exezick",
   "felipevillavicencio321",
   "gamerhackuz",
+  "georgelautech-byte",
   "glanjos27-dev",
   "harishsehlangia",
   "hisshanzzz",
@@ -169,6 +169,7 @@
   "tjwodud04",
   "udaysaai",
   "vardan444",
+  "xiayu1987",
   "yoshi933",
   "yxpil"
  ],
@@ -432,7 +433,9 @@
   "ZhangRui987": "2026-09-17",
   "Tech-Ninja1020": "2026-09-18",
   "alfredshingai": "2026-09-18",
-  "Amirhouschang": "2026-09-21"
+  "Amirhouschang": "2026-09-21",
+  "georgelautech-byte": "2026-09-22",
+  "xiayu1987": "2026-09-22"
  },
  "traffic_series": [
   {
@@ -827,6 +830,11 @@
   },
   {
    "date": "2026-09-21",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-09-22",
    "clones": 1071,
    "views": 52
   }
