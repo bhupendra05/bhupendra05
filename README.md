@@ -34,15 +34,30 @@
 <!-- ====================== ABOUT ====================== -->
 ## ❯ ABOUT_ME
 
+<table>
+<tr>
+<td width="40%" align="center" valign="middle">
+
+<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/portrait.jpg" width="100%" alt="A map of what I build"/>
+<sub><i>a map of what I build — ask me what it means</i></sub>
+
+</td>
+<td width="60%" valign="middle">
+
 ```python
 class BhupendraTale:
-    role        = "AI Engineer · Agentic AI · LLM · MCP · RAG"
-    location    = "Indore, India 🇮🇳"
-    focus       = "Building the infrastructure layer autonomous agents run on"
-    philosophy  = "Find a real problem → build the smallest sharp tool → test it → ship it"
-    flagship    = "AION — an operating system for AI agents"
-    shipped     = "126+ tools shipped · all tested · local-first where it matters"
+    role       = "AI Engineer · Agentic AI"
+    stack      = "LLM · MCP · RAG · Agents"
+    location   = "Indore, India 🇮🇳"
+    focus      = "the infra agents run on"
+    philosophy = "problem → sharp tool → test → ship"
+    flagship   = "AION — an OS for AI agents"
+    shipped    = "126+ tools · all tested"
 ```
+
+</td>
+</tr>
+</table>
 
 - 🧠 **Agent infrastructure** — author of **[AION](https://bhupendra05.github.io/bhupendra05/#aion)**, a zero-dependency micro-kernel that gives agents OS-grade primitives (capability sandboxing, credit budgets, semantic memory, multi-agent IPC) — and **[termind](https://bhupendra05.github.io/bhupendra05/#termind-ca)**, a local AI agent built on it with a dedicated workbench for chartered accountants.
 - 🤖 **LLM & agent tooling** — MCP servers, RAG pipelines built from scratch (no LangChain), LangGraph multi-agent patterns, and a dozen more focused agentic-AI tools — request routing, hallucination checking, incident root-causing, spec verification.
