@@ -5,9 +5,9 @@
     <stop offset="1" stop-color="#0d0f18"/>
   </linearGradient>
   <linearGradient id="border" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0"   stop-color="#4fd8ff"/>
-    <stop offset="0.5" stop-color="#a875ff"/>
-    <stop offset="1"   stop-color="#ff5fb0"/>
+    <stop offset="0"   stop-color="#00e5ff"/>
+    <stop offset="0.5" stop-color="#b14dff"/>
+    <stop offset="1"   stop-color="#ff2d95"/>
   </linearGradient>
   <filter id="glow" x="-20%" y="-60%" width="140%" height="220%">
     <feGaussianBlur stdDeviation="2.2" result="b"/>
@@ -19,28 +19,28 @@
 <rect width="720" height="220" rx="12" fill="none" stroke="url(#border)" stroke-width="1.5" opacity="0.85"/>
 
 <line x1="20" y1="56" x2="700" y2="56" stroke="url(#border)" stroke-width="0.8" opacity="0.5"/>
-<text x="20" y="28" font-size="12.5" font-weight="700" fill="#a875ff"
+<text x="20" y="28" font-size="12.5" font-weight="700" fill="#b14dff"
   font-family="JetBrains Mono,Courier New,monospace" letter-spacing="3">▲ BHUPENDRA05 // GITHUB ACTIVITY</text>
-<text x="20" y="46" font-size="10" fill="#4fd8ff" font-family="JetBrains Mono,Courier New,monospace"
+<text x="20" y="46" font-size="10" fill="#00e5ff" font-family="JetBrains Mono,Courier New,monospace"
   letter-spacing="1.6">Small tools. Sharp problems. Measured results.</text>
 
-<path d="M8 8 h20 M8 8 v20"   stroke="#4fd8ff" stroke-width="2" fill="none" opacity="0.7"/>
-<path d="M712 8 h-20 M712 8 v20"     stroke="#4fd8ff" stroke-width="2" fill="none" opacity="0.7"/>
-<path d="M8 212 h20 M8 212 v-20"     stroke="#a875ff" stroke-width="2" fill="none" opacity="0.7"/>
-<path d="M712 212 h-20 M712 212 v-20" stroke="#a875ff" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M8 8 h20 M8 8 v20"   stroke="#00e5ff" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M712 8 h-20 M712 8 v20"     stroke="#00e5ff" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M8 212 h20 M8 212 v-20"     stroke="#b14dff" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M712 212 h-20 M712 212 v-20" stroke="#b14dff" stroke-width="2" fill="none" opacity="0.7"/>
 
-<line x1="248" y1="60" x2="248" y2="206" stroke="#a875ff" stroke-width="0.6" opacity="0.18"/><line x1="492" y1="60" x2="492" y2="206" stroke="#a875ff" stroke-width="0.6" opacity="0.18"/><line x1="24" y1="130" x2="696" y2="130" stroke="#4fd8ff" stroke-width="0.6" opacity="0.18"/>
+<line x1="248" y1="60" x2="248" y2="206" stroke="#b14dff" stroke-width="0.6" opacity="0.18"/><line x1="492" y1="60" x2="492" y2="206" stroke="#b14dff" stroke-width="0.6" opacity="0.18"/><line x1="24" y1="130" x2="696" y2="130" stroke="#00e5ff" stroke-width="0.6" opacity="0.18"/>
 
 <text x="30" y="86" font-size="10.5" fill="#9498ab" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">⭐  STARS</text>
-<text x="30" y="120" font-size="30" font-weight="800" fill="#a875ff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">21</text>
+<text x="30" y="120" font-size="30" font-weight="800" fill="#b14dff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">21</text>
   <text x="270" y="86" font-size="10.5" fill="#9498ab" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">🔥  COMMITS / YEAR</text>
-<text x="270" y="120" font-size="30" font-weight="800" fill="#4fd8ff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">32</text>
+<text x="270" y="120" font-size="30" font-weight="800" fill="#00e5ff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">32</text>
   <text x="510" y="86" font-size="10.5" fill="#9498ab" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">📦  REPOS SHIPPED</text>
-<text x="510" y="120" font-size="30" font-weight="800" fill="#a875ff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">166</text>
+<text x="510" y="120" font-size="30" font-weight="800" fill="#b14dff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">166</text>
   <text x="30" y="164" font-size="10.5" fill="#9498ab" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">🔀  PULL REQUESTS</text>
-<text x="30" y="198" font-size="30" font-weight="800" fill="#4fd8ff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">4</text>
+<text x="30" y="198" font-size="30" font-weight="800" fill="#00e5ff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">4</text>
   <text x="270" y="164" font-size="10.5" fill="#9498ab" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">👥  FOLLOWERS</text>
-<text x="270" y="198" font-size="30" font-weight="800" fill="#a875ff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">174</text>
+<text x="270" y="198" font-size="30" font-weight="800" fill="#b14dff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">175</text>
   <text x="510" y="164" font-size="10.5" fill="#9498ab" font-family="JetBrains Mono,Courier New,monospace" letter-spacing="1.2">🏆  TOP LANGUAGE</text>
-<text x="510" y="198" font-size="30" font-weight="800" fill="#4fd8ff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">Python</text>
+<text x="510" y="198" font-size="30" font-weight="800" fill="#00e5ff" font-family="JetBrains Mono,Courier New,monospace" filter="url(#glow)">Python</text>
 </svg>

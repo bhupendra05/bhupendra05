@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-24T06:58:13.300428+00:00",
+ "generated_at": "2026-09-24T18:27:34.056431+00:00",
  "login": "bhupendra05",
  "tagline": "Small tools. Sharp problems. Measured results.",
  "totals": {
@@ -7,7 +7,7 @@
   "commits": 32,
   "repos": 166,
   "prs": 4,
-  "followers": 174,
+  "followers": 175,
   "top_lang": "Python",
   "watchers": 1,
   "recruits": 16,
@@ -99,9 +99,7 @@
   }
  ],
  "new_followers": [
-  "BEPb",
-  "Therealdk8890",
-  "aza-ali"
+  "the-priest"
  ],
  "new_watchers": [],
  "first_seen": {
@@ -365,7 +363,8 @@
   "georgelautech-byte": "2026-09-22",
   "xiayu1987": "2026-09-22",
   "BEPb": "2026-09-24",
-  "Therealdk8890": "2026-09-24"
+  "Therealdk8890": "2026-09-24",
+  "the-priest": "2026-09-24"
  },
  "traffic_series": [
   {
@@ -842,7 +841,7 @@
   }
  ],
  "languages": {
-  "Python": 2093903,
+  "Python": 2098775,
   "JavaScript": 218012,
   "HTML": 164741,
   "TypeScript": 124554,
