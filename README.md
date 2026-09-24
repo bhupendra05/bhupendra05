@@ -7,12 +7,12 @@
 
 <picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/tagline.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/tagline.svg"><img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/tagline.svg" alt="AION — an operating system for AI agents"/></picture>
 
-<a href="https://bhupendra05.github.io/bhupendra05/"><img src="https://img.shields.io/badge/▲_PORTFOLIO_%26_LIVE_DASHBOARD-b14dff?style=for-the-badge&labelColor=05060a" alt="portfolio"/></a>
-<a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4"><img src="https://img.shields.io/badge/LINKEDIN-00e5ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=05060a" alt="linkedin"/></a>
-<a href="mailto:bgurjar05.bg@gmail.com"><img src="https://img.shields.io/badge/EMAIL-ff2d95?style=for-the-badge&logo=gmail&logoColor=white&labelColor=05060a" alt="email"/></a>
+<a href="https://bhupendra05.github.io/bhupendra05/"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/▲_PORTFOLIO_%26_LIVE_DASHBOARD-b14dff?style=for-the-badge&labelColor=e8ebf3"><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/▲_PORTFOLIO_%26_LIVE_DASHBOARD-b14dff?style=for-the-badge&labelColor=05060a"><img src="https://img.shields.io/badge/▲_PORTFOLIO_%26_LIVE_DASHBOARD-b14dff?style=for-the-badge&labelColor=05060a" alt="portfolio"/></picture></a>
+<a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/LINKEDIN-00e5ff?style=for-the-badge&logo=linkedin&logoColor=12131c&labelColor=e8ebf3"><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/LINKEDIN-00e5ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=05060a"><img src="https://img.shields.io/badge/LINKEDIN-00e5ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=05060a" alt="linkedin"/></picture></a>
+<a href="mailto:bgurjar05.bg@gmail.com"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/EMAIL-ff2d95?style=for-the-badge&logo=gmail&logoColor=12131c&labelColor=e8ebf3"><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/EMAIL-ff2d95?style=for-the-badge&logo=gmail&logoColor=white&labelColor=05060a"><img src="https://img.shields.io/badge/EMAIL-ff2d95?style=for-the-badge&logo=gmail&logoColor=white&labelColor=05060a" alt="email"/></picture></a>
 <br/>
-<img src="https://komarev.com/ghpvc/?username=bhupendra05&style=for-the-badge&color=00e5ff&labelColor=05060a&label=PROFILE+VIEWS" alt="profile views"/>
-<a href="https://github.com/bhupendra05?tab=followers"><img src="https://img.shields.io/github/followers/bhupendra05?style=for-the-badge&color=b14dff&labelColor=05060a&logo=github&label=FOLLOWERS" alt="followers"/></a>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://komarev.com/ghpvc/?username=bhupendra05&style=for-the-badge&color=00e5ff&labelColor=e8ebf3&label=PROFILE+VIEWS"><source media="(prefers-color-scheme: dark)" srcset="https://komarev.com/ghpvc/?username=bhupendra05&style=for-the-badge&color=00e5ff&labelColor=05060a&label=PROFILE+VIEWS"><img src="https://komarev.com/ghpvc/?username=bhupendra05&style=for-the-badge&color=00e5ff&labelColor=05060a&label=PROFILE+VIEWS" alt="profile views"/></picture>
+<a href="https://github.com/bhupendra05?tab=followers"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/github/followers/bhupendra05?style=for-the-badge&color=b14dff&labelColor=e8ebf3&logo=github&label=FOLLOWERS&logoColor=12131c"><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/github/followers/bhupendra05?style=for-the-badge&color=b14dff&labelColor=05060a&logo=github&label=FOLLOWERS"><img src="https://img.shields.io/github/followers/bhupendra05?style=for-the-badge&color=b14dff&labelColor=05060a&logo=github&label=FOLLOWERS" alt="followers"/></picture></a>
 
 <br/><br/>
 
@@ -135,7 +135,7 @@ class BhupendraTale:
 - 🐌 **[n1detect](https://github.com/bhupendra05/n1detect)** — detect N+1 SQL queries · ⏰ **[cronguard](https://github.com/bhupendra05/cronguard)** — alert on failed cron jobs
 </details>
 
-<p align="center"><a href="https://bhupendra05.github.io/bhupendra05/#projects"><img src="https://img.shields.io/badge/BROWSE_ALL_126%2B_TOOLS_→-00e5ff?style=for-the-badge&labelColor=05060a" alt="browse all tools"/></a></p>
+<p align="center"><a href="https://bhupendra05.github.io/bhupendra05/#projects"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/BROWSE_ALL_126%2B_TOOLS_→-00e5ff?style=for-the-badge&labelColor=e8ebf3"><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/BROWSE_ALL_126%2B_TOOLS_→-00e5ff?style=for-the-badge&labelColor=05060a"><img src="https://img.shields.io/badge/BROWSE_ALL_126%2B_TOOLS_→-00e5ff?style=for-the-badge&labelColor=05060a" alt="browse all tools"/></picture></a></p>
 
 <br/>
 
@@ -167,9 +167,9 @@ Want one of these tools, or have a problem you think should exist as one? Reach 
 
 <br/>
 
-<a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4"><img src="https://img.shields.io/badge/LinkedIn-Connect-00e5ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=05060a"/></a>
-<a href="mailto:bgurjar05.bg@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hi-ff2d95?style=for-the-badge&logo=gmail&logoColor=white&labelColor=05060a"/></a>
-<a href="https://bhupendra05.github.io/bhupendra05/"><img src="https://img.shields.io/badge/Portfolio-Explore-b14dff?style=for-the-badge&logo=githubpages&logoColor=white&labelColor=05060a"/></a>
+<a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/LinkedIn-Connect-00e5ff?style=for-the-badge&logo=linkedin&logoColor=12131c&labelColor=e8ebf3"><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/LinkedIn-Connect-00e5ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=05060a"><img src="https://img.shields.io/badge/LinkedIn-Connect-00e5ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=05060a"/></picture></a>
+<a href="mailto:bgurjar05.bg@gmail.com"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Email-Say%20hi-ff2d95?style=for-the-badge&logo=gmail&logoColor=12131c&labelColor=e8ebf3"><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Email-Say%20hi-ff2d95?style=for-the-badge&logo=gmail&logoColor=white&labelColor=05060a"><img src="https://img.shields.io/badge/Email-Say%20hi-ff2d95?style=for-the-badge&logo=gmail&logoColor=white&labelColor=05060a"/></picture></a>
+<a href="https://bhupendra05.github.io/bhupendra05/"><picture><source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Portfolio-Explore-b14dff?style=for-the-badge&logo=githubpages&logoColor=12131c&labelColor=e8ebf3"><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Portfolio-Explore-b14dff?style=for-the-badge&logo=githubpages&logoColor=white&labelColor=05060a"><img src="https://img.shields.io/badge/Portfolio-Explore-b14dff?style=for-the-badge&logo=githubpages&logoColor=white&labelColor=05060a"/></picture></a>
 
 <br/><br/>
 
