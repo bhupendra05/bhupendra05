@@ -40,11 +40,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_1 }}
           GITHUB_LOGIN: bhupendra05
-        run: python scripts/gen_stats.py
+        run: python scripts/gen_stats.py && python scripts/lightify.py assets/stats.svg assets/intel.svg
 
       - name: Commit and push (if changed)
         run: |
           git config user.name "Bhupendra Tale"
           git config user.email "bgurjar05.bg@gmail.com"
-          git add assets/stats.svg assets/intel.svg data/history.json data/dashboard.json
+          git add assets/stats.svg assets/intel.svg assets/light/stats.svg assets/light/intel.svg data/history.json data/dashboard.json
           git diff --staged --quiet && echo "no changes" || (git commit -m "chore: refresh empire dashboard [skip ci]" && git push)

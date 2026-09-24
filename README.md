@@ -1,11 +1,11 @@
 <!-- Every visual below is a self-hosted SVG from one design system.
      Static pieces: scripts/gen_readme_assets.py · live pieces: gen_age.py / gen_stats.py -->
 
-<a href="https://bhupendra05.github.io/bhupendra05/"><img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/header.svg" alt="Bhupendra Tale — Agentic AI Engineer"/></a>
+<a href="https://bhupendra05.github.io/bhupendra05/"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/header.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/header.svg"><img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/header.svg" alt="Bhupendra Tale — Agentic AI Engineer"/></picture></a>
 
 <div align="center">
 
-<img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/tagline.svg" alt="AION — an operating system for AI agents"/>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/tagline.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/tagline.svg"><img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/tagline.svg" alt="AION — an operating system for AI agents"/></picture>
 
 <a href="https://bhupendra05.github.io/bhupendra05/"><img src="https://img.shields.io/badge/▲_PORTFOLIO_%26_LIVE_DASHBOARD-b14dff?style=for-the-badge&labelColor=05060a" alt="portfolio"/></a>
 <a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4"><img src="https://img.shields.io/badge/LINKEDIN-00e5ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=05060a" alt="linkedin"/></a>
@@ -17,13 +17,13 @@
 <br/><br/>
 
 <!-- Live age — re-rendered daily just after midnight IST by .github/workflows/age.yml -->
-<img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/age.svg" alt="Human uptime — online since 05 May 1999"/>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/age.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/age.svg"><img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/age.svg" alt="Human uptime — online since 05 May 1999"/></picture>
 
 </div>
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s01.svg" width="100%" alt=""/>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/s01.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s01.svg"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s01.svg" width="100%" alt=""/></picture>
 
 <table>
 <tr>
@@ -50,36 +50,36 @@ class BhupendraTale:
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/capabilities.svg" width="100%" alt="Agent infrastructure · LLM tooling · AI for finance · local-first · fundamentals · security"/>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/capabilities.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/capabilities.svg"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/capabilities.svg" width="100%" alt="Agent infrastructure · LLM tooling · AI for finance · local-first · fundamentals · security"/></picture>
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s02.svg" width="100%" alt=""/>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/s02.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s02.svg"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s02.svg" width="100%" alt=""/></picture>
 
 <table>
 <tr>
-<td width="50%"><a href="https://bhupendra05.github.io/bhupendra05/#aion"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-aion.svg" width="100%" alt="AION — The Agent Operating System"/></a></td>
-<td width="50%"><a href="https://bhupendra05.github.io/bhupendra05/#termind-ca"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-termind.svg" width="100%" alt="termind — a local AI agent"/></a></td>
+<td width="50%"><a href="https://bhupendra05.github.io/bhupendra05/#aion"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/card-aion.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-aion.svg"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-aion.svg" width="100%" alt="AION — The Agent Operating System"/></picture></a></td>
+<td width="50%"><a href="https://bhupendra05.github.io/bhupendra05/#termind-ca"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/card-termind.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-termind.svg"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-termind.svg" width="100%" alt="termind — a local AI agent"/></picture></a></td>
 </tr>
 <tr>
-<td width="50%"><a href="https://opulix-deal-engine.onrender.com/"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-opulix.svg" width="100%" alt="Opulix — deal-origination engine"/></a></td>
-<td width="50%"><a href="https://github.com/bhupendra05/rag-from-scratch"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-rag.svg" width="100%" alt="rag-from-scratch"/></a></td>
+<td width="50%"><a href="https://opulix-deal-engine.onrender.com/"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/card-opulix.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-opulix.svg"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-opulix.svg" width="100%" alt="Opulix — deal-origination engine"/></picture></a></td>
+<td width="50%"><a href="https://github.com/bhupendra05/rag-from-scratch"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/card-rag.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-rag.svg"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-rag.svg" width="100%" alt="rag-from-scratch"/></picture></a></td>
 </tr>
 <tr>
-<td width="50%"><a href="https://github.com/bhupendra05/langgraph-examples"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-langgraph.svg" width="100%" alt="langgraph-examples"/></a></td>
-<td width="50%"><a href="https://github.com/bhupendra05/mcp-servers"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-mcp.svg" width="100%" alt="mcp-servers"/></a></td>
+<td width="50%"><a href="https://github.com/bhupendra05/langgraph-examples"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/card-langgraph.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-langgraph.svg"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-langgraph.svg" width="100%" alt="langgraph-examples"/></picture></a></td>
+<td width="50%"><a href="https://github.com/bhupendra05/mcp-servers"><picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/card-mcp.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-mcp.svg"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-mcp.svg" width="100%" alt="mcp-servers"/></picture></a></td>
 </tr>
 </table>
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s03.svg" width="100%" alt=""/>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/s03.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s03.svg"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s03.svg" width="100%" alt=""/></picture>
 
-<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/stack.svg" width="100%" alt="Claude · OpenAI · MCP · Ollama · LangGraph · Python · TypeScript · Rust · FastAPI · PostgreSQL · Docker · Kubernetes"/>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/stack.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/stack.svg"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/stack.svg" width="100%" alt="Claude · OpenAI · MCP · Ollama · LangGraph · Python · TypeScript · Rust · FastAPI · PostgreSQL · Docker · Kubernetes"/></picture>
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s04.svg" width="100%" alt=""/>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/s04.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s04.svg"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s04.svg" width="100%" alt=""/></picture>
 
 <details open>
 <summary><b>🧠 Agent Infrastructure</b></summary>
@@ -139,13 +139,13 @@ class BhupendraTale:
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s05.svg" width="100%" alt=""/>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/s05.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s05.svg"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s05.svg" width="100%" alt=""/></picture>
 
 <div align="center">
 
-<img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/stats.svg" alt="GitHub stats"/>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/stats.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/stats.svg"><img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/stats.svg" alt="GitHub stats"/></picture>
 <br/><br/>
-<img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/intel.svg" alt="Live GitHub activity"/>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/intel.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/intel.svg"><img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/intel.svg" alt="Live GitHub activity"/></picture>
 <br/><br/>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/output/github-contribution-grid-snake-dark.svg">
@@ -157,7 +157,7 @@ class BhupendraTale:
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s06.svg" width="100%" alt=""/>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/s06.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s06.svg"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s06.svg" width="100%" alt=""/></picture>
 
 <div align="center">
 
@@ -173,6 +173,6 @@ Want one of these tools, or have a problem you think should exist as one? Reach 
 
 <br/><br/>
 
-<img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/footer.svg" alt="Built in public · Pune, India"/>
+<picture><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/light/ui/footer.svg"><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/footer.svg"><img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/footer.svg" alt="Built in public · Pune, India"/></picture>
 
 </div>

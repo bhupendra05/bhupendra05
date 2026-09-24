@@ -12,6 +12,9 @@ scheduled generators; this script only owns the static pieces.)
 """
 from html import escape
 import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "assets", "ui")
@@ -245,6 +248,11 @@ def main():
         write(f"card-{p['slug']}.svg", card(p))
     write("stack.svg", stack())
     write("footer.svg", footer())
+    # light-theme twins of everything above (assets/light/ui/*.svg)
+    import lightify
+    for f in sorted(os.listdir(OUT)):
+        if f.endswith(".svg"):
+            lightify.lightify(os.path.join("assets", "ui", f))
 
 
 if __name__ == "__main__":

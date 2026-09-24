@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 210" width="440" height="210" role="img" aria-label="Opulix — Deal-origination engine">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f4fa"/></linearGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0092d6"/><stop offset="0.5" stop-color="#8a24e8"/><stop offset="1" stop-color="#e0107a"/></linearGradient>
+  <filter id="glow" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="0" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="440" height="210" rx="12" fill="url(#bg)"/>
+<rect x="0.75" y="0.75" width="438.5" height="208.5" rx="12" fill="none" stroke="url(#neon)" stroke-width="1.5" opacity="0.9"/>
+<path d="M8 8 h18 M8 8 v18" stroke="#e0107a" stroke-width="2" fill="none"/>
+<path d="M432 8 h-18 M432 8 v18" stroke="#e0107a" stroke-width="2" fill="none"/>
+<path d="M8 202 h18 M8 202 v-18" stroke="#e0107a" stroke-width="2" fill="none"/>
+<path d="M432 202 h-18 M432 202 v-18" stroke="#e0107a" stroke-width="2" fill="none"/>
+<polygon points="50.0,36.0 69.1,47.0 69.1,69.0 50.0,80.0 30.9,69.0 30.9,47.0" fill="#ffffff" stroke="#e0107a" stroke-width="2" filter="url(#glow)"/>
+<text x="50" y="63" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="13" font-weight="800" fill="#e0107a" text-anchor="middle" letter-spacing="0" >OP</text>
+<text x="88" y="52" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="20" font-weight="800" fill="#12131c" text-anchor="start" letter-spacing="0" >Opulix</text>
+<text x="88" y="74" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11.5" font-weight="700" fill="#e0107a" text-anchor="start" letter-spacing="0.5" >Deal-origination engine</text>
+<rect x="362.0" y="30" width="56.0" height="22" rx="11" fill="#0aa851" fill-opacity="0.12" stroke="#0aa851" stroke-opacity="0.7"/>
+<text x="390.0" y="45" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="10" font-weight="800" fill="#0aa851" text-anchor="middle" letter-spacing="1" >● LIVE</text>
+<line x1="24" y1="96" x2="416" y2="96" stroke="#e1e5ef"/>
+<text x="24" y="124" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="12.5" font-weight="400" fill="#555a70" text-anchor="start" letter-spacing="0" >In daily use at a real investment bank,</text>
+<text x="24" y="144" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="12.5" font-weight="400" fill="#555a70" text-anchor="start" letter-spacing="0" >surfacing deals before anyone else.</text>
+<rect x="24" y="166" width="72.2" height="24" rx="12" fill="#ffffff" stroke="#e0107a" stroke-opacity="0.55"/><circle cx="36" cy="178" r="3.5" fill="#e0107a"/><text x="44" y="182" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11" font-weight="400" fill="#12131c" text-anchor="start" letter-spacing="0" >finance</text>
+<rect x="104.19999999999999" y="166" width="39.2" height="24" rx="12" fill="#ffffff" stroke="#8a24e8" stroke-opacity="0.55"/><circle cx="116.19999999999999" cy="178" r="3.5" fill="#8a24e8"/><text x="124.19999999999999" y="182" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11" font-weight="400" fill="#12131c" text-anchor="start" letter-spacing="0" >IB</text>
+<rect x="151.39999999999998" y="166" width="39.2" height="24" rx="12" fill="#ffffff" stroke="#0092d6" stroke-opacity="0.55"/><circle cx="163.39999999999998" cy="178" r="3.5" fill="#0092d6"/><text x="171.39999999999998" y="182" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11" font-weight="400" fill="#12131c" text-anchor="start" letter-spacing="0" >AI</text>
+<text x="416" y="183" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="16" font-weight="800" fill="#e0107a" text-anchor="end" letter-spacing="0" >↗</text>
+</svg>

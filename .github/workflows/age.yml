@@ -24,12 +24,12 @@ jobs:
         with:
           python-version: '3.11'
       # Stdlib only, no token — nothing here can expire and silently stall.
-      - run: python scripts/gen_age.py
+      - run: python scripts/gen_age.py && python scripts/lightify.py assets/age.svg
       - name: Commit and push (if changed)
         run: |
           git config user.name "Bhupendra Tale"
           git config user.email "bgurjar05.bg@gmail.com"
-          git add assets/age.svg
+          git add assets/age.svg assets/light/age.svg
           git diff --staged --quiet && echo "no changes" && exit 0
           git commit -m "chore: refresh live age [skip ci]"
           # The dashboard workflow also pushes to main; rebase onto it instead of losing the race.
