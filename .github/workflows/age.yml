@@ -1,0 +1,36 @@
+name: Refresh Live Age
+
+on:
+  schedule:
+    - cron: '35 18 * * *'   # 00:05 IST — ticks over on the actual local day, not UTC's
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/gen_age.py', '.github/workflows/age.yml']
+
+concurrency:
+  group: live-age
+  cancel-in-progress: true
+
+jobs:
+  age:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      # Stdlib only, no token — nothing here can expire and silently stall.
+      - run: python scripts/gen_age.py
+      - name: Commit and push (if changed)
+        run: |
+          git config user.name "Bhupendra Tale"
+          git config user.email "bgurjar05.bg@gmail.com"
+          git add assets/age.svg
+          git diff --staged --quiet && echo "no changes" && exit 0
+          git commit -m "chore: refresh live age [skip ci]"
+          # The dashboard workflow also pushes to main; rebase onto it instead of losing the race.
+          git pull --rebase && git push

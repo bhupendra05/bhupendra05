@@ -374,12 +374,12 @@ print(f"✓ data/dashboard.json")
 # ══════════════════════════════ CARD A — stats.svg ═══════════════════════════
 W, H = 720, 220
 STATS = [
-    ("⭐  STARS",            fmt(stars),        "#a875ff"),
-    ("🔥  COMMITS / YEAR",   fmt(commits),      "#4fd8ff"),
-    ("📦  REPOS SHIPPED",    fmt(public_repos), "#a875ff"),
-    ("🔀  PULL REQUESTS",    fmt(prs),          "#4fd8ff"),
-    ("👥  FOLLOWERS",        fmt(followers),    "#a875ff"),
-    ("🏆  TOP LANGUAGE",     top_lang,          "#4fd8ff"),
+    ("⭐  STARS",            fmt(stars),        "#b14dff"),
+    ("🔥  COMMITS / YEAR",   fmt(commits),      "#00e5ff"),
+    ("📦  REPOS SHIPPED",    fmt(public_repos), "#b14dff"),
+    ("🔀  PULL REQUESTS",    fmt(prs),          "#00e5ff"),
+    ("👥  FOLLOWERS",        fmt(followers),    "#b14dff"),
+    ("🏆  TOP LANGUAGE",     top_lang,          "#00e5ff"),
 ]
 COL_X = [30, 270, 510]
 ROW_Y = [86, 164]
@@ -396,9 +396,9 @@ for i, (label, value, color) in enumerate(STATS):
 cells_svg = "\n  ".join(cells)
 v1, v2 = 248, 492
 vdivs = (
-    f'<line x1="{v1}" y1="60" x2="{v1}" y2="{H-14}" stroke="#a875ff" stroke-width="0.6" opacity="0.18"/>'
-    f'<line x1="{v2}" y1="60" x2="{v2}" y2="{H-14}" stroke="#a875ff" stroke-width="0.6" opacity="0.18"/>'
-    f'<line x1="24" y1="130" x2="{W-24}" y2="130" stroke="#4fd8ff" stroke-width="0.6" opacity="0.18"/>'
+    f'<line x1="{v1}" y1="60" x2="{v1}" y2="{H-14}" stroke="#b14dff" stroke-width="0.6" opacity="0.18"/>'
+    f'<line x1="{v2}" y1="60" x2="{v2}" y2="{H-14}" stroke="#b14dff" stroke-width="0.6" opacity="0.18"/>'
+    f'<line x1="24" y1="130" x2="{W-24}" y2="130" stroke="#00e5ff" stroke-width="0.6" opacity="0.18"/>'
 )
 
 stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="GitHub stats for {LOGIN}">
@@ -408,9 +408,9 @@ stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" wi
     <stop offset="1" stop-color="#0d0f18"/>
   </linearGradient>
   <linearGradient id="border" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0"   stop-color="#4fd8ff"/>
-    <stop offset="0.5" stop-color="#a875ff"/>
-    <stop offset="1"   stop-color="#ff5fb0"/>
+    <stop offset="0"   stop-color="#00e5ff"/>
+    <stop offset="0.5" stop-color="#b14dff"/>
+    <stop offset="1"   stop-color="#ff2d95"/>
   </linearGradient>
   <filter id="glow" x="-20%" y="-60%" width="140%" height="220%">
     <feGaussianBlur stdDeviation="2.2" result="b"/>
@@ -422,15 +422,15 @@ stats_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" wi
 <rect width="{W}" height="{H}" rx="12" fill="none" stroke="url(#border)" stroke-width="1.5" opacity="0.85"/>
 
 <line x1="20" y1="56" x2="{W-20}" y2="56" stroke="url(#border)" stroke-width="0.8" opacity="0.5"/>
-<text x="20" y="28" font-size="12.5" font-weight="700" fill="#a875ff"
+<text x="20" y="28" font-size="12.5" font-weight="700" fill="#b14dff"
   font-family="JetBrains Mono,Courier New,monospace" letter-spacing="3">▲ {LOGIN.upper()} // GITHUB ACTIVITY</text>
-<text x="20" y="46" font-size="10" fill="#4fd8ff" font-family="JetBrains Mono,Courier New,monospace"
+<text x="20" y="46" font-size="10" fill="#00e5ff" font-family="JetBrains Mono,Courier New,monospace"
   letter-spacing="1.6">{escape(tagline)}</text>
 
-<path d="M8 8 h20 M8 8 v20"   stroke="#4fd8ff" stroke-width="2" fill="none" opacity="0.7"/>
-<path d="M{W-8} 8 h-20 M{W-8} 8 v20"     stroke="#4fd8ff" stroke-width="2" fill="none" opacity="0.7"/>
-<path d="M8 {H-8} h20 M8 {H-8} v-20"     stroke="#a875ff" stroke-width="2" fill="none" opacity="0.7"/>
-<path d="M{W-8} {H-8} h-20 M{W-8} {H-8} v-20" stroke="#a875ff" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M8 8 h20 M8 8 v20"   stroke="#00e5ff" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M{W-8} 8 h-20 M{W-8} 8 v20"     stroke="#00e5ff" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M8 {H-8} h20 M8 {H-8} v-20"     stroke="#b14dff" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M{W-8} {H-8} h-20 M{W-8} {H-8} v-20" stroke="#b14dff" stroke-width="2" fill="none" opacity="0.7"/>
 
 {vdivs}
 
@@ -451,8 +451,8 @@ y = 92
 for e in recent_stars:
     feed_rows.append(
         f'<text x="30" y="{y}" font-size="12.5" fill="#eef0f6" font-family="JetBrains Mono,Courier New,monospace">'
-        f'<tspan fill="#a875ff">⭐</tspan> @{escape(e["login"])} <tspan fill="#5c6078">starred</tspan> {escape(e["repo"])}</text>'
-        f'<text x="{W-30}" y="{y}" font-size="11" fill="#4fd8ff" text-anchor="end" '
+        f'<tspan fill="#b14dff">⭐</tspan> @{escape(e["login"])} <tspan fill="#5c6078">starred</tspan> {escape(e["repo"])}</text>'
+        f'<text x="{W-30}" y="{y}" font-size="11" fill="#00e5ff" text-anchor="end" '
         f'font-family="JetBrains Mono,Courier New,monospace">{relative_time(e["at"], now)}</text>'
     )
     y += 24
@@ -466,13 +466,13 @@ signal_lines = []
 if new_followers:
     names = ", ".join(f"@{escape(n)}" for n in new_followers[:4])
     more = f" +{len(new_followers)-4} more" if len(new_followers) > 4 else ""
-    signal_lines.append(f'<tspan fill="#4fd8ff">new followers:</tspan> <tspan fill="#eef0f6">{names}{more}</tspan>')
+    signal_lines.append(f'<tspan fill="#00e5ff">new followers:</tspan> <tspan fill="#eef0f6">{names}{more}</tspan>')
 else:
     signal_lines.append('<tspan fill="#5c6078">no new followers since last check</tspan>')
 if new_watchers:
     names = ", ".join(f"@{escape(n)}" for n in new_watchers[:4])
     more = f" +{len(new_watchers)-4} more" if len(new_watchers) > 4 else ""
-    signal_lines.append(f'<tspan fill="#4fd8ff">new watchers:</tspan> <tspan fill="#eef0f6">{names}{more}</tspan>')
+    signal_lines.append(f'<tspan fill="#00e5ff">new watchers:</tspan> <tspan fill="#eef0f6">{names}{more}</tspan>')
 else:
     signal_lines.append('<tspan fill="#5c6078">no new watchers since last check</tspan>')
 
@@ -484,10 +484,10 @@ signals_svg = "\n  ".join(
 H2 = signals_y + len(signal_lines) * 22 + 68
 hud_y = H2 - 46
 HUD = [
-    ("WATCHERS", str(len(unique_watchers)), "#a875ff"),
-    ("NEW STARS", str(len(star_events)), "#4fd8ff"),
-    ("CLONES·14D", f"{total_clones} ({total_clones_uniq}u)", "#a875ff"),
-    ("VIEWS·14D", f"{total_views} ({total_views_uniq}u)", "#4fd8ff"),
+    ("WATCHERS", str(len(unique_watchers)), "#b14dff"),
+    ("NEW STARS", str(len(star_events)), "#00e5ff"),
+    ("CLONES·14D", f"{total_clones} ({total_clones_uniq}u)", "#b14dff"),
+    ("VIEWS·14D", f"{total_views} ({total_views_uniq}u)", "#00e5ff"),
 ]
 hud_cells = []
 hud_x = [30, 210, 390, 570]
@@ -507,9 +507,9 @@ intel_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H2}" w
     <stop offset="1" stop-color="#0d0f18"/>
   </linearGradient>
   <linearGradient id="border2" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0"   stop-color="#4fd8ff"/>
-    <stop offset="0.5" stop-color="#a875ff"/>
-    <stop offset="1"   stop-color="#ff5fb0"/>
+    <stop offset="0"   stop-color="#00e5ff"/>
+    <stop offset="0.5" stop-color="#b14dff"/>
+    <stop offset="1"   stop-color="#ff2d95"/>
   </linearGradient>
 </defs>
 
@@ -517,22 +517,22 @@ intel_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H2}" w
 <rect width="{W}" height="{H2}" rx="12" fill="none" stroke="url(#border2)" stroke-width="1.5" opacity="0.85"/>
 
 <line x1="20" y1="56" x2="{W-20}" y2="56" stroke="url(#border2)" stroke-width="0.8" opacity="0.5"/>
-<text x="20" y="28" font-size="12.5" font-weight="700" fill="#a875ff"
+<text x="20" y="28" font-size="12.5" font-weight="700" fill="#b14dff"
   font-family="JetBrains Mono,Courier New,monospace" letter-spacing="3">▲ LIVE GITHUB ACTIVITY</text>
-<text x="20" y="46" font-size="10" fill="#4fd8ff" font-family="JetBrains Mono,Courier New,monospace"
+<text x="20" y="46" font-size="10" fill="#00e5ff" font-family="JetBrains Mono,Courier New,monospace"
   letter-spacing="1.6">REFRESHED DAILY AT 02:00 UTC</text>
 
-<path d="M8 8 h20 M8 8 v20"   stroke="#4fd8ff" stroke-width="2" fill="none" opacity="0.7"/>
-<path d="M{W-8} 8 h-20 M{W-8} 8 v20"     stroke="#4fd8ff" stroke-width="2" fill="none" opacity="0.7"/>
-<path d="M8 {H2-8} h20 M8 {H2-8} v-20"     stroke="#a875ff" stroke-width="2" fill="none" opacity="0.7"/>
-<path d="M{W-8} {H2-8} h-20 M{W-8} {H2-8} v-20" stroke="#a875ff" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M8 8 h20 M8 8 v20"   stroke="#00e5ff" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M{W-8} 8 h-20 M{W-8} 8 v20"     stroke="#00e5ff" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M8 {H2-8} h20 M8 {H2-8} v-20"     stroke="#b14dff" stroke-width="2" fill="none" opacity="0.7"/>
+<path d="M{W-8} {H2-8} h-20 M{W-8} {H2-8} v-20" stroke="#b14dff" stroke-width="2" fill="none" opacity="0.7"/>
 
 {"".join(feed_rows)}
 
-<line x1="20" y1="{signals_y - 16}" x2="{W-20}" y2="{signals_y - 16}" stroke="#4fd8ff" stroke-width="0.5" opacity="0.18"/>
+<line x1="20" y1="{signals_y - 16}" x2="{W-20}" y2="{signals_y - 16}" stroke="#00e5ff" stroke-width="0.5" opacity="0.18"/>
 {signals_svg}
 
-<line x1="20" y1="{hud_y - 22}" x2="{W-20}" y2="{hud_y - 22}" stroke="#a875ff" stroke-width="0.5" opacity="0.18"/>
+<line x1="20" y1="{hud_y - 22}" x2="{W-20}" y2="{hud_y - 22}" stroke="#b14dff" stroke-width="0.5" opacity="0.18"/>
 {hud_svg}
 </svg>'''
 

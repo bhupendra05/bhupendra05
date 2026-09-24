@@ -7,20 +7,25 @@
 
 <!-- Typing animation (demolab host — reliable) -->
 <a href="https://github.com/bhupendra05">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2800&pause=700&color=4FD8FF&center=true&vCenter=true&width=760&lines=AION+%E2%80%94+an+OS+for+AI+agents;LLM+%C2%B7+MCP+%C2%B7+RAG+%C2%B7+Agentic+AI;I+turn+expert+workflows+into+AI+tools;126%2B+tools+shipped%2C+all+tested+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2800&pause=700&color=00E5FF&center=true&vCenter=true&width=760&lines=AION+%E2%80%94+an+OS+for+AI+agents;LLM+%C2%B7+MCP+%C2%B7+RAG+%C2%B7+Agentic+AI;I+turn+expert+workflows+into+AI+tools;126%2B+tools+shipped%2C+all+tested+%F0%9F%9A%80" alt="Typing SVG" />
 </a>
 
 <br/>
 
-<a href="https://bhupendra05.github.io/bhupendra05/"><img src="https://img.shields.io/badge/🌐_PORTFOLIO_%26_LIVE_DASHBOARD-a875ff?style=for-the-badge&labelColor=05060a" alt="live dashboard"/></a>
+<a href="https://bhupendra05.github.io/bhupendra05/"><img src="https://img.shields.io/badge/🌐_PORTFOLIO_%26_LIVE_DASHBOARD-b14dff?style=for-the-badge&labelColor=05060a" alt="live dashboard"/></a>
 
 <br/><br/>
 
 <!-- Badges (komarev + shields — reliable palette matched to the site) -->
-<img src="https://komarev.com/ghpvc/?username=bhupendra05&style=for-the-badge&color=4fd8ff&labelColor=05060a&label=PROFILE+VIEWS" alt="views"/>
-<a href="https://github.com/bhupendra05?tab=followers"><img src="https://img.shields.io/github/followers/bhupendra05?style=for-the-badge&color=a875ff&labelColor=05060a&logo=github" alt="followers"/></a>
-<a href="mailto:bgurjar05.bg@gmail.com"><img src="https://img.shields.io/badge/EMAIL-ff5fb0?style=for-the-badge&logo=gmail&logoColor=white&labelColor=05060a" alt="email"/></a>
-<a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4"><img src="https://img.shields.io/badge/LINKEDIN-4fd8ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=05060a" alt="linkedin"/></a>
+<img src="https://komarev.com/ghpvc/?username=bhupendra05&style=for-the-badge&color=00e5ff&labelColor=05060a&label=PROFILE+VIEWS" alt="views"/>
+<a href="https://github.com/bhupendra05?tab=followers"><img src="https://img.shields.io/github/followers/bhupendra05?style=for-the-badge&color=b14dff&labelColor=05060a&logo=github" alt="followers"/></a>
+<a href="mailto:bgurjar05.bg@gmail.com"><img src="https://img.shields.io/badge/EMAIL-ff2d95?style=for-the-badge&logo=gmail&logoColor=white&labelColor=05060a" alt="email"/></a>
+<a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4"><img src="https://img.shields.io/badge/LINKEDIN-00e5ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=05060a" alt="linkedin"/></a>
+
+<br/><br/>
+
+<!-- Live age — re-rendered daily just after midnight IST by .github/workflows/age.yml -->
+<img width="92%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/age.svg" alt="Live age — online since 05 May 1999"/>
 
 </div>
 
@@ -94,7 +99,7 @@ class BhupendraTale:
 ### ▲ [AION](https://bhupendra05.github.io/bhupendra05/#aion)
 The Agent Operating System — a micro-kernel that schedules the resources agents actually burn: **tokens, context & credits**.
 <br/>
-![flagship](https://img.shields.io/badge/flagship-4fd8ff?style=flat-square&labelColor=05060a) ![tests](https://img.shields.io/badge/356_tests-ff5fb0?style=flat-square&labelColor=05060a) ![private](https://img.shields.io/badge/private_%C2%B7_by_design-a875ff?style=flat-square&labelColor=05060a)
+![flagship](https://img.shields.io/badge/flagship-00e5ff?style=flat-square&labelColor=05060a) ![tests](https://img.shields.io/badge/356_tests-ff2d95?style=flat-square&labelColor=05060a) ![private](https://img.shields.io/badge/private_%C2%B7_by_design-b14dff?style=flat-square&labelColor=05060a)
 
 </td>
 <td width="50%" valign="top">
@@ -102,7 +107,7 @@ The Agent Operating System — a micro-kernel that schedules the resources agent
 ### ⚡ [termind](https://bhupendra05.github.io/bhupendra05/#termind-ca)
 A local AI agent, terminal + web UI, one shared brain — with a dedicated workbench for chartered accountants. $0/query, private by design.
 <br/>
-![tests](https://img.shields.io/badge/216_tests-a875ff?style=flat-square&labelColor=05060a) ![local](https://img.shields.io/badge/local_%C2%B7_private-4fd8ff?style=flat-square&labelColor=05060a)
+![tests](https://img.shields.io/badge/216_tests-b14dff?style=flat-square&labelColor=05060a) ![local](https://img.shields.io/badge/local_%C2%B7_private-00e5ff?style=flat-square&labelColor=05060a)
 
 </td>
 </tr>
@@ -112,7 +117,7 @@ A local AI agent, terminal + web UI, one shared brain — with a dedicated workb
 ### 🔗 [rag-from-scratch](https://github.com/bhupendra05/rag-from-scratch)
 A complete RAG pipeline with no LangChain — chunking, hybrid FAISS + BM25 retrieval, understood at the mechanism level.
 <br/>
-![stars](https://img.shields.io/github/stars/bhupendra05/rag-from-scratch?style=flat-square&logo=github&logoColor=white&color=a875ff&labelColor=05060a) ![scratch](https://img.shields.io/badge/zero_frameworks-4fd8ff?style=flat-square&labelColor=05060a)
+![stars](https://img.shields.io/github/stars/bhupendra05/rag-from-scratch?style=flat-square&logo=github&logoColor=white&color=b14dff&labelColor=05060a) ![scratch](https://img.shields.io/badge/zero_frameworks-00e5ff?style=flat-square&labelColor=05060a)
 
 </td>
 <td width="50%" valign="top">
@@ -120,7 +125,7 @@ A complete RAG pipeline with no LangChain — chunking, hybrid FAISS + BM25 retr
 ### 🕸️ [langgraph-examples](https://github.com/bhupendra05/langgraph-examples)
 Six production agent patterns — supervisor routing, human-in-the-loop, parallel fan-out, self-reflective RAG.
 <br/>
-![stars](https://img.shields.io/github/stars/bhupendra05/langgraph-examples?style=flat-square&logo=github&logoColor=white&color=a875ff&labelColor=05060a) ![patterns](https://img.shields.io/badge/6_patterns-ff5fb0?style=flat-square&labelColor=05060a)
+![stars](https://img.shields.io/github/stars/bhupendra05/langgraph-examples?style=flat-square&logo=github&logoColor=white&color=b14dff&labelColor=05060a) ![patterns](https://img.shields.io/badge/6_patterns-ff2d95?style=flat-square&labelColor=05060a)
 
 </td>
 </tr>
@@ -130,7 +135,7 @@ Six production agent patterns — supervisor routing, human-in-the-loop, paralle
 ### 🖇️ [mcp-servers](https://github.com/bhupendra05/mcp-servers)
 Four production-ready MCP servers — GitHub, PostgreSQL, filesystem, and a web scraper — safe by default.
 <br/>
-![stars](https://img.shields.io/github/stars/bhupendra05/mcp-servers?style=flat-square&logo=github&logoColor=white&color=a875ff&labelColor=05060a) ![mcp](https://img.shields.io/badge/MCP-4fd8ff?style=flat-square&labelColor=05060a)
+![stars](https://img.shields.io/github/stars/bhupendra05/mcp-servers?style=flat-square&logo=github&logoColor=white&color=b14dff&labelColor=05060a) ![mcp](https://img.shields.io/badge/MCP-00e5ff?style=flat-square&labelColor=05060a)
 
 </td>
 <td width="50%" valign="top">
@@ -138,7 +143,7 @@ Four production-ready MCP servers — GitHub, PostgreSQL, filesystem, and a web 
 ### 💼 [Opulix](https://opulix-deal-engine.onrender.com/)
 Deal-origination platform for investment bankers — deployed and in daily use by a real IB firm, not a demo.
 <br/>
-![live](https://img.shields.io/badge/LIVE_PRODUCT-3ddc84?style=flat-square&labelColor=05060a) ![finance](https://img.shields.io/badge/finance_%C2%B7_IB-a875ff?style=flat-square&labelColor=05060a)
+![live](https://img.shields.io/badge/LIVE_PRODUCT-3ddc84?style=flat-square&labelColor=05060a) ![finance](https://img.shields.io/badge/finance_%C2%B7_IB-b14dff?style=flat-square&labelColor=05060a)
 
 </td>
 </tr>
@@ -224,9 +229,9 @@ Deal-origination platform for investment bankers — deployed and in daily use b
 
 <br/><br/>
 
-<img height="172" src="https://streak-stats.demolab.com/?user=bhupendra05&hide_border=true&background=05060a&stroke=4fd8ff&ring=a875ff&fire=ff5fb0&currStreakNum=eef0f6&currStreakLabel=4fd8ff&sideNums=eef0f6&sideLabels=4fd8ff&dates=9498ab&excludeDaysLabel=9498ab" alt="streak"/>
+<img height="172" src="https://streak-stats.demolab.com/?user=bhupendra05&hide_border=true&background=05060a&stroke=00e5ff&ring=b14dff&fire=ff2d95&currStreakNum=eef0f6&currStreakLabel=00e5ff&sideNums=eef0f6&sideLabels=00e5ff&dates=9498ab&excludeDaysLabel=9498ab" alt="streak"/>
 
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=bhupendra05&bg_color=05060a&color=4fd8ff&line=a875ff&point=eef0f6&area=true&area_color=a875ff&hide_border=true&title_color=a875ff" alt="activity graph"/>
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=bhupendra05&bg_color=05060a&color=00e5ff&line=b14dff&point=eef0f6&area=true&area_color=b14dff&hide_border=true&title_color=b14dff" alt="activity graph"/>
 
 </div>
 
@@ -255,9 +260,9 @@ Deal-origination platform for investment bankers — deployed and in daily use b
 I build AI-native infrastructure and I'm always up for a sharp problem.
 **Open to agentic-AI roles, collaborations, and freelance work.**
 
-<a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4"><img src="https://img.shields.io/badge/LinkedIn-Connect-4fd8ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=05060a"/></a>
-<a href="mailto:bgurjar05.bg@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hi-ff5fb0?style=for-the-badge&logo=gmail&logoColor=white&labelColor=05060a"/></a>
-<a href="https://github.com/bhupendra05"><img src="https://img.shields.io/badge/GitHub-Follow-a875ff?style=for-the-badge&logo=github&logoColor=white&labelColor=05060a"/></a>
+<a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4"><img src="https://img.shields.io/badge/LinkedIn-Connect-00e5ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=05060a"/></a>
+<a href="mailto:bgurjar05.bg@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hi-ff2d95?style=for-the-badge&logo=gmail&logoColor=white&labelColor=05060a"/></a>
+<a href="https://github.com/bhupendra05"><img src="https://img.shields.io/badge/GitHub-Follow-b14dff?style=for-the-badge&logo=github&logoColor=white&labelColor=05060a"/></a>
 
 <br/><br/>
 
