@@ -48,7 +48,7 @@
 class BhupendraTale:
     role       = "AI Engineer · Agentic AI"
     stack      = "LLM · MCP · RAG · Agents"
-    location   = "Indore, India 🇮🇳"
+    location   = "Pune, India 🇮🇳"
     focus      = "the infra agents run on"
     philosophy = "problem → sharp tool → test → ship"
     flagship   = "AION — an OS for AI agents"
