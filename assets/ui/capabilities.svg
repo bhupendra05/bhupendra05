@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="What I build">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05060a"/><stop offset="1" stop-color="#0d0f18"/></linearGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff"/><stop offset="0.5" stop-color="#b14dff"/><stop offset="1" stop-color="#ff2d95"/></linearGradient>
+  <filter id="glow" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="900" height="300" rx="12" fill="url(#bg)"/>
+<rect x="0.75" y="0.75" width="898.5" height="298.5" rx="12" fill="none" stroke="url(#neon)" stroke-width="1.5" opacity="0.9"/>
+<path d="M8 8 h18 M8 8 v18" stroke="#00e5ff" stroke-width="2" fill="none"/>
+<path d="M892 8 h-18 M892 8 v18" stroke="#00e5ff" stroke-width="2" fill="none"/>
+<path d="M8 292 h18 M8 292 v-18" stroke="#ff2d95" stroke-width="2" fill="none"/>
+<path d="M892 292 h-18 M892 292 v-18" stroke="#ff2d95" stroke-width="2" fill="none"/>
+<rect x="22.0" y="22.0" width="274.7" height="120.0" rx="9" fill="#05060a" stroke="#1a1d2e"/>
+<rect x="22.0" y="22.0" width="4" height="120.0" rx="2" fill="#00e5ff"/>
+<text x="42.0" y="56.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11" font-weight="700" fill="#00e5ff" text-anchor="start" letter-spacing="2" >01</text>
+<text x="42.0" y="80.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="13" font-weight="800" fill="#eef0f6" text-anchor="start" letter-spacing="1" >AGENT INFRASTRUCTURE</text>
+<text x="42.0" y="106.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11.5" font-weight="400" fill="#9aa0b8" text-anchor="start" letter-spacing="0" >AION kernel: sandboxing, credit</text>
+<text x="42.0" y="125.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11.5" font-weight="400" fill="#9aa0b8" text-anchor="start" letter-spacing="0" >budgets, memory, multi-agent IPC</text>
+<rect x="312.7" y="22.0" width="274.7" height="120.0" rx="9" fill="#05060a" stroke="#1a1d2e"/>
+<rect x="312.7" y="22.0" width="4" height="120.0" rx="2" fill="#b14dff"/>
+<text x="332.6666666666667" y="56.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11" font-weight="700" fill="#b14dff" text-anchor="start" letter-spacing="2" >02</text>
+<text x="332.6666666666667" y="80.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="13" font-weight="800" fill="#eef0f6" text-anchor="start" letter-spacing="1" >LLM &amp; AGENT TOOLING</text>
+<text x="332.6666666666667" y="106.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11.5" font-weight="400" fill="#9aa0b8" text-anchor="start" letter-spacing="0" >MCP servers, RAG from scratch,</text>
+<text x="332.6666666666667" y="125.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11.5" font-weight="400" fill="#9aa0b8" text-anchor="start" letter-spacing="0" >LangGraph multi-agent patterns</text>
+<rect x="603.3" y="22.0" width="274.7" height="120.0" rx="9" fill="#05060a" stroke="#1a1d2e"/>
+<rect x="603.3" y="22.0" width="4" height="120.0" rx="2" fill="#ff2d95"/>
+<text x="623.3333333333334" y="56.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11" font-weight="700" fill="#ff2d95" text-anchor="start" letter-spacing="2" >03</text>
+<text x="623.3333333333334" y="80.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="13" font-weight="800" fill="#eef0f6" text-anchor="start" letter-spacing="1" >AI FOR FINANCE &amp; IB</text>
+<text x="623.3333333333334" y="106.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11.5" font-weight="400" fill="#9aa0b8" text-anchor="start" letter-spacing="0" >Deal sourcing in production at</text>
+<text x="623.3333333333334" y="125.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11.5" font-weight="400" fill="#9aa0b8" text-anchor="start" letter-spacing="0" >a real IB firm, DCF, waterfalls</text>
+<rect x="22.0" y="158.0" width="274.7" height="120.0" rx="9" fill="#05060a" stroke="#1a1d2e"/>
+<rect x="22.0" y="158.0" width="4" height="120.0" rx="2" fill="#39ff88"/>
+<text x="42.0" y="192.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11" font-weight="700" fill="#39ff88" text-anchor="start" letter-spacing="2" >04</text>
+<text x="42.0" y="216.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="13" font-weight="800" fill="#eef0f6" text-anchor="start" letter-spacing="1" >LOCAL-FIRST &amp; PRIVATE</text>
+<text x="42.0" y="242.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11.5" font-weight="400" fill="#9aa0b8" text-anchor="start" letter-spacing="0" >Agents that never send your</text>
+<text x="42.0" y="261.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11.5" font-weight="400" fill="#9aa0b8" text-anchor="start" letter-spacing="0" >data anywhere. $0 per query.</text>
+<rect x="312.7" y="158.0" width="274.7" height="120.0" rx="9" fill="#05060a" stroke="#1a1d2e"/>
+<rect x="312.7" y="158.0" width="4" height="120.0" rx="2" fill="#00e5ff"/>
+<text x="332.6666666666667" y="192.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11" font-weight="700" fill="#00e5ff" text-anchor="start" letter-spacing="2" >05</text>
+<text x="332.6666666666667" y="216.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="13" font-weight="800" fill="#eef0f6" text-anchor="start" letter-spacing="1" >FUNDAMENTALS, BY HAND</text>
+<text x="332.6666666666667" y="242.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11.5" font-weight="400" fill="#9aa0b8" text-anchor="start" letter-spacing="0" >Rate limiters, sketches, BM25</text>
+<text x="332.6666666666667" y="261.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11.5" font-weight="400" fill="#9aa0b8" text-anchor="start" letter-spacing="0" >search — built, not wrapped</text>
+<rect x="603.3" y="158.0" width="274.7" height="120.0" rx="9" fill="#05060a" stroke="#1a1d2e"/>
+<rect x="603.3" y="158.0" width="4" height="120.0" rx="2" fill="#b14dff"/>
+<text x="623.3333333333334" y="192.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11" font-weight="700" fill="#b14dff" text-anchor="start" letter-spacing="2" >06</text>
+<text x="623.3333333333334" y="216.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="13" font-weight="800" fill="#eef0f6" text-anchor="start" letter-spacing="1" >SECURITY-MINDED</text>
+<text x="623.3333333333334" y="242.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11.5" font-weight="400" fill="#9aa0b8" text-anchor="start" letter-spacing="0" >Phishing, secret scanning, PII</text>
+<text x="623.3333333333334" y="261.0" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11.5" font-weight="400" fill="#9aa0b8" text-anchor="start" letter-spacing="0" >redaction, DNS-tunnel detection</text>
+</svg>

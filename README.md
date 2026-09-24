@@ -1,54 +1,45 @@
-<!-- ====================== HEADER (self-hosted SVG — no flaky third-party) ====================== -->
-<a href="https://github.com/bhupendra05">
-  <img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/header.svg" alt="Bhupendra Tale — AI Engineer"/>
-</a>
+<!-- Every visual below is a self-hosted SVG from one design system.
+     Static pieces: scripts/gen_readme_assets.py · live pieces: gen_age.py / gen_stats.py -->
+
+<a href="https://bhupendra05.github.io/bhupendra05/"><img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/header.svg" alt="Bhupendra Tale — Agentic AI Engineer"/></a>
 
 <div align="center">
 
-<!-- Typing animation (demolab host — reliable) -->
-<a href="https://github.com/bhupendra05">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2800&pause=700&color=00E5FF&center=true&vCenter=true&width=760&lines=AION+%E2%80%94+an+OS+for+AI+agents;LLM+%C2%B7+MCP+%C2%B7+RAG+%C2%B7+Agentic+AI;I+turn+expert+workflows+into+AI+tools;126%2B+tools+shipped%2C+all+tested+%F0%9F%9A%80" alt="Typing SVG" />
-</a>
+<img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/tagline.svg" alt="AION — an operating system for AI agents"/>
 
-<br/>
-
-<a href="https://bhupendra05.github.io/bhupendra05/"><img src="https://img.shields.io/badge/🌐_PORTFOLIO_%26_LIVE_DASHBOARD-b14dff?style=for-the-badge&labelColor=05060a" alt="live dashboard"/></a>
-
-<br/><br/>
-
-<!-- Badges (komarev + shields — reliable palette matched to the site) -->
-<img src="https://komarev.com/ghpvc/?username=bhupendra05&style=for-the-badge&color=00e5ff&labelColor=05060a&label=PROFILE+VIEWS" alt="views"/>
-<a href="https://github.com/bhupendra05?tab=followers"><img src="https://img.shields.io/github/followers/bhupendra05?style=for-the-badge&color=b14dff&labelColor=05060a&logo=github" alt="followers"/></a>
-<a href="mailto:bgurjar05.bg@gmail.com"><img src="https://img.shields.io/badge/EMAIL-ff2d95?style=for-the-badge&logo=gmail&logoColor=white&labelColor=05060a" alt="email"/></a>
+<a href="https://bhupendra05.github.io/bhupendra05/"><img src="https://img.shields.io/badge/▲_PORTFOLIO_%26_LIVE_DASHBOARD-b14dff?style=for-the-badge&labelColor=05060a" alt="portfolio"/></a>
 <a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4"><img src="https://img.shields.io/badge/LINKEDIN-00e5ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=05060a" alt="linkedin"/></a>
+<a href="mailto:bgurjar05.bg@gmail.com"><img src="https://img.shields.io/badge/EMAIL-ff2d95?style=for-the-badge&logo=gmail&logoColor=white&labelColor=05060a" alt="email"/></a>
+<br/>
+<img src="https://komarev.com/ghpvc/?username=bhupendra05&style=for-the-badge&color=00e5ff&labelColor=05060a&label=PROFILE+VIEWS" alt="profile views"/>
+<a href="https://github.com/bhupendra05?tab=followers"><img src="https://img.shields.io/github/followers/bhupendra05?style=for-the-badge&color=b14dff&labelColor=05060a&logo=github&label=FOLLOWERS" alt="followers"/></a>
 
 <br/><br/>
 
 <!-- Live age — re-rendered daily just after midnight IST by .github/workflows/age.yml -->
-<img width="92%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/age.svg" alt="Live age — online since 05 May 1999"/>
+<img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/age.svg" alt="Human uptime — online since 05 May 1999"/>
 
 </div>
 
-<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/divider.svg" width="100%" alt=""/>
+<br/>
 
-<!-- ====================== ABOUT ====================== -->
-## ❯ ABOUT_ME
+<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s01.svg" width="100%" alt=""/>
 
 <table>
 <tr>
-<td width="40%" align="center" valign="middle">
+<td width="42%" align="center" valign="middle">
 
 <img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/portrait.jpg" width="100%" alt="A map of what I build"/>
 <sub><i>a map of what I build — ask me what it means</i></sub>
 
 </td>
-<td width="60%" valign="middle">
+<td width="58%" valign="middle">
 
 ```python
 class BhupendraTale:
     role       = "AI Engineer · Agentic AI"
     stack      = "LLM · MCP · RAG · Agents"
-    location   = "Pune, India 🇮🇳"
+    location   = "Pune, India"
     focus      = "the infra agents run on"
     philosophy = "problem → sharp tool → test → ship"
     flagship   = "AION — an OS for AI agents"
@@ -59,115 +50,36 @@ class BhupendraTale:
 </tr>
 </table>
 
-- 🧠 **Agent infrastructure** — author of **[AION](https://bhupendra05.github.io/bhupendra05/#aion)**, a zero-dependency micro-kernel that gives agents OS-grade primitives (capability sandboxing, credit budgets, semantic memory, multi-agent IPC) — and **[termind](https://bhupendra05.github.io/bhupendra05/#termind-ca)**, a local AI agent built on it with a dedicated workbench for chartered accountants.
-- 🤖 **LLM & agent tooling** — MCP servers, RAG pipelines built from scratch (no LangChain), LangGraph multi-agent patterns, and a dozen more focused agentic-AI tools — request routing, hallucination checking, incident root-causing, spec verification.
-- 💼 **AI for finance & IB** — deal-sourcing automation (Opulix, in production for a real IB firm), PE/VC waterfall math, DCF, cap-table exits — runnable by *chatting* with an LLM, not spreadsheet macros.
-- 🎓 **Strong fundamentals** — rate limiters, probabilistic data structures, and a BM25 search engine, all built **from scratch**, not wrapped.
-- 🛡️ **Security-minded** — phishing detection, secret scanning, PII redaction, DNS-tunneling detection.
-- ⚡ **I ship.** One coherent, tested version at a time — see the commit history, not just the pitch.
+<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/capabilities.svg" width="100%" alt="Agent infrastructure · LLM tooling · AI for finance · local-first · fundamentals · security"/>
 
-<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/divider.svg" width="100%" alt=""/>
+<br/><br/>
 
-<!-- ====================== TECH STACK ====================== -->
-## ❯ TECH_STACK
-
-<div align="center">
-
-**🤖 AI / LLM**
-
-![Anthropic](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=05060a)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white&labelColor=05060a)
-![MCP](https://img.shields.io/badge/MCP-000000?style=for-the-badge&logo=modelcontextprotocol&logoColor=white&labelColor=05060a)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white&labelColor=05060a)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white&labelColor=05060a)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white&labelColor=05060a)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black&labelColor=05060a)
-
-**💻 Languages & Backend**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=05060a)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=05060a)
-![Rust](https://img.shields.io/badge/Rust-CE412B?style=for-the-badge&logo=rust&logoColor=white&labelColor=05060a)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=05060a)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white&labelColor=05060a)
-
-**🗄️ Data & DevOps**
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white&labelColor=05060a)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white&labelColor=05060a)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=05060a)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=05060a)
-![GitHub Actions](https://img.shields.io/badge/Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white&labelColor=05060a)
-![Solana](https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white&labelColor=05060a)
-
-</div>
-
-<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/divider.svg" width="100%" alt=""/>
-
-<!-- ====================== FEATURED (reliable cards — no 503 pins) ====================== -->
-## ❯ FLAGSHIP_BUILDS
+<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s02.svg" width="100%" alt=""/>
 
 <table>
 <tr>
-<td width="50%" valign="top">
-
-### ▲ [AION](https://bhupendra05.github.io/bhupendra05/#aion)
-The Agent Operating System — a micro-kernel that schedules the resources agents actually burn: **tokens, context & credits**.
-<br/>
-![flagship](https://img.shields.io/badge/flagship-00e5ff?style=flat-square&labelColor=05060a) ![tests](https://img.shields.io/badge/356_tests-ff2d95?style=flat-square&labelColor=05060a) ![private](https://img.shields.io/badge/private_%C2%B7_by_design-b14dff?style=flat-square&labelColor=05060a)
-
-</td>
-<td width="50%" valign="top">
-
-### ⚡ [termind](https://bhupendra05.github.io/bhupendra05/#termind-ca)
-A local AI agent, terminal + web UI, one shared brain — with a dedicated workbench for chartered accountants. $0/query, private by design.
-<br/>
-![tests](https://img.shields.io/badge/216_tests-b14dff?style=flat-square&labelColor=05060a) ![local](https://img.shields.io/badge/local_%C2%B7_private-00e5ff?style=flat-square&labelColor=05060a)
-
-</td>
+<td width="50%"><a href="https://bhupendra05.github.io/bhupendra05/#aion"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-aion.svg" width="100%" alt="AION — The Agent Operating System"/></a></td>
+<td width="50%"><a href="https://bhupendra05.github.io/bhupendra05/#termind-ca"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-termind.svg" width="100%" alt="termind — a local AI agent"/></a></td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-
-### 🔗 [rag-from-scratch](https://github.com/bhupendra05/rag-from-scratch)
-A complete RAG pipeline with no LangChain — chunking, hybrid FAISS + BM25 retrieval, understood at the mechanism level.
-<br/>
-![stars](https://img.shields.io/github/stars/bhupendra05/rag-from-scratch?style=flat-square&logo=github&logoColor=white&color=b14dff&labelColor=05060a) ![scratch](https://img.shields.io/badge/zero_frameworks-00e5ff?style=flat-square&labelColor=05060a)
-
-</td>
-<td width="50%" valign="top">
-
-### 🕸️ [langgraph-examples](https://github.com/bhupendra05/langgraph-examples)
-Six production agent patterns — supervisor routing, human-in-the-loop, parallel fan-out, self-reflective RAG.
-<br/>
-![stars](https://img.shields.io/github/stars/bhupendra05/langgraph-examples?style=flat-square&logo=github&logoColor=white&color=b14dff&labelColor=05060a) ![patterns](https://img.shields.io/badge/6_patterns-ff2d95?style=flat-square&labelColor=05060a)
-
-</td>
+<td width="50%"><a href="https://opulix-deal-engine.onrender.com/"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-opulix.svg" width="100%" alt="Opulix — deal-origination engine"/></a></td>
+<td width="50%"><a href="https://github.com/bhupendra05/rag-from-scratch"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-rag.svg" width="100%" alt="rag-from-scratch"/></a></td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-
-### 🖇️ [mcp-servers](https://github.com/bhupendra05/mcp-servers)
-Four production-ready MCP servers — GitHub, PostgreSQL, filesystem, and a web scraper — safe by default.
-<br/>
-![stars](https://img.shields.io/github/stars/bhupendra05/mcp-servers?style=flat-square&logo=github&logoColor=white&color=b14dff&labelColor=05060a) ![mcp](https://img.shields.io/badge/MCP-00e5ff?style=flat-square&labelColor=05060a)
-
-</td>
-<td width="50%" valign="top">
-
-### 💼 [Opulix](https://opulix-deal-engine.onrender.com/)
-Deal-origination platform for investment bankers — deployed and in daily use by a real IB firm, not a demo.
-<br/>
-![live](https://img.shields.io/badge/LIVE_PRODUCT-3ddc84?style=flat-square&labelColor=05060a) ![finance](https://img.shields.io/badge/finance_%C2%B7_IB-b14dff?style=flat-square&labelColor=05060a)
-
-</td>
+<td width="50%"><a href="https://github.com/bhupendra05/langgraph-examples"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-langgraph.svg" width="100%" alt="langgraph-examples"/></a></td>
+<td width="50%"><a href="https://github.com/bhupendra05/mcp-servers"><img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/card-mcp.svg" width="100%" alt="mcp-servers"/></a></td>
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/divider.svg" width="100%" alt=""/>
+<br/>
 
-<!-- ====================== MORE BY DOMAIN ====================== -->
-## ❯ MORE_BY_DOMAIN
+<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s03.svg" width="100%" alt=""/>
+
+<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/stack.svg" width="100%" alt="Claude · OpenAI · MCP · Ollama · LangGraph · Python · TypeScript · Rust · FastAPI · PostgreSQL · Docker · Kubernetes"/>
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s04.svg" width="100%" alt=""/>
 
 <details open>
 <summary><b>🧠 Agent Infrastructure</b></summary>
@@ -223,66 +135,44 @@ Deal-origination platform for investment bankers — deployed and in daily use b
 - 🐌 **[n1detect](https://github.com/bhupendra05/n1detect)** — detect N+1 SQL queries · ⏰ **[cronguard](https://github.com/bhupendra05/cronguard)** — alert on failed cron jobs
 </details>
 
-> 🔭 **Browse all 126+ repositories, organized by domain →** [bhupendra05.github.io/bhupendra05/#projects](https://bhupendra05.github.io/bhupendra05/#projects)
+<p align="center"><a href="https://bhupendra05.github.io/bhupendra05/#projects"><img src="https://img.shields.io/badge/BROWSE_ALL_126%2B_TOOLS_→-00e5ff?style=for-the-badge&labelColor=05060a" alt="browse all tools"/></a></p>
 
-<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/divider.svg" width="100%" alt=""/>
+<br/>
 
-<!-- ====================== ANALYTICS ====================== -->
-## ❯ LIVE_STATS
-
-<p align="center"><i>Pulled straight from the GitHub API and refreshed every morning at 02:00 UTC. No third-party server in the loop.</i></p>
+<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s05.svg" width="100%" alt=""/>
 
 <div align="center">
 
-<!-- Stats card: self-generated daily by GitHub Actions (scripts/gen_stats.py) — no third-party server -->
-<img width="98%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/stats.svg" alt="GitHub stats"/>
-
+<img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/stats.svg" alt="GitHub stats"/>
 <br/><br/>
-
-<!-- Activity card: recent stargazers (real timestamps), newly-detected followers/watchers, 14-day traffic -->
-<img width="98%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/intel.svg" alt="Live GitHub activity"/>
-
+<img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/intel.svg" alt="Live GitHub activity"/>
 <br/><br/>
-
-<img height="172" src="https://streak-stats.demolab.com/?user=bhupendra05&hide_border=true&background=05060a&stroke=00e5ff&ring=b14dff&fire=ff2d95&currStreakNum=eef0f6&currStreakLabel=00e5ff&sideNums=eef0f6&sideLabels=00e5ff&dates=9498ab&excludeDaysLabel=9498ab" alt="streak"/>
-
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=bhupendra05&bg_color=05060a&color=00e5ff&line=b14dff&point=eef0f6&area=true&area_color=b14dff&hide_border=true&title_color=b14dff" alt="activity graph"/>
-
-</div>
-
-<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/divider.svg" width="100%" alt=""/>
-
-<!-- ====================== SNAKE (self-hosted via Action — reliable) ====================== -->
-## ❯ CONTRIBUTION_GRAPH
-
-<div align="center">
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhupendra05/bhupendra05/output/github-contribution-grid-snake.svg">
-  <img alt="snake animation" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/output/github-contribution-grid-snake.svg">
+  <img width="100%" alt="contribution snake" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/output/github-contribution-grid-snake.svg">
 </picture>
 
 </div>
 
-<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/divider.svg" width="100%" alt=""/>
+<br/>
 
-<!-- ====================== CONNECT ====================== -->
-## ❯ LETS_BUILD
+<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/s06.svg" width="100%" alt=""/>
 
 <div align="center">
 
-I build AI-native infrastructure and I'm always up for a sharp problem.
-**Open to agentic-AI roles, collaborations, and freelance work.**
+**I build AI-native infrastructure — and I'm always up for a sharp problem.**
+<br/>
+Want one of these tools, or have a problem you think should exist as one? Reach out.
+
+<br/>
 
 <a href="https://www.linkedin.com/in/bhupendra-tale95b3b11b4"><img src="https://img.shields.io/badge/LinkedIn-Connect-00e5ff?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=05060a"/></a>
 <a href="mailto:bgurjar05.bg@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hi-ff2d95?style=for-the-badge&logo=gmail&logoColor=white&labelColor=05060a"/></a>
-<a href="https://github.com/bhupendra05"><img src="https://img.shields.io/badge/GitHub-Follow-b14dff?style=for-the-badge&logo=github&logoColor=white&labelColor=05060a"/></a>
+<a href="https://bhupendra05.github.io/bhupendra05/"><img src="https://img.shields.io/badge/Portfolio-Explore-b14dff?style=for-the-badge&logo=githubpages&logoColor=white&labelColor=05060a"/></a>
 
 <br/><br/>
 
-<i>⭐ Find my work useful? A star means a lot — and helps others discover it.</i>
+<img width="100%" src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/ui/footer.svg" alt="Built in public · Pune, India"/>
 
 </div>
-
-<img src="https://raw.githubusercontent.com/bhupendra05/bhupendra05/main/assets/divider.svg" width="100%" alt=""/>

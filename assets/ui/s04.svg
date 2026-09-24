@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 64" width="900" height="64" role="img" aria-label="04 ALL_WORK">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05060a"/><stop offset="1" stop-color="#0d0f18"/></linearGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff"/><stop offset="0.5" stop-color="#b14dff"/><stop offset="1" stop-color="#ff2d95"/></linearGradient>
+  <filter id="glow" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<text x="0" y="40" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="30" font-weight="800" fill="url(#neon)" text-anchor="start" letter-spacing="0" filter="url(#glow)">04</text><text x="64" y="32" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="20" font-weight="800" fill="#eef0f6" text-anchor="start" letter-spacing="3" >ALL_WORK</text><text x="64" y="52" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11.5" font-weight="400" fill="#9aa0b8" text-anchor="start" letter-spacing="1.2" >126+ tools, organized by domain</text><rect x="0" y="62" width="900" height="2" fill="url(#neon)" opacity="0.55"/>
+</svg>

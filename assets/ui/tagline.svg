@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 56" width="900" height="56" role="img" aria-label="AION — an operating system for AI agents">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05060a"/><stop offset="1" stop-color="#0d0f18"/></linearGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff"/><stop offset="0.5" stop-color="#b14dff"/><stop offset="1" stop-color="#ff2d95"/></linearGradient>
+  <filter id="glow" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<g opacity="0"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" keyTimes="0.0000;0.0208;0.2292;0.2500;1.0000" values="0;1;1;0;0"/><text x="450.0" y="36" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="22" font-weight="700" fill="#00e5ff" text-anchor="middle" letter-spacing="0.5" filter="url(#glow)">❯ AION — an operating system for AI agents</text></g>
+<g opacity="0"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" keyTimes="0.0000;0.2500;0.2708;0.4792;0.5000;1.0000" values="0;0;1;1;0;0"/><text x="450.0" y="36" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="22" font-weight="700" fill="#b14dff" text-anchor="middle" letter-spacing="0.5" filter="url(#glow)">❯ LLM · MCP · RAG · agentic infrastructure</text></g>
+<g opacity="0"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" keyTimes="0.0000;0.5000;0.5208;0.7292;0.7500;1.0000" values="0;0;1;1;0;0"/><text x="450.0" y="36" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="22" font-weight="700" fill="#ff2d95" text-anchor="middle" letter-spacing="0.5" filter="url(#glow)">❯ I turn expert workflows into AI tools</text></g>
+<g opacity="0"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" keyTimes="0.0000;0.7500;0.7708;0.9792;1.0000" values="0;0;1;1;0"/><text x="450.0" y="36" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="22" font-weight="700" fill="#39ff88" text-anchor="middle" letter-spacing="0.5" filter="url(#glow)">❯ 126+ tools shipped — every one tested</text></g>
+</svg>

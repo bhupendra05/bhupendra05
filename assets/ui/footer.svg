@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 110" width="900" height="110" role="img" aria-label="Built in public">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05060a"/><stop offset="1" stop-color="#0d0f18"/></linearGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff"/><stop offset="0.5" stop-color="#b14dff"/><stop offset="1" stop-color="#ff2d95"/></linearGradient>
+  <filter id="glow" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect x="0" y="0" width="900" height="2" fill="url(#neon)"/><path d="M438.0 54 L450.0 32 L462.0 54 Z" fill="none" stroke="#b14dff" stroke-width="2" filter="url(#glow)"><animate attributeName="opacity" values="1;0.35;1" dur="2.4s" repeatCount="indefinite"/></path><text x="450.0" y="80" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="12" font-weight="700" fill="#eef0f6" text-anchor="middle" letter-spacing="3" >BUILT IN PUBLIC · TESTED BEFORE IT&#x27;S CALLED DONE</text><text x="450.0" y="100" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="10.5" font-weight="400" fill="#9aa0b8" text-anchor="middle" letter-spacing="3" >PUNE, INDIA</text>
+</svg>

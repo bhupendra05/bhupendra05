@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 210" width="440" height="210" role="img" aria-label="AION — The Agent Operating System">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05060a"/><stop offset="1" stop-color="#0d0f18"/></linearGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff"/><stop offset="0.5" stop-color="#b14dff"/><stop offset="1" stop-color="#ff2d95"/></linearGradient>
+  <filter id="glow" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="440" height="210" rx="12" fill="url(#bg)"/>
+<rect x="0.75" y="0.75" width="438.5" height="208.5" rx="12" fill="none" stroke="url(#neon)" stroke-width="1.5" opacity="0.9"/>
+<path d="M8 8 h18 M8 8 v18" stroke="#00e5ff" stroke-width="2" fill="none"/>
+<path d="M432 8 h-18 M432 8 v18" stroke="#00e5ff" stroke-width="2" fill="none"/>
+<path d="M8 202 h18 M8 202 v-18" stroke="#00e5ff" stroke-width="2" fill="none"/>
+<path d="M432 202 h-18 M432 202 v-18" stroke="#00e5ff" stroke-width="2" fill="none"/>
+<path d="M50 36 L72 74 L28 74 Z" fill="none" stroke="#00e5ff" stroke-width="2.5" filter="url(#glow)"/>
+<text x="88" y="52" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="20" font-weight="800" fill="#eef0f6" text-anchor="start" letter-spacing="0" >AION</text>
+<text x="88" y="74" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11.5" font-weight="700" fill="#00e5ff" text-anchor="start" letter-spacing="0.5" >The Agent Operating System</text>
+<rect x="344.0" y="30" width="74.0" height="22" rx="11" fill="#00e5ff" fill-opacity="0.12" stroke="#00e5ff" stroke-opacity="0.7"/>
+<text x="381.0" y="45" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="10" font-weight="800" fill="#00e5ff" text-anchor="middle" letter-spacing="1" >356 TESTS</text>
+<line x1="24" y1="96" x2="416" y2="96" stroke="#1a1d2e"/>
+<text x="24" y="124" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="12.5" font-weight="400" fill="#9aa0b8" text-anchor="start" letter-spacing="0" >A micro-kernel that schedules what agents</text>
+<text x="24" y="144" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="12.5" font-weight="400" fill="#9aa0b8" text-anchor="start" letter-spacing="0" >actually burn: tokens, context, credits.</text>
+<rect x="24" y="166" width="65.6" height="24" rx="12" fill="#05060a" stroke="#3776ab" stroke-opacity="0.55"/><circle cx="36" cy="178" r="3.5" fill="#3776ab"/><text x="44" y="182" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11" font-weight="400" fill="#eef0f6" text-anchor="start" letter-spacing="0" >Python</text>
+<rect x="97.6" y="166" width="78.8" height="24" rx="12" fill="#05060a" stroke="#39ff88" stroke-opacity="0.55"/><circle cx="109.6" cy="178" r="3.5" fill="#39ff88"/><text x="117.6" y="182" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11" font-weight="400" fill="#eef0f6" text-anchor="start" letter-spacing="0" >zero-dep</text>
+<rect x="184.39999999999998" y="166" width="65.6" height="24" rx="12" fill="#05060a" stroke="#b14dff" stroke-opacity="0.55"/><circle cx="196.39999999999998" cy="178" r="3.5" fill="#b14dff"/><text x="204.39999999999998" y="182" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="11" font-weight="400" fill="#eef0f6" text-anchor="start" letter-spacing="0" >kernel</text>
+<text x="416" y="183" font-family="JetBrains Mono,SF Mono,Consolas,Courier New,monospace" font-size="16" font-weight="800" fill="#00e5ff" text-anchor="end" letter-spacing="0" >↗</text>
+</svg>
