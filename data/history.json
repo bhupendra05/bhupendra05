@@ -1,6 +1,7 @@
 {
- "last_run": "2026-09-28T08:00:02.319339+00:00",
+ "last_run": "2026-09-29T07:41:59.819348+00:00",
  "followers": [
+  "00200200",
   "0disoft",
   "1Crazymoney",
   "3xtroy",
@@ -15,7 +16,6 @@
   "Amirhouschang",
   "AronAxe",
   "Arul1998",
-  "BEPb",
   "BrainTentacle",
   "ByteBunny777",
   "DEVAL-020",
@@ -150,6 +150,7 @@
   "ohmygodduh",
   "ollarethe4k-dotcom",
   "openamer",
+  "polystrategist",
   "pwnedroot",
   "qiluy202-dev",
   "r97221004",
@@ -449,7 +450,8 @@
   "shinobi-coder701": "2026-09-25",
   "serena-peschiaroli": "2026-09-27",
   "EhsanShahbazii": "2026-09-27",
-  "DEVAL-020": "2026-09-27"
+  "DEVAL-020": "2026-09-27",
+  "polystrategist": "2026-09-29"
  },
  "traffic_series": [
   {
@@ -879,6 +881,11 @@
   },
   {
    "date": "2026-09-28",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-09-29",
    "clones": 1071,
    "views": 52
   }
