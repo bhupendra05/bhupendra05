@@ -1,5 +1,5 @@
 {
- "last_run": "2026-10-01T08:02:34.382200+00:00",
+ "last_run": "2026-10-02T07:46:14.259058+00:00",
  "followers": [
   "00200200",
   "0disoft",
@@ -112,13 +112,11 @@
   "ictdeplomavta-glitch",
   "iloekenedilichukwu",
   "ip-docketing",
-  "ishandutta2007",
   "ivanpaghubasan",
   "josejairobaltazargallegos-afk",
   "josephsenior",
   "kaiiii777",
   "kapenda-dev",
-  "kgeminicdev",
   "kimuntugroup-commits",
   "kingcrown88x-tech",
   "kitikazis",
@@ -894,6 +892,11 @@
   },
   {
    "date": "2026-10-01",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-10-02",
    "clones": 1071,
    "views": 52
   }
