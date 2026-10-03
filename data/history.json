@@ -1,5 +1,5 @@
 {
- "last_run": "2026-10-02T07:46:14.259058+00:00",
+ "last_run": "2026-10-03T07:20:03.349467+00:00",
  "followers": [
   "00200200",
   "0disoft",
@@ -53,6 +53,7 @@
   "NomanRafique01",
   "NullEntity001",
   "ORIORIS-FR",
+  "OWAIS086-web",
   "PEOPLE-EATER",
   "SVauna",
   "SakunosukeCode",
@@ -147,6 +148,7 @@
   "ollarethe4k-dotcom",
   "openamer",
   "polystrategist",
+  "prempalhade3-code",
   "pwnedroot",
   "qiluy202-dev",
   "r97221004",
@@ -447,14 +449,11 @@
   "EhsanShahbazii": "2026-09-27",
   "DEVAL-020": "2026-09-27",
   "polystrategist": "2026-09-29",
-  "kgeminicdev": "2026-09-30"
+  "kgeminicdev": "2026-09-30",
+  "OWAIS086-web": "2026-10-03",
+  "prempalhade3-code": "2026-10-03"
  },
  "traffic_series": [
-  {
-   "date": "2026-07-05",
-   "clones": 1083,
-   "views": 108
-  },
   {
    "date": "2026-07-06",
    "clones": 1083,
@@ -897,6 +896,11 @@
   },
   {
    "date": "2026-10-02",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-10-03",
    "clones": 1071,
    "views": 52
   }

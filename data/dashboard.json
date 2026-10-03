@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-02T07:46:14.260127+00:00",
+ "generated_at": "2026-10-03T07:20:03.350530+00:00",
  "login": "bhupendra05",
- "tagline": "Small tools. Sharp problems. Measured results.",
+ "tagline": "Building the layer autonomous agents run on.",
  "totals": {
-  "stars": 22,
+  "stars": 23,
   "commits": 32,
   "repos": 173,
   "prs": 4,
-  "followers": 174,
+  "followers": 176,
   "top_lang": "Python",
   "watchers": 1,
   "recruits": 16,
@@ -98,7 +98,10 @@
    "at": "2026-05-29T13:25:54Z"
   }
  ],
- "new_followers": [],
+ "new_followers": [
+  "OWAIS086-web",
+  "prempalhade3-code"
+ ],
  "new_watchers": [],
  "first_seen": {
   "yunawyner": "2026-07-05",
@@ -368,14 +371,11 @@
   "EhsanShahbazii": "2026-09-27",
   "DEVAL-020": "2026-09-27",
   "polystrategist": "2026-09-29",
-  "kgeminicdev": "2026-09-30"
+  "kgeminicdev": "2026-09-30",
+  "OWAIS086-web": "2026-10-03",
+  "prempalhade3-code": "2026-10-03"
  },
  "traffic_series": [
-  {
-   "date": "2026-07-05",
-   "clones": 1083,
-   "views": 108
-  },
   {
    "date": "2026-07-06",
    "clones": 1083,
@@ -820,6 +820,11 @@
    "date": "2026-10-02",
    "clones": 1071,
    "views": 52
+  },
+  {
+   "date": "2026-10-03",
+   "clones": 1071,
+   "views": 52
   }
  ],
  "top_repos": [
@@ -830,16 +835,16 @@
    "url": "https://github.com/bhupendra05/bhupendra05"
   },
   {
+   "name": "phisheye",
+   "stars": 3,
+   "description": "Offline, zero-dependency phishing-URL risk scanner \u2014 catches homograph, typosquat & DGA tricks. For blue teams.",
+   "url": "https://github.com/bhupendra05/phisheye"
+  },
+  {
    "name": "deeptracker",
    "stars": 2,
    "description": "Deep-tech funding & valuation tracker for Indian startups \u2014 semiconductors, space, aerospace, eVTOL, biotech. Sector/quarter analytics, investor leaderboard.",
    "url": "https://github.com/bhupendra05/deeptracker"
-  },
-  {
-   "name": "phisheye",
-   "stars": 2,
-   "description": "Offline, zero-dependency phishing-URL risk scanner \u2014 catches homograph, typosquat & DGA tricks. For blue teams.",
-   "url": "https://github.com/bhupendra05/phisheye"
   },
   {
    "name": "tunneleye",
