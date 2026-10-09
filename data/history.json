@@ -1,5 +1,5 @@
 {
- "last_run": "2026-10-08T08:12:29.320805+00:00",
+ "last_run": "2026-10-09T08:12:15.789945+00:00",
  "followers": [
   "0disoft",
   "1Crazymoney",
@@ -132,6 +132,7 @@
   "martinsblucas",
   "matheusfmedina",
   "matthieugraziani",
+  "md-abu-kayser",
   "minjae083",
   "mosyan",
   "mrhx01",
@@ -139,7 +140,6 @@
   "mtngunay",
   "mwakidenis",
   "nargestohidloo",
-  "nearyou",
   "nehasudheesh",
   "nickjlamb",
   "noelmayele02-droid",
@@ -152,6 +152,7 @@
   "qiluy202-dev",
   "r97221004",
   "rahuloraj",
+  "rasidi3112",
   "raviwijerathna1",
   "rengm89",
   "rsamwilson2323-cloud",
@@ -457,14 +458,10 @@
   "rengm89": "2026-10-04",
   "salikhussain71-code": "2026-10-05",
   "serakib": "2026-10-07",
-  "madfrank17": "2026-10-08"
+  "madfrank17": "2026-10-08",
+  "md-abu-kayser": "2026-10-09"
  },
  "traffic_series": [
-  {
-   "date": "2026-07-11",
-   "clones": 1083,
-   "views": 108
-  },
   {
    "date": "2026-07-12",
    "clones": 1083,
@@ -907,6 +904,11 @@
   },
   {
    "date": "2026-10-08",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-10-09",
    "clones": 1071,
    "views": 52
   }
