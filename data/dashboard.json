@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T06:42:26.766131+00:00",
+ "generated_at": "2026-10-25T07:08:14.092778+00:00",
  "login": "bhupendra05",
- "tagline": "Infrastructure, not apps. Local, not cloud.",
+ "tagline": "126+ repos \u2014 every one open, every one real.",
  "totals": {
-  "stars": 23,
+  "stars": 24,
   "commits": 32,
   "repos": 173,
   "prs": 4,
@@ -98,9 +98,7 @@
    "at": "2026-05-29T13:25:54Z"
   }
  ],
- "new_followers": [
-  "CRIME-N-PUNISHMENT"
- ],
+ "new_followers": [],
  "new_watchers": [],
  "first_seen": {
   "yunawyner": "2026-07-05",
@@ -390,11 +388,6 @@
   "CRIME-N-PUNISHMENT": "2026-10-24"
  },
  "traffic_series": [
-  {
-   "date": "2026-07-27",
-   "clones": 1071,
-   "views": 52
-  },
   {
    "date": "2026-07-28",
    "clones": 1071,
@@ -839,6 +832,11 @@
    "date": "2026-10-24",
    "clones": 1071,
    "views": 52
+  },
+  {
+   "date": "2026-10-25",
+   "clones": 1071,
+   "views": 52
   }
  ],
  "top_repos": [
@@ -853,6 +851,12 @@
    "stars": 3,
    "description": "Offline, zero-dependency phishing-URL risk scanner \u2014 catches homograph, typosquat & DGA tricks. For blue teams.",
    "url": "https://github.com/bhupendra05/phisheye"
+  },
+  {
+   "name": "carryflow",
+   "stars": 2,
+   "description": "PE/VC distribution waterfall, carried-interest & exit-structuring engine \u2014 European/American waterfalls, IRR/MOIC, secondaries, continuation vehicles",
+   "url": "https://github.com/bhupendra05/carryflow"
   },
   {
    "name": "deeptracker",
@@ -877,12 +881,6 @@
    "stars": 1,
    "description": "Retrieval-Augmented Generation (RAG) Agent - Singapore Tour Guide with PDF extraction, vector embeddings, semantic search, and LLM integration",
    "url": "https://github.com/bhupendra05/agentic-rag-agent"
-  },
-  {
-   "name": "carryflow",
-   "stars": 1,
-   "description": "PE/VC distribution waterfall, carried-interest & exit-structuring engine \u2014 European/American waterfalls, IRR/MOIC, secondaries, continuation vehicles",
-   "url": "https://github.com/bhupendra05/carryflow"
   },
   {
    "name": "claude-commands",
