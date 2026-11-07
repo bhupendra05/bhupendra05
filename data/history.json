@@ -1,5 +1,5 @@
 {
- "last_run": "2026-11-06T08:47:34.427548+00:00",
+ "last_run": "2026-11-07T08:01:52.560612+00:00",
  "followers": [
   "0disoft",
   "0vm",
@@ -31,6 +31,7 @@
   "FidelJones",
   "Gagagarb",
   "GallaGit",
+  "Git-FED",
   "HollowGaze",
   "IDouble",
   "Jitspoed",
@@ -83,6 +84,7 @@
   "ak47akshaykulkarni",
   "aleoviedo071298",
   "alhermann",
+  "aramisjustin068",
   "arpitrajjj",
   "ashish7802",
   "auroraeye-dev",
@@ -127,6 +129,7 @@
   "kitikazis",
   "kritagyaio",
   "lcetin66",
+  "liesbethbelmokhtar203-source",
   "lollaramkumar-cyber",
   "lucianoizidro",
   "luisv-lima",
@@ -475,14 +478,11 @@
   "Gagagarb": "2026-10-28",
   "MuhammadHassanC": "2026-10-29",
   "shahidazam2020-oss": "2026-10-31",
-  "Jitspoed": "2026-11-02"
+  "Jitspoed": "2026-11-02",
+  "Git-FED": "2026-11-07",
+  "aramisjustin068": "2026-11-07"
  },
  "traffic_series": [
-  {
-   "date": "2026-08-08",
-   "clones": 1071,
-   "views": 52
-  },
   {
    "date": "2026-08-09",
    "clones": 1071,
@@ -925,6 +925,11 @@
   },
   {
    "date": "2026-11-06",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-11-07",
    "clones": 1071,
    "views": 52
   }
