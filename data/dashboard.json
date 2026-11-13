@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-12T08:59:48.546369+00:00",
+ "generated_at": "2026-11-13T08:56:34.063944+00:00",
  "login": "bhupendra05",
- "tagline": "Building the layer autonomous agents run on.",
+ "tagline": "Proven, not promised.",
  "totals": {
   "stars": 25,
   "commits": 32,
   "repos": 173,
   "prs": 4,
-  "followers": 179,
+  "followers": 180,
   "top_lang": "Python",
   "watchers": 1,
   "recruits": 16,
@@ -98,7 +98,9 @@
    "at": "2026-05-29T13:25:54Z"
   }
  ],
- "new_followers": [],
+ "new_followers": [
+  "Yacine-ai-tech"
+ ],
  "new_watchers": [],
  "first_seen": {
   "yunawyner": "2026-07-05",
@@ -393,14 +395,10 @@
   "Jitspoed": "2026-11-02",
   "Git-FED": "2026-11-07",
   "aramisjustin068": "2026-11-07",
-  "arielshakaramiro": "2026-11-10"
+  "arielshakaramiro": "2026-11-10",
+  "Yacine-ai-tech": "2026-11-13"
  },
  "traffic_series": [
-  {
-   "date": "2026-08-14",
-   "clones": 1071,
-   "views": 52
-  },
   {
    "date": "2026-08-15",
    "clones": 1071,
@@ -843,6 +841,11 @@
   },
   {
    "date": "2026-11-12",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-11-13",
    "clones": 1071,
    "views": 52
   }
