@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-13T08:56:34.063944+00:00",
+ "generated_at": "2026-11-14T08:19:51.641429+00:00",
  "login": "bhupendra05",
- "tagline": "Proven, not promised.",
+ "tagline": "One focused release at a time \u2014 see the commits.",
  "totals": {
-  "stars": 25,
+  "stars": 26,
   "commits": 32,
   "repos": 173,
   "prs": 4,
@@ -98,9 +98,7 @@
    "at": "2026-05-29T13:25:54Z"
   }
  ],
- "new_followers": [
-  "Yacine-ai-tech"
- ],
+ "new_followers": [],
  "new_watchers": [],
  "first_seen": {
   "yunawyner": "2026-07-05",
@@ -399,11 +397,6 @@
   "Yacine-ai-tech": "2026-11-13"
  },
  "traffic_series": [
-  {
-   "date": "2026-08-15",
-   "clones": 1071,
-   "views": 52
-  },
   {
    "date": "2026-08-16",
    "clones": 1071,
@@ -848,6 +841,11 @@
    "date": "2026-11-13",
    "clones": 1071,
    "views": 52
+  },
+  {
+   "date": "2026-11-14",
+   "clones": 1071,
+   "views": 52
   }
  ],
  "top_repos": [
@@ -894,6 +892,12 @@
    "url": "https://github.com/bhupendra05/agentic-rag-agent"
   },
   {
+   "name": "claude-api-cookbook",
+   "stars": 1,
+   "description": "Claude API examples: tool use, vision, streaming, batch API, structured output, prompt engineering patterns",
+   "url": "https://github.com/bhupendra05/claude-api-cookbook"
+  },
+  {
    "name": "claude-commands",
    "stars": 1,
    "description": "99 real, installable Claude Code slash commands (/eli10, /resumebullet, /tldr). The 'secret commands' infographic \u2014 turned into actual commands you can run.",
@@ -904,12 +908,6 @@
    "stars": 1,
    "description": "DCF valuation for any US public company using free SEC EDGAR data \u2014 one command, no API key",
    "url": "https://github.com/bhupendra05/dcf-model"
-  },
-  {
-   "name": "exitsim",
-   "stars": 1,
-   "description": "Cap table & exit waterfall simulator \u2014 liquidation preferences, participating preferred, seniority stacking, dilution, breakeven solver",
-   "url": "https://github.com/bhupendra05/exitsim"
   }
  ],
  "languages": {
