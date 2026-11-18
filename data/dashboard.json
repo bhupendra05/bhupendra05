@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-17T09:55:15.174632+00:00",
+ "generated_at": "2026-11-18T09:30:40.773138+00:00",
  "login": "bhupendra05",
- "tagline": "Infrastructure, not apps. Local, not cloud.",
+ "tagline": "126+ repos \u2014 every one open, every one real.",
  "totals": {
   "stars": 27,
   "commits": 32,
@@ -99,7 +99,7 @@
   }
  ],
  "new_followers": [
-  "beny-NI"
+  "deveguru"
  ],
  "new_watchers": [],
  "first_seen": {
@@ -400,14 +400,10 @@
   "Bhoomikakaushik": "2026-11-15",
   "applecat88": "2026-11-16",
   "bahattinyunus": "2026-11-16",
-  "beny-NI": "2026-11-17"
+  "beny-NI": "2026-11-17",
+  "deveguru": "2026-11-18"
  },
  "traffic_series": [
-  {
-   "date": "2026-08-19",
-   "clones": 1071,
-   "views": 52
-  },
   {
    "date": "2026-08-20",
    "clones": 1071,
@@ -850,6 +846,11 @@
   },
   {
    "date": "2026-11-17",
+   "clones": 1071,
+   "views": 52
+  },
+  {
+   "date": "2026-11-18",
    "clones": 1071,
    "views": 52
   }
