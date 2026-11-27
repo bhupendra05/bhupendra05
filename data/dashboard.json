@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-26T10:13:24.882101+00:00",
+ "generated_at": "2026-11-27T10:19:13.269846+00:00",
  "login": "bhupendra05",
- "tagline": "126+ repos \u2014 every one open, every one real.",
+ "tagline": "Small tools. Sharp problems. Measured results.",
  "totals": {
-  "stars": 27,
+  "stars": 26,
   "commits": 32,
   "repos": 174,
   "prs": 4,
-  "followers": 190,
+  "followers": 188,
   "top_lang": "Python",
   "watchers": 1,
   "recruits": 16,
@@ -98,9 +98,7 @@
    "at": "2026-05-29T13:25:54Z"
   }
  ],
- "new_followers": [
-  "inii-sayaa"
- ],
+ "new_followers": [],
  "new_watchers": [],
  "first_seen": {
   "yunawyner": "2026-07-05",
@@ -410,11 +408,6 @@
   "inii-sayaa": "2026-11-26"
  },
  "traffic_series": [
-  {
-   "date": "2026-08-28",
-   "clones": 1071,
-   "views": 52
-  },
   {
    "date": "2026-08-29",
    "clones": 1071,
@@ -859,6 +852,11 @@
    "date": "2026-11-26",
    "clones": 1071,
    "views": 52
+  },
+  {
+   "date": "2026-11-27",
+   "clones": 1071,
+   "views": 52
   }
  ],
  "top_repos": [
@@ -881,16 +879,16 @@
    "url": "https://github.com/bhupendra05/phisheye"
   },
   {
-   "name": "tunneleye",
-   "stars": 3,
-   "description": "Catch data leaving via DNS \u2014 detects DNS tunneling/exfiltration in query logs by subdomain entropy, length, unique-count & volume. Offline, zero-dep.",
-   "url": "https://github.com/bhupendra05/tunneleye"
-  },
-  {
    "name": "deeptracker",
    "stars": 2,
    "description": "Deep-tech funding & valuation tracker for Indian startups \u2014 semiconductors, space, aerospace, eVTOL, biotech. Sector/quarter analytics, investor leaderboard.",
    "url": "https://github.com/bhupendra05/deeptracker"
+  },
+  {
+   "name": "tunneleye",
+   "stars": 2,
+   "description": "Catch data leaving via DNS \u2014 detects DNS tunneling/exfiltration in query logs by subdomain entropy, length, unique-count & volume. Offline, zero-dep.",
+   "url": "https://github.com/bhupendra05/tunneleye"
   },
   {
    "name": "txlens",
